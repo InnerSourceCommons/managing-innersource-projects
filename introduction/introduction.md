@@ -207,7 +207,7 @@ Harvard):
 
 [^2]: https://www.youtube.com/watch?v=x7ozaFbqg00
 
-[^3] http://www.oreilly.com/programming/free/getting-started-with-innersource.csp
+[^3]: http://www.oreilly.com/programming/free/getting-started-with-innersource.csp
 
 [^4]: https://en.wikipedia.org/wiki/Omnichannel
 
@@ -217,4 +217,4 @@ Harvard):
 
 [^7]: http://www.towerswatson.com/DownloadMedia.aspx?media=%7B1EBA6F1E-B1E7-4F0A-A9F7-D828C4D8B2AE%7D
 
-[^8] https://en.wikipedia.org/wiki/Drive:_The_Surprising_Truth_About_What_Motivates_Us
+[^8]: https://en.wikipedia.org/wiki/Drive:_The_Surprising_Truth_About_What_Motivates_Us
