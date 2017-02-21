@@ -39,3 +39,6 @@ For further questions, please contact José Manrique López or Daniel Izquierdo:
 
 
 Thanks for your time here!
+
+
+All of the content found in this repository is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
