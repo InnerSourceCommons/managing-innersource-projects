@@ -18,3 +18,9 @@ You can [open discussions there](https://www.gitbook.com/book/dicortazar/managin
 
 Please be aware that all of your contributions will be opened by default and
 that those will be licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+## Guidelines
+
+When using titles in Markdown, use # for main title, ## for the second header title, etc. It's just to follow the same style :).
+
+When mentioning inner source, we tend to use lower case and separated by a blank space as in open source. As an example, these are not correct cases: Inner Source, Inner source, InnerSource, innersource, inner sourcing. Again this is a matter of following a similar style.
