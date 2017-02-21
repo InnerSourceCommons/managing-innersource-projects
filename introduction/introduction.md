@@ -31,12 +31,22 @@ basketball coach) in IBM Linux comercial [^2]:
 Losing yourself in the group for the good of the group, that’s
 teamwork.”
 
+Since the collaboration methodologies used in OSS projects are providing
+high quality innovative technology thanks to engaged development communities, 
+why not applying same methodologies inside your company? That's Inner Source, or
+Inner Sourcing.
+
+If you haven't decided yet to apply Inner Source in your company, we recommend you
+start reading "Getting Started with InnerSource"[^3] by Andy Oran. After that, or if
+you have already dediced to start the Inner Source path, this book will give you better
+understanding of Inner Source scenarios, framework and management skills.
+
 The Digital Transformation hype
 -------------------------------
 
 During the same period of time, many companies have started facing what
 they call their “Digital Transformation”, to become software omnichannel
-companies[^3]. They become heavy IT users and the key transformation
+companies[^4]. They become heavy IT users and the key transformation
 steps usually are defined by
 
 -   breaking cross-organizational silos (cultural change)
@@ -44,7 +54,7 @@ steps usually are defined by
 -   adoption new IT technologies (cloud, big data, mobile, etc.)
 
 The adoption of these technologies usually means that companies need
-people and companies to build strong and competent “DevOps”[^4] teams.
+people and companies to build strong and competent “DevOps”[^5] teams.
 Yes, “DevOps”, the second hype-word after “Digital Transformation” of
 these ages.
 
@@ -119,7 +129,7 @@ Disengagement at work
 
 If previous scenarios are familiar to you, probably you don’t feel
 engage at work. Don’t worry, you are not alone. According to World
-Economic Forum [^5] 70% of employees say they are disengaged at work.
+Economic Forum [^6] 70% of employees say they are disengaged at work.
 
 In the same article, it says that “Research from the University of
 California found that motivated employees were 31% more productive, had
@@ -127,9 +137,21 @@ California found that motivated employees were 31% more productive, had
 employees. They were also 87% less likely to quit, according to a
 Corporate Leadership Council study on over 50,000 people”.
 
-Towers Watson[^6] found that companies with engaged employees produced
+Towers Watson[^7] found that companies with engaged employees produced
 19.2% more operative incomes in one year, but companies with worse
 engagement operative incomes get reduced by 32.7%.
+
+It was Daniel Pink in his book "Drive"[^8] who argues that human motivation is 
+largely intrinsic. The aspects of this motivation can be divided into 
+
+- autonomy, typical for OSS projects developers that are self-managed
+
+- mastery, as the desire to improve developer skills to improve the project they are involved in
+
+- purpose, defined as mission in many OSS projects
+
+These aspects are key for software developers motivation, since their tasks
+involve cognitive skills, decision-making, creativity, or higher-order thinking.
 
 Adopting OSS development principles
 -----------------------------------
@@ -145,12 +167,13 @@ IT factor:
 
 By adopting OSS development principles, companies are adopting:
 
--   Governance model with policies to manage their projects under a
+-   Governance model with policies to self-manage their projects under a
     collaborative methodology
 
 -   Transparent communication channels to break silos
 
--   Meritocracy for developers, creating the “contributor role”
+-   Meritocracy, or do-cracy, for developers, who become engaged “contributors” 
+    (autonomous, willing to improve their skills and focused in project purpose)
 
 -   New roles for project managers, empowering their soft skills for
     people/community management
@@ -184,10 +207,14 @@ Harvard):
 
 [^2]: https://www.youtube.com/watch?v=x7ozaFbqg00
 
-[^3]: https://en.wikipedia.org/wiki/Omnichannel
+[^3] http://www.oreilly.com/programming/free/getting-started-with-innersource.csp
 
-[^4]: https://en.wikipedia.org/wiki/DevOps
+[^4]: https://en.wikipedia.org/wiki/Omnichannel
 
-[^5]: https://www.weforum.org/agenda/2016/11/70-of-employees-say-they-are-disengaged-at-work-heres-how-to-motivate-them/
+[^5]: https://en.wikipedia.org/wiki/DevOps
 
-[^6]: http://www.towerswatson.com/DownloadMedia.aspx?media=%7B1EBA6F1E-B1E7-4F0A-A9F7-D828C4D8B2AE%7D
+[^6]: https://www.weforum.org/agenda/2016/11/70-of-employees-say-they-are-disengaged-at-work-heres-how-to-motivate-them/
+
+[^7]: http://www.towerswatson.com/DownloadMedia.aspx?media=%7B1EBA6F1E-B1E7-4F0A-A9F7-D828C4D8B2AE%7D
+
+[^8] https://en.wikipedia.org/wiki/Drive:_The_Surprising_Truth_About_What_Motivates_Us
