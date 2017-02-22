@@ -37,7 +37,7 @@ why not applying same methodologies inside your company? That's inner source!
 If you haven't decided yet to apply inner source in your company, we recommend you
 start reading "Getting Started with InnerSource"[^3] by Andy Oran. After that, or if
 you have already decided to start the inner source path, this book will give you better
-understanding of Inner Source scenarios, framework and management skills.
+understanding of inner source scenarios, framework and management skills.
 
 ## The Digital Transformation hype
 
