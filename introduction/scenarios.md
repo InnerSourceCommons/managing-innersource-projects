@@ -26,11 +26,11 @@ boundaries of teams, business units and nations.
 Beyond the obvious profile, software development companies, let's see some 
 scenarios or situations where inner source can help.
 
-## The Digital Transformation wave
+## The digital transformation wave
 
 During last years, many companies have started facing what
 they call their “Digital Transformation”, to become omnichannel
-companies[^4]. They become heavy IT users and the key transformation
+companies[^1]. They become heavy IT users and the key transformation
 steps usually are defined by
 
 -   breaking cross-organizational silos (cultural change)
@@ -38,7 +38,7 @@ steps usually are defined by
 -   adoption new IT technologies (cloud, big data, mobile, etc.)
 
 The adoption of these technologies usually means that companies need 
-to build competent “DevOps”[^5] teams. Yes, “DevOps”, the second 
+to build competent “DevOps”[^2] teams. Yes, “DevOps”, the second 
 hype-word after “Digital Transformation” of these ages.
 
 “DevOps teams” share some principles with collaborative development
@@ -58,7 +58,7 @@ We have seen companies facing the same problem with different solutions
 due to the lack of cross-organizational transparent and collaborative
 methodology.
 
-## The World of Silos
+## The world of silos
 
 In some cases, there is a corporate head or central unit that decides
 the technology for the rest of business units. When these business units
@@ -105,7 +105,7 @@ transparency and collaboration.
 
 If previous scenarios are familiar to you, probably you don’t feel
 engaged at work. Don’t worry, you are not alone. According to World
-Economic Forum [^6] 70% of employees say they are disengaged at work.
+Economic Forum [^3] 70% of employees say they are disengaged at work.
 
 In the same article, it says that “Research from the University of
 California found that motivated employees were 31% more productive, had
@@ -113,11 +113,11 @@ California found that motivated employees were 31% more productive, had
 employees. They were also 87% less likely to quit, according to a
 Corporate Leadership Council study on over 50,000 people”.
 
-Towers Watson[^7] found that companies with engaged employees produced
+Towers Watson[^4] found that companies with engaged employees produced
 19.2% more operative incomes in one year, but companies with worse
 engagement operative incomes get reduced by 32.7%.
 
-It was Daniel Pink in his book "Drive"[^8] who argues that human motivation is 
+It was Daniel Pink in his book "Drive"[^5] who argues that human motivation is 
 largely intrinsic. The aspects of this motivation can be divided into 
 
 - autonomy, typical for OSS projects developers that are self-managed
@@ -129,12 +129,12 @@ largely intrinsic. The aspects of this motivation can be divided into
 These aspects are key for software developers motivation, since their tasks
 involve cognitive skills, decision-making, creativity, or higher-order thinking.
 
-[^4]: https://en.wikipedia.org/wiki/Omnichannel
+[^1]: https://en.wikipedia.org/wiki/Omnichannel
 
-[^5]: https://en.wikipedia.org/wiki/DevOps
+[^2]: https://en.wikipedia.org/wiki/DevOps
 
-[^6]: https://www.weforum.org/agenda/2016/11/70-of-employees-say-they-are-disengaged-at-work-heres-how-to-motivate-them/
+[^3]: https://www.weforum.org/agenda/2016/11/70-of-employees-say-they-are-disengaged-at-work-heres-how-to-motivate-them/
 
-[^7]: http://www.towerswatson.com/DownloadMedia.aspx?media=%7B1EBA6F1E-B1E7-4F0A-A9F7-D828C4D8B2AE%7D
+[^4]: http://www.towerswatson.com/DownloadMedia.aspx?media=%7B1EBA6F1E-B1E7-4F0A-A9F7-D828C4D8B2AE%7D
 
-[^8]: https://en.wikipedia.org/wiki/Drive:_The_Surprising_Truth_About_What_Motivates_Us
+[^5]: https://en.wikipedia.org/wiki/Drive:_The_Surprising_Truth_About_What_Motivates_Us
