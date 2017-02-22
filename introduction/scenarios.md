@@ -129,55 +129,6 @@ largely intrinsic. The aspects of this motivation can be divided into
 These aspects are key for software developers motivation, since their tasks
 involve cognitive skills, decision-making, creativity, or higher-order thinking.
 
-## Adopting open source development principles
-
-Briefing, there are several scenarios found in companies with an strong
-IT factor:
-
--   “Silos Culture” avoiding cross-organizational transparency
-
--   Inefficient resources management
-
--   Disengagement at work
-
-By adopting OSS development principles, companies are adopting:
-
--   Governance model with policies to self-manage their projects under a
-    collaborative methodology
-
--   Transparent communication channels to break silos
-
--   Meritocracy, or do-cracy, for developers, who become engaged “contributors” 
-    (autonomous, willing to improve their skills and focused in project purpose)
-
--   New roles for project managers, empowering their soft skills for
-    people/community management
-
-These principles will help the companies on:
-
--   Effective resources management, with better code/knowledge reuse
-    and cost sharing accross the different units
-
--   Faster technology innovations/improvements, since the code is
-    developed collaboratively and transparently by interested people and
-    units
-
--   Empowered employees, increasing engagement by letting them to be
-    part of companies development roadmap
-
--   Higher inner-innovation, by allowing employees to propose new ideas
-    implementation based on company’s technology/knowledge
-
-Adopting open source development principles inside your company is the main
-definition for inner source. If you have already
-decided, or have started to adopt Inner Source in your company, this
-book will provide you some insights about how you can track the status
-of your path.
-
-“Collecting data is only the first step toward wisdom, but sharing data
-is the first step toward community.” – Henry Lewis Gates (professor at
-Harvard)
-
 [^4]: https://en.wikipedia.org/wiki/Omnichannel
 
 [^5]: https://en.wikipedia.org/wiki/DevOps
