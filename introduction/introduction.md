@@ -1,5 +1,4 @@
-Introduction
-============
+# Introduction
 
 It was 2011 when Marc Andreessen wrote his famous article, “Why Software
 is eating the World”[^1]. By that time, Linux Kernel was already 20
@@ -15,13 +14,13 @@ multiple applications in many different fields and sectors. Each
 application has improved it over time, thanks to its open collaborative
 development methodology.
 
-Almost 6 years later, we can assure that free, open source sofwtare
-(OSS) projects have succed in the IT development ecosystem. We can see
+Almost 6 years later, we can assure that free, open source software
+(OSS) projects have succeed in the IT development ecosystem. We can see
 companies adopting OSS technologies and people contributing to OSS from
 different companies and even during their spare time.
 
 How has OSS reached the level of innovation we have nowadays? How has it
-reached the market acceptance we see nowdays? How has it engaged so many
+reached the market acceptance we see nowadays? How has it engaged so many
 people and organizations to contribute to it?
 
 It’s a teamwork effort and quoting John Wooden (former UCLA Bruins
@@ -33,16 +32,14 @@ teamwork.”
 
 Since the collaboration methodologies used in OSS projects are providing
 high quality innovative technology thanks to engaged development communities, 
-why not applying same methodologies inside your company? That's Inner Source, or
-Inner Sourcing.
+why not applying same methodologies inside your company? That's inner source!
 
-If you haven't decided yet to apply Inner Source in your company, we recommend you
+If you haven't decided yet to apply inner source in your company, we recommend you
 start reading "Getting Started with InnerSource"[^3] by Andy Oran. After that, or if
-you have already dediced to start the Inner Source path, this book will give you better
+you have already decided to start the inner source path, this book will give you better
 understanding of Inner Source scenarios, framework and management skills.
 
-The Digital Transformation hype
--------------------------------
+## The Digital Transformation hype
 
 During the same period of time, many companies have started facing what
 they call their “Digital Transformation”, to become software omnichannel
@@ -53,8 +50,8 @@ steps usually are defined by
 
 -   adoption new IT technologies (cloud, big data, mobile, etc.)
 
-The adoption of these technologies usually means that companies need
-people and companies to build strong and competent “DevOps”[^5] teams.
+The adoption of these technologies usually means that companies need 
+to build strong and competent “DevOps”[^5] teams.
 Yes, “DevOps”, the second hype-word after “Digital Transformation” of
 these ages.
 
@@ -69,14 +66,13 @@ These teams usually develop custom software solutions and deployment
 recipes for their companies. For small, medium enterprises (SME) this
 could be useful and easy to manage. But, what happens when the company
 has several DevOps teams around the world? How can they ensure a maximum
-code/knowledge resuse across the organization?
+code/knowledge reuse across the organization?
 
 We have seen companies facing the same problem with different solutions
 due to the lack of cross-organizational transparent and collaborative
 methodology.
 
-The World of Silos
-------------------
+## The World of Silos
 
 In some cases, there is a corporate head or central unit that decides
 the technology for the rest of business units. When these business units
@@ -87,25 +83,20 @@ probably doing the same in their “silos”. The result? The adoption of
 any update of the “core product” is a nightmare.
 
 In other cases, business units behave as independent companies. Each one
-use their own IT architecture, ending with an inefficient management of
+uses their own IT architecture, ending with an inefficient management of
 resources caused by multiplication of technologies, developments, etc.
 
-Even if the companies have adopted a “DevOps culture”, the lack of
-shared source code and knowledge infrastructure, with a clear governance
-model that allow people form the company to contribute to it is the main
-issue in these cases, creating a “Silos Culture”.
-
-Collaborative development in Open Source world has been used several
+Collaborative development in open source ecosystems has been used several
 times as an example of how these methodologies can break silos between
-companies that might be even market competitors. If competitors can
+companies that might be even market competitors. Those companies have
+been able to share knowledge and resources with a common goal . If competitors can
 collaborate to build technology in which their business rely on, why
 could not corporate business units do the same if they have corporate
 succes as mission?
 
-The start-ups bubble
---------------------
+## The start-ups bubble
 
-Many people might discuss if we are living an “start-ups bubble” or not,
+Many people might discuss if we are living a “start-ups bubble” or not,
 but we are clearly surrounded by news about how a group of few people go
 from a garage to a multinational company in a few years through
 investment rounds.
@@ -116,7 +107,7 @@ serious problem.
 
 The lack of effective and transparent communication channels and
 documented procedures, might make harder any new employee on-boarding
-and to be engage with the company.
+and to be engaged with the company.
 
 On the other hand, recently created companies have been born taking
 advantage of the existing IT solutions to provide omnichannel services.
@@ -124,11 +115,10 @@ They are used to work under “DevOps culture” and it might be easier for
 them to adopt a common cross-organizational methodology that allow
 transparency and collaboration.
 
-Disengagement at work
----------------------
+## Disengagement at work
 
 If previous scenarios are familiar to you, probably you don’t feel
-engage at work. Don’t worry, you are not alone. According to World
+engaged at work. Don’t worry, you are not alone. According to World
 Economic Forum [^6] 70% of employees say they are disengaged at work.
 
 In the same article, it says that “Research from the University of
@@ -153,8 +143,7 @@ largely intrinsic. The aspects of this motivation can be divided into
 These aspects are key for software developers motivation, since their tasks
 involve cognitive skills, decision-making, creativity, or higher-order thinking.
 
-Adopting OSS development principles
------------------------------------
+## Adopting OSS development principles
 
 Briefing, there are several scenarios found in companies with an strong
 IT factor:
@@ -181,7 +170,7 @@ By adopting OSS development principles, companies are adopting:
 These principles will help the companies on:
 
 -   Effective resources management, with better code/knowledge reuse
-    accross the different units
+    and cost sharing accross the different units
 
 -   Faster technology innovations/improvements, since the code is
     developed collaboratively and transparently by interested people and
