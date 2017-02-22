@@ -32,7 +32,18 @@ Let's introduce the *inner source framework*.
 
 ## Governance
 
-As described by OSSWatch[^1]:
+According to the Business Dictionary, governace is defined as:
+
+>Establishment of policies, and continuous monitoring
+>of their proper implementation, by the members of the
+>governing body of an organization. It includes the
+>mechanisms required to balance the powers of the
+>members (with the associated accountability), and
+>their primary duty of enhancing the prosperity and
+>viability of the organization
+
+In open source, governance is described in the "governance
+model" document, defined by OSSWatch[^1] as:
 
 >A governance model describes the roles that project participants 
 >can take on and the process for decision making within the project. 
@@ -58,14 +69,80 @@ Usually the governance model is a written document containing:
 
 ## Technical infrastructure
 
+By technical infrastructure we describe the tools used by inner source
+developers for their daily work. Usually, this tools cover:
+
+- Source code management systems
+
+- Issue/tasks tracking systems
+
+- Forums or mailing lists, and "questions and answers" forums
+
+- Chat or instant messaging tools
+
+- Continous integration systems
+
+- Document/knowledge management systems (wikis)
+
 ## Collaboration as cultural change
 
-## Finnancial support
+Creating an engaged community is one of the key points for
+open source projects success and sustainability. Same
+principle applies for inner source projects.
+
+Managing a community is different from traditional development teams 
+management, so project managers need to adapt their skills
+to the new scenario.
+
+Open source communities are very flat organizations where
+leadership is usually more important than formal power. 
+Companies adopting inner source need to adapt their 
+organizational structure to a flatter one.
+
+## Financial support
+
+In a perfect inner source scenario, and based in David Pink quote 
+you should pay enough “to take the issue of money off the table.”
+
+But we usually don't live in perfect worlds, and there are several
+scenarios where financial support for inner projects are critical:
+
+- payment in different geographical regions
+
+- employees working in a mix of inner and non-inner source projects
+
+- cost sharing between different business units with their own budget
+
+- projects developed by a mix of company employees and subcontractors
+
+Again, open source provides some examples of how to
+get financial support for their projects, and 
+organizations like Linux Foundation, Apache Software Foundation, etc.
+could work as reference, translating their "foundation"
+principles to our companies.
 
 ## Processes measurement 
+
+Last but not least, if we are speaking about management, to measure becomes
+a basic skill for us.
+
+Beyond collecting data, managers need to understand the goals of the organization
+and how the gathered data can help them to achieve such goals. They also
+need to take care of how they share that data
+with the teams, and what the want to achieve.
 
 >“Collecting data is only the first step toward wisdom, but sharing data
 >is the first step toward community.” – Henry Lewis Gates (professor at
 >Harvard)
+
+Open measurment gives a lot of benefits for our inner source community:
+
+- awareness, it allows us to understand who we are, what we are doing, etc.
+
+- governance check, monitoring policies implementatio
+
+- transparency, as trust generator for third parties and fairness
+  for our inner community
+
 
 [^1]: http://oss-watch.ac.uk/resources/governancemodels
