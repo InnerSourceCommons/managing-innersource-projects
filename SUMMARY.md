@@ -2,6 +2,9 @@
 
 * [Summary](README.md)
 * [Introduction](introduction/introduction.md)
+  * [Scenarios](introduction/scenarios.md)
+  * [Framework](introduction/framework.md)
+  * [Authors and Reviewers](introduction/authors.md)
 * [What, When and How to Measure](measuring/introduction.md)
   * [Goals using Metrics](measuring/goals.md)
   * [Areas of Analysis](measuring/areas.md)
