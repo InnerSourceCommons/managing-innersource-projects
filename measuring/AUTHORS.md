@@ -1,12 +1,27 @@
-Author(s) (Chronological order):
+---
+authors:
+  - name: Daniel Izquierdo Cortázar
+    organization: Bitergia
+reviewers:
+  - name: Greogorio Robles
+    organization: Universidad Rey Juan Carlos
+  - name: José Manrique López
+    organization: Bitergia
+  - name: Kate Stewart
+    organization: The Linux Foundation
+---
 
-     Daniel Izquierdo Cortázar. Bitergia
+# Author(s)
 
-Reviewer(s) (Chronological order).
+Chronological order:
 
-    Gregorio Robles. Universidad Rey Juan Carlos.
+* Daniel Izquierdo Cortázar. [Bitergia](http://bitergia.com).
 
-    José Manrique López. Bitergia.
+# Reviewer(s)
 
-    Kate Stewart. The Linux Foundation.
+Chronological order:
+
+* Gregorio Robles. [Universidad Rey Juan Carlos](https://www.urjc.es/).
+* José Manrique López. [Bitergia](http://bitergia.com).
+* Kate Stewart. [The Linux Foundation](https://www.linuxfoundation.org/).
 
