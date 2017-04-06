@@ -1,6 +1,6 @@
 # Inner source framework
 
-Adopting inner source methodology help companies on:
+By adopting inner source methodology and principles, organizations get:
 
 -   Effective resources management, with better code/knowledge reuse
     and cost sharing accross the different units
