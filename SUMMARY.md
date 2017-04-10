@@ -6,6 +6,7 @@
   * [Framework](introduction/framework.md)
   * [Authors and Reviewers](introduction/authors.md)
 * [Infrastructure](infrastructure/infrastructure.md)
+  * [Authors and Reviewers](infrastructure/authors.md)
 * [What, When and How to Measure](measuring/introduction.md)
   * [Goals using Metrics](measuring/goals.md)
   * [Areas of Analysis](measuring/areas.md)
@@ -23,4 +24,4 @@
     * [Keep great Developers in House](measuring/metrics.md#happy_devs)
     * [Allow Innovation in Detail](measuring/metrics.md#innovation)
   * [References](measuring/references.md)
-  * [Authors and Reviewers](measuring/AUTHORS.md)
+  * [Authors and Reviewers](measuring/authors.md)
