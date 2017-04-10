@@ -1,17 +1,4 @@
----
-authors:
-  - name: Daniel Izquierdo Cortázar
-    organization: Bitergia
-reviewers:
-  - name: Greogorio Robles
-    organization: Universidad Rey Juan Carlos
-  - name: José Manrique López
-    organization: Bitergia
-  - name: Kate Stewart
-    organization: The Linux Foundation
----
-
-# Author(s)
+## Author(s)
 
 Chronological order:
 

@@ -1,10 +1,3 @@
-* Authors (Chronological order)
-  * Daniel Izquierdo. Bitergia.
-
-
-* Reviewers (Chronological order)
-
-
 # Introduction
 
 Infrastructure is one of the key aspects when dealing with inner source.

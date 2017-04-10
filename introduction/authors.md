@@ -1,16 +1,11 @@
----
-authors:
-- name: J. Manrique López
-  organization: Bitergia
-reviewers:
-- name: Daniel Izquierdo
-  organization: Bitergia
----
+## Authors
 
-# Authors
+(Chronological order)
 
 - J. Manrique López ([Bitergia](http://bitergia.com))
 
 ## Reviewers
+
+(Chronological order)
 
 - Daniel Izquierdo  ([Bitergia](http://bitergia.com))
