@@ -39,8 +39,27 @@ start reading "Getting Started with InnerSource"[^3] by Andy Oran. After that, o
 you have already decided to start the inner source path, this book will give you better
 understanding of inner source scenarios, framework and management skills.
 
+## Inner source principles
+
+Inner source software development takes its principles from the open source software 
+development culture. Jim Jagielski, from The Apache Software Foundation, has listed 
+them[^4] as:
+
+1. Culture
+2. Communication
+3. Transparency
+4. Collaboration
+5. Community
+6. Meritocracy
+
+As an organization willing to adopt inner source methodology, the first step is to look
+how close are organization's principles with these open source ecosytem principles, and 
+work on minimizing the *deltas* with them.
+
 [^1]: https://www.wsj.com/articles/SB10001424053111903480904576512250915629460
 
 [^2]: https://www.youtube.com/watch?v=x7ozaFbqg00
 
 [^3]: http://www.oreilly.com/programming/free/getting-started-with-innersource.csp
+
+[^4]: http://www.slideshare.net/jimjag/inner-source-enterprise-lessons-from-the-open-source-community

@@ -1,10 +1,7 @@
 # Managing Inner Source Projects book
 
-This repository contains the Markdown files needed to build the whole Managing
-Inner Source Projects book.
-This is intended to bring from a managerial perspective the several aspects needed
+This book is intended to bring, from a managerial perspective, the several aspects needed
 when introducing inner source methodologies into enterprises.
-
 
 This book is a work in progress process where anyone is more than welcome to contribute
 in any possible way. Ideas, comments, typos, full paragraphs or sections would be
