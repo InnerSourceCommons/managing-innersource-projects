@@ -3,8 +3,8 @@
   "pluginsConfig": {
     "autocover": {
       "title": "Managing inner source projects",
-      "author": ["Daniel Izquierdo", "José Manrique López", "Greogrio Robles (rev.)", "Kate Stewart (rev.)"]
-      "pluginsConfig": {
+      "author": "Daniel Izquierdo et al",
+       "pluginsConfig": {
         "autocover": {
           "font": {
             "size": null,
