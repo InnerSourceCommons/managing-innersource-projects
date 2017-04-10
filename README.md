@@ -12,6 +12,20 @@ For those that have already contributed to the book, thanks a lot!
 
 You can find more information about the process in the [contributing section](https://github.com/dicortazar/managing-inner-source-projects/blob/master/CONTRIBUTING.md).
 
+## Who is fostering this initiative?
+
+Bitergia, as neutral actor in the software development analytics field aims at
+sharing the knowledge acquire during the last years. This book is currently focused on its main areas of expertise such as the usual metrics and KPI's to use,
+the methodology, the metrics strategy around your general inner source strategy 
+or the infrastructure needed to have a successful inner source
+journey within your company.
+
+This book is open to anyone interested in inner source, either you are 
+applying this and you want to share your use case or you have successfully 
+applied inner source in your internal software development process.
+
+
+
 ## References
 
 For further reading, we encourage you to participate in the [Inner Source Commons site](https://paypal.github.io/InnerSourceCommons/)
