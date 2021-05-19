@@ -13,7 +13,7 @@ By adopting inner source methodology and principles, organizations get:
     part of companies development roadmap
 
 -   Higher inner-innovation, by allowing employees to propose new ideas
-    implementation based on company’s technology/knowledge
+    and implementations based on company’s technology/knowledge
 
 But any project, even open source ones, need a framework
 that support them defining:
