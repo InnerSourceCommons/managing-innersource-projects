@@ -57,7 +57,7 @@ Usually the governance model is a written document containing:
 
 -  work, management and collaboration infrastructures definition
 
--  people roles and responsabilities definitions
+-  people roles and responsibilities definitions
 
 -  community support mechanisms 
 
