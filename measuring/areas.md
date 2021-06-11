@@ -5,12 +5,12 @@ When analyzing software development projects, there are several areas
 that can be analyzed. Traditional analysis are focused on code metrics,
 while the activity, community and process are key components to take
 into account. This handbook brings into context those areas not that
-well studied, but key when inner sourcing: community and process.
+well studied, but key for InnerSource: community and process.
 
-Inner source is basically all about direct interactions between
+InnerSource is basically all about direct interactions between
 developers, removing all of the hierarchical aspects remaining in the
 middle. It is all about creating communities and building social
-networks that allow the knowledge to fly around. Inner source is about
+networks that allow the knowledge to fly around. InnerSource is about
 leaving developers to work with other developers (D2D) jumping over the
 traditional hierarchies. This helps to increase the development
 activity, break silos of information and allow innovation within the
@@ -35,7 +35,7 @@ organization.
     tickets referencing pull requests and those referencing commits,
     etc.
 
--   **Community**: people are key when talking about inner source. If
+-   **Community**: people are key when talking about InnerSource. If
     one of the goals consists of flattering the hierarchical structure
     of an organization, we need to measure how people interact with
     other developers. Although this is again measured through the traces
@@ -52,7 +52,7 @@ organization.
     betweenness if we play with some indicators when building networks.
 
 -   **Process**: thus we have a community of developers working together
-    and leaving traces of their activity. But inner source is something
+    and leaving traces of their activity. But InnerSource is something
     more than spreading the knowledge across the organization. It is
     also a matter of reducing the time to market, increasing the
     velocity of development and building better products. That is the
@@ -61,8 +61,8 @@ organization.
     piece of code. In a more hierarchical structure, there might be some
     daily meetings where some decisions are taken and requirements
     implemented. That is process and if we want to improve that, we need
-    to measure in first place key parameters of such process. In inner
-    source communities, process is quite similar to open source
+    to measure in first place key parameters of such process. In Inner-
+    Source communities, process is quite similar to open source
     communities where code style, documentation, code review process,
     continuous integration, design meetings are part of this process.
     The main difference here is how developers directly interact with
@@ -80,6 +80,6 @@ organization.
     There are usual metrics that determine the complexity of the code,
     modularity, test coverage, documentation coverage, and others. What
     we have when measuring this type of metrics is that we can control
-    where our inner source method is leading those metrics. Increases in
+    where our InnerSource method is leading those metrics. Increases in
     the code complexity or less test coverage may indicate unexpected
     behaviours that should be fixed and controlled.

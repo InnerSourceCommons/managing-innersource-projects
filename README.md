@@ -1,7 +1,7 @@
-# Managing Inner Source Projects book
+# Managing InnerSource Projects book
 
 This book is intended to bring, from a managerial perspective, the several aspects needed
-when introducing inner source methodologies into enterprises.
+when introducing InnerSource methodologies into enterprises.
 
 This book is a work in progress process where anyone is more than welcome to contribute
 in any possible way. Ideas, comments, typos, full paragraphs or sections would be
@@ -16,26 +16,26 @@ You can find more information about the process in the [contributing section](ht
 
 Bitergia, as neutral actor in the software development analytics field aims at
 sharing the knowledge acquire during the last years. This book is currently focused on its main areas of expertise such as the usual metrics and KPI's to use,
-the methodology, the metrics strategy around your general inner source strategy 
-or the infrastructure needed to have a successful inner source
+the methodology, the metrics strategy around your general InnerSource strategy 
+or the infrastructure needed to have a successful InnerSource
 journey within your company.
 
-This book is open to anyone interested in inner source, either you are 
+This book is open to anyone interested in InnerSource, either you are 
 applying this and you want to share your use case or you have successfully 
-applied inner source in your internal software development process.
+applied InnerSource in your internal software development process.
 
 
 
 ## References
 
-For further reading, we encourage you to participate in the [Inner Source Commons site](https://paypal.github.io/InnerSourceCommons/)
+For further reading, we encourage you to participate in the [InnerSource Commons site](https://paypal.github.io/InnerSourceCommons/)
 funded by PayPal where dozens of companies are already sharing experiences and working to
 understand all of this. It is a great place to understand how others are facing this
 new methodology as we are all learning from this incipient process.
 
 And finally, if you're interested in participating from a survey perspective and share
 your insights about this within your organization, please have a look at the
-[Inner Source Survey](https://paypal.github.io/InnerSourceCommons/assets/files/InnerSourceCommonsSurvey2016.pdf).
+[InnerSource Survey](https://paypal.github.io/InnerSourceCommons/assets/files/InnerSourceCommonsSurvey2016.pdf).
 
 
 ## Acknowledgements

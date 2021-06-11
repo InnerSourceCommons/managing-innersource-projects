@@ -4,9 +4,9 @@ Some Examples of Interest
 Although open source communities seem to be similar in some cases, there
 are peculiarities that define their actual idiosyncrasy. Details such as
 selecting the code review tool may mean a significant change in the way
-this is analyzed. This also takes place in inner source projects.
+this is analyzed. This also takes place in InnerSource projects.
 
-Infrastructure is indeed a key part of the inner source process as this
+Infrastructure is indeed a key part of the InnerSource process as this
 may force developers to work in a specific way. As an example, the
 OpenStack community uses Gerrit and forces developers willing to commit
 a piece of code to use this. This means that the community is 100% sure
@@ -28,11 +28,11 @@ list of potential issues when installing infrastructure, governance
 model, financial system and so on.
 
 The following is a list of usual studies of interest in organizations
-applying inner source methodologies. This list is not intended to be an
+applying InnerSource methodologies. This list is not intended to be an
 exhaustive one, but examples of how to approach and measure specific
-issues related to the usual goals in the inner source world. Part of
+issues related to the usual goals in the InnerSource world. Part of
 these analysis are experiences coming from the open source world that
-could be useful when talking about inner source communities. These are
+could be useful when talking about InnerSource communities. These are
 communities and engaging new developers, retaining those, code review
 processes and others are common goals.
 
@@ -42,7 +42,7 @@ Mentorship and helping newcomers
 
 This analysis is related to the centralization of the development and
 attracting and retaining new developers. When aiming at incrementing the
-number of participants in the inner source ecosystem, trusted committers
+number of participants in the InnerSource ecosystem, trusted committers
 and mentors are key in this new process. Trusted committers as they are
 the core reviewers of the project and well known developers. And those
 trusted committers may be the ones acting as mentors. Mentorship should
@@ -56,7 +56,7 @@ community. And finally, will review the piece of code pull-requested by
 a newcomer driving her around the needs for such change and potential
 requested updates to that piece of code.
 
-And all of this information can be tracked. As inner source is fostering
+And all of this information can be tracked. As InnerSource is fostering
 a transparent infrastructure to deal with all of the activities around
 the development of the product, those discussions are all open to anyone
 interested in. Thus, the mentorship analysis will help to understand who
@@ -64,7 +64,7 @@ are those mentors, if those mentors are helping to reduce the time to
 review process as they give clear directions about how to proceed and
 the number of newcomers that come to the community. All of these are
 just examples of how to potentially track mentors activity and if such
-activity is actually helping in the inner source adoption within an
+activity is actually helping in the InnerSource adoption within an
 organization.
 
 This should be compared to previous stages of the software development
@@ -127,7 +127,7 @@ Contributors Funnel
 -------------------
 
 This analysis is focused on understanding how long it takes for a
-developer in the inner source community to become a developer or a core
+developer in the InnerSource community to become a developer or a core
 reviewer. Communities can be seen as *onions* where there are several
 layers. Those purely acting as end users. Those users that when they
 find a bug, this is reported to the community. Those that report the bug
@@ -137,14 +137,14 @@ developer.
 
 The usual proportion of these communities, at least in open source, are
 following the distribution of 80% of the activity is done by a 20% of
-the developers. It is expected that inner source communities follow the
+the developers. It is expected that InnerSource communities follow the
 same distribution as the development process is open within the
 organization. Thus, the mentioned roles such as pure end users or core
 developers will be also found.
 
 Coming back to the analysis, the contributors funnel analysis aims at
 understanding how much time it takes for a developer to become a
-contributor of the inner source project. From their first traces asking
+contributor of the InnerSource project. From their first traces asking
 for a feature request in a mailing lists or opening a bug report, till
 the point in time when they commit or review their first piece of code.
 
@@ -159,7 +159,7 @@ become trusted committer after a while.
 Engagement
 ----------
 
-Attraction and retention of new members. As inner source method evolves
+Attraction and retention of new members. As InnerSource method evolves
 within an organization, it is expected that developers will work on
 other projects not directly related to their business units. Those
 participating for their first time will be part of the attraction rate
@@ -254,7 +254,7 @@ In addition, this role in organizations have reached their position in a
 hierarchical way and this is how this is expected to work for others
 willing so scale in the hierarchy.
 
-However, Inner source aims at fostering developers to developers
+However, InnerSource aims at fostering developers to developers
 relationships (D2D) and not manager to manager (M2M) relationships as
 this delays the development process and decision making at the technical
 level.
@@ -289,7 +289,7 @@ Allow Innovation in Detail
 This follows the detailed GQM approach where each goal may have several
 questions and each question may have one or more metrics that helps to
 understand the situation. This also assumes that we are in an
-organization that already applied Inner Source and wanted to check if
+organization that already applied InnerSource and wanted to check if
 the process is leading to an actual improvement in the several detailed
 goals.
 
@@ -332,7 +332,7 @@ goals.
 
     -   Rationale: As incubated projects need some process to become
         mature ones, this is related to the activity in the incubation
-        side of the inner source program.
+        side of the InnerSource program.
 
     -   Metric: Number of new incubating projects
 

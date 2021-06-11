@@ -1,6 +1,6 @@
 # Introduction
 
-Infrastructure is one of the key aspects when dealing with inner source.
+Infrastructure is one of the key aspects when dealing with InnerSource.
 This provides the tools necessary to develop and communicate across
 the development teams.
 
@@ -8,8 +8,8 @@ Developers, middle management and C-level are all part of this process.
 All of these groups are part of the mindset change to be part of a more open
 software development process. And any of those should accept the new rules to play.
 
-As inner source aims at bringing some of the principles when developing
-in open source communities, inner source communities needs a cultural
+As InnerSource aims at bringing some of the principles when developing
+in open source communities, InnerSource communities needs a cultural
 change where open communication and transparency in the decision making
 process are vital.
 
@@ -48,7 +48,7 @@ and mined.
   accessible by anyone within the organization. Any person related in somehow
   to the development process should have access to this. This is helpful to
   build confidence across developers and lower the barriers to anyone willing
-  to contribute to the inner sourced projects. Any contribution is welcome and
+  to contribute to the InnerSourced projects. Any contribution is welcome and
   being open to any type of contributor is necessary.
 
 * **Transparency**. This is focused on the authorship of the several contributions.
@@ -60,14 +60,14 @@ and mined.
   such communities. As there are contributions beyond the code, the ownership of
   the contributions should help to understand other types of contributions. From
   documentation to mentorship or helping others in the forums are activities of
-  interest in inner source communities.
+  interest in InnerSource communities.
 
 * **Archivable**. Any tool should provide an archive of previous actions. This will
   help when talking about specific pieces of code, previous technical discussions
   in the communication channels or decisions made during the design summits. This
   should help for referencing purposes.
 
-* **Searchable**. As more and more projects will be added to the inner source process,
+* **Searchable**. As more and more projects will be added to the InnerSource process,
   the amount of repositories of information will grow in the same way. It is
   important to have searching capabilities within the platform. This will help
   to reuse and discover projects and contributors useful for our own purposes.
@@ -83,7 +83,7 @@ and mined.
   any other non-desired situation.
 
   As detailed in the metrics chapter, data play a key
-  role in the deployment of the inner source methodology. This will help
+  role in the deployment of the InnerSource methodology. This will help
   to understand where the whole process is going and make decisions when
   necessary to follow the right direction. For this, tools that allow
   to retrieve information through an API (e.g.: GitHub API) or thanks to
@@ -106,14 +106,14 @@ The first one focuses on the needed and
 basic infrastructure when starting from scratch an open source project. While
 the latter is focused on how to support specific workflows with tools. And
 both are great approaches when dealing with open source projects and partially
-useful when dealing with inner source projects.
+useful when dealing with InnerSource projects.
 
 As Jono states in his book "_To select the right tools for the job, we need
 first to understand what we are trying to achieve. We need to know what our
 **workflow** is_".
 
 The following section focuses on the infrastructure needs when starting an
-inner source project. In the basics there are not main differences from the
+InnerSource project. In the basics there are not main differences from the
 key aspects point of view. However we have to deal with existing, internal
 and in some cases access-restricted infrastructure and check if that infrastructure is enough
 for our new purposes and goals when inner-sourcing.
@@ -125,7 +125,7 @@ are available that fit with our key-aspects requirements.
 
 # Basic Infrastructure
 
-As inner source is mainly about cultural change, we need to have an easy-access
+As InnerSource is mainly about cultural change, we need to have an easy-access
 and low barrier tools. The easier to use, the more developers that will try
 in first place to work with other business units and inner-sourced projects.
 
@@ -134,7 +134,7 @@ other areas where developers can start to contribute. From documentation and
 mere typos in the collaborative wiki to design meetings and even review
 activities in projects of your interest or asking for feature requests. There
 is a myriad of potential actions that anyone within the organization can help
-with. And the goal of inner source is to foster those actions as much as possible
+with. And the goal of InnerSource is to foster those actions as much as possible
 letting developers know that those actions are really much appreciated.
 
 The infrastructure is thus divided into three main areas:
@@ -164,14 +164,14 @@ communities. More advanced options could be the use of [Slack](https://slack.com
 [Mattermost](https://mattermost.com) if the organization prefers to use
 open source and in house SaaS deployments.
 
-* In third place the monitoring infrastructure is key when applying inner source and
+* In third place the monitoring infrastructure is key when applying InnerSource and
 in general when bringing a new methodology to organizations. This is one of the
 main differences with open source communities. They are open by default and basically
 follow the detailed key aspects. However, infrastructure to measure process advances
 have not been one of the main goals in the case of open source communities.
 Basically they are using a successful development methodology, each of them
 with their own peculiarities, but open by default.
-Inner source needs of this type of infrastructure as managers and developers
+InnerSource needs of this type of infrastructure as managers and developers
 need feedback about their performance. A change in the software development
 process of large organizations, a cultural change and the community building
 process needs a large set of actions and those actions should have the
@@ -186,7 +186,7 @@ similar to the one depicted in the following picture. If this process
 is familiar to you is because this is based on the [OpenStack software development
 process](https://docs.openstack.org/infra/manual/developers.html) as detailed in their wiki site.
 I have copied the workflow as this contains the basic pieces also needed for
-inner source. Other communities use a similar approach, although I did not find
+InnerSource. Other communities use a similar approach, although I did not find
 a nice picture! Sorry folks!. In addition to this, this is a new figure as
 I wanted to have it independent of the infrastructure. OpenStack uses
 Git, Gerrit and other tooling for this process, but others are also possible.
@@ -237,7 +237,7 @@ system before proceeding with the code review process. They would be sure
 that this works prior any effort from them.
 
 * ** Ticketing system **: tickets are useful to attract community to an
-inner source project. This helps in two specific ways: transparency of the
+InnerSource project. This helps in two specific ways: transparency of the
 development process, raising issues and having a roadmap of the issues
 to be closed. And in second place, to provide a platform for newcomers and
 users to detail their needs. Tickets are helpful to bring community in inner
@@ -262,7 +262,7 @@ the documentation also covers information as general as the mission and
 the type of things that the piece of code does and the things that this does
 not do.
 
-* ** Collaborative design platform **: inner source in large organizations
+* ** Collaborative design platform **: InnerSource in large organizations
 is a synonym of geographically distributed teams. Face to face meetings are
 hard to have in this type of organizations, but there should exist infrastructure
 to bridge those difficulties. Requirements specifications, technical decisions,
@@ -277,7 +277,7 @@ by others within the organization.
 
 ## Communication channels infrastructure
 
-Inner source is about cultural change. And that cultural change is based on
+InnerSource is about cultural change. And that cultural change is based on
 transparency and meritocracy. Communication channels should be open within
 the organization, and anyone is allowed to post to them.
 
@@ -319,7 +319,7 @@ and such data source should provide a way to mine this. This will provide
 raw data information that should be later parsed and treated to be useful.
 
 There is extra information in the metrics chapter, but in brief, any organization
-applying inner source, or any other new methodology, should have a way to
+applying InnerSource, or any other new methodology, should have a way to
 check how that new process is performing when compared to the old way.
 
 This monitoring infrastructure should also have as outcomes several ways of
@@ -361,13 +361,13 @@ also KPIs or static documents to be shared with third parties.
 # Comparing how inner-sourced your infrastructure is
 
 Just detailing the infrastructure needed within an organization to effectively
-apply inner source would be simplistic. This section aims at listing the
+apply InnerSource would be simplistic. This section aims at listing the
 questions you need to ask to your infrastructure team to check if
 that internal and well known infrastructure is able to be part of the
-inner source process.
+InnerSource process.
 
 The goal of this section is to compare the internal infrastructure used within
-an organization and check how close this is to an ideal inner source toolchain.
+an organization and check how close this is to an ideal InnerSource toolchain.
 As detail, in the software development process, it is necessary the use of
 specific tools such as the versioning system, code review process, ticketing
 system, continuous integration, documentation storage and collaborative

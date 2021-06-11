@@ -32,16 +32,16 @@ teamwork.”
 
 Since the collaboration methodologies used in OSS projects are providing
 high quality innovative technology thanks to engaged development communities, 
-why not applying same methodologies inside your company? That's inner source!
+why not applying same methodologies inside your company? That's InnerSource!
 
-If you haven't decided yet to apply inner source in your company, we recommend you
+If you haven't decided yet to apply InnerSource in your company, we recommend you
 start reading "Getting Started with InnerSource"[^3] by Andy Oran. After that, or if
-you have already decided to start the inner source path, this book will give you better
-understanding of inner source scenarios, framework and management skills.
+you have already decided to start the InnerSource path, this book will give you better
+understanding of InnerSource scenarios, framework and management skills.
 
-## Inner source principles
+## InnerSource principles
 
-Inner source software development takes its principles from the open source software 
+InnerSource software development takes its principles from the open source software 
 development culture. Jim Jagielski, from The Apache Software Foundation, has listed 
 them[^4] as:
 
@@ -52,7 +52,7 @@ them[^4] as:
 5. Community
 6. Meritocracy
 
-As an organization willing to adopt inner source methodology, the first step is to look
+As an organization willing to adopt InnerSource methodology, the first step is to look
 how close are organization's principles with these open source ecosytem principles, and 
 work on minimizing the *deltas* with them.
 
