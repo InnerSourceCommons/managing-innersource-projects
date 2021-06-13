@@ -1,6 +1,6 @@
-# Inner source framework
+# InnerSource framework
 
-By adopting inner source methodology and principles, organizations get:
+By adopting InnerSource methodology and principles, organizations get:
 
 -   Effective resources management, with better code/knowledge reuse
     and cost sharing accross the different units
@@ -28,7 +28,7 @@ that support them defining:
 
 -   metrics and KPIs
 
-Let's introduce the *inner source framework*.
+Let's introduce the *InnerSource framework*.
 
 ## Governance
 
@@ -69,7 +69,7 @@ Usually the governance model is a written document containing:
 
 ## Technical infrastructure
 
-By technical infrastructure we describe the tools used by inner source
+By technical infrastructure we describe the tools used by InnerSource
 developers for their daily work. Usually, this tools cover:
 
 - Source code management systems
@@ -88,7 +88,7 @@ developers for their daily work. Usually, this tools cover:
 
 Creating an engaged community is one of the key points for
 open source projects success and sustainability. Same
-principle applies for inner source projects.
+principle applies for InnerSource projects.
 
 Managing a community is different from traditional development teams 
 management, so project managers need to adapt their skills
@@ -96,20 +96,20 @@ to the new scenario.
 
 Open source communities are very flat organizations where
 leadership is usually more important than formal power. 
-Companies adopting inner source need to adapt their 
+Companies adopting InnerSource need to adapt their 
 organizational structure to a flatter one.
 
 ## Financial support
 
-In a perfect inner source scenario, and based in David Pink quote 
+In a perfect InnerSource scenario, and based in David Pink quote 
 you should pay enough “to take the issue of money off the table.”
 
 But we usually don't live in perfect worlds, and there are several
-scenarios where financial support for inner projects are critical:
+scenarios where financial support for InnerSource projects are critical:
 
 - payment in different geographical regions
 
-- employees working in a mix of inner and non-inner source projects
+- employees working in a mix of InnerSource and non-InnerSource projects
 
 - cost sharing between different business units with their own budget
 
@@ -135,14 +135,14 @@ with the teams, and what the want to achieve.
 >is the first step toward community.” – Henry Lewis Gates (professor at
 >Harvard)
 
-Open measurment gives a lot of benefits for our inner source community:
+Open measurment gives a lot of benefits for our InnerSource community:
 
 - awareness, it allows us to understand who we are, what we are doing, etc.
 
 - governance check, monitoring policies implementatio
 
 - transparency, as trust generator for third parties and fairness
-  for our inner community
+  for our InnerSource community
 
 
 [^1]: http://oss-watch.ac.uk/resources/governancemodels

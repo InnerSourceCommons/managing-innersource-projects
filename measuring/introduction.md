@@ -9,12 +9,12 @@ many... up to the point of reaching saturation!
 This report aims to formalize a strategy and a method to identify,
 acquire and understand metrics, and how to apply those to the inner
 source world. Part of the information found in this document is built on
-top of previous literature and talks about inner source. However, none
+top of previous literature and talks about InnerSource. However, none
 of the former seems to focus especifically on the metrics needed to
 understand if a process is working as expected, or if substantial
 changes are required.
 
-As inner source is a medium or long term activity, as any new
+As InnerSource is a medium or long term activity, as any new
 methodology to be applied within a company, feedback about the process
 and performance is key to assure its quality. This report has as goal to
 be the *glue* between developers, managers and C-level. It aims to help
@@ -47,8 +47,8 @@ specific decision, then state a set of questions that fit in that goal,
 and finally come back with a list of metrics that answer each of the
 proposed questions.
 
-As Inner Source has a different meaning depending on the organization
-where it is deployed, inner source may have different goals. However,
+As InnerSource has a different meaning depending on the organization
+where it is deployed, InnerSource may have different goals. However,
 there are some goals that are usually required across organizations and
 that can be divided into these main groups[^3]:
 
@@ -85,7 +85,7 @@ that can be divided into these main groups[^3]:
 
 -   And last but not least, allowing developers to work on the topics
     they feel are important for the organization or on their own
-    interest help them to be more comfortable. Inner source helps to
+    interest help them to be more comfortable. InnerSource helps to
     improve the retention of the good developers for the organizations,
     but also helps in the recruitment process as the organization is
     seen as innovative and listen to developers needs. This helps to the

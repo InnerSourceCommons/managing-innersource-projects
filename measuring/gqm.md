@@ -3,7 +3,7 @@ Goal-Question-Metric Approach
 
 The Goal Question Metric approach defines a mechanism to provide an
 umbrella that helps to define and detailed software metrics. This can be
-easily extended to other backgrounds, although inner source method
+easily extended to other backgrounds, although InnerSource method
 basically fits in this type of evaluation.
 
 As stated in the original paper: “Any engineering process requires
@@ -19,8 +19,8 @@ models.”[^6]. The GQM has been extensively used in academia and the
 industry as a method to detail metrics useful for a set of pre-defined
 goals.
 
-In the specific case of inner source, and summarizing, the following can
-be seen as some of the most important goals for inner source:
+In the specific case of InnerSource, and summarizing, the following can
+be seen as some of the most important goals for InnerSource:
 
 -   Goal 1. Improve code quality through CI and peer review
 
@@ -35,7 +35,7 @@ be seen as some of the most important goals for inner source:
 Then, each of the goals may have one or more questions that will answer
 those specific goals. And those are particularly related to the stage
 the process is. Although we may have the same goal when starting to
-apply inner source within an organization and when that method is fully
+apply InnerSource within an organization and when that method is fully
 established, the related questions are potentially different.
 
 Let’s focus on Goal 5: improve engagement within the organization. We
@@ -50,7 +50,7 @@ the question would be to keep improving the engagement or at least have
 a stable software development process with this respect.
 
 **Starting from scratch**: Question 1: How many new attracted developers
-are participating in the inner sourced projects?
+are participating in the InnerSourced projects?
 
 **Working on an inner-sourced community**: Question 1: Is the attraction
 of new developers improving over time? And this question leads to

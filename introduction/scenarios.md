@@ -1,9 +1,9 @@
-#Inner source scenarios
+#InnerSource scenarios
 
-Where inner source methodology is being used? Which kind of companies are already
+Where InnerSource methodology is being used? Which kind of companies are already
 using it?
 
-In 2000, Tim O'Reilly defined inner source as "the use of open source development 
+In 2000, Tim O'Reilly defined InnerSource as "the use of open source development 
 techniques within the corporation". Clearly this definition applies to
 companies developing software for their own use or to be used by 
 third parties.
@@ -20,11 +20,11 @@ Some common open source development techniques are:
 - transparent communication: everything, from documents to conversations, is written and 
   stored, to allow historical review
   
-Inner source, like open source, is well suited for cross-organization collaboration breaking
+InnerSource, like open source, is well suited for cross-organization collaboration breaking
 boundaries of teams, business units and nations.
 
 Beyond the obvious profile, software development companies, let's see some 
-scenarios or situations where inner source can help.
+scenarios or situations where InnerSource can help.
 
 ## The digital transformation wave
 

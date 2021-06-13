@@ -23,7 +23,7 @@ metrics and improve the metrics cycle. This will also help to introduce
 a data-driven development cycle and let the developers feel comfortable
 when using them.
 
-When using metrics in Inner Source, we have already detailed the
+When using metrics in InnerSource, we have already detailed the
 following purposes:
 
 -   Awareness: be aware of the work in progress
