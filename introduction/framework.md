@@ -13,7 +13,7 @@ By adopting InnerSource methodology and principles, organizations get:
     part of companies development roadmap
 
 -   Higher inner-innovation, by allowing employees to propose new ideas
-    implementation based on company’s technology/knowledge
+    and implementations based on company’s technology/knowledge
 
 But any project, even open source ones, need a framework
 that support them defining:
@@ -57,7 +57,7 @@ Usually the governance model is a written document containing:
 
 -  work, management and collaboration infrastructures definition
 
--  people roles and responsabilities definitions
+-  people roles and responsibilities definitions
 
 -  community support mechanisms 
 

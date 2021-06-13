@@ -1,5 +1,7 @@
 # Managing InnerSource Projects book
 
+<img src="managing-innersource-projects-cover.jpg" title="Managing InnerSource Projects">
+
 This book is intended to bring, from a managerial perspective, the several aspects needed
 when introducing InnerSource methodologies into enterprises.
 
@@ -23,6 +25,7 @@ journey within your company.
 This book is open to anyone interested in InnerSource, either you are 
 applying this and you want to share your use case or you have successfully 
 applied InnerSource in your internal software development process.
+
 
 
 
@@ -51,5 +54,6 @@ For further questions, please contact José Manrique López or Daniel Izquierdo:
 
 Thanks for your time here!
 
+The book cover was created by [Sebastian Spier](https://spier.hu), using an image by user [Bru-nO](https://pixabay.com/photos/measure-unit-of-measure-meterstab-2737004/), available under the [Pixabay License](https://pixabay.com/service/license/).
 
 All of the content found in this repository is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).

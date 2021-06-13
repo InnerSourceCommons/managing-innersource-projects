@@ -30,7 +30,7 @@ This is something that already takes place in OSS communities. They
 usually need a subscription in some of the tools such as
 the mailing lists or the wikis. And once this is done, the contributor
 is allowed to update wikis or send emails. In the case of the source code
-the process has been lately more bureaocratic as code review has
+the process has been lately more bureaucratic as code review has
 become more and more important.
 
 On the other hand, sites like [GitHub](https://github.com) or [GitLab](https://gitlab.com)
