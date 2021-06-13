@@ -1,5 +1,7 @@
 # Managing Inner Source Projects book
 
+<img src="managing-innersource-projects-cover.jpg" title="Managing InnerSource Projects">
+
 This book is intended to bring, from a managerial perspective, the several aspects needed
 when introducing inner source methodologies into enterprises.
 
@@ -16,12 +18,12 @@ You can find more information about the process in the [contributing section](ht
 
 Bitergia, as neutral actor in the software development analytics field aims at
 sharing the knowledge acquire during the last years. This book is currently focused on its main areas of expertise such as the usual metrics and KPI's to use,
-the methodology, the metrics strategy around your general inner source strategy 
+the methodology, the metrics strategy around your general inner source strategy
 or the infrastructure needed to have a successful inner source
 journey within your company.
 
-This book is open to anyone interested in inner source, either you are 
-applying this and you want to share your use case or you have successfully 
+This book is open to anyone interested in inner source, either you are
+applying this and you want to share your use case or you have successfully
 applied inner source in your internal software development process.
 
 
@@ -51,5 +53,6 @@ For further questions, please contact José Manrique López or Daniel Izquierdo:
 
 Thanks for your time here!
 
+The book cover was created by [Sebastian Spier](https://spier.hu), using an image by user [Bru-nO](https://pixabay.com/photos/measure-unit-of-measure-meterstab-2737004/), available under the [Pixabay License](https://pixabay.com/service/license/).
 
 All of the content found in this repository is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
