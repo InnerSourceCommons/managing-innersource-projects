@@ -63,7 +63,7 @@ methodology.
 In some cases, there is a corporate head or central unit that decides
 the technology for the rest of business units. When these business units
 adopt the technology, they usually need to customize it, ending with
-something slightly different to the orginal product. While the central
+something slightly different to the original product. While the central
 unit evolves its product in their “closed silo”, the other units are
 probably doing the same in their “silos”. The result? The adoption of
 any update of the “core product” is a nightmare.
@@ -78,7 +78,7 @@ companies that might be even market competitors. Those companies have
 been able to share knowledge and resources with a common goal . If competitors can
 collaborate to build technology in which their business rely on, why
 could not corporate business units do the same if they have corporate
-succes as mission?
+success as mission?
 
 ## The start-ups bubble
 
