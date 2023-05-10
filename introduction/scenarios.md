@@ -45,7 +45,7 @@ hype-word after “Digital Transformation” of these ages.
 teams in the open source world. As first described by John Willis and
 Damon Edwards in 2010, CALMS, standing for Culture (collaboration),
 Automation, Lean, Measurement, and Sharing to describe the “DevOps
-framework”, obviously contains terms familar to any open source
+framework”, obviously contains terms familiar to any open source
 developer.
 
 These teams usually develop custom software solutions and deployment
