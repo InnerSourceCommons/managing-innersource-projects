@@ -3,7 +3,7 @@
 By adopting InnerSource methodology and principles, organizations get:
 
 -   Effective resources management, with better code/knowledge reuse
-    and cost sharing accross the different units
+    and cost sharing across the different units
 
 -   Faster technology innovations/improvements, since the code is
     developed collaboratively and transparently by interested people and
@@ -32,7 +32,7 @@ Let's introduce the *InnerSource framework*.
 
 ## Governance
 
-According to the Business Dictionary, governace is defined as:
+According to the Business Dictionary, governance is defined as:
 
 >Establishment of policies, and continuous monitoring
 >of their proper implementation, by the members of the
@@ -129,17 +129,17 @@ a basic skill for us.
 Beyond collecting data, managers need to understand the goals of the organization
 and how the gathered data can help them to achieve such goals. They also
 need to take care of how they share that data
-with the teams, and what the want to achieve.
+with the teams, and what they want to achieve.
 
 >“Collecting data is only the first step toward wisdom, but sharing data
 >is the first step toward community.” – Henry Lewis Gates (professor at
 >Harvard)
 
-Open measurment gives a lot of benefits for our InnerSource community:
+Open measurement gives a lot of benefits for our InnerSource community:
 
 - awareness, it allows us to understand who we are, what we are doing, etc.
 
-- governance check, monitoring policies implementatio
+- governance check, monitoring policies implementation
 
 - transparency, as trust generator for third parties and fairness
   for our InnerSource community
