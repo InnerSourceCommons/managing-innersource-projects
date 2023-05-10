@@ -24,7 +24,7 @@ reached the market acceptance we see nowadays? How has it engaged so many
 people and organizations to contribute to it?
 
 It’s a teamwork effort and quoting John Wooden (former UCLA Bruins
-basketball coach) in IBM Linux comercial [^2]:
+basketball coach) in IBM Linux commercial [^2]:
 
 “A player who makes a team great is more valuable than a great player.
 Losing yourself in the group for the good of the group, that’s
@@ -53,7 +53,7 @@ them[^4] as:
 6. Meritocracy
 
 As an organization willing to adopt InnerSource methodology, the first step is to look
-how close are organization's principles with these open source ecosytem principles, and 
+how close are organization's principles with these open source ecosystem principles, and 
 work on minimizing the *deltas* with them.
 
 [^1]: https://www.wsj.com/articles/SB10001424053111903480904576512250915629460
