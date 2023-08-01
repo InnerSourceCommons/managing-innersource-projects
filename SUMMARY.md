@@ -30,3 +30,8 @@
     * [Allow Innovation in Detail](measuring/metrics.md#allow-innovation-in-detail)
   * [References](measuring/references.md)
   * [Authors and Reviewers](measuring/authors.md)
+* [Tooling](tooling/innersource-tooling.md)
+  * [GitHub Strategy](tooling/github-strategy.md)
+  * [GitHub Configuration](tooling/github-configuration.md)
+  * [GitLab Strategy](tooling/gitlab-strategy.md)
+  * [GitLab Configuration](tooling/gitlab-configuration.md)
