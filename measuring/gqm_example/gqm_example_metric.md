@@ -4,12 +4,15 @@
 
 A brief description of the metric.
 
-- **Synopsis**: Brief summary of the metric
-- **Scale/UoM**: What is the scale and unit of measure of the metric? (nominal, ordinal, interval, ratio - the scale limits the types of operations you can do. E. g. you can't compute averages on a nominal scale, even if the ordinals are expressed as numbers)
-- **Interpretation**: What do different values or value ranges mean? (good/bad, little/a lot, ...)
--**Measuring**: How do you actually calculate the value of the metric and  what are the input sources (I think that is what _pseudo-code_ is referring to, below).
+**Synopsis**: A brief summary of the metric.  
 
-```Psuedo-code for the metric```
+**Scale/UoM**: What scale and unit of measure does the metric use? The scale determines what kinds of operations are possible. For example, you cannot calculate averages on a nominal scale, even if the ordinals are expressed as numbers. The scale types are nominal, ordinal, interval, and ratio.  
+
+**Interpretation**: What do the different values or ranges signify? For example, what does "good" or "bad" mean, or how much is "little" versus "a lot"?  
+
+**Measuring**: What input sources do you use to calculate the metric's value?  
+
+```Pseudo-code for the metric```
 
 ## Goals
 
