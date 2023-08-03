@@ -8,3 +8,5 @@
 ## Reviewers
 
 (Chronological order)
+
+- Guilherme Dellagustin ([SAP](https://sap.com/))
