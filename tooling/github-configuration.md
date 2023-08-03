@@ -1,5 +1,19 @@
 # GitHub InnerSource Configuration
 
+- [Enterprise Setting](#enterprise-setting)
+  - [Repository policies](#repository-policies)
+    - [Base permissions](#base-permissions)
+    - [Repository creation](#repository-creation)
+    - [Repository forking (Private / Internal)](#repository-forking-private--internal)
+- [Organization Setting](#organization-setting)
+  - [Member privileges](#member-privileges)
+    - [Base permissions](#base-permissions-1)
+    - [Repository creation](#repository-creation-1)
+    - [Repository forking](#repository-forking)
+- [GitHub Enterprise Server Setting](#github-enterprise-server-setting)
+  - [GitHub Connect - Server statistics](#github-connect---server-statistics)
+- [Resources](#resources)
+
 ## Enterprise Setting
 
 ### Repository policies

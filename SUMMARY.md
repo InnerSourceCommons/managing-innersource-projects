@@ -35,3 +35,4 @@
   * [GitHub Configuration](tooling/github-configuration.md)
   * [GitLab Strategy](tooling/gitlab-strategy.md)
   * [GitLab Configuration](tooling/gitlab-configuration.md)
+  * [Authors and Reviewers](tooling/authors.md)

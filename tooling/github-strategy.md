@@ -1,5 +1,13 @@
 # GitHub InnerSource Strategies
 
+- [Balancing Security \& InnerSource: Who Can See What](#balancing-security--innersource-who-can-see-what)
+- [Security-First Perspective and InnerSource-first Perspective](#security-first-perspective-and-innersource-first-perspective)
+- [Visibility Differences by InnerSource Project Type](#visibility-differences-by-innersource-project-type)
+- [Project Participation Difficulty Level by Setting](#project-participation-difficulty-level-by-setting)
+- [Pros and Cons of InnerSource Dedicated Environment](#pros-and-cons-of-innersource-dedicated-environment)
+- [Variations in how repository read access is distributed](#variations-in-how-repository-read-access-is-distributed)
+- [Conclusion: High Level Guideline](#conclusion-high-level-guideline)
+
 ## Balancing Security & InnerSource: Who Can See What
 
 The section explores the delicate balance between security and collaboration in the context of InnerSource projects. Within an InnerSource project, transparency plays a vital role in fostering collaboration and encouraging participation. Ideally, the project should be structured to allow as many individuals as possible to contribute, ensuring that the barriers to participation are kept low. However, it's important to acknowledge that certain constraints and considerations may prevent making everything openly accessible within the company.
