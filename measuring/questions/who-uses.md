@@ -12,4 +12,4 @@ Depending on the InnerSource project, usage could look something like:
 
 ## Metrics
 
-* [Example Metric](./gqm_example_metric.md)
+* [Usage count](../metrics/usage-count.md)
