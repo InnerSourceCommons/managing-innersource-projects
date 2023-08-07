@@ -7,7 +7,3 @@ We want to build just once software that solves commmon problems and then share 
 ## Questions
 
 * [Who uses the InnerSource project?](../questions/who-uses.md)
-
-## Metrics
-
-* [Example Metric](./gqm_example_metric.md)
