@@ -1,6 +1,4 @@
-# Example Metric
-
-**A short name of the metric**
+# **Metric:** Short name of the metric
 
 A brief description of the metric.
 
@@ -10,13 +8,15 @@ A brief description of the metric.
 
 **Interpretation**: What do the different values or ranges signify? For example, what does "good" or "bad" mean, or how much is "little" versus "a lot"?  
 
-**Measuring**: What input sources do you use to calculate the metric's value?  
+**Measuring**
+
+What input sources do you use to calculate the metric's value?  
 
 ```Pseudo-code for the metric```
 
 ## Goals
 
-[Example Goal](./gqm_example_goal.md)
+* [Example Goal](./gqm_example_goal.md)
 
 ## Questions
 

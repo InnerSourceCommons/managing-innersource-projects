@@ -1,11 +1,9 @@
-# Question Example
-
-**The question**
+# **Question:** A brief description of the question.
 
 ## Goals
 
-[Example Goal](./gqm_example_goal.md)
+* [Example Goal](./gqm_example_goal.md)
 
 ## Metrics
 
-[Example Metric](./gqm_example_metric.md)
+* [Example Metric](./gqm_example_metric.md)
