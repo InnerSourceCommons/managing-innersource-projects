@@ -1,4 +1,4 @@
-# Reduce duplication
+# **Goal::** Reduce duplication
 
 Why should be build things more than once?
 We're already busy and behind where we'd like to be.
