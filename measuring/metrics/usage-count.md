@@ -1,4 +1,4 @@
-# Usage count
+# **Metric:** Usage count
 
 **Synopsis**: Count how many times the InnerSource project is used.
 Gain additional insight by gathering metadata on these usages such as business unit or timeframe.
