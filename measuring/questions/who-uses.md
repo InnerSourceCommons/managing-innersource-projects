@@ -1,6 +1,6 @@
 # Who uses the InnerSource project?
 
-Depending on the InnerSource project, usage could look something like:
+Depending on the InnerSource project, usage of the project could look something like:
 
 * Inclusion of a module in a build.
 * Calling and API.
