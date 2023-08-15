@@ -6,6 +6,6 @@ We want to build just once software that solves commmon problems and then share 
 
 ## Related Questions
 
-| **Question** | **How it relates to the goal** | **Limitations or gotchas** |
+| **Question** | **How it relates to the goal** | **Gotchas** |
 | --- | --- | --- |
 | [Who uses the InnerSource project?](../questions/who-uses.md) | Every instance of reduced duplication will show up as an increase in usage. | The converse is not necessarily true that every instance of increased usage is an instance of reduced duplication.  It's always possible that some shared usage would have happened even without InnerSource. |
