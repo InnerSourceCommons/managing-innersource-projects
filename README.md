@@ -30,6 +30,8 @@ applied InnerSource in your internal software development process.
 
 Review the [Goal-Question-Metric Approach](./measuring/gqm.md) to further understand how we structure goals, questions, and metrics.
 
+Review [GQM use cases and user journeys](./measuring/gqm_example/README.md) to guide their development.
+
 We document each goal in a separate folder in the [measuring](./measuring) directory. Goals link to relevant questions and metrics in the same directory.
 
 *Examples:*
@@ -38,7 +40,7 @@ We document each goal in a separate folder in the [measuring](./measuring) direc
 * [Example Question](./measuring/gqm_example/gqm_example_question.md)
 * [Example Metric](./measuring/gqm_example/gqm_example_metric.md)
 
-We interconnect our goals, questions, and metrics. This approach not only expands our documentation of these aspects but also keeps it well-organized.
+We interconnect our goals, questions, and metrics (GQM). This approach not only expands our documentation of these aspects but also keeps it well-organized.
 
 ## References
 
