@@ -37,9 +37,9 @@ Goals link to all related questions, and questions link to all related metrics.
 
 *Templates:*
 
-* [Goal Template](./measuring/gqm_example/gqm_example_goal.md)
-* [Question Template](./measuring/gqm_example/gqm_example_question.md)
-* [Metric Template](./measuring/gqm_example/gqm_example_metric.md)
+* [Goal Template](./measuring/gqm_example/gqm_goal_template.md)
+* [Question Template](./measuring/gqm_example/gqm_question_template.md)
+* [Metric Template](./measuring/gqm_example/gqm_metric_template.md)
 
 We interconnect our goals, questions, and metrics (GQM) in graph format. This approach not only expands our documentation of these aspects but also keeps it well-organized.
 
