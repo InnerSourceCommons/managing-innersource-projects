@@ -1,4 +1,4 @@
-# Summary
+# Table of contents
 
 * [Summary](README.md)
 * [Introduction](introduction/introduction.md)
@@ -6,11 +6,8 @@
   * [Framework](introduction/framework.md)
   * [Authors and Reviewers](introduction/authors.md)
 * [Infrastructure](infrastructure/infrastructure.md)
-  * [Basic Infrastructure](infrastructure/infrastructure.md#basic-infrastructure)
-    * [Development Process](infrastructure/infrastructure.md#development-process-infrastructure)
-    * [Communication Channels](infrastructure/infrastructure.md#communication-channels-infrastructure)
-    * [Monitoring](infrastructure/infrastructure.md#monitoring-infrastructure)
-  * [Comparing How Inner-Sourced Your Infra Is](infrastructure/infrastructure.md#comparing-how-inner-sourced-your-infrastructure-is)
+  *
+  *
   * [Authors and Reviewers](infrastructure/authors.md)
 * [What, When and How to Measure](measuring/introduction.md)
   * [Goals using Metrics](measuring/goals.md)
@@ -18,16 +15,16 @@
   * [Goal-Question-Metric Approach](measuring/gqm.md)
   * [Strategy](measuring/strategy.md)
   * [Examples of Interest](measuring/metrics.md)
-    * [Mentorship and helping Newcomers](measuring/metrics.md#mentorships-and-helping-newcomers)
-    * [Development Cycle](measuring/metrics.md#development-cycle)
-    * [Contributors Funnel](measuring/metrics.md#contributors-funnel)
-    * [Engagement](measuring/metrics.md#engagement)
-    * [Break Silos](measuring/metrics.md#break-silos)
-    * [Spreading the Knowledge](measuring/metrics.md#spreading-the-knowledge)
-    * [Middle Management Cultural Change](measuring/metrics.md#middle-management-cultural-change)
-    * [Scalability](measuring/metrics.md#scalability)
-    * [Keep great Developers in House](measuring/metrics.md#keep-great-developers-in-house)
-    * [Allow Innovation in Detail](measuring/metrics.md#allow-innovation-in-detail)
+    *
+    *
+    *
+    *
+    *
+    *
+    *
+    *
+    *
+    *
   * [References](measuring/references.md)
   * [Authors and Reviewers](measuring/authors.md)
-* [Use Goals, Questions, and Metrics](measuring/use_gqm.md)
+* [Use Goals, Questions, and Metrics](measuring/use\_gqm.md)
