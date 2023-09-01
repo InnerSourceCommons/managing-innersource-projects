@@ -6,4 +6,4 @@
 
 | **Metric** | **How it answers the question** | **Gotchas** |
 | --- | --- | --- |
-| [Example Metric](./gqm_example_metric.md) | Describe how this metric helps to answer this question.  | Gotchas |
+| [Example Metric](./gqm_metric_template.md) | Describe how this metric helps to answer this question.  | Gotchas |
