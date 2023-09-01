@@ -1,9 +1,9 @@
-# **Question:** A brief description of the question.
+# **Question:** A brief description of the question
 
-## Goals
+(Optional) Add any additional description oof the question.
 
-* [Example Goal](./gqm_example_goal.md)
+## Related Metrics
 
-## Metrics
-
-* [Example Metric](./gqm_example_metric.md)
+| **Metric** | **How it answers the question** | **Gotchas** |
+| --- | --- | --- |
+| [Example Metric](./gqm_example_metric.md) | Describe how this metric helps to answer this question.  | Gotchas |
