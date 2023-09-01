@@ -18,7 +18,3 @@ Here is a list of [many package managers](https://github.com/oss-review-toolkit/
 Look in those dependencies for usage of your InnerSource project.
 
 If the project is a UI and requires login, then read the project logs to determine the list of users.
-
-## Questions
-
-* [Who uses the InnerSource project?](../questions/who-uses.md)
