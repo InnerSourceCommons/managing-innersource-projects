@@ -4,10 +4,10 @@
 Gain additional insight by gathering metadata on these usages such as business unit or timeframe.
 With this additional metadata we can see how lopsided or even the usage is spread across the company and across time.
 
-**Scale/UoM**: Ordinal (I think 😆).
+**Unit of Measurement**: Ordinal number.
 
 **Interpretation**: Higher absolute usage count is generally better.
-Higher diversity of usage across business unit or timeframe is generall better.
+Higher diversity of usage across business unit or timeframe is generally better.
 
 **Measuring**
 
