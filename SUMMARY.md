@@ -30,3 +30,4 @@
     * [Allow Innovation in Detail](measuring/metrics.md#allow-innovation-in-detail)
   * [References](measuring/references.md)
   * [Authors and Reviewers](measuring/authors.md)
+* [Use Goals, Questions, and Metrics](measuring/use_gqm.md)
