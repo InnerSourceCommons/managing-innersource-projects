@@ -10,7 +10,7 @@ Infrastructure is indeed a key part of the InnerSource process as this
 may force developers to work in a specific way. As an example, the
 OpenStack community uses Gerrit and forces developers willing to commit
 a piece of code to use this. This means that the community is 100% sure
-that thethey are code-reviewing any piece of code nto the
+they are code-reviewing any piece of code into the
 baseline.
 
 Thus, having the proper infrastructure helps to follow a pre-defined
