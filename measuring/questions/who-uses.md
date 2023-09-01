@@ -6,6 +6,8 @@ Depending on the InnerSource project, usage of the project could look something 
 * Calling and API.
 * Visiting a UI.
 
-## Metrics
+## Related Metrics
 
-* [Usage count](../metrics/usage-count.md)
+| **Metric** | **How it answers the question** | **Gotchas** |
+| --- | --- | --- |
+| [Usage count](../metrics/usage-count.md) | We can see how many times an InnerSource project is reused.  If there is extra information attached to that usage (like which business unit is the user) then we can see how widely across the company an InnerSource project is used. | |
