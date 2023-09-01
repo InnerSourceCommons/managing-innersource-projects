@@ -6,10 +6,6 @@ Depending on the InnerSource project, usage of the project could look something 
 * Calling and API.
 * Visiting a UI.
 
-## Goals
-
-* [Reduce duplication](../goals/reduce-duplication.md)
-
 ## Metrics
 
 * [Usage count](../metrics/usage-count.md)
