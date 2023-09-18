@@ -22,7 +22,7 @@
 
 When setting up the base repository permissions to promote InnerSource within your organization on GitHub, it's important to strike a balance between transparency, collaboration, and respecting constraints and limitations. Here are some best practices for setting up repository permissions:
 
-| Permission | Description |
+| Repository Permission | Description |
 | --- | --- |
 | No Policy | Inherit permissions from the organization or parent repository. Provides flexibility for projects with unique permission needs. |
 | No Permission | Not recommended if any of the repositories in that org might benefit from collaboration. Completely restricts access to the repository, hindering collaboration and knowledge sharing. Repository access requires finding and talking to org owners. |
