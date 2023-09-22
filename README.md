@@ -26,8 +26,22 @@ This book is open to anyone interested in InnerSource, either you are
 applying this and you want to share your use case or you have successfully 
 applied InnerSource in your internal software development process.
 
+## How Do We Structure Goals, Questions, and Metrics?
 
+Review the [Goal-Question-Metric Approach](./measuring/gqm.md) to further understand how we structure goals, questions, and metrics.
 
+Review [GQM use cases and user journeys](./measuring/gqm_example/README.md) to guide their development.
+
+We document goals, questions, and metrics in separate folders in the [measuring](./measuring) directory.
+Goals link to all related questions, and questions link to all related metrics.
+
+*Templates:*
+
+* [Goal Template](./measuring/gqm_example/gqm_goal_template.md)
+* [Question Template](./measuring/gqm_example/gqm_question_template.md)
+* [Metric Template](./measuring/gqm_example/gqm_metric_template.md)
+
+We interconnect our goals, questions, and metrics (GQM) in graph format. This approach not only expands our documentation of these aspects but also keeps it well-organized.
 
 ## References
 
