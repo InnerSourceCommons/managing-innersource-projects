@@ -4,8 +4,11 @@
 
 ```mermaid
 graph LR;
+find-projects[Find Projects] --> who-uses[Who Uses];
 reduce-duplication[Reduce Duplication] --> who-uses[Who Uses];
 who-uses --> usage-count[Usage Count];
+find-projects --> who-contributes
+who-contributes[Who Contributes] --> code-contributions[Code Contributions];
 ```
 
 ## Goals
