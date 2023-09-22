@@ -1,6 +1,14 @@
+# How Do I Add A Goal Question Metric (GQM)?
+
+1. Add your GQM to one of the following directories.
+   1. [../goals](../goals/)
+   2. [../questions](../questions/)
+   3. [../metrics](../metrics/)
+2. Update [../use_gqm.md](../use_gqm.md) with graph connections.
+
 # What Is The Goal Question Metric (GQM) Example?
 
-The GQM example is a starting point to create additional Goals, Questions, and Metrics relevant to an InnerSource Program Office (ISPO).
+The GQM example is a starting point to create additional Goals, Questions, and Metrics relevant to an InnerSource Program Office (ISPO)
 
 ## Stakeholder Use Cases
 
@@ -8,7 +16,7 @@ The GQM example serves specific stakeholders.
 
 * **Executives** use them to track the value of an InnerSource program.
 * **InnerSource Program Office** uses them to improve the program.
-* **InnerSouce Project Drivers** use them to advocate for and run their project.
+* **InnerSource Project Drivers** use them to advocate for and run their project.
 
 ## User Journeys
 
