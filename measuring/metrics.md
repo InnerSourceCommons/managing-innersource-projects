@@ -19,7 +19,7 @@ clear workflow followed by any developer within the organization.
 
 On the other hand, if the workflow is not well defined or if the
 development infrastructure allows to have work arounds, this may lead to
-situations where shortcuts are usual and developers and managers may get
+situations where shortcuts are usual, and developers and managers may get
 frustrated at some point.
 
 Thus, having in mind those differences between two communities, inner
