@@ -8,7 +8,7 @@
 
 # What Is The Goal Question Metric (GQM) Example?
 
-The GQM example is a starting point to create additional Goals, Questions, and Metrics relevant to an InnerSource Program Office (ISPO)
+The GQM example is a starting point to create additional Goals, Questions, and Metrics relevant to an InnerSource Program Office (ISPO).
 
 ## Stakeholder Use Cases
 
