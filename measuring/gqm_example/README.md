@@ -1,6 +1,6 @@
 # How Do I Add A Goal Question Metric (GQM)?
 
-1. Add your GQM to one of the following directories.
+1. Add your goals, questions, and metrics to the following directories (use the templates inside the directories):
    1. [../goals](../goals/)
    2. [../questions](../questions/)
    3. [../metrics](../metrics/)
