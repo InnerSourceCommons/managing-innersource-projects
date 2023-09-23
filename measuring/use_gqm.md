@@ -1,6 +1,6 @@
 # Use Goals, Questions, and Metrics
 
-*An overview of the GQM catalog.*
+*An overview of the Goals, Questions, and Metrics (GQM) catalog.*
 
 ```mermaid
 graph LR;
