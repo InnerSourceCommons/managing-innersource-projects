@@ -4,7 +4,7 @@
    1. [../goals](../goals/)
    2. [../questions](../questions/)
    3. [../metrics](../metrics/)
-2. Update [../use_gqm.md](../use_gqm.md) with graph connections.
+2. Update [../use_gqm.md](../use_gqm.md) with graph connections and links.
 
 # What Is The Goal Question Metric (GQM) Example?
 
