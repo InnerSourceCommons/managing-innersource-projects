@@ -19,8 +19,8 @@
 ## Layering Source Control Management Configurations
 In GitHub, configuration can be set at different levels. In general, configuration set at the enterprise level will overrule or constrain organizational configuration which will do the same for repository level configuration.
 Sometimes a configuration settings disables options at lower levels. Other times a configuration setting at the enterprise or organization level only sets the default option that is prechecked. A user who takes an additional actions can pick a different configuration at the repository level if only the default option is set. Due the overlapping nature of the policies, it is important to pick the right layer to apply a configuration: enterprise, organization, or repository.
-In general, use caution when picking configuration settings at the enterprise or organization level that restrict reasonable choies at the repository level. These can add friction to the developer experience and even promote shadow IT in the worse cases. Nudging with defaults can be better in some circumstances than disabling options enterirely.
-If you have repositories that must be extremely tightly controlled, consider mandating that type of repository go into special organizations set up for those constraints instead of trying to apply those constrains on all enterprise code.
+In general, use caution when picking configuration settings at the enterprise or organization level that restrict reasonable choies at the repository level. These can add friction to the developer experience and even promote shadow IT in the worst cases. Nudging with defaults can be better in some circumstances than disabling options entirely.
+If you have repositories that must be extremely tightly controlled, consider mandating that that type of repository go into organizations set up for those constraints instead of trying to apply those constrains on all enterprise code.
 
 ## Enterprise Setting
 
@@ -39,15 +39,15 @@ Base permissions set at the enterprise level are applied to all of an enterprise
 | Write | All enterprise members will have the "Write" permission. They will able to make commit contributions to the repositories and approve pull requests. |
 | Admin | All enterprise members will have "Admin" permissions to all repositories in the organization, including clone, pull, and add new collaborators. |
 
-*To avoid confusion, please note that "No Policy" is an option at the enterprise level, but it is not an option at the organization level.*
+*Please note that "No Policy" is an option at the enterprise level, but it is not an option at the organization level.*
 
 ##### How to pick what configuration to choose
-Selecting "Read" gives every member of the enterprise read permissions to EVERY repository. There are circumstances where this is acceptable based on who the gets membership to the enterprise and what type of code is being stored there. In many other cases, "No Policy" is the best option as it allows for the most flexibility. In large enterprises with many organiations different organizations will want different base repository permissions, "No Policy" enables each organization to pick their own configuration. It will be possible that one organization will set all their repositories to have READ rights given to every member and another will give no base permissions by default for repositories in that organization. "No Permissions" means that organizations can not set this policy themselves, and it gets set at each repository only. There are situations where this is appropriate, but it is less common.
+Selecting "Read" gives every member of the enterprise read permissions to EVERY repository. There are circumstances where this is acceptable based on who gets membership to the enterprise and what type of code is being stored there. In many other cases, "No Policy" is the best option as it allows for the most flexibility. In large enterprises with many organiations different organizations will want different base repository permissions, "No Policy" enables each organization to pick their own base permission configuration. It will be possible that one organization will set all their repositories to have READ rights given to every member of the organization, and another will give no base permissions by default for repositories in that organization. "No Permissions" means that organizations can not set this policy themselves, and it gets set at each repository only. There are situations where this is appropriate, but it is less common. 
 
 *"No Policy" or "READ" are common choices.*
 
 #### Repository creation
-Enterprise configuration on repository creation restricts who can create a new repository and with what visibility across the entire enterprise. There is also an organization-level configuration setting that controls repository creation within each organization.
+Enterprise configuration on repository creation restricts who can create a new repository and with what visibility across the entire enterprise. There is also an organization-level configuration setting that controls repository creation within each organization. Enterprise level configuration over rules organization policy unless "No Policy" is selected. 
 
 | Repository Creation | Description | Recommendation |
 | --- | --- | --- |
@@ -80,7 +80,7 @@ In another situation, there might be a single GitHub instance for both public fa
 
 It's important to consider your organization's policies and the nature of the projects when deciding on repository creation settings. Striking a balance between encouraging collaboration and managing access to sensitive information is crucial in an InnerSource context. 
 
-*In general, you want to pick a combination of architecture, addons, and configuration that lets most users create private and internal repositories with low friction while more tightly controlling creation of public visible repositories.*
+*In general, you want to pick a combination of architecture, add-ons, and configuration that lets most users create private and internal repositories with low friction while more tightly controlling creation of public visible repositories.*
 
 #### Repository forking (Private / Internal)
 
@@ -91,7 +91,7 @@ In an example where a repository holds the code for a web site, someone not asso
 has to find who is the best person to talk to about that repository, email them, wait for a response, probably send a few more emails, get write permissions, start a branch, make one line change, and submit a pull request. 
 This could take a day or 30 days. Many potential small changes will simply never start or die somewhere alnog the process. In constrast with forking, that same user can fork the repository, make the change, and submit a pull request
 back to the repository. They don't have to wait for a return email or any communication. They can simply do the change and submit it. This type of quick development is not always appropriate and many repositories might 
-perfer to always use branch-based development. However, for some small by someone not on the team that owns the repository, forking is a great enabler of small scale InnerSource. 
+perfer to always use branch-based development. However, for some small contributions by someone not on the team that owns the repository, forking is a great enabler of small scale InnerSource. 
 
 | Repository Forking | Description | Recommendation |
 | --- | --- | --- |
@@ -99,19 +99,17 @@ perfer to always use branch-based development. However, for some small by someon
 | Enabled | Organizations always allow private and internal repositories to be forked. | Encourage forking of private and internal repositories to promote collaboration and foster a culture of contribution. Forking enables individuals or teams to make modifications and propose changes without directly impacting the original codebase. |
 | Disabled | Organizations never allow private or internal repositories to be forked. | In an InnerSource context, it is recommended to enable forking to encourage collaboration, knowledge sharing, and innovation. Forking allows individuals or teams to experiment, improve, and contribute without directly modifying the original codebase. |
 
-One consideration for whether to enable forking is whether the GitHub instance in question is purely internal or not. A company may want to limit forking of internal code in private repositories of a public-facing GitHub instance to personal user space repository. In this scenario, branch development only may be appriate. In constrast, if the GitHub Enterprise instance is only internal code and all users have company created GitHub identifies that can not fork into public repositories, then forking could be enabled into private repositories at much lower risk as those repositories are still under corporate control and not public facing. Additionally, if normal users lack the ability to make repositories public by themselves, there is even less risk.
+One consideration for whether to enable forking is whether the GitHub instance in question is purely internal or not. A company may want to limit forking of internal code in private repositories of a public-facing GitHub instance to personal user space repository. In this scenario, branch development only may be appriate. In constrast, if the GitHub Enterprise instance is only internal code and all users have company created GitHub identities that can not fork into public repositories, then forking could be enabled into private repositories at much lower risk as those repositories are still under corporate control and not public facing. Additionally, if normal users lack the ability to make repositories public by themselves, there is  less risk. Certain enterprises, organizations, or repositories may need to disable forking partially or entirely for their specific regulatory or compliance requirements.
 
-Certain enterprises, organizations, or repositories may need to disable forking partially or entirely for their specific regulatory or compliance requirements.
-
-*Enabling forking is good for InnerSource as it is lower friction way to quickly make small contributions compared to branch-based development. Seek to combine configuration with architecture to enable it as an option without increasing risk of accidental disclosure.*
+*Enabling forking is good for InnerSource as it is lower friction way to quickly make small contributions compared to branch-based development. Seek to combine configuration with architecture to enable it as an option without increasing risk of accidental disclosure. When forking is enabled, individual repositories should always have the option to turn it off.*
 
 ## Organization Setting
+Within each Organization, administrators of that organiation can pick base permissions for all repositories in that organization. 
 Organization configuration settings are similar but not exactly the same as enterprise settings. Some enterprises limit what organization owners can pick through enterprise policies and sometimes they limit options through training or written policies in order to allow for exceptions.
 
 ### Member privileges
 
 #### Base permissions
-Within each Organization, administrators of that organiation can pick base permissions for all repositories in that organization. 
 
 Note that the difference between base permissions at organization level vs. enterprise level described above on this page is there is no longer a "No Policy" option. 
 
@@ -122,9 +120,9 @@ Note that the difference between base permissions at organization level vs. ente
 | Write | All organization members will have the "Write" permission. They will able to make commit contributions to the repositories and approve pull requests. |
 | Admin | All organization members will have "Admin" permissions to all repositories in the organization, including clone, pull, and add new collaborators. |
 
-Although there are situations where it might be appropriate to give all members of an organization "write" and "admin" permissions, for example in a very small organization of a single team, those permisssions would are generally too powerful to distribute to every member of an organization. Instead, it is more common to give organization members "No Permission" or "Read" permissions. Enabling InnerSource goals while selecting "No Permissions" is possible, but it takes more work and combining a few different configurations. How do to so is explained in option 2 below. 
+Although there are situations where it might be appropriate to give all members of an organization "write" and "admin" permissions, for example in a very small organization of a single team, those permisssions are often too powerful to distribute to every member of an organization, especially large ones. Instead, it is more common to give organization members "No Permission" or "Read" permissions. Enabling InnerSource goals while selecting "No Permissions" is possible, but it takes more work and combining a few different configurations. How do to so is explained in option 2 below. 
 
-First, let's explain wide, moderat, and narrrow internal sharing.
+First, let's explain wide, moderate, and narrrow internal sharing.
 - Wide sharing: anyone in the enterprise has READ permissions to repositories in the organization that opt-in.
 - Moderate sharing: anyone in the organization has read rights to every repository
 - Opt-in Moderate sharing: anyone in the organization has read rights to repositories in the organization that opt-in.
