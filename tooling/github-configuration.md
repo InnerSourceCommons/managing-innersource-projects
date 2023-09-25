@@ -16,21 +16,40 @@
 
 ## Enterprise Setting
 
-### Repository policies
+#### Layering Source Control Management Configurations
+In GitHub, configuration can be set at different levels. In general, configuration set at the enterprise level will overrule or constrain organizational configuration which will do the same for repository level configuration.
+Sometimes a configuration settings disables options at lower levels. Other times a configuration setting at the enterprise or organization level only sets the default option that is prechecked. It can be changed by a user who takes an additional action at the repository level. Due the overlapping nature of the policies, it is important to pick the right layer to apply a configuration.
+In general, use caution when picking configuration settings at the enterprise or organization level that restrict reasonable choies at the repository level. Nudging with defaults can be better than disabling options enterirely.
+If you have repositories that must be extremely tightly controlled, consider mandating that type of repository go into special organizations set up for those constraints instead of trying to apply those constrains on all enterprise code.
+
+### Repository policies set an Organization Level
 
 #### Base permissions
 
-Base permissions are permissions that are applied to an organization’s repositories give to all members, excluding outside collaborators. Since organization members can have permissions from multiple sources, members and collaborators who have been granted a higher level of access than the base permissions will retain their higher permission privileges. When setting up the base repository permissions to promote InnerSource within your organization on GitHub, it's important to strike a balance between transparency, collaboration, and respecting constraints and limitations. Here are some best practices for setting up repository permissions:
+[Base permissions](https://docs.github.com/en/organizations/managing-organization-settings/managing-base-permissions-for-projects) are permissions that are applied to all of an organization’s repositories from the organization level. They are given to all members of the organization, excluding outside collaborators. Since organization members can have permissions from multiple sources, members and collaborators who have been granted a higher level of access than the base permissions will retain their higher permission privileges. When setting up the base repository permissions to promote InnerSource within your organization on GitHub, it's important to strike a balance between transparency, collaboration, and respecting constraints and limitations. Here are some best practices for setting up repository permissions:
 
 | Repository Permission | Description |
 | --- | --- |
-| No Policy | Inherit permissions from the organization or parent repository. Provides flexibility for projects with unique permission needs. |
-| No Permission | Not recommended if any of the repositories in that org might benefit from collaboration. Completely restricts access to the repository, hindering collaboration and knowledge sharing. Repository access requires finding and talking to org owners. The exception is if there is another GitHub team created that automatically includes all members of the organization. In that case, repository owners can optionally add that team for READ access to their repository, which enables both easy visiblity to all members of an organization to any repository that selects for that but still allows for the possibility of a repository under that organization that can only be seen by a few people. |
+| No Permission |  Selecting this means organization membership gives users no permissions to read, write, or admin any repositories in the organization. If not compared with other methods of extending permissions, especially read permissions, this will result in making the organization's repositories hard to discovery, find, or collaborate. |
 | Read | All organization members can view the repository's contents, promoting transparency and allowing employees to learn from each other's work. |
-| Write | Specific individuals or teams with the "Write" permission can make contributions to the repository. Grant to active InnerSource participants with relevant skills. |
-| Admin | Limited to a select group responsible for managing the repository and overseeing InnerSource initiatives. Handles repository configuration and review processes. |
+| Write | All organization members will have the "Write" permission. They will able to make commit contributions to the repositories and approve pull requests. |
+| Admin | All organization members will have "Admin" permissions to all repositories in the organization, including clone, pull, and add new collaborators. |
 
-It is better to choose No Policy and let the user choose, but it can also a good idea to consciously choose Read permissions if it is easy for developers to create repositories another organization when they need more privacy.
+"No Permission" or "READ" are common options to choose. Selecting "Read" gives every member of the organization read permissions to EVERY repositories in the organization, even if the repositories visibility is set to private. Many times this is fine and the preferrable option. 
+
+##### Enabling wide and narrow sharing from a single organization.
+If you want to enable both wide and narrow sharing within a single organization, then the base permissions setting of "No Permission" combined with two other configurations might be preferrable. 
+
+In situations where it is important to have a single organization be able to hold:
+- Repositories shared to anyone in the enterprise
+- Repositories shared to anyone in the organization
+- Repositories shared to a more limited subset of users
+  
+... Then 3 settings should be combined:
+1. "No Permissions" should be selected for the base repository permissions for an organization.
+2.  Ensure repositories can opt into sharing with everyone in the enterprise by giving repository owners the permission to pick "internal visibility" upon creation at a later date. This is normally available by default, but it can be disabled at the organization or enterprise level. Optionally, there is an organizational policy to set "internal visibility" as the default visibility. Default means repository owners can select to have the repository be private but internal is the pre-checked selection.
+3. To ensure it is low friction for all organization members to have READ access for most repositories in the organization, set up a GitHub team that mirrors that organization's membership. Repository owners that want to share READ permissions to their repository with any member of the organization, can add that team to their repository. 
+
 
 #### Repository creation
 
@@ -45,6 +64,14 @@ It's important to consider your organization's policies and the nature of the pr
 | ┣ Public | Members can create public repositories visible to everyone on GitHub. | Promote open sharing and collaboration with both internal and external stakeholders. |
 | ┣  Private | Members can create private repositories accessible only to invited collaborators. | Encourage team-specific or sensitive projects that require restricted access. |
 | ┗ Internal | Members can create internal repositories visible to organization members. | Foster collaboration and knowledge sharing within the organization while keeping information proprietary. |
+
+Restricting who can make a repository public or adding process around that workflow is an important control to minimize the risk of code being made public that should not be made public. 
+
+It is worth noting here that some companies may have entirely separate Github instances for different combinations of public facing code, private code collaboration with external partners, internal code collaboration across the entire company, or code collaboration within a subset of the company. In the situation where a company has one GitHub instance for internal code and one or more organizations on the public-facing github.com for open-source, they might turn off the ability to create any repositories under public visibility in the GitHub Enterprise instance specifically for internal code. This has the additional benefit of making it less risky to let repository owners change their repository visibility themselves and less risky to enable repository forking.
+
+**Having different GitHub instances for public-facing and internal code can reduce risk of accidental disclosures.**
+
+Some companies also have add-on systems that handle repository creation. This can be useful if an enterprise wnats to capture additional information from repository creators at time of repository creation, programmatically inject standard files or create metadata in other IT systems at the same time. 
 
 #### Repository forking (Private / Internal)
 
