@@ -20,17 +20,17 @@
 
 #### Base permissions
 
-When setting up the base repository permissions to promote InnerSource within your organization on GitHub, it's important to strike a balance between transparency, collaboration, and respecting constraints and limitations. Here are some best practices for setting up repository permissions:
+Base permissions are permissions that are applied to an organization’s repositories give to all members, excluding outside collaborators. Since organization members can have permissions from multiple sources, members and collaborators who have been granted a higher level of access than the base permissions will retain their higher permission privileges. When setting up the base repository permissions to promote InnerSource within your organization on GitHub, it's important to strike a balance between transparency, collaboration, and respecting constraints and limitations. Here are some best practices for setting up repository permissions:
 
 | Repository Permission | Description |
 | --- | --- |
 | No Policy | Inherit permissions from the organization or parent repository. Provides flexibility for projects with unique permission needs. |
-| No Permission | Not recommended if any of the repositories in that org might benefit from collaboration. Completely restricts access to the repository, hindering collaboration and knowledge sharing. Repository access requires finding and talking to org owners. |
+| No Permission | Not recommended if any of the repositories in that org might benefit from collaboration. Completely restricts access to the repository, hindering collaboration and knowledge sharing. Repository access requires finding and talking to org owners. The exception is if there is another GitHub team created that automatically includes all members of the organization. In that case, repository owners can optionally add that team for READ access to their repository, which enables both easy visiblity to all members of an organization to any repository that selects for that but still allows for the possibility of a repository under that organization that can only be seen by a few people. |
 | Read | All organization members can view the repository's contents, promoting transparency and allowing employees to learn from each other's work. |
 | Write | Specific individuals or teams with the "Write" permission can make contributions to the repository. Grant to active InnerSource participants with relevant skills. |
 | Admin | Limited to a select group responsible for managing the repository and overseeing InnerSource initiatives. Handles repository configuration and review processes. |
 
-It is better to choose No Policy and let the user choose, but it is also a good idea to consciously choose Read permission.
+It is better to choose No Policy and let the user choose, but it can also a good idea to consciously choose Read permissions if it is easy for developers to create repositories another organization when they need more privacy.
 
 #### Repository creation
 
