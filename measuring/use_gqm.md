@@ -5,7 +5,7 @@
 ```mermaid
 graph LR;
     subgraph GQM[Goals, Questions, Metrics]
-        find-projects[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/master/measuring/goals/find-projects.md'>Find Projects</a>] --> who-uses[Who Uses]
+        find-projects[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/master/measuring/goals/find-projects.md' target='_blank'>Find Projects</a>] --> who-uses[Who Uses]
         reduce-duplication[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/master/measuring/goals/reduce-duplication.md'>Reduce Duplication</a>] --> who-uses[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/master/measuring/questions/who-uses.md'>Who Uses</a>]
         who-uses --> usage-count[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/master/measuring/metrics/usage-count.md'>Usage Count</a>]
         find-projects --> who-contributes
