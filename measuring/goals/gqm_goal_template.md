@@ -1,3 +1,5 @@
+[⬑ back to the overall graph](../use_gqm.md).
+
 # **Goal:** Short name of the goal
 
 A brief paragraph describing the goal and why it matters.
