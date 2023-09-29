@@ -1,4 +1,4 @@
-[⬑ back to the overall graph](../use_gqm.md).
+[⬑ back to the overall graph](../use_gqm.md)
 
 # **Metric:** Short name of the metric
 
