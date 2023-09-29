@@ -2,6 +2,8 @@
 
 *An overview of the GQM catalog.*
 
+This page works better in GitHub; [click here](https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/master/measuring/use_gqm.md).
+
 ```mermaid
 graph LR;
     subgraph GQM[Goals, Questions, Metrics]
