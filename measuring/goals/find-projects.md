@@ -1,3 +1,5 @@
+[⬑ back to the overall graph](../use_gqm.md)
+
 # **Goal:** Find InnerSource Projects
 
 We want it to be easy for people to find InnerSource projects to use.

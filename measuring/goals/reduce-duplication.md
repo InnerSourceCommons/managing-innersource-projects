@@ -1,3 +1,5 @@
+[⬑ back to the overall graph](../use_gqm.md)
+
 # **Goal:** Reduce duplication
 
 Why should be build things more than once?

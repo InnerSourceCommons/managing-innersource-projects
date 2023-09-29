@@ -1,3 +1,5 @@
+[⬑ back to the overall graph](../use_gqm.md)
+
 # **Metric:** Code contributions
 
 **Synopsis**: Count of commits that do not come from the project owner.

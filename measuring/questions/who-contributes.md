@@ -1,3 +1,5 @@
+[⬑ back to the overall graph](../use_gqm.md)
+
 # **Question:** Who contributes to the InnerSource project?
 
 There are many types of contributions - e.g. code, documentation, discussion, etc.

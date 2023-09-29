@@ -1,3 +1,5 @@
+[⬑ back to the overall graph](../use_gqm.md)
+
 # **Metric:** Usage count
 
 **Synopsis**: Count how many times the InnerSource project is used.
