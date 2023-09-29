@@ -1,3 +1,5 @@
+[⬑ back to the overall graph](../use_gqm.md).
+
 # Question: Who uses the InnerSource project?
 
 Depending on the InnerSource project, usage of the project could look something like:
