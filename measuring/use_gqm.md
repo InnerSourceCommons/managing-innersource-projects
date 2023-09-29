@@ -1,6 +1,6 @@
 # Use Goals, Questions, and Metrics
 
-*An overview of the GQM catalog.*
+*An overview of the Goals, Questions, and Metrics (GQM) catalog.*
 
 This page works better in GitHub; [click here](https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/master/measuring/use_gqm.md).
 
