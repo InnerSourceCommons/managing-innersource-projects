@@ -1,4 +1,4 @@
-[⬑ back to the overall graph](../use_gqm.md).
+[⬑ back to the overall graph](../use_gqm.md)
 
 # **Question:** A brief description of the question
 
