@@ -2,7 +2,7 @@ Goal-Question-Metric Approach
 =============================
 
 The Goal Question Metric approach defines a mechanism to provide an
-umbrella that helps to define and detailed software metrics. This can be
+umbrella that helps to define and detail software metrics. This can be
 easily extended to other backgrounds, although InnerSource method
 basically fits in this type of evaluation.
 
