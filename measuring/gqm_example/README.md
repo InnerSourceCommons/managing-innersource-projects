@@ -1,3 +1,9 @@
+# How Should I Format Goals Questions & Metrics?
+
+* [gqm_goal_template.md](../goals/gqm_goal_template.md)
+* [gqm_question_template.md](../questions/gqm_question_template.md)
+* [gqm_metric_template.md](../metrics/gqm_metric_template.md)
+
 # How Do I Add A Goal Question Metric (GQM)?
 
 See the ["Metrics" section of CONTRIBUTING.md](../../CONTRIBUTING.md#metrics).
