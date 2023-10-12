@@ -84,7 +84,7 @@ so the skillset is basically the same, with some specifics:
   challenging and needs more effort and skill.
 
 InnerSource-specific topics will need attention:
-- Transfer pricing doesn't apply to open source but use to be a
+- Transfer pricing doesn't apply to open source but tends to be a
   barrier for corporations operating in different fiscal
   jurisdictions.
 - Heavily outsourced development scenarios might require focusing
