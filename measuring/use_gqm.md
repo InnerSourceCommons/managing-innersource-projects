@@ -30,3 +30,10 @@ graph LR;
         class metric,code-contributions,usage-count metrics
     end
 ```
+
+Add your goals, questions, and metrics into this graph!  It will help you to see how others approach and interact with what you are doing.
+You may get new ideas of what metrics answer the questions you have or what additional goals your questions can support.
+See [CONTRIBUTING.md#metrics].
+
+[CONTRIBUTING.md#metrics]: https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/master/CONTRIBUTING.md#metrics
+
