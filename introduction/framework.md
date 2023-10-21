@@ -80,7 +80,7 @@ developers for their daily work. Usually, this tools cover:
 
 - Chat or instant messaging tools
 
-- Continous integration systems
+- Continuous integration systems
 
 - Document/knowledge management systems (wikis)
 
