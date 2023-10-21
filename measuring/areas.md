@@ -27,7 +27,7 @@ organization.
     to obtain trends about this type of information. Usual activity
     measurements can be the number of commits up to some date, but also
     the increase or decrease of such number of commits when comparing to
-    timeframes. This can be extended to any potential *event* that may
+    time frames. This can be extended to any potential *event* that may
     take place in a community of developers: emails, reviews, opening a
     ticket, closing a ticket, commenting on a code review or sending an
     email, but there are others more elaborated such as actions as
