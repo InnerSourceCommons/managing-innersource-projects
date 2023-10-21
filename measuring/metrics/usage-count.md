@@ -3,13 +3,13 @@
 # **Metric:** Usage count
 
 **Synopsis**: Count how many times the InnerSource project is used.
-Gain additional insight by gathering metadata on these usages such as business unit or timeframe.
+Gain additional insight by gathering metadata on these usages such as business unit or time frame.
 With this additional metadata we can see how lopsided or even the usage is spread across the company and across time.
 
 **Unit of Measurement**: Ordinal number.
 
 **Interpretation**: Higher absolute usage count is generally better.
-Higher diversity of usage across business unit or timeframe is generally better.
+Higher diversity of usage across business unit or time frame is generally better.
 
 **Measuring**
 

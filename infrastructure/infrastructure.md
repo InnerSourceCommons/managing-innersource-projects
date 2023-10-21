@@ -15,9 +15,9 @@ process are vital.
 
 Thus the selected infrastructure must be open and transparent by design.
 And this should help developers to follow some specific tracks such as
-code review processes. This should help to avoid work arounds as well.
+code review processes. This should help to avoid work-arounds as well.
 Any contributor to the new infrastructure must follow the same rules.
-There will be differences in the access level permited such as
+There will be differences in the access level permitted such as
 those developers that are newcomers versus those that already have
 commit rights.
 
@@ -143,7 +143,7 @@ The infrastructure is thus divided into three main areas:
 the basic tooling for developers.
 Selecting the right tools will help to have a clear process and that process
 will bring trustiness to the community. Any developer must follow that process
-and work arounds should not exist. As an example, any developer, even core
+and work-arounds should not exist. As an example, any developer, even core
 or trusted committers should face a review process when submitting a piece
 of code. It is clear that trusted committers have a reputation in the community
 and this will help in the review process, but they still need to go through
@@ -181,7 +181,7 @@ business units need of a monitoring infrastructure.
 ## Development process infrastructure
 
 When developing there are three main tools to take into account: the versioning
-, code review and continouos integration systems. Those should follow a process
+, code review and continuous integration systems. Those should follow a process
 similar to the one depicted in the following picture. If this process
 is familiar to you is because this is based on the [OpenStack software development
 process](https://docs.openstack.org/infra/manual/developers.html) as detailed in their wiki site.
@@ -414,4 +414,4 @@ provided such as openness.
 GitHub enterprise.
 GitLab.
 In house repositories.
-Attlasian stack.
+Atlasian stack.
