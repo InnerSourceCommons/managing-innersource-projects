@@ -16,7 +16,7 @@ You can find more information about the process in the [contributing section](ht
 
 ## Who is fostering this initiative?
 
-We thank [Bitergia] for starting this book and seeding it with its main areas of expertise such as the usual metrics and KPI's to use,
+We thank [Bitergia] (especially José Manrique López and Daniel Izquierdo) for starting this book and seeding it with its main areas of expertise such as the usual metrics and KPI's to use,
 the methodology, the metrics strategy around your general InnerSource strategy 
 and the infrastructure needed to have a successful InnerSource
 journey within a company.
