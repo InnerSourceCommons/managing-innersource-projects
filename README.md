@@ -47,7 +47,7 @@ improve their craft of InnerSource.
 
 Each chapter in the book is authored and reviewed by different people. That information can
 be found at the beginning of each chapter. This initiative is fostered by the [ISPO Working Group].
-For further questions, please contact us in _Slack_!
+For further questions, please contact us in [Slack](https://innersourcecommons.org/slack)!
 
 The book cover was created by [Sebastian Spier](https://spier.hu), using an image by user [Bru-nO](https://pixabay.com/photos/measure-unit-of-measure-meterstab-2737004/), available under the [Pixabay License](https://pixabay.com/service/license/).
 
