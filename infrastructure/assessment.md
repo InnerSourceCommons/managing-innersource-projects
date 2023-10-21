@@ -1,4 +1,4 @@
-# Comparing how inner-sourced your infrastructure is
+# Comparing How InnerSourced your Infrastructure is
 
 Just detailing the infrastructure needed within an organization to effectively
 apply InnerSource would be simplistic. This section aims at listing the
@@ -16,7 +16,7 @@ platform to share technical decisions.
 For each of those, we need to check if they are following the key aspects
 provided such as openness.
 
-**Development process infrastructure**
+## Development Process Infrastructure
 
  |                     | Openness | Transparency | Archivable | Searchable | Monitoring | Access Rights |
  |---------------------|----------|--------------|------------|------------|------------|---------------|
@@ -26,30 +26,25 @@ provided such as openness.
  | CI                  |          |              |            |            |            |               |
  | Wiki/Documentation  |          |              |            |            |            |               |
  | TODO List           |          |              |            |            |            |               |
- | Collaborative notes |          |              |            |            |            |               ||
+ | Collaborative notes |          |              |            |            |            |               |
 
-
-**Communication Channels Infrastructure**
-
+## Communication Channels Infrastructure
 
  |                     | Openness | Transparency | Archivable | Searchable | Monitoring | Access Rights |
  |---------------------|----------|--------------|------------|------------|------------|---------------|
  | Mailing lists/forums|          |              |            |            |            |               |
  | Instant channels    |          |              |            |            |            |               |
- | Questions/Answers   |          |              |            |            |            |               ||
+ | Questions/Answers   |          |              |            |            |            |               |
 
-
-**Monitoring Infrastructure**
+## Monitoring Infrastructure
 
  |                         | Openness | Transparency | Archivable | Searchable | Monitoring | Access Rights |
  |-------------------------|----------|--------------|------------|------------|------------|---------------|
  | Retrieval platform      |          |              |            |            |            |               |
  | Enrichment platform     |          |              |            |            |            |               |
- | Visualization platform  |          |              |            |            |            |               ||
+ | Visualization platform  |          |              |            |            |            |               |
 
-
-
-# Some examples of Infrastructure
+# Some Examples of Infrastructure
 
 GitHub enterprise.
 GitLab.

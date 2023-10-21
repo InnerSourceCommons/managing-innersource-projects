@@ -97,7 +97,6 @@ and mined.
   The infrastructure should allow this roles division. Anyone is welcome to read,
   but some of them are allowed to write.
 
-
 All of these are probably already known as those are key aspects when deploying
 infrastructure in open source projects. There are two great books that have already
 dealt with this issue. [_Producing Open Source Software_ by _Karl Fogel_](http://producingoss.com/)

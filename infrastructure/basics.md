@@ -53,7 +53,7 @@ process needs a large set of actions and those actions should have the
 confirmation that they are working. For this the organization and its
 business units need of a monitoring infrastructure.
 
-## Development process infrastructure
+## Development Process Infrastructure
 
 When developing there are three main tools to take into account: the versioning
 , code review and continuous integration systems. Those should follow a process
@@ -82,14 +82,14 @@ to the submitter (7: Review process -> Updated Copy of Upstream).
 
 ![Usual software development process](development_workflow.jpg)
 
-* ** Versioning system **: this tool is used by developers to store the
+* **Versioning system**: this tool is used by developers to store the
 several iterations of a given piece of software. As developers are basically
 geographically distributed, the versioning system should allow this type of
 interactions, where any developer at any time may submit a piece of code
 to be reviewed. Systems that allow off-line development are highly
 recommended as developers will be able to locally work and later submit the code.
 
-* ** Code review system **: once the piece of code is ready to be submitted,
+* **Code review system**: once the piece of code is ready to be submitted,
 this should be previously reviewed by another developer. This forces developers
 to submit that piece of code through a specific process. As an example,
 there are several ways where open source communities code review others, using
@@ -102,7 +102,7 @@ piece of source code without needing to submit that to review. Early discussions
 in the code review process helps to produce better code and having mentors
 involved in the process.
 
-* ** Continuous integration (CI) system **: this is one of the key tooling when
+* **Continuous integration (CI) system**: this is one of the key tooling when
 developing. There are already several eyes having a look at the source code
 in the code review process. With the addition of a continuous integration
 platform, any type of test should be covered: regression, unit testing, end
@@ -111,7 +111,7 @@ review process. In this way, developers can wait for the answer for the CI
 system before proceeding with the code review process. They would be sure
 that this works prior any effort from them.
 
-* ** Ticketing system **: tickets are useful to attract community to an
+* **Ticketing system**: tickets are useful to attract community to an
 InnerSource project. This helps in two specific ways: transparency of the
 development process, raising issues and having a roadmap of the issues
 to be closed. And in second place, to provide a platform for newcomers and
@@ -123,7 +123,7 @@ is key to let developers know about the community and business units needs.
 Then all of this can be discussed during the design summits defining further
 roadmaps based on users, developers and organizations requirements.
 
-* ** Documentation system **: documentation is now available to any member
+* **Documentation system**: documentation is now available to any member
 of the organization. And documentation has extra goals when producing it. Not
 only to developers, but to users. Indeed the documentation should be focused
 on several roles. From developers to users, the documentation should cover
@@ -137,7 +137,7 @@ the documentation also covers information as general as the mission and
 the type of things that the piece of code does and the things that this does
 not do.
 
-* ** Collaborative design platform **: InnerSource in large organizations
+* **Collaborative design platform**: InnerSource in large organizations
 is a synonym of geographically distributed teams. Face to face meetings are
 hard to have in this type of organizations, but there should exist infrastructure
 to bridge those difficulties. Requirements specifications, technical decisions,
@@ -149,8 +149,7 @@ by others within the organization.
 
 ![Extended usual software development process](development_workflow_all.jpg)
 
-
-## Communication channels infrastructure
+## Communication Channels Infrastructure
 
 InnerSource is about cultural change. And that cultural change is based on
 transparency and meritocracy. Communication channels should be open within
@@ -159,32 +158,30 @@ the organization, and anyone is allowed to post to them.
 Any decision out of the public channels should be later written down in these
 as any decision should be traceable and referenceable.
 
-
-* ** Mailing Lists / Forums **: this asynchronous way of communicating across the
+* **Mailing Lists / Forums**: this asynchronous way of communicating across the
 developer teams is highly effective. Being geographically distributed force
 the members of the organization to avoid direct communication channels
 when possible as people lives in different time zones.
 
-* ** Instant Messaging **: this is another asynchronous communication channel.
+* **Instant Messaging**: this is another asynchronous communication channel.
 From the usual IRC channels used in open source software, to other open
 source options such as Mattermost, this helps to lead technical discussions,
 store the log information and have all of the developers in a virtual room
 where they can discuss, but also users can enter looking for advice.
 
-* ** Questions / Answers **: this type of platforms help to raise questions and
+* **Questions / Answers**: this type of platforms help to raise questions and
 share those with the rest of the community. Users and developers can vote
 the most interesting ones and this helps to bring attention to issues of interest
 for the internal inner-sourced community.
 
-* ** Video conference **: face to face meeting definitively helps. And even more
+* **Video conference**: face to face meeting definitively helps. And even more
 when discussing about technical issues. This type of synchronous communication
 channels are useful for discussions but force people to be at the same time
 in the same virtual room. As there could be members from several time zones,
 those are more difficult to set than conversations in the instant messaging
 or mailing lists.
 
-
-## Monitoring infrastructure
+## Monitoring Infrastructure
 
 This infrastructure is needed to understand the current situation of the
 software development process and should help in the decision making process.
@@ -214,7 +211,6 @@ The following is a potential architecture that could help when accessing
 the several data layers, from raw information to detailed visualizations.
 
 ![Monitoring Infrastructure](monitoring_infrastructure.jpg)
-
 
 * **Retrieval Platform**: this first part uses as input any of the data
 sources already mentioned. Version systems, mailing lists, tickets,
