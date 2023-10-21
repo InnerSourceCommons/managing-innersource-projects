@@ -1,5 +1,4 @@
-Introduction
-============
+# What, When and How to Measure
 
 Choosing the right software metrics is not an easy task. If you have
 access to data, and in software development a lot of data can be
