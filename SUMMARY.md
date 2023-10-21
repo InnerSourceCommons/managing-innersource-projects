@@ -9,7 +9,7 @@
   * [Basic Infrastructure](infrastructure/basics.md)
   * [Comparing How Inner-Sourced Your Infra Is](infrastructure/assessment.md)
   * [Authors and Reviewers](infrastructure/authors.md)
-* [What, When and How to Measure](measuring/introduction.md)
+* [What, When and How to Measure](measuring/measuring.md)
   * [Goals using Metrics](measuring/goals.md)
     * [Use Goals, Questions, and Metrics](measuring/use\_gqm.md)
       * [Goals](use\_gqm/goals/README.md)
