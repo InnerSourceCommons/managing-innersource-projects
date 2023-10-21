@@ -18,7 +18,7 @@ process, but this also helps to be more metrics-friendly as there is a
 clear workflow followed by any developer within the organization.
 
 On the other hand, if the workflow is not well defined or if the
-development infrastructure allows to have work arounds, this may lead to
+development infrastructure allows to have work-arounds, this may lead to
 situations where shortcuts are usual, and developers and managers may get
 frustrated at some point.
 
@@ -265,7 +265,7 @@ Scalability
 And this leads to pure scalability. When allowing D2D relationships from
 any place within the organization, middle management roles tend to
 re-convert themselves to community managers that foster that type of
-behaviours, bring hackathons at home and invite third parties to
+behaviors, bring hackathons at home and invite third parties to
 participate in their projects as they participate in others.
 
 Keep Great Developers in House

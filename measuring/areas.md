@@ -82,4 +82,4 @@ organization.
     we have when measuring this type of metrics is that we can control
     where our InnerSource method is leading those metrics. Increases in
     the code complexity or less test coverage may indicate unexpected
-    behaviours that should be fixed and controlled.
+    behaviors that should be fixed and controlled.
