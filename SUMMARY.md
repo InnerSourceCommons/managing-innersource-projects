@@ -6,7 +6,7 @@
   * [Framework](introduction/framework.md)
   * [Authors and Reviewers](introduction/authors.md)
 * [Infrastructure](infrastructure/infrastructure.md)
-  * [Basic Infrastructure](infrastructure/basics.md.md)
+  * [Basic Infrastructure](infrastructure/basics.md)
   * [Comparing How Inner-Sourced Your Infra Is](infrastructure/assessment.md)
   * [Authors and Reviewers](infrastructure/authors.md)
 * [What, When and How to Measure](measuring/introduction.md)
