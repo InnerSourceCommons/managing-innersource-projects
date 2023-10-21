@@ -1,10 +1,12 @@
+# Authors and Reviewers
+
 ## Author(s)
 
 Chronological order:
 
 * Daniel Izquierdo Cortázar. [Bitergia](http://bitergia.com).
 
-# Reviewer(s)
+## Reviewers
 
 Chronological order:
 
