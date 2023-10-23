@@ -2,7 +2,7 @@
 
 *An overview of the Goals, Questions, and Metrics (GQM) catalog.*
 
-This page works better in GitHub; [click here](https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/master/measuring/use_gqm.md).
+This page works better in GitHub; [click here](https://bit.ly/3tOrsbO).
 
 ```mermaid
 graph LR;
