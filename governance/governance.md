@@ -62,11 +62,12 @@ adaptation.
 
 ## Foster usage of InnerSource software
 
-InnerSource-developed software might suffer from the same kind of
-distrust open source has. Usage is the base: don't expect
-contributions without users. And the borders applying to
-InnerSource limit the audience, so this can become challenging for
-small or varied corporations.
+There are at least three reasons for fostering the usage of
+InnerSource-developed software:
+- It might suffer from the same kind of distrust open source has.
+- Usage is the base: don't expect contributions without users.
+- The borders applying to InnerSource limit the audience, so this
+  can become challenging for small or varied corporations.
 
 ### Activities
 
