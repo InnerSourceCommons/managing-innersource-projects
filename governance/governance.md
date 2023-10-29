@@ -30,7 +30,7 @@ Usually the governance model is a written document containing:
 -  monitoring policies and mechanisms description
 
 
-# Govenance Standards/Models
+## Governance Standards/Models
 
 There are some initiatives describing what good corporate open
 source governance means. The most mature one is the _Good Governance
