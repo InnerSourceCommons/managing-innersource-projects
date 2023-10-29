@@ -34,7 +34,7 @@ Usually the governance model is a written document containing:
 There are some initiatives describing what good corporate open
 source governance means. The most mature one is the _Good Governance
 Initiative[^2]_ by the OSPO Alliance,
-which  has already released the first version (v1) of its framework.
+which has already released the first version (v1) of its framework.
 
 Coming versions of this framework are expected to consider
 InnerSource as a corporate practice managed by the Open Source
