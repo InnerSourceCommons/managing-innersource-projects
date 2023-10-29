@@ -1,8 +1,10 @@
+# Authors and Reviewers
+
 ## Authors
 
 (Chronological order)
 
-- Daniel Izquierdo  ([Bitergia](http://bitergia.com))
+- Daniel Izquierdo ([Bitergia](http://bitergia.com))
 
 ## Reviewers
 

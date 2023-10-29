@@ -43,7 +43,7 @@ According to the Business Dictionary, governance is defined as:
 >viability of the organization
 
 In open source, governance is described in the "governance
-model" document, defined by OSSWatch[^1] as:
+model" document, defined by [OSSWatch](http://oss-watch.ac.uk/resources/governancemodels) as:
 
 >A governance model describes the roles that project participants 
 >can take on and the process for decision making within the project. 
@@ -80,7 +80,7 @@ developers for their daily work. Usually, this tools cover:
 
 - Chat or instant messaging tools
 
-- Continous integration systems
+- Continuous integration systems
 
 - Document/knowledge management systems (wikis)
 
@@ -143,6 +143,3 @@ Open measurement gives a lot of benefits for our InnerSource community:
 
 - transparency, as trust generator for third parties and fairness
   for our InnerSource community
-
-
-[^1]: http://oss-watch.ac.uk/resources/governancemodels

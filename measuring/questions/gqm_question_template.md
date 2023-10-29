@@ -2,7 +2,7 @@
 
 # **Question:** A brief description of the question
 
-(Optional) Add any additional description oof the question.
+(Optional) Add any additional description of the question.
 
 ## Related Metrics
 

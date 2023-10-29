@@ -16,15 +16,14 @@ You can find more information about the process in the [contributing section](ht
 
 ## Who is fostering this initiative?
 
-Bitergia, as neutral actor in the software development analytics field aims at
-sharing the knowledge acquire during the last years. This book is currently focused on its main areas of expertise such as the usual metrics and KPI's to use,
+We thank [Bitergia] (especially José Manrique López and Daniel Izquierdo) for starting this book and seeding it with its main areas of expertise such as the usual metrics and KPI's to use,
 the methodology, the metrics strategy around your general InnerSource strategy 
-or the infrastructure needed to have a successful InnerSource
-journey within your company.
+and the infrastructure needed to have a successful InnerSource
+journey within a company.
 
-This book is open to anyone interested in InnerSource, either you are 
-applying this and you want to share your use case or you have successfully 
-applied InnerSource in your internal software development process.
+The book is now managed by the [ISPO Working Group].
+It is open for use and contribution by anyone interested in InnerSource.
+Come join us and contribute!
 
 ## How Do We Structure Goals, Questions, and Metrics?
 
@@ -39,29 +38,21 @@ See the ["Metrics" section of CONTRIBUTING.md](./CONTRIBUTING.md#metrics).
 
 ## References
 
-For further reading, we encourage you to participate in the [InnerSource Commons site](https://paypal.github.io/InnerSourceCommons/)
-funded by PayPal where dozens of companies are already sharing experiences and working to
-understand all of this. It is a great place to understand how others are facing this
-new methodology as we are all learning from this incipient process.
-
-And finally, if you're interested in participating from a survey perspective and share
-your insights about this within your organization, please have a look at the
-[InnerSource Survey](https://paypal.github.io/InnerSourceCommons/assets/files/InnerSourceCommonsSurvey2016.pdf).
+For further reading, we encourage you to participate in the [InnerSource Commons],
+a non-profit foundation where dozens of companies are already sharing experiences and working to
+improve their craft of InnerSource.
 
 
 ## Acknowledgements
 
 Each chapter in the book is authored and reviewed by different people. That information can
-be found at the beginning of each chapter. This initiative is fostered by [Bitergia](https://bitergia.com)
-although given some technical issues, we finally decided to open this under a personal
-repository.
-
-For further questions, please contact José Manrique López or Daniel Izquierdo:
-(jsmanrique|dizquierdo) at bitergia dot com.
-
-
-Thanks for your time here!
+be found at the beginning of each chapter. This initiative is fostered by the [ISPO Working Group].
+For further questions, please contact us in [Slack](https://innersourcecommons.org/slack)!
 
 The book cover was created by [Sebastian Spier](https://spier.hu), using an image by user [Bru-nO](https://pixabay.com/photos/measure-unit-of-measure-meterstab-2737004/), available under the [Pixabay License](https://pixabay.com/service/license/).
 
 All of the content found in this repository is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+[Bitergia]: https://bitergia.com/
+[ISPO Working Group]: https://innersourcecommons.org/community/#ispo
+[InnerSource Commons]: https://innersourcecommons.org/
