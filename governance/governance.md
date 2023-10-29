@@ -79,7 +79,7 @@ so the skillset is basically the same, with some specifics:
   products is not needed.
 - InnerSource usually deploys to a single instance. Then, the
   needed scope for deployment training might be narrowed down.
-- Motivation: InnerSource is less sexy than open source, and the
+- Motivation: InnerSource is less exciting than open source, and the
   pool of possible contributors is smaller. Motivation is more
   challenging and needs more effort and skill.
 
@@ -92,16 +92,17 @@ InnerSource-specific topics will need attention:
   developers inhouse.
 
 InnerSource supervision ought to focus on different questions:
-a) Purpose: controlling the redundant developments and ensuring
+
+* Purpose: controlling the redundant developments and ensuring
    InnerSource software is proactively managed.
-b) Push/promote integrating InnerSource components and
+* Push/promote integrating InnerSource components and
    contributing upstream.
-c) Identify where InnerSource are de-facto or critical solutions
+* Identify where InnerSource are de-facto or critical solutions
    and assess suitability (avoid InnerSource monoliths).
 
 There's usually no need to curate enterprise-grade InnerSource
 software or to manage open source software development skills and
-resources (GGI activities 1.4 and 1.5.
+resources (GGI activities 1.4 and 1.5).
 
 In exchange, software and documentation findability are
 challenging because public search engines usually don't work
@@ -195,13 +196,13 @@ Under open source, a sense of belonging to any local community
 smoothly transitions into the global community. The feeling crosses
 formal boundaries the same way the software does.
 
-In InnerSource there's also a global community. (In fact, it is an
+In InnerSource there's also a [global community](https://innersourcecommons.org/). (In fact, it is an
 open source one, but that's another tale to be told on other
 occasions).
 
 But in contrast to open source, while the global InnerSource
 community shares information and resources, they do **not** share
-**their InnerSource production***. The presence of boundaries for
+**their InnerSource production**. The presence of boundaries for
 the InnerSource production becomes thus very present and remarks
 the separation between the local community and the global one.
 
@@ -209,7 +210,7 @@ the separation between the local community and the global one.
 
 As part of the open source spirit in which InnerSource roots,
 organizations are encouraged to engage with special interest groups
-(SIG's) beyond their borders, and in particular with the global
+(SIG) beyond their borders, and in particular with the global
 InnerSource community.
 
 Publicly asserting one's InnerSource practice and showcasing related
