@@ -29,7 +29,6 @@ Usually the governance model is a written document containing:
 -  contribution process policies description
 -  monitoring policies and mechanisms description
 
-
 ## Governance Standards/Models
 
 There are some initiatives describing what good corporate open
