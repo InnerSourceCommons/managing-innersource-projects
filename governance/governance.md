@@ -33,8 +33,8 @@ Usually the governance model is a written document containing:
 # Govenance Standards/Models
 
 There are some initiatives describing what good corporate open
-source governance means. The most mature one is the _[Good Governance
-Initiative](https://ospo-alliance.org/ggi/)_ by the OSPO Alliance,
+source governance means. The most mature one is the _Good Governance
+Initiative[^2]_ by the OSPO Alliance,
 which  has already released the first version (v1) of its framework.
 
 Coming versions of this framework are expected to consider
@@ -148,8 +148,7 @@ Dependency management needs to take care of both:
 The internal context is a source of concerns. The specific set of
 concerns depends very much on each organization and vary a lot, but
 the individual concerns are usually shared with other organizations.
-For that reason, the InnerSource Commons collects
-[patterns](https://github.com/InnerSourceCommons/InnerSourcePatterns),
+For that reason, the InnerSource Commons collects patterns[^3],
 so solutions can be reused, either as they are or as inspiration for
 a local variant.
 
@@ -158,9 +157,8 @@ Metrics tend to help provide trust.
 But the corporate motivation for embracing InnerSource might be
 different (silo breakage, etc) and independent of approaching
 open source. These local differences totally affect the metrics
-architecture. See the
-[metrics pattern](https://github.com/InnerSourceCommons/InnerSourcePatterns/blob/main/patterns/1-initial/introducing-metrics-in-innersource.md)
-published by InnerSource Commons.
+architecture. See the metrics[^4] pattern published by InnerSource
+Commons.
 
 ## Spread the (InnerSource) culture
 
@@ -196,8 +194,8 @@ Under open source, a sense of belonging to any local community
 smoothly transitions into the global community. The feeling crosses
 formal boundaries the same way the software does.
 
-In InnerSource there's also a [global community](https://innersourcecommons.org/). (In fact, it is an
-open source one, but that's another tale to be told on other
+In InnerSource there's also a global community[^5]. (In fact, it is
+an open source one, but that's another tale to be told on other
 occasions).
 
 But in contrast to open source, while the global InnerSource
@@ -223,15 +221,12 @@ include:
 
 Engagement with the internal community is a fundamental part of
 InnerSource. But as users of software of other teams, it is in
-self-interest to secure long term support or knowledge transfer
-from upstream. The
-[code-consumers pattern](https://github.com/InnerSourceCommons/InnerSourcePatterns/blob/main/patterns/1-initial/code-consumers.md)
-is related to this.
+self-interest to secure long-term support or knowledge transfer
+from upstream. The _code-consumers_ pattern[^6] is related to this.
 
 Usually, there's scant or no need for internal InnerSource
-[purchase policies](https://ospo-alliance.org/ggi/activities/open_source_procurement_policy/)
-but if needed, it is a natural task for the InnerSource Program
-Office  (ISPO).
+purchase policies[^7], but if needed, it is a natural task for the
+InnerSource Program Office  (ISPO).
 
 ## Make InnerSource Strategic for the organization
 
@@ -254,3 +249,18 @@ digital sovereignty, and digital transformation. Think of your
 organization and its context and find other goals InnerSource may
 contribute towards. Then communicate it and get as much air cover
 from your executives as you can.
+
+
+[^1]: http://oss-watch.ac.uk/resources/governancemodels
+
+[^2]: https://ospo-alliance.org/ggi/
+
+[^3]: https://github.com/InnerSourceCommons/InnerSourcePatterns
+
+[^4]: https://github.com/InnerSourceCommons/InnerSourcePatterns/blob/main/patterns/1-initial/introducing-metrics-in-innersource.md
+
+[^5]: https://innersourcecommons.org/
+
+[^6]: https://github.com/InnerSourceCommons/InnerSourcePatterns/blob/main/patterns/1-initial/code-consumers.md
+
+[^7]: https://ospo-alliance.org/ggi/activities/open_source_procurement_policy/
