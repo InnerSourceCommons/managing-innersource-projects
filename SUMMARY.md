@@ -24,3 +24,4 @@
   * [Examples of Interest](measuring/metrics.md)
   * [References](measuring/references.md)
   * [Authors and Reviewers](measuring/authors.md)
+* [Governance](governance/governance.md)
