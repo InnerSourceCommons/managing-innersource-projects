@@ -20,7 +20,7 @@ jobs:
     - name: Vale Linting
       uses: errata-ai/vale-action@reviewdog
       with:
-        files: '["introduction/", "infrastructure/", "measuring/"]'
+        files: '["introduction/", "infrastructure/", "measuring/", "governance/"]'
         vale_flags: "--glob=*.md"
         filter_mode: added
         debug: true
