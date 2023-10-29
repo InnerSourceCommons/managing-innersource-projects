@@ -250,7 +250,6 @@ organization and its context and find other goals InnerSource may
 contribute towards. Then communicate it and get as much air cover
 from your executives as you can.
 
-
 [^1]: http://oss-watch.ac.uk/resources/governancemodels
 
 [^2]: https://ospo-alliance.org/ggi/
