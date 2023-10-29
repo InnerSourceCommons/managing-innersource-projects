@@ -29,11 +29,11 @@ Usually the governance model is a written document containing:
 -  contribution process policies description
 -  monitoring policies and mechanisms description
 
-## Governance Standards/Models
+## Governance standards/models
 
 There are some initiatives describing what good corporate open
 source governance means. The most mature one is the _Good Governance
-Initiative[^2]_ by the OSPO Alliance,
+Initiative (GGI)[^2]_ by the OSPO Alliance,
 which has already released the first version (v1) of its framework.
 
 Coming versions of this framework are expected to consider
@@ -228,7 +228,7 @@ Usually, there's scant or no need for internal InnerSource
 purchase policies[^7], but if needed, it is a natural task for the
 InnerSource Program Office  (ISPO).
 
-## Make InnerSource Strategic for the organization
+## Make InnerSource strategic for the organization
 
 Most times, InnerSource is a corporate cultural transformation. Such
 changes need time to overcome previous inertia and even longer to
