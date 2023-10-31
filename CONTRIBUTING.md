@@ -37,11 +37,11 @@ When using titles in Markdown, use # for main title, ## for the second header ti
 At that time this manual step will no longer be needed.
 
 [Goal-Question-Metric]: https://en.wikipedia.org/wiki/GQM
-[goals]: https://github.com/InnerSourceCommons/managing-inner-source-projects/tree/master/measuring/goals
-[questions]: https://github.com/InnerSourceCommons/managing-inner-source-projects/tree/master/measuring/questions
-[metrics]: https://github.com/InnerSourceCommons/managing-inner-source-projects/tree/master/measuring/metrics
-[goal template]: https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/master/measuring/goals/gqm_goal_template.md
-[question template]: https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/master/measuring/questions/gqm_question_template.md
-[metric template]: https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/master/measuring/metrics/gqm_metric_template.md
-[edit the MermaidJS source]: https://github.com/InnerSourceCommons/managing-inner-source-projects/edit/master/measuring/use_gqm.md
-[graph]: https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/master/measuring/use_gqm.md
+[goals]: https://github.com/InnerSourceCommons/managing-inner-source-projects/tree/main/measuring/goals
+[questions]: https://github.com/InnerSourceCommons/managing-inner-source-projects/tree/main/measuring/questions
+[metrics]: https://github.com/InnerSourceCommons/managing-inner-source-projects/tree/main/measuring/metrics
+[goal template]: https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/goals/gqm_goal_template.md
+[question template]: https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/questions/gqm_question_template.md
+[metric template]: https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/metrics/gqm_metric_template.md
+[edit the MermaidJS source]: https://github.com/InnerSourceCommons/managing-inner-source-projects/edit/main/measuring/use_gqm.md
+[graph]: https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/use_gqm.md
