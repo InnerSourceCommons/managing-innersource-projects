@@ -12,7 +12,7 @@ within this respect in a way that this is useful for third parties. For this, we
 actively looking for reviewers that can help in this process.
 For those that have already contributed to the book, thanks a lot!
 
-You can find more information about the process in the [contributing section](https://github.com/dicortazar/managing-inner-source-projects/blob/master/CONTRIBUTING.md).
+You can find more information about the process in the [contributing section](https://github.com/dicortazar/managing-inner-source-projects/blob/main/CONTRIBUTING.md).
 
 ## Who is fostering this initiative?
 
