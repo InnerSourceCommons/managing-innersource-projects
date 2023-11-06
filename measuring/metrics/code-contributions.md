@@ -5,10 +5,10 @@
 **Synopsis**: Count of commits that do not come from the project owner.
 Gain additional insight by gathering metadata on these commits such as committer identity, committer business unit, or or commit timestamp.
 
-**Unit of Measurement**: Ordinal number 
+**Unit of Measurement**: Ordinal number
 
 **Interpretation**: Higher contribution count is generally better.
-Higher diversity of contribution across people, business units or timeframe is generally better
+Higher diversity of contribution across people, business units or time frame is generally better
 
 **Measuring**
 

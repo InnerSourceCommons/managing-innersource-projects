@@ -1,5 +1,4 @@
-Introduction
-============
+# What, When and How to Measure
 
 Choosing the right software metrics is not an easy task. If you have
 access to data, and in software development a lot of data can be
@@ -10,7 +9,7 @@ This report aims to formalize a strategy and a method to identify,
 acquire and understand metrics, and how to apply those to the inner
 source world. Part of the information found in this document is built on
 top of previous literature and talks about InnerSource. However, none
-of the former seems to focus especifically on the metrics needed to
+of the former seems to focus specifically on the metrics needed to
 understand if a process is working as expected, or if substantial
 changes are required.
 
@@ -35,7 +34,7 @@ Rewarding systems on top of the metrics are also recommended, but always
 with a specific focus on fostering some actions such as pushing
 developers to commit their first pull request[^1]. The point about
 having metrics is that people can cheat on them, so when fostering
-specific behaviours, those should be use in short periods of time to
+specific behaviors, those should be use in short periods of time to
 help developers to get used to some way of developing. The most
 recommended use of metrics is to track the performance of the whole
 community and how to avoid bottlenecks and actions that may delay their
