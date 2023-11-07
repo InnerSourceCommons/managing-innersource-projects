@@ -24,6 +24,8 @@ If you have repositories that must be extremely tightly controlled, consider man
 
 ## Enterprise Setting
 
+_Please be aware that the configuration options described here were valid at the time of writing (2023-11), but GitHub configuration options do change over time. Please refer to official GitHub documentation for latest configuration options._
+
 ### Repository policies set at Enterprise Level
 If your GitHub organization is part of an enterprise on GitHub, there are enterprise level configuration settings that administrators of that Enterprise can change. If you are not an enterprise admin, you will likely not even be able to see these settings.
 
