@@ -1,10 +1,10 @@
 # Índice
 
-* [Resumo](RESUMO.md)
-* [Introdución](introducion/introducion.md)
-  * [Escenarios](introducion/escenarios.md)
-  * [Marco de traballo](introducion/marco.md)
-  * [Autoría](introducion/autoria.md)
+* [Resumo](README.md)
+* [Introdución](introduction/introduction.md)
+  * [Escenarios](introduction/scenarios.md)
+  * [Marco de traballo](introduction/framework.md)
+  * [Autoría](introduction/authors.md)
 * [Infraestrutura](infraestrutura/infraestrutura.md)
   * [Infraestrutura básica](infraestrutura/infraestrutura.md#infraestrutura-basica)
     * [Infraestrutura do proceso de desenvolvemento](infraestrutura/infraestrutura.md#infraestrutura-do-proceso-de-desenvolvemento)
