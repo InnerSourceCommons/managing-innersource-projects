@@ -1,58 +1,47 @@
-# Managing InnerSource Projects book
+# Resumo
 
-<img src="managing-innersource-projects-cover.jpg" title="Managing InnerSource Projects">
+<img src="managing-innersource-projects-cover_gl.jpg" title="Xestión de proxectos InnerSource">
 
-This book is intended to bring, from a managerial perspective, the several aspects needed
-when introducing InnerSource methodologies into enterprises.
+Este libro busca proporcionar información sobre a xestión de distintos aspectos indispensables á hora de empregar InnerSource nas empresas.
 
-This book is a work in progress process where anyone is more than welcome to contribute
-in any possible way. Ideas, comments, typos, full paragraphs or sections would be
-great. This repository aims at bringing specialized knowledge from the industry
-within this respect in a way that this is useful for third parties. For this, we are
-actively looking for reviewers that can help in this process.
-For those that have already contributed to the book, thanks a lot!
+É o resultado dun proceso aínda en marcha, no que calquera persoa está convidada a contribuír de calquera xeito posible. As aportacións en forma de ideas, comentarios, correccións de erros tipográficos, ou mesmo cambios en parágrafos ou seccións enteiras, serán benvidas. Este repositorio ten como obxectivo aportar coñecemento especializado desde a industria de maneira que sexa útil a terceiros/as. Para isto, estamos na procura activa de revisores/as que poidan colaborar neste proceso e expresamos o noso agradecemento a aquelas persoas que xa fixeron algunha contribución ao libro.
 
-You can find more information about the process in the [contributing section](https://github.com/dicortazar/managing-inner-source-projects/blob/main/CONTRIBUTING.md).
+Pode atopar máis información sobre este proceso na [sección de contribucións](https://github.com/dicortazar/managing-inner-source-projects/blob/master/CONTRIBUTING.md).
 
-## Who is fostering this initiative?
+## Quen está a impulsar esta iniciativa?
 
-We thank [Bitergia] (especially José Manrique López and Daniel Izquierdo) for starting this book and seeding it with its main areas of expertise such as the usual metrics and KPI's to use,
-the methodology, the metrics strategy around your general InnerSource strategy 
-and the infrastructure needed to have a successful InnerSource
-journey within a company.
+Bitergia, como actor neutral no eido da análise do desenvolvemento de software, tenta compartir o coñecemento adquirido durante os últimos anos. Este libro céntrase nas súas principais áreas de especialización, como son o uso de métricas e KPI, a metodoloxía, as métricas arredor da estratexia xeral de InnerSource ou a infraestrutura necesaria coa que percorrer con éxito a senda de InnerSource dentro da súa empresa.
 
-The book is now managed by the [ISPO Working Group].
-It is open for use and contribution by anyone interested in InnerSource.
-Come join us and contribute!
+Este documento está aberto a calquera con interese en InnerSource, tanto se aínda está en proceso de aplicalo e quere compartir o seu caso, como se xa está a empregar con éxito InnerSource no seu proceso interno de desenvolvemento de software.
 
-## How Do We Structure Goals, Questions, and Metrics?
+## Referencias
 
-Review the [Goal-Question-Metric Approach](./measuring/gqm.md) to further understand how we structure goals, questions, and metrics.
-Review [GQM use cases and user journeys](./measuring/gqm_example/README.md) to guide their development.
+Se desexa ampliar esta información, animámolo a participar na [web InnerSource Commons](https://paypal.github.io/InnerSourceCommons/) financiada por PayPal, na que ducias de empresas xa están a compartir as súas experiencias e a traballar na procura dun mellor entendemento do funcionamento de InnerSource. Un gran recurso co que poder considerar o enfoque doutras compañías, ao tempo que se aprende durante o proceso.
 
-We document goals, questions, and metrics in separate folders in the [measuring](./measuring) directory.
-You can browse all goals, questions, and metrics in [graph format](./measuring/use_gqm.md). 
+Para rematar, se vostede está interesado/a en participar dunha enquisa na que compartir os coñecementos da súa organización sobre a materia, bótelle unha ollada á [Enquisa de InnerSource](https://paypal.github.io/InnerSourceCommons/assets/files/InnerSourceCommonsSurvey2016.pdf).
 
-Add in your own scenarios to the graph!
-See the ["Metrics" section of CONTRIBUTING.md](./CONTRIBUTING.md#metrics).
+## Agradecementos
 
-## References
+Cada capítulo do libro orixinal (en inglés) foi escrito e revisado por diferentes persoas. Esa información está dispoñible ao comezo de cada capítulo. Esta iniciativa foi impulsada por [Bitergia](https://bitergia.com); aínda que, por mor dalgúns problemas técnicos, finalmente decidiron colgar o libro nun repositorio persoal.
 
-For further reading, we encourage you to participate in the [InnerSource Commons],
-a non-profit foundation where dozens of companies are already sharing experiences and working to
-improve their craft of InnerSource.
+Se ten algunha pregunta, pode pórse en contacto con José Manrique López ou Daniel Izquierdo (jsmanrique | dizquierdo) en bitergia punto com.
 
+Grazas polo seu interese.
 
-## Acknowledgements
+A portada do libro foi creada por [Sebastian Spier](https://spier.hu), a partir dunha imaxe do usuario [Bru-nO](https://pixabay.com/photos/measure-unit-of-measure-meterstab-2737004/), dispoñible baixo a [licenza Pixabay](https://pixabay.com/service/license/).
 
-Each chapter in the book is authored and reviewed by different people. That information can
-be found at the beginning of each chapter. This initiative is fostered by the [ISPO Working Group].
-For further questions, please contact us in [Slack](https://innersourcecommons.org/slack)!
+Todo o contido que se atopa neste repositorio ten licenza [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
-The book cover was created by [Sebastian Spier](https://spier.hu), using an image by user [Bru-nO](https://pixabay.com/photos/measure-unit-of-measure-meterstab-2737004/), available under the [Pixabay License](https://pixabay.com/service/license/).
+## Sobre a tradución
 
-All of the content found in this repository is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Esta tradución á lingua galega foi elaborada pola [AMTEGA](https://amtega.xunta.gal) (Xunta de Galicia). Cofinanciada a través de Fondos Europeos.
 
-[Bitergia]: https://bitergia.com/
-[ISPO Working Group]: https://innersourcecommons.org/community/#ispo
-[InnerSource Commons]: https://innersourcecommons.org/
+Distribúese baixo licenza Creative Commons Atribución - Compartir Igual 4.0 Internacional (CC BY-SA 4.0). Pode consultar as condicións desta licenza [aquí](https://creativecommons.org/licenses/by‐sa/4.0/deed.gl).
+
+**Autoras da tradución:**
+
+* Leticia Gómez Cadahía
+* María Lucía González Castro
+* Vanesa Pol Hermida
+
+<img src="fondos-publicos.png" title="Fondos Públicos">

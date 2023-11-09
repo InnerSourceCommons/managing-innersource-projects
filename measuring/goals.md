@@ -1,47 +1,16 @@
-Goals using Metrics
+Obxectivos no uso das métricas
 ===================
 
-This section aims at providing a strategy for your InnerSource metrics
-that help to understand the path from your initial process till a full
-InnerSource organization.
+Este apartado pretende proporcionar unha estratexia de métricas InnerSource que axude a entender o camiño a seguir desde o inicio do proceso ata que este atinxa toda a organización.
 
-It is important to remark that metrics useful for some organizations are
-not that useful in other contexts. This is similar to the open source
-projects where a project is not that similar to other in terms of
-governance, licenses, infrastructure or detailed process, but they are
-producing open source software and working as a community. This handbook
-has a similar goal, to detail how an ideal InnerSource project would
-be, but there are not two organizations using the same InnerSource
-approach.
+É importante destacar que as mesmas métricas que poden ser de utilidade para algunhas organizacións poden non ser tan útiles en tódolos contextos. De igual xeito, os proxectos de software libre non teñen por que ser semellantes entre si en termos de gobernación, licenzas, infraestrutura ou fases do proceso, aínda se todos están a producir software libre ou a traballar en comunidade. Este manual xorde cun obxectivo similar, o de pormenorizar como sería o proxecto InnerSource ideal, tendo en conta que non hai dúas organizacións que utilicen o mesmo enfoque.
 
-Thus, metrics useful for some contexts, for example technological
-organizations, might not apply to other context such as banks due to
-external factors such as legal regulations that are even different from
-country to country.
+Por mor disto, é posible que as métricas útiles en certas situacións, como as das organizacións tecnolóxicas, non sempre sexan aplicables noutros escenarios como, por exemplo, os bancos. Isto débese a factores externos, pois incluso as regulacións legais poden variar dun país a outro.
 
-In addition to all of this, when measuring InnerSource, there are three
-main purposes to use metrics: check on going work, lead process
-improvement[^5] and motivational aspects.
+Por último, no caso de InnerSource, o uso de métricas cumpre tres propósitos principais: comprobar o traballo en curso, liderar a mellora[^5] no proceso e avaliar aspectos motivacionais.
 
--   **Check** on going work: this helps to understand where the
-    development is right now. To be aware of the status helps to
-    understand how fast things are changing when a new process is in the
-    pipeline. This also helps to go from A to B and even trying several
-    approaches to the same problem and have tests for this.
+- **Comprobar** o traballo en curso: permite identificar os puntos en desenvolvemento en tempo real. Se se coñece o estado do proxecto pódese saber tamén a velocidade coa que avanza un novo proceso en marcha. Isto non só favorece o paso de A a B, senón que permite probar distintos enfoques para un mesmo problema e realizar varias probas.
 
--   **Lead** process improvement: InnerSource means a change in how
-    process works in the following. From a hierarchical way to a flatter
-    way of working, InnerSource needs indicators to help to determine
-    if that process improvement is properly working. And if this is not
-    working, then using another approach or apply other policies.
+- **Liderar** a mellora do proceso: InnerSource supón un punto de inflexión no seu funcionamento. Precísanse indicadores que determinen se a mellora do proceso funciona correctamente, tanto traballando dun xeito moi xerarquizado como moi pouco. E cando non da resultado emprégase outro enfoque ou aplícanse outras políticas.
 
--   **Motivational** aspects: InnerSource also means cultural change,
-    and this is not usually taken into account in other methodologies.
-    Indeed, this cultural change is identified in InnerSource as key.
-    This should be the type of actions that will help to migrate from a
-    traditional way of working to a more transparent and community-
-    oriented way to work. And metrics can help to lead this process.
-    First, to let developers know where they are and how their process
-    is working, but also to have some fun within the work and
-    competitions through challenges, hackathons and other measurable
-    activities that lead to a more community-oriented organizations.
+- Os aspectos **motivacionais**: InnerSource supón tamén un cambio cultural, algo que non se adoita considerar sequera noutras metodoloxías. De feito, este cambio cultural é a chave de InnerSource. Pois estas son as accións que axudan a migrar dunha forma de traballo tradicional a outra máis transparente e orientada á comunidade. A guía deste proceso poden ser as métricas. En primeiro lugar, para situar aos/ás desenvolvedores/as e mostrarlles como está a funcionar o proceso mais, tamén, para desfrutar no traballo e nas competicións, retos, hackatóns e outras actividades analizables que promoven organizacións máis orientadas á comunidade.

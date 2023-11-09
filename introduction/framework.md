@@ -1,145 +1,84 @@
-# InnerSource framework
+# Marco de traballo
 
-By adopting InnerSource methodology and principles, organizations get:
+Ao adoptar os procesos e principios de InnerSource, as organizacións conseguen:
 
--   Effective resources management, with better code/knowledge reuse
-    and cost sharing across the different units
+- Unha xestión eficaz dos recursos, cunha mellor reutilización do código e do coñecemento e un mellor reparto dos costes entre as distintas unidades empresariais.
+- Innovacións ou melloras tecnolóxicas máis rápidas, xa que o código se desenvolve de forma colaborativa e transparente por medio das contribucións recibidas das distintas áreas da empresa interesadas.
+- Un equipo de traballo apoderado e máis comprometido, ao permitirlles formar parta da folla de ruta de desenvolvemento da compañía.
+-	Maior innovación interna, que permite ao persoal propor novas ideas baseadas na tecnoloxía e coñecementos da empresa.
 
--   Faster technology innovations/improvements, since the code is
-    developed collaboratively and transparently by interested people and
-    units
+Pero calquera proxecto, incluso os de software libre, necesitará un marco de traballo que poida axudar ao persoal a definir ou dar resposta aos seguintes aspectos:
 
--   Empowered employees, increasing engagement by letting them to be
-    part of companies development roadmap
+- Políticas claras de contribución e para a xestión da meritocracia (ou factocracia).
+- Ferramentas e canles de comunicación.
+- Unha cultura comunitaria.
+- Quen asume os gastos?
+- Métricas e KPI.
 
--   Higher inner-innovation, by allowing employees to propose new ideas
-    and implementations based on company’s technology/knowledge
+Vexamos pois o *marco de traballo de InnerSource*.
 
-But any project, even open source ones, need a framework
-that support them defining:
+## Gobernación
 
--   clear policies for contributors, to manage meritocracy (or do-cracy)
+O dicionario define a gobernación como:
 
--   tools and communication channels
+>O establecemento de políticas e a supervisión continua da súa correcta aplicación polos membros do órgano de goberno dunha organización. Inclúe os mecanismos necesarios para equilibrar os poderes dos membros (coa responsabilidade asociada) e o seu deber primordial de aumentar a prosperidade e viabilidade da organización.
 
--   community culture
+Para o software libre, a gobernación descríbese no documento «modelo de gobernación» de OSSWatch[^1]:
 
--   who pays it?
+>O modelo de gobernación describe os roles que poden asumir os/as participantes dun proxecto e o proceso de toma de decisións dentro do mesmo. Ademais, a gobernación describe as regras básicas para a participación no proxecto e os procesos para a comunicación e o intercambio entre o equipo e a comunidade.
 
--   metrics and KPIs
+Xeralmente, o modelo de gobernación é un documento escrito que contén:
 
-Let's introduce the *InnerSource framework*.
+- As metas do proxecto.
+- A definición de infraestruturas de traballo, xestión e colaboración.
+- A definición dos roles e responsabilidades.
+- Os mecanismos de soporte na comunidade.
+- A descrición das políticas do proceso de toma de decisións.
+- A descrición das políticas do proceso de contribución.
+- A descrición das políticas e mecanismos de seguimento.
 
-## Governance
+## Infraestrutura técnica
 
-According to the Business Dictionary, governance is defined as:
+Por infraestrutura referímonos ás ferramentas empregadas polo equipo de desenvolvemento no seu traballo diario en InnerSource. Con frecuencia, estas ferramentas inclúen:
 
->Establishment of policies, and continuous monitoring
->of their proper implementation, by the members of the
->governing body of an organization. It includes the
->mechanisms required to balance the powers of the
->members (with the associated accountability), and
->their primary duty of enhancing the prosperity and
->viability of the organization
+- Sistemas de xestión de código fonte.
+- Sistemas de seguimento de incidencias ou tarefas.
+- Listaxes de correo e foros de «preguntas e respostas».
+- Ferramentas de chat ou de mensaxería instantánea.
+- Sistemas de integración continua.
+- Sistemas de xestión de documentación e coñecemento (wikis).
 
-In open source, governance is described in the "governance
-model" document, defined by [OSSWatch](http://oss-watch.ac.uk/resources/governancemodels) as:
+## A colaboración como cambio cultural
 
->A governance model describes the roles that project participants 
->can take on and the process for decision making within the project. 
->In addition, it describes the ground rules for participation in the 
->project and the processes for communicating and sharing within 
->the project team and community
+Crear unha comunidade comprometida é un dos puntos chave para o éxito e sostibilidade dos proxectos de software libre. O mesmo principio aplícase aos proxectos de InnerSource.
 
-Usually the governance model is a written document containing:
+A xestión da comunidade é diferente á xestión tradicional de equipos de desenvolvemento, polo que os/as xestores/as de proxectos deben adaptar as súas habilidades ao novo escenario.
 
--  project goals
+As comunidades de software libre son organizacións pouco xerarquizadas, nas que o liderado adoita ser máis importante que a estrutura de poder. As empresas que adoptan InnerSource necesitarán adaptar a súa estrutura organizativa na mesma dirección.
 
--  work, management and collaboration infrastructures definition
+## Financiamento
 
--  people roles and responsibilities definitions
+Nun escenario InnerSource perfecto, e baseándonos na cita de David Pink, vostede debería pagar o suficiente ao seu persoal como «para que o diñeiro non fose un tema de conversación na mesa».
 
--  community support mechanisms 
+Pero non adoitamos vivir en mundos perfectos e hai varios escenarios nos que o financiamento será fundamental para os proxectos de InnerSource:
 
--  decision making process policies description
+- Nos pagos en diferentes rexións xeográficas.
+- Cando hai traballadores/as que combinan o traballo de proxectos InnerSource con outros que non o son.
+- Nos costes compartidos entre diferentes unidades de negocio cun presuposto propio.
+- Proxectos desenvolvidos por unha combinación de persoal da empresa e subcontratado.
 
--  contribution process policies description
+De novo, o software libre proporciona algúns exemplos de como obter financiamento para os seus proxectos e organizacións como Linux Foundation, Apache Software Foundation etc.; as cales, se trasladamos os seus principios «fundacionais» ás nosas compañías, poderían servirnos de referencia.
 
--  monitoring policies and mechanisms description
+## Medición de procesos
 
-## Technical infrastructure
+Por último, pero non menos importante, se falamos de xestión, a medición convértese nunha habilidade básica para nós. Máis aló de recompilar datos, os cargos superiores necesitan entender os obxectivos da organización e como empregar os datos recollidos para chegar a alcanzalos. Tamén cómpre coidar a forma de compartir eses datos cos equipos e o que queren conseguir.
 
-By technical infrastructure we describe the tools used by InnerSource
-developers for their daily work. Usually, this tools cover:
+>«Recompilar datos é só o primeiro paso cara a sabedoría, pero compartir datos é o primeiro paso cara a comunidade.». Henry Lewis Gates (Profesor da Universidade de Harvard).
 
-- Source code management systems
+A medición aberta pode ser moi vantaxosa para a nosa comunidade InnerSource:
 
-- Issue/tasks tracking systems
+- Conciencia; permítenos entender quen somos, que estamos a facer etc.
+- Control da gobernación, posta en marcha das políticas de seguimento.
+- Transparencia para xerar confianza externa, como para garantir a equidade na nosa comunidade InnerSource.
 
-- Forums or mailing lists, and "questions and answers" forums
-
-- Chat or instant messaging tools
-
-- Continuous integration systems
-
-- Document/knowledge management systems (wikis)
-
-## Collaboration as cultural change
-
-Creating an engaged community is one of the key points for
-open source projects success and sustainability. Same
-principle applies for InnerSource projects.
-
-Managing a community is different from traditional development teams 
-management, so project managers need to adapt their skills
-to the new scenario.
-
-Open source communities are very flat organizations where
-leadership is usually more important than formal power. 
-Companies adopting InnerSource need to adapt their 
-organizational structure to a flatter one.
-
-## Financial support
-
-In a perfect InnerSource scenario, and based in David Pink quote 
-you should pay enough “to take the issue of money off the table.”
-
-But we usually don't live in perfect worlds, and there are several
-scenarios where financial support for InnerSource projects are critical:
-
-- payment in different geographical regions
-
-- employees working in a mix of InnerSource and non-InnerSource projects
-
-- cost sharing between different business units with their own budget
-
-- projects developed by a mix of company employees and subcontractors
-
-Again, open source provides some examples of how to
-get financial support for their projects, and 
-organizations like Linux Foundation, Apache Software Foundation, etc.
-could work as reference, translating their "foundation"
-principles to our companies.
-
-## Processes measurement 
-
-Last but not least, if we are speaking about management, to measure becomes
-a basic skill for us.
-
-Beyond collecting data, managers need to understand the goals of the organization
-and how the gathered data can help them to achieve such goals. They also
-need to take care of how they share that data
-with the teams, and what they want to achieve.
-
->“Collecting data is only the first step toward wisdom, but sharing data
->is the first step toward community.” – Henry Lewis Gates (professor at
->Harvard)
-
-Open measurement gives a lot of benefits for our InnerSource community:
-
-- awareness, it allows us to understand who we are, what we are doing, etc.
-
-- governance check, monitoring policies implementation
-
-- transparency, as trust generator for third parties and fairness
-  for our InnerSource community
+[^1]: http://oss-watch.ac.uk/resources/governancemo

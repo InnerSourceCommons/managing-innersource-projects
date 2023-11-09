@@ -1,133 +1,69 @@
-#InnerSource scenarios
+# Escenarios
+Onde se emprega a metodoloxía InnerSource? Que tipo de compañías xa a están a empregar?
 
-Where InnerSource methodology is being used? Which kind of companies are already
-using it?
+No ano 2000, Tim O’Reilly definiu InnerSource como «o uso de técnicas de desenvolvemento de software libre dentro dunha corporación». Evidentemente, esta definición aplicase tanto ás compañías que desenvolven software para o seu uso propio, como para outros.
 
-In 2000, Tim O'Reilly defined InnerSource as "the use of open source development 
-techniques within the corporation". Clearly this definition applies to
-companies developing software for their own use or to be used by 
-third parties.
+Algunhas técnicas comúns para o desenvolvemento de software libre son:
 
-Some common open source development techniques are:
+- Desenvolvemento transparente: Calquera pode revisar e contribuír.
+- As *forks* son benvidas: Xeralmente, a innovación vese impulsada por novas ideas que xorden de proxectos existentes.
+- Equipos diversos: Xente de tódalas partes do mundo pode contribuír, independentemente do seu xénero, educación ou raza.
+- Comunicación transparente: Todo sempre por escrito e debe formar parte do arquivo, desde documentos ata as conversas, para contar cun historial no caso de precisar revisalo.
 
-- transparent development: anyone is able to review and contribute
+InnerSource, como o software libre, é idónea para fomentar a colaboración entre organizacións, posto que elimina as barreiras entre diferentes equipos, áreas empresariais e, mesmo, as posibles barreiras xeográficas.
 
-- forks are welcome: innovation is usually driven by new ideas from existing projects
+Máis aló do perfil evidente das compañías dedicadas ao desenvolvemento de software, imos ver tamén algúns outros escenarios e situacións en que a emprega de InnerSource pode ser de utilidade.
 
-- diverse teams: people from all around the world are able to contribute, independently of their gender,
-  education, race, etc.
 
-- transparent communication: everything, from documents to conversations, is written and 
-  stored, to allow historical review
-  
-InnerSource, like open source, is well suited for cross-organization collaboration breaking
-boundaries of teams, business units and nations.
 
-Beyond the obvious profile, software development companies, let's see some 
-scenarios or situations where InnerSource can help.
+## A onda transformadora dixital
 
-## The digital transformation wave
+Durante os últimos anos, moitas compañías tiveron que enfrontarse á chamada «transformación dixital», para tornar en compañías omnicanle[^1]. Na actualidade, convertéronse en grandes usuarias das TI e os pasos chave desta transformación estiveron xeralmente definidos por:
 
-During last years, many companies have started facing what
-they call their “Digital Transformation”, to become omnichannel
-companies[^1]. They become heavy IT users and the key transformation
-steps usually are defined by
+- A rotura os silos entre as organizacións (cambio cultural).
+- A adopción de novas TI (a nube, *big data*, móbiles etc.).
 
--   breaking cross-organizational silos (cultural change)
+A adopción destas tecnoloxías adoita significar que as compañías necesitan crear equipos DevOps competentes. Iso é, «DevOps»[^2], se cadra o segundo termo máis relevante nestes últimos anos logo da «transformación dixital».
 
--   adoption new IT technologies (cloud, big data, mobile, etc.)
+E os equipos DevOps comparten algunhas características cos equipos de desenvolvemento colaborativo do software libre. Tal e como xa fora descrito por John Willis e Damon Edwards en 2010, o «marco DevOps» correspóndese con CALMS —que (polas súas siglas en inglés) significa Cultura (de colaboración), Automatización, Axilidade, Medición e Uso compartido— e, sen dúbida, contén termos familiares para calquera desenvolvedor/a de software libre.
 
-The adoption of these technologies usually means that companies need 
-to build competent “DevOps”[^2] teams. Yes, “DevOps”, the second 
-hype-word after “Digital Transformation” of these ages.
+Estes equipos adoitan desenvolver solucións de software personalizadas mediante receitas de implementación para as súas compañías. Para as pequenas e medianas empresas (PEME), isto podería ser útil e sinxelo de xestionar. Pero que é o que acontece cando a compañía conta con varios equipos DevOps arredor do mundo? Como poden garantir que se comparta o código e o coñecemento en toda a organización?
 
-“DevOps teams” share some principles with collaborative development
-teams in the open source world. As first described by John Willis and
-Damon Edwards in 2010, CALMS, standing for Culture (collaboration),
-Automation, Lean, Measurement, and Sharing to describe the “DevOps
-framework”, obviously contains terms familiar to any open source
-developer.
+Xa vimos empresas que afrontaron o mesmo problema con diferentes solucións, por mor da falta de organización transparente entre organizacións, así como de metodoloxías colaborativas.
 
-These teams usually develop custom software solutions and deployment
-recipes for their companies. For small, medium enterprises (SME) this
-could be useful and easy to manage. But, what happens when the company
-has several DevOps teams around the world? How can they ensure a maximum
-code/knowledge reuse across the organization?
 
-We have seen companies facing the same problem with different solutions
-due to the lack of cross-organizational transparent and collaborative
-methodology.
 
-## The world of silos
+## O mundo dos silos
 
-In some cases, there is a corporate head or central unit that decides
-the technology for the rest of business units. When these business units
-adopt the technology, they usually need to customize it, ending with
-something slightly different to the original product. While the central
-unit evolves its product in their “closed silo”, the other units are
-probably doing the same in their “silos”. The result? The adoption of
-any update of the “core product” is a nightmare.
+Nalgúns casos, son os altos cargos corporativos ou unha unidade central da compañía os que deciden a tecnoloxía do resto das áreas de negocio. Cando estas adoptan a tecnoloxía, polo xeral precisan personalizala ata obter algo lixeiramente diferente do produto orixinal. Mentres que a unidade central avanza co seu produto no seu «silo pechado», é moi posible que as outras áreas empresariais estean a facer o mesmo nos seus silos. E cal será o resultado diso? Que o intento de integración de calquera actualización do produto principal vai ser un pesadelo.
 
-In other cases, business units behave as independent companies. Each one
-uses their own IT architecture, ending with an inefficient management of
-resources caused by multiplication of technologies, developments, etc.
+Noutros casos, as unidades de negocio pode que se comporten como compañías independentes. Cada unha emprega a súa propia arquitectura TI, o que remata cunha xestión dos recursos ineficiente causada pola multiplicación de tecnoloxías, desenvolvementos etc.
 
-Collaborative development in open source ecosystems has been used several
-times as an example of how these methodologies can break silos between
-companies that might be even market competitors. Those companies have
-been able to share knowledge and resources with a common goal . If competitors can
-collaborate to build technology in which their business rely on, why
-could not corporate business units do the same if they have corporate
-success as mission?
+O desenvolvemento colaborativo en ecosistemas de software libre empregouse en máis dunha ocasión como exemplo de que estas metodoloxías permiten romper os silos entre compañías que mesmo poderían ser competidoras de mercado. Esas compañías foron capaces de compartir o seu coñecemento e recursos  por unha meta común. Se a competencia pode colaborar para construír a tecnoloxía na que basear os seus negocios, por que as distintas unidades empresariais dunha corporación non poderían facer o mesmo se a súa misión é o éxito corporativo?
 
-## The start-ups bubble
+## A burbulla das *start-ups*
 
-Many people might discuss if we are living a “start-ups bubble” or not,
-but we are clearly surrounded by news about how a group of few people go
-from a garage to a multinational company in a few years through
-investment rounds.
+Moita xente podería argumentar sobre se estamos ou non a vivir nunha «burbulla start-up»; mais non hai dúbida de que nos atopamos rodeados de noticias sobre pequenos grupos de persoas que, mediante roldas de inversión, pasaron dun garaxe a fundar compañías multinacionais en poucos anos.
 
-Our experience tell us that opening offices abroad is always a
-challenge, and managing development teams growing that fast can be a
-serious problem.
+A nosa experiencia dinos que a apertura de oficinas no estranxeiro sempre é un reto, e a xestión de equipos de desenvolvemento que crecen con rapidez pode ser un problema serio. A falta de canles de comunicación efectivos e transparentes, así como de procedementos de documentación, podería dificultar a incorporación de novo persoal e diminuír o seu compromiso coa empresa.
 
-The lack of effective and transparent communication channels and
-documented procedures, might make harder any new employee on-boarding
-and to be engaged with the company.
+Por outra banda, as compañías de recente creación xa naceron aproveitando as solucións informáticas existentes para proporcionar servizos omnicanle. Están acostumadas a traballar baixo a «cultura DevOps» e pode que lles resulte máis doado adoptar unha metodoloxía común a toda a organización que permita a transparencia e a colaboración.
 
-On the other hand, recently created companies have been born taking
-advantage of the existing IT solutions to provide omnichannel services.
-They are used to work under “DevOps culture” and it might be easier for
-them to adopt a common cross-organizational methodology that allow
-transparency and collaboration.
+## Falta de implicación no traballo
 
-## Disengagement at work
+Se algún dos escenarios anteriores lle resulta familiar, é posible que a súa implicación no traballo non sexa moi alta. Mais non se preocupe, é bastante habitual. De acordo co World Economic Forum[^3], o 70 % dos/as traballadores/as afirma non sentirse comprometido/a co seu labor profesional.
 
-If previous scenarios are familiar to you, probably you don’t feel
-engaged at work. Don’t worry, you are not alone. According to World
-Economic Forum [^3] 70% of employees say they are disengaged at work.
+No mesmo artigo pódese ler que: «Unha investigación da Universidade de California descubriu que cando o persoal está motivado é un 31 % máis produtivo, as súas ventas crecen un 37 % e é o triple de creativo que os membros do persoal sen motivación. E, segundo un estudo do Consello de Liderazgo Corporativo levado a cabo con máis de 50 000 persoas, tamén hai un 87 % menos de probabilidades de que queiran renunciar».
 
-In the same article, it says that “Research from the University of
-California found that motivated employees were 31% more productive, had
-37% higher sales, and were three times more creative than demotivated
-employees. They were also 87% less likely to quit, according to a
-Corporate Leadership Council study on over 50,000 people”.
+Towers Watson[^4] descubriu que as empresas con traballadores/as comprometidos/as producían un 19,2 % máis de ingresos operativos nun ano, pero as compañías cun menor grao de compromiso reducían os seus ingresos operativos nun 32,7 %.
 
-Towers Watson[^4] found that companies with engaged employees produced
-19.2% more operative incomes in one year, but companies with worse
-engagement operative incomes get reduced by 32.7%.
+Foi Daniel Pink, no seu libro titulado *Drive*[^5], quen sostivo que a motivación humana é en gran medida intrínseca. Os aspectos desta motivación pódense dividir en:
 
-It was Daniel Pink in his book "Drive"[^5] who argues that human motivation is 
-largely intrinsic. The aspects of this motivation can be divided into 
+- Autonomía, típica dos equipos de desenvolvemento de software libre con capacidade para a autoxestión.
+- Mestría ou desexo de perfeccionar as habilidades de desenvolvemento para mellorar o proxecto no que están a participar.
+- Propósito, que en moitos proxectos de software libre defínese como a misión.
 
-- autonomy, typical for OSS projects developers that are self-managed
-
-- mastery, as the desire to improve developer skills to improve the project they are involved in
-
-- purpose, defined as mission in many OSS projects
-
-These aspects are key for software developers motivation, since their tasks
-involve cognitive skills, decision-making, creativity, or higher-order thinking.
+Estes aspectos son chave para a motivación dos/as desenvolvedores/as de software, xa que as súas tarefas implican habilidades cognitivas, toma de decisións, creatividade ou pensamento de orde superior.
 
 [^1]: https://en.wikipedia.org/wiki/Omnichannel
 

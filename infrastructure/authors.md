@@ -1,13 +1,15 @@
-# Authors and Reviewers
+﻿# Autoría e revisións
 
-## Authors
+## Autoría
 
-(Chronological order)
+(Orde cronolóxica)
 
-- Daniel Izquierdo ([Bitergia](http://bitergia.com))
+- Daniel Izquierdo ([Bitergia](http://bitergia.com/))
 
-## Reviewers
+## Revisións
 
-(Chronological order)
+(Orde cronolóxica)
 
-- Looking for reviewers!
+- Na procura de revisores!
+
+

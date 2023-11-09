@@ -1,60 +1,31 @@
-# Introduction
+# Introdución
 
-It was 2011 when Marc Andreessen wrote his famous article, “Why Software
-is eating the World”[^1]. By that time, Linux Kernel was already 20
-years old, developed under an open collaborative model by hundreds of
-developers from different companies, and some even contributing during
-their spare time. Linux can be found in almost any kind of device, from
-IoT and car components, to super computing cloud hardware, without
-forgetting one of the most used mobile operating systems in the market.
+Corría o ano 2011 cando Marc Andressen escribiu o seu artigo «Why Software is eating the World»[^1] [Por que o software está a engulir o mundo]. Por aquel entón, Linux Kernel xa se puxera en marcha vinte anos atrás a través dun modelo colaborativo aberto a centos de desenvolvedores/as de diferentes compañías; algúns/unhas dos/as cales contribuían incluso no seu tempo libre. Hoxe, Linux pódese atopar en case calquera dispositivo, desde no IoT (polas súas siglas en inglés, Internet das Cousas) ou nos compoñentes de automóbiles, ata no hardware de supercomputación na nube, sen esquecer un dos sistemas operativos móbiles máis empregados no mercado.
 
-And Linux is just one example of how a free, open source software (OSS)
-project has evolved from one single idea in one single person’s head to
-multiple applications in many different fields and sectors. Each
-application has improved it over time, thanks to its open collaborative
-development methodology.
+E Linux é só un exemplo de como un proxecto OSS (polas súas siglas en inglés, e en adiante, de código aberto ou software libre) evolucionou de non ser máis que unha mera idea ata chegar a ter múltiples aplicacións en diferentes sectores profesionais. Con cada nova aplicación, o sistema mellorou co transcurso do tempo, grazas á súa metodoloxía colaborativa de desenvolvemento baseada no software libre.
 
-Almost 6 years later, we can assure that free, open source software
-(OSS) projects have succeed in the IT development ecosystem. We can see
-companies adopting OSS technologies and people contributing to OSS from
-different companies and even during their spare time.
+Case seis anos despois, podemos asegurar que os proxectos de software libre ou código aberto triunfaron no ecosistema de desenvolvemento das TI (Tecnoloxías da Información). Son moitas as empresas que adoptaron os procesos propios do software libre, e moitas as persoas que contribuíron; tanto desde as diferentes compañías, de xeito voluntario.
 
-How has OSS reached the level of innovation we have nowadays? How has it
-reached the market acceptance we see nowadays? How has it engaged so many
-people and organizations to contribute to it?
+Como conseguiu o software libre alcanzar o nivel de innovación que logrou hoxe en día? Como acadou a aceptación do mercado que observamos na actualidade? Como atinxiu tal cantidade de contribucións tanto individuais como de organizacións?
 
-It’s a teamwork effort and quoting John Wooden (former UCLA Bruins
-basketball coach) in IBM Linux commercial [^2]:
+Trátase dun esforzo en equipo; no anuncio de IBM Linux[^2], John Wooden, exentrenador de baloncesto do UCLA Bruins, dicía: «O xogador que fai grande ao seu equipo é máis valioso que un gran xogador. Perderte a ti mesmo no equipo polo ben deste é o verdadeiro traballo en equipo.».
 
-“A player who makes a team great is more valuable than a great player.
-Losing yourself in the group for the good of the group, that’s
-teamwork.”
+E se as metodoloxías de colaboración empregadas nos proxectos de software libre están a proporcionar tecnoloxía innovadora de alta calidade, grazas ás comunidades de desenvolvemento comprometidas; por que non aplicar as mesmas metodoloxías na súa compañía? Pois iso é InnerSource!
 
-Since the collaboration methodologies used in OSS projects are providing
-high quality innovative technology thanks to engaged development communities, 
-why not applying same methodologies inside your company? That's InnerSource!
+Se aínda non se decidiu a aplicar InnerSource na súa empresa, nós recomendamos que comece por ler o libro *Getting Started with InnerSource*[^3] [Como iniciarse en InnerSource] de Andy Oran. Logo diso, e se vostede decide tomar este camiño, pode confiar no presente libre para obter unha mellor comprensión dos distintos escenarios do marco de traballo e a xestión de habilidades en InnerSource.
 
-If you haven't decided yet to apply InnerSource in your company, we recommend you
-start reading "Getting Started with InnerSource"[^3] by Andy Oran. After that, or if
-you have already decided to start the InnerSource path, this book will give you better
-understanding of InnerSource scenarios, framework and management skills.
+## Principios de InnerSource
 
-## InnerSource principles
+InnerSource basea os seus principios de desenvolvemento de software nos da cultura de software libre. Jim Jagielski, creador de The Apache Software Foundation, enumerounos[^4] como:
 
-InnerSource software development takes its principles from the open source software 
-development culture. Jim Jagielski, from The Apache Software Foundation, has listed 
-them[^4] as:
+1. Cultura.
+2. Comunicación.
+3. Transparencia.
+4. Colaboración.
+5. Comunidade.
+6. Meritocracia.
 
-1. Culture
-2. Communication
-3. Transparency
-4. Collaboration
-5. Community
-6. Meritocracy
-
-As an organization willing to adopt InnerSource methodology, the first step is to look
-how close are organization's principles with these open source ecosystem principles, and 
-work on minimizing the *deltas* with them.
+O primeiro paso de toda organización disposta a adoptar a metodoloxía InnerSource, será avaliar se os seus principios están preto dos da cultura de software libre e, se é preciso, traballar para minimizar os posibles *deltas* existentes entre eles.
 
 [^1]: https://www.wsj.com/articles/SB10001424053111903480904576512250915629460
 

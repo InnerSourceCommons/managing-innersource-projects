@@ -1,352 +1,150 @@
-Some Examples of Interest
+Exemplos de interese
 =========================
 
-Although open source communities seem to be similar in some cases, there
-are peculiarities that define their actual idiosyncrasy. Details such as
-selecting the code review tool may mean a significant change in the way
-this is analyzed. This also takes place in InnerSource projects.
+Aínda que, nalgúns casos, as comunidades de software libre parecen semellantes, existen peculiaridades que definen a súa idiosincrasia propia. Matices como a selección dunha ferramenta de revisión de código, poden supor un cambio significativo no xeito en que se analiza o devandito código. Isto tamén acontece nos proxectos InnerSource.
 
-Infrastructure is indeed a key part of the InnerSource process as this
-may force developers to work in a specific way. As an example, the
-OpenStack community uses Gerrit and forces developers willing to commit
-a piece of code to use this. This means that the community is 100% sure
-they are code-reviewing any piece of code into the
-baseline.
+De feito, unha parte chave do proceso InnerSource é a súa infraestrutura; xa que os/as desenvolvedores/as terán que traballar dun xeito específico segundo a mesma. Por exemplo, a comunidade de OpenStack usa a aplicación Gerrit e obriga aos/ás desenvolvedores/as que queren facer un *commit* dun fragmento de código a empregala. Isto significa que a comunidade ten a certeza  de que están a revisar calquera fragmento de código que se fusiona na liña de base.
 
-Thus, having the proper infrastructure helps to follow a pre-defined
-process, but this also helps to be more metrics-friendly as there is a
-clear workflow followed by any developer within the organization.
+Polo tanto, dispor da infraestrutura axeitada axuda a seguir un proceso predefinido. Non obstante, isto tamén permite ter máis en conta as métricas, ao establecer unhas fases claras do traballo que debe seguir cada desenvolvedor/a que traballe na organización.
 
-On the other hand, if the workflow is not well defined or if the
-development infrastructure allows to have work-arounds, this may lead to
-situations where shortcuts are usual, and developers and managers may get
-frustrated at some point.
+Por outra banda, se as fases do traballo non está ben definidas ou se, pola contra, a infraestrutura do desenvolvemento permite as solucións alternativas, isto pode conducir a situacións nas que os atallos sexan habituais, de xeito que tanto o equipo de desenvolvemento como os cargos intermedios poidan sentirse frustrados/as por momentos.
 
-Thus, having in mind those differences between two communities, inner
-source is not safe of this peculiarities, and any organization faces a
-list of potential issues when installing infrastructure, governance
-model, financial system and so on.
+Así, tendo en conta as diferenzas entre as dúas comunidades, o mundo InnerSource non está a salvo destas peculiaridades e calquera organización se enfronta a unha longa listaxe de posibles problemas ao instalar a infraestrutura, o modelo de gobernación, o sistema financeiro etc.
 
-The following is a list of usual studies of interest in organizations
-applying InnerSource methodologies. This list is not intended to be an
-exhaustive one, but examples of how to approach and measure specific
-issues related to the usual goals in the InnerSource world. Part of
-these analysis are experiences coming from the open source world that
-could be useful when talking about InnerSource communities. These are
-communities and engaging new developers, retaining those, code review
-processes and others are common goals.
+A continuación, preséntase unha listaxe de estudos de interese en empresas que aplican metodoloxías InnerSource. Esta listaxe non pretende ser exhaustiva, senón ofrecer exemplos para abordar e medir problemas específicos relacionados cos obxectivos habituais de InnerSource. Parte destas análises consisten en experiencias que proveñen do eido do software libre e que poderían ser útiles cando se fala de comunidades InnerSource. Os principais obxectivos comúns son as comunidades, a captación e mantemento de novos/as desenvolvedores/as e os procesos de revisión de código, entre outros.
 
-[](#mentorship)
-Mentorship and helping newcomers
+Mentoría e axuda aos/ás novos/as contribuidores/as
 --------------------------------
 
-This analysis is related to the centralization of the development and
-attracting and retaining new developers. When aiming at incrementing the
-number of participants in the InnerSource ecosystem, trusted committers
-and mentors are key in this new process. Trusted committers as they are
-the core reviewers of the project and well known developers. And those
-trusted committers may be the ones acting as mentors. Mentorship should
-help new developers to feel comfortable with the environment in the
-project, and for this, mentors will help new contributors in several
-ways: understand how to use the available infrastructure (Git
-repositories, mailing lists, code review process, etc). The mentor will
-provide pointers to the documentation and code guidelines. This role
-will also help in understanding how to contribute to that specific
-community. And finally, will review the piece of code pull-requested by
-a newcomer driving her around the needs for such change and potential
-requested updates to that piece of code.
+Esta análise está relacionada coa centralización do desenvolvemento e a atracción e mantemento de novos/as desenvolvedores/as. Cando se está na procura de aumentar a cantidade de participantes no ecosistema InnerSource, os *trusted committers* e os/as mentores/as serán esenciais. Ademais da súa participación no desenvolvemento, os/as *trusted commiters* están principalmente a cargo da revisión do proxecto e é moi posible que tamén das mentorías. A mentoría debería axudar a que os/as novos/as desenvolvedores/as se sintan cómodos/as traballando no proxecto e, para iso, os/as mentores/as axúdannos de varias maneiras no que concirne a entender como empregar a infraestrutura dispoñible (os repositorios Git, as listaxes de correo, o proceso de revisión de código etc.). Ademais, o/a mentor/a proporcionará indicacións sobre a documentación e as pautas para a escritura do código e o seu rol servirá para axudar a comprender como contribuír a esa comunidade en concreto. Por último, este rol tamén se encargará de revisar os fragmentos de código das primeiras *pull requests* dos/as novos/as contribuidores/as, e de asesoralos/as acerca da necesidade dos posibles cambios solicitados e sobre as potenciais peticións de actualizacións para ese fragmento de código.
 
-And all of this information can be tracked. As InnerSource is fostering
-a transparent infrastructure to deal with all of the activities around
-the development of the product, those discussions are all open to anyone
-interested in. Thus, the mentorship analysis will help to understand who
-are those mentors, if those mentors are helping to reduce the time to
-review process as they give clear directions about how to proceed and
-the number of newcomers that come to the community. All of these are
-just examples of how to potentially track mentors activity and if such
-activity is actually helping in the InnerSource adoption within an
-organization.
+Pódese facer un seguimento do proceso e rexistrar toda esta información. Pois como InnerSource está a fomentar unha infraestrutura transparente para tratar tódalas actividades relacionadas co desenvolvemento do produto, as discusións están abertas a calquera persoa interesada. Polo tanto, a análise de mentorías axuda a comprender quen son os/as mentores/as e se están a axudar a reducir o tempo do proceso de revisión, ao proporcionar instrucións claras sobre como proceder e información sobre o número de novos/as contribuidores/as que están a chegar á comunidade. Estes son só algúns exemplos de como realizar un seguimento potencial da actividade dos/as mentores/as e do impacto da mesma nunha empresa que está a traballar no marco de InnerSource.
 
-This should be compared to previous stages of the software development
-process and improve the bottlenecks of activity when needed. A potential
-and usual issue raised in open source communities, but also within
-organizations is that the workload adequacy of the mentors and core
-reviewers is high and those are at some point the bottleneck in the code
-review process, what forces the community to bring more core reviewers.
+Isto debe compararse con etapas anteriores do proceso de desenvolvemento de software e mellorar os puntos de conxestión da actividade cando sexa necesario. Un posible problema común nas comunidades de software libre, e tamén dentro das empresas, é unha alta carga de traballo dos/as mentores/as e revisores/as principais. Posto que, nalgúns momentos, estes/as son o punto de conxestión no proceso de revisión do código, é necesario incorporar máis revisores/as principais á comunidade.
 
-It is also interesting to foster the creation of the mentors role even
-if they are not core reviewers of the community, as they can provide
-useful information to the newcomers. This role can be also seen as the
-community manager that facilitates the path of those interested in
-contributing.
+Tamén é interesante fomentar a creación do rol dos/as mentores/as aínda que non sexan os/as revisores/as principais da comunidade, xa que poden aportar información útil aos/ás novos/as contribuidores/as. Este rol tamén pode ser visto como un/unha xestor/a da comunidade que facilita o camiño daqueles/as interesados/as en facer contribucións.
 
-Development Cycle
+O ciclo de desenvolvemento
 -----------------
 
-The study of the development cycle is related to the reduction of the
-time to market. This could be seen as a way to determine if the policies
-applied are actually decreasing the total time to develop a new feature,
-fix a bug and other actions. The goal of this analysis consists of
-understanding the total time from user stories to the merge into the
-source code repository.
+O estudo do ciclo de desenvolvemento está relacionado coa redución do prazo de comercialización. Isto podería entenderse como un xeito de determinar se as políticas aplicadas están realmente a diminuír o tempo total de desenvolvemento dunha nova función ou de corrección dun erro, entre outras accións. O obxectivo desta análise consiste en comprender o tempo total que abrangue o proceso que vai desde a versión inicial do/a usuario/a ata a inclusión dos cambios no repositorio de código fonte.
 
-This is important to understand the time that usually takes a new
-requirement to be implemented going through the design phase,
-implementation, code review process, continuous integration and merging
-time. As SLAs are playing a role here, we can calculate how long it
-takes for a feature request to be part of the source code and then
-later, there is a time to deploy that functionality or fix that in
-production.
+Isto é importante para entender o tempo que adoita tardarse en implantar un novo requisito logo da fase de deseño, posta en marcha, proceso de revisión do código, integración continua e prazo de integración. Como aquí interveñen os SLA (polas súas siglas en inglés, Acordo de Nivel de Servizo), pódese calcular canto tarda a petición dunha nova funcionalidade en formar parte do código fonte e, despois, o tempo para activala ou corrixila en produción.
 
-Some examples of this analysis could be the questions of how fast the
-requirements are implemented, for example the best 50% or 80% of them
-and if the community is able to reduce that time over time. It is also
-possible to split this process into its several phases such as feature
-request, backlog, developing process, code review process, continuous
-integration, merge into master, more continuous integration and later
-deployment in the customer. And thanks to this split, it is possible to
-look for bottlenecks.
+Algúns exemplos desta análise poderían ser acerca da rapidez coa que se executan os requisitos —por exemplo, se cadra 50 % ou 80 % deles—, e sobre a capacidade de reducir aínda máis a súa duración por parte da comunidade a medida que pasa o tempo. Tamén é posible dividir este proceso en varias fases: a *feature request*, as tarefas pendentes, o proceso de desenvolvemento, o proceso de revisión de código, a integración continua, a integración no código mestre, máis integración continua e, finalmente, a posterior activación da funcionalidade para o/a cliente/a. E, grazas a esta división en fases, será posible buscar puntos de conxestión.
 
-As an example, let us consider the code review phase. There are two
-roles playing here: the submitter and the reviewer. And we can split the
-time that a reviewer and a submitter is spending on their specific
-tasks. Thus, there is a time waiting for a reviewer action (typically
-the code review action) and the time waiting for a submitter action
-(typically when the reviewer asked for some modifications of the pull
-request).
+Como exemplo, consideremos a fase de revisión do código. Hai dous roles que xogan un papel importante nela: o/a provedor/a e o/a revisor/a e, o tempo que ambos/as dedican ás súas tarefas específicas, pódese dividir. Deste xeito, existirá un tempo de espera para a acción do/a revisor/a (xeralmente, a propia revisión do código) e un tempo de espera para a acción do/a provedor/a (xeralmente, modificacións da *pull requests* solicitadas polo/a revisor/a).
 
-If it happens that the time waiting for a submitter action is too high,
-the community may need to emphasized training actions on those newcomers
-or developers. But if the time waiting for a reviewer action is the one
-increasing over time, then the community may have a look at some actions
-that will help to reduce that time. For example, they can vote other
-developers to be code reviewers, or being more precise in the requests
-than to the submitters.
+Se se da o caso de que o tempo de espera para a acción dun/dunha provedor/a é demasiado elevado, é posible que a comunidade deba levar a cabo accións formativas cos/coas novos/a participantes ou desenvolvedores/as. Mais se é o tempo de espera para a acción do/a revisor/a o que aumenta co tempo, é necesario que a comunidade considere levar a cabo accións que axuden a reducilo. Por exemplo, poden escoller outros/as desenvolvedores/as para que sexan revisores/as de código, ou ser máis precisos/as coas peticións solicitadas aos/ás provedores/as.
 
-Contributors Funnel
--------------------
+Funil de contribuidores/as
+-----------------
 
-This analysis is focused on understanding how long it takes for a
-developer in the InnerSource community to become a developer or a core
-reviewer. Communities can be seen as *onions* where there are several
-layers. Those purely acting as end users. Those users that when they
-find a bug, this is reported to the community. Those that report the bug
-and send a pull request. And finally the development team that could
-participate in the community occasionally, regularly or as core
-developer.
+Esta análise céntrase en comprender canto tarda un/unha contribuidor/a da comunidade InnerSource en converterse en desenvolvedor/a ou revisor/a principal. As comunidades poden verse como cebolas que teñen varias capas. Por un lado, atoparemos persoas que só actúan como usuario/a final e, por outra banda, os/as que cando atopan un *bug*, deciden comunicarllo á comunidade. Tamén haberá usuarios/as que ademais de informar do *bug* e ademais envían unha *pull request*. E, finalmente, están os/as membros do equipo de desenvolvemento que  poden participar na comunidade de xeito ocasional, habitual ou, mesmo, como desenvolvedor/a principal.
 
-The usual proportion of these communities, at least in open source, are
-following the distribution of 80% of the activity is done by a 20% of
-the developers. It is expected that InnerSource communities follow the
-same distribution as the development process is open within the
-organization. Thus, the mentioned roles such as pure end users or core
-developers will be also found.
+A proporción habitual destas comunidades, polo menos en software libre, está a seguir unha distribución na que o 80 % da actividade realízaa un 20 % dos/as desenvolvedores/as. Prevese que as comunidades InnerSource sigan a mesma distribución, ao ser tamén o desenvolvemento dentro da organización un proceso aberto. Deste xeito, tamén contará cos roles mencionados, desde os/as usuarios/as finais puros/as ata os/as desenvolvedores/as principais.
 
-Coming back to the analysis, the contributors funnel analysis aims at
-understanding how much time it takes for a developer to become a
-contributor of the InnerSource project. From their first traces asking
-for a feature request in a mailing lists or opening a bug report, till
-the point in time when they commit or review their first piece of code.
+Volvendo á análise, o estudo do funil de contribuidores/as ten como obxectivo comprender canto tempo lle leva a un desenvolvedor/a converterse en colaborador/a dun proxecto InnerSource; desde a primeira vez que solicita unha nova funcionalidade nunha listaxe de correo ou xera un informe de erros, ata o momento en que fai o seu primeiro *commit* ou a súa primeira revisión dun fragmento de código.
 
-Indeed the goal of this analysis is to bring to context how good the
-community manager, mentors and other roles are performing with this
-respect.
+O obxectivo desta análise é, de feito, pór en contexto a eficacia do/a xestor/a da comunidade, dos/as mentores/as e doutros roles involucrados.
 
-This also helps to understand what percentage of contributors or users
-are finally committing a piece of code, and what percentage of those
-become trusted committer after a while.
+Isto tamén axuda a comprender que porcentaxe de colaboradores/as ou usuarios/as, finalmente, contribúen cun *commit* dun fragmento de código, e que porcentaxe chega a converterse en *trusted committer*  ao cabo dun tempo.
 
-Engagement
-----------
+Compromiso
+-----------------
 
-Attraction and retention of new members. As InnerSource method evolves
-within an organization, it is expected that developers will work on
-other projects not directly related to their business units. Those
-participating for their first time will be part of the attraction rate
-of such community. Those that are still contributing in that project
-will be part of the retention rate. And those leaving the community
-after a while will be part of the developers that were not retained.
+Nesta sección abórdase a atracción e retención de novos membros. A medida que o método InnerSource evoluciona nunha organización, espérase que os/as desenvolvedores/as traballen noutros proxectos que non estean directamente relacionados coas súas áreas de negocio. Aqueles/as que participen por primeira vez, conformarán a taxa de atracción da comunidade. Pola contra, os/as que aínda estean a facer contribucións nese proxecto, conforman a taxa de retención. Ademais, os/as que deixen a comunidade despois dun tempo, formarán parte da taxa dos/as desenvolvedores/as que non foron retidos.
 
-The ideal goal of any project is to attract as many as possible, retain
-all of them so nobody leaves the community. But this does not take
-place. Turnover is an inevitable situation and projects, business units
-and organizations have to deal with it. However it is possible to
-measure the engagement of the community and how specific policies help
-to attract and retain more developers than others.
+O obxectivo ideal de calquera proxecto é conseguir atraer á maior cantidade posible de desenvolvedores/as e mantelos/as para que non abandonen a comunidade. Pero isto non sempre acontece. A rotación é algo inevitable e os proxectos, as áreas de negocio e as organizacións teñen que lidar con ela. Con todo, é posible medir o compromiso da comunidade e o xeito no que determinadas políticas axudan máis que outras a atraer e reter a un maior número de desenvolvedores/as.
 
-That attraction and retention rate could be affected by other variables
-such as the programming language, people in the project, rewarding
-process and others.
+Esa taxa de atracción e retención podería verse afectada por outras variables como a linguaxe de programación, as persoas que traballan no proxecto ou as retribucións, entre outras.
 
-Some specific questions in this analysis are related to how comfortable
-developers are in the business unit or in the organization, and will
-help to improve the process to attract and retain the best of them. How
-good is the project or community retaining developers? How far is this
-community from the community performing the best? Do we know the reasons
-why developers left the community? And if so, are we applying some
-actions to let them know that they are precious for the community?
+Algunhas das preguntas específicas nesta análise gardan relación co grao de implicación ou sentimento de pertenza dos/as desenvolvedores/as na súa unidade de negocio ou na compañía, e permitirán pulir o proceso para atraer e manter aos/ás mellores desenvolvedores/as. En que medida o proxecto ou comunidade está a conseguir manter aos/ás desenvolvedores/as? A que distancia se atopa esta comunidade da comunidade co mellor desempeño? Coñécense as razóns polas que os/as anteriores desenvolvedores/as abandonaron a comunidade? E, se é así, estase a levar a cabo algunha acción para facerlles saber a súa importancia na mesma?
 
-The more the metrics we have, the more understanding the project will
-have about it. This could be also seen as a way to measure neutrality
-and transparency within a project and across several business units and
-the organization in general.
+Cantas máis sexan as posibles métricas, con máis información sobre o tema analizado contará o proxecto. E isto tamén podería verse como unha forma de medir a neutralidade e a transparencia non só no proxecto, senón entre varias áreas empresariais e na empresa en xeral.
 
-Break Silos
------------
+Eliminar os silos
+-----------------
 
-This concept is linked to large organizations that have several
-development teams and those are geographically distributed. Developers
-in different silos do not know what others are doing and can not
-interact with other developers out of their own silo.
+Este concepto está ligado tanto ás grandes empresas con varios equipos de desenvolvemento, como as que contan cun equipo distribuído por distintas localizacións xeográficas. Os/As desenvolvedores/as que están en distintos silos non saben o que están a facer os/as demais e non poden interactuar cos/coas outros/as desenvolvedores/as fóra do seu propio silo.
 
-Silos are also an effect of hierarchical organizations where only
-management on the top of the silo what others are doing. This can be
-even seen in development teams in the same silo where project members
-depends on middle management and that roles control all of the
-information.
+Os silos tamén son consecuencia das empresas xerarquizadas onde só os altos cargos teñen coñecemento do que están a facer os demais. Isto tamén pode observarse nos equipos de desenvolvemento que pertencen a un mesmo silo, nos que os membros do proxecto dependen dos mandos intermedios e, estes últimos, teñen o control de toda a información.
 
-Spreading the Knowledge
------------------------
+Difundir os coñecementos
+-----------------
 
-As silos are broken and the structure becomes flatter, the knowledge
-should be shared across the organization. Developers come to a new
-project, they contribute and they gain knowledge about how to proceed,
-the mission of such project, idiosyncrasy, infrastructure, etc. And
-Those interactions can be measured thanks to the traces left in the
-several data sources.
+A medida que se eliminan os silos e a estrutura se volve menos xerarquizada, os coñecementos deben compartirse con tódolos/as integrantes da empresa. Os/as desenvolvedores/as chegan a un novo proxecto, fan contribucións e adquiren coñecementos sobre como avanzar, sobre a misión do devandito proxecto, a súa idiosincrasia e infraestrutura etc. Esas interaccións pódense medir grazas ao rastro que deixan nas distintas fontes de información.
 
-For instance, developers working in the same file, may have different
-knowledge of the library, but there is a link between those: that piece
-of source code. Those acting as mentors and those being mentored also
-builds their own specific social network.
+Por exemplo, os/as desenvolvedores/as que traballan no mesmo arquivo poderán estar máis ou menos familiarizados/as coa biblioteca, mais contan cun vínculo entre eles/as; ese fragmento de código fonte. Do mesmo xeito, os/as que toman o rol de mentores/as e aqueles/as aos/ás que mentorizan tamén están a construír a súa propia rede social específica.
 
-Some specific metrics of interest here are those related to the analysis
-of how the knowledge becomes something popular in the sense of people
-contributing to the several repositories of information. As an example,
-the *territoriality* can be used to understand how lonely are developers
-when working. Areas of the code highly territorial may mean that no
-contributors are helping there. And we need to understand the reason for
-this: spaghetti code, complex functionalities that requires a depth
-understanding of what is being developed, etc.
+Algunhas métricas concretas de interese son as relacionadas coa análise de como o coñecemento chega a ser algo xeralizado, a medida que as persoas contribúen en distintos repositorios de información. Como exemplo, pódese empregar a territorialidade para comprender o illamento dos/as desenvolvedores/as mentres traballan. De feito, cando existen áreas do código que son altamente territoriais, pode querer dicir que ninguén está a prestar axuda nesa área de código. Así, cómpre entender os motivos do  *código spaghetti*, ou das funcionalidades complexas que requiren unha comprensión profunda do que se está a desenvolver etc.
 
-Other ways to measure how the knowledge is flowing around the community
-is analyzing the *orphaned code* left by those leaving the project. Is
-someone maintaining that area of the code? Are there others in charge of
-such piece of code that previously participated? What are the usual
-areas of knowledge of the different core reviewers where they
-participated?
+Outras maneiras de medir a fluidez do coñecemento na comunidade consisten en analizar *o código orfo* que deixan os/as desenvolvedores/as que abandonan o proxecto. Cabe preguntarse se hai alguén que manteña esa parte do código, se hai outras persoas ao cargo que xa participaran niso con anterioridade, e cales son as áreas de coñecemento habituais das que se encargan os/as revisores/as principais.
 
-And finally, usual metrics such as betweenness may help to understand
-key players that have knowledge across several projects. Those linking
-two nets are those that help to move knowledge from one community to the
-other.
+Finalmente, métricas habituais, como a intermediación, poden axudar a facerlles comprender aos/ás involucrados/as os seus coñecementos acadados en varios proxectos; aquelas persoas que unen dúas redes e axudan a trasladar os coñecementos dunha comunidade a outra.
 
-Middle Management cultural change
----------------------------------
+Cambio cultural dos mandos intermedios
+-----------------
 
-Silos lead to middle management as those are in charge of filtering and
-controlling that the developer teams reach some specific deadlines and
-goals. However, activities among teams are not fostered with a lack of
-dynamism that affects other areas of innovation in the company as people
-tend to focus on the work their being paid for, and not others work.
+Os silos están relacionados cos mandos medios, pois estes/as son os/as encargados/as de filtrar e controlar que os equipos de desenvolvedores/as acaden uns prazos e obxectivos específicos. Non obstante, non se fomentan as actividades entre equipos e a falta de dinamismo afecta a outras áreas de innovación da compañía, xa que as persoas tenden a centrarse soamente no traballo polo que cobran e non polo traballo dos/as demais.
 
-In addition, this role in organizations have reached their position in a
-hierarchical way and this is how this is expected to work for others
-willing so scale in the hierarchy.
+Adicionalmente, este rol nas empresas vén dado pola súa disposición xerárquica, e así é como se espera que funcione cos/coas demais traballadores/as que tenten escalar na xerarquía.
 
-However, InnerSource aims at fostering developers to developers
-relationships (D2D) and not manager to manager (M2M) relationships as
-this delays the development process and decision making at the technical
-level.
+Porén, InnerSource ten como obxectivo fomentar as relacións entre desenvolvedores/as (D2D) mais non as de xerente a xerente (M2M), xa que iso retrasa o proceso de desenvolvemento e a toma de decisións a nivel técnico.
 
-Scalability
------------
+Escalabilidade
+-----------------
 
-And this leads to pure scalability. When allowing D2D relationships from
-any place within the organization, middle management roles tend to
-re-convert themselves to community managers that foster that type of
-behaviors, bring hackathons at home and invite third parties to
-participate in their projects as they participate in others.
+Permitir as relacións D2D desde calquera lugar da empresa, conduce á escalabilidade pura. Os mandos intermedios tenden a reconverterse en xestores/as da comunidade que fomentan ese tipo de comportamentos, atraen hackatóns á súa empresa e convidan a persoas externas a participar nos seus proxectos, do mesmo xeito que tamén eles/as participan nos de outros/as.
 
-Keep Great Developers in House
-------------------------------
+Conservar aos/ás mellores desenvolvedores/as
+-----------------
 
-And having freedom and trust from the organization developers work at is
-a good complement to feel great at work. Indeed one of the main goals of
-any organization is to keep their own great developers at home, but also
-to attract the best developers around the world. This cultural change
-and way of working help to have developers aligned with the general
-strategy of the company.
+Contar coa liberdade e confianza da empresa na que traballan os/as desenvolvedores/as é un bo complemento para sentirse ben no traballo. De feito, un dos principais obxectivos de calquera organización é manter aos/ás seus/súas mellores desenvolvedores/as, pero tamén atraer aos/ás mellores do mundo. Este cambio cultural e no modo de traballar permite ter aos/ás desenvolvedores/as aliñados/as coa estratexia xeral da empresa.
 
-Thus, there are some initial goals to be accomplish within the company:
-remove silos, reconvert middle management, scale development and have a
-great development team. Following the GQM approach, this allows us to
-work on the specific questions we need to answer with this respect.
+Así pois, algúns dos obxectivos iniciais que cumprir dentro da empresa son: eliminar os silos, reconverter aos mandos intermedios, escalar o desenvolvemento e contar cun gran equipo. Seguindo o enfoque GQM, isto permítenos traballar nas cuestións específicas das que se busque resposta.
 
-Allow Innovation in Detail
---------------------------
+Permitir unha innovación en detalle
+-----------------
 
-This follows the detailed GQM approach where each goal may have several
-questions and each question may have one or more metrics that helps to
-understand the situation. This also assumes that we are in an
-organization that already applied InnerSource and wanted to check if
-the process is leading to an actual improvement in the several detailed
-goals.
+Segundo o enfoque GQM, cada obxectivo pode presentar varias preguntas e cada pregunta pode responderse cunha ou máis métricas que axuden a comprender unha situación específica. Tamén se dá por feito que a organización xa aplicou InnerSource e quere verificar se o proceso conduce a unha mellora real con varios obxectivos concretos.
 
-**Goal: allow innovation within developers**
+**Obxectivo: Permitir a innovación entre os/as desenvolvedores/as**
 
--   Question: How are developers interacting with other business units?
+- Pregunta: Como interactúan os/as desenvolvedores/as con outras áreas da empresa?
 
-    -   Rationale: innovation is a result of mixing several points of
-        view when resolving issues. Developers from other disciplines or
-        business units will bring ideas that may foster that innovation
-        process.
+    - Fundamento: A innovación é o resultado de mesturar varios puntos de vista cando se resolven problemas. Os/as desenvolvedores/as doutras disciplinas ou áreas de negocio formularán ideas que poden fomentar ese proceso de innovación.
+    
+    - Métrica: Número de desenvolvedores/as atraídos/as aos distintos proxectos InnerSource.
+    
+    - Métrica: Número de desenvolvedores/as retidos/as nos distintos proxectos InnerSource.
+    
+    - Métrica: Número de contribucións (*commits*, edicións das wiki, correos electrónicos e outras métricas sobre os/as contribuidores/as atraídos/as).
+    
+    - Métrica: Número de *trusted committers*.
 
-    -   Metric: Number of attracted developers in the several inner
-        source projects
+- Pregunta: Como se están a crear os novos proxectos dentro da empresa?
 
-    -   Metric: Number of retained developers in the several inner
-        source projects
+    - Fundamento: A creación de novos proxectos é o resultado de permitir que os/as desenvolvedores/as se sintan cómodos/as dentro da organización. Os novos proxectos son a consecuencia de facerlles saber que poden aportar ideas á actividade principal da empresa.
+    
+    - Métrica: Número de novos proxectos na plataforma.
+    
+    - Métrica: Número de distintos/as desenvolvedores/as que crean novos proxectos.
+    
+    - Métrica: Número de desenvolvedores/as activos/as nos últimos proxectos.
 
-    -   Metric: Number of contributions: commits, wiki editions, emails
-        and others from attracted contributors
+- Pregunta: Están mellorando o soporte na empresa os proxectos de incubación?
 
-    -   Metric: Number of trusted committers
+    - Fundamento: Como a incubación de proxectos necesita un certo proceso ata a súa maduración, relaciónase directamente coa actividade no apartado sobre incubación do programa InnerSource.
+    
+    - Métrica: Número de novos proxectos en incubación.
+    
+    - Métrica: Número de proxectos incubados que se converteron en proxectos oficiais.
 
--   Question: How are new projects being created within the
-    organization?
+- Pregunta: Que novas tecnoloxías se introduciron na empresa?
 
-    -   Rationale: the creation of new projects is the result of
-        allowing developers to feel comfortable within the organization.
-        New projects are the consequence of letting them know that they
-        can bring ideas to the core business of the organization.
-
-    -   Metric: Number of new projects in the platform
-
-    -   Metric: Number of different developers creating new projects
-
-    -   Metric: Number of active developers in the last
-
--   Question: Are incubation projects gaining traction within the
-    organization?
-
-    -   Rationale: As incubated projects need some process to become
-        mature ones, this is related to the activity in the incubation
-        side of the InnerSource program.
-
-    -   Metric: Number of new incubating projects
-
-    -   Metric: Number of incubated projects became official ones
-
--   Question: How many new technologies have been introduced in the
-    organization?
-
-    -   Rationale: it is representative the PayPal case[^7] where used
-        to work in a specific programming language. But innovation came
-        from new developers introducing JS and saving hundreds of lines
-        of code.
-
-    -   Metric: Number of new programming languages
-
-    -   Metric: Number of new open source libraries introduced in the
-        development
+    - Fundamento: É representativo o caso de PayPal[^7], que adoitaba traballar nunha linguaxe de programación específica. Mais a innovación chegou da man de novos/as desenvolvedores/as que coa introdución de JS conseguiron aforrar centos de liñas de código.
+    
+    - Métrica: Número de novas linguaxes de programación.
+    
+    - Métrica: Número de novas bibliotecas de software libre creadas no desenvolvemento.

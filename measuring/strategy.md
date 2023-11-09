@@ -1,92 +1,34 @@
-Strategy
+Estratexia
 ========
 
-Even when measuring and having data, people are still a key component of
-the strategy to deploy metrics and to have a driven-data process change.
-Metrics that lead to a process improvement or a motivational change are
-needed to be understood and approved by those that will be tracked. And
-there is not a need to measure everything, but to focus on specific
-areas of developers work that help to understand if this is working.
+Mesmo ao tomar e medir datos, as persoas seguen sendo un compoñente chave da estratexia de aplicación das métricas e no impulso de cambio baseado neses datos. As métricas que levan a unha mellora do proceso ou a un cambio motivacional son necesarias para ser entendidas e aprobadas por aqueles dos que se vai facer un seguimento. E non hai que medilo todo, senón centrarse en áreas específicas do traballo dos/as desenvolvedores/as que axuden a entender se está a funcionar.
 
-In addition to all of this, the metrics strategy is directly linked to
-the general purpose of the process update. From time to time
-organizations update their goals and those goals force a change in the
-metrics used to parse how far the organization is from those goals.
+Ademais disto, a estratexia de métricas está directamente ligada ao propósito xeral da actualización do proceso. De cando en vez, as organizacións actualizan os seus obxectivos e eses obxectivos obrigan a facer un cambio nas métricas empregadas para analizar canto lle falta á organización para acadalos.
 
-Thus, there are two main components in this process: goals and people.
-And developers must be aligned with the goals of the organization so
-everyone is walking the same path to success.
+Así, hai dous compoñentes principais neste proceso: obxectivos e persoas. E os/as desenvolvedores/as deben estar aliñados/as cos obxectivos da organización para  transitar o mesmo camiño cara ao éxito.
 
-Developers and middle management should be part of the process to
-understand what the useful metrics are, to help to reject useless
-metrics and improve the metrics cycle. This will also help to introduce
-a data-driven development cycle and let the developers feel comfortable
-when using them.
+Desenvolvedores/as e mandos intermedios deben formar parte do proceso para comprender cales son as métricas útiles, axudar a rexeitar as fútiles e mellorar o ciclo de métricas. Isto tamén permitirá introducir un ciclo de desenvolvemento baseado en datos e permitirá que os/as desenvolvedores/as se sintan cómodos/as cando o usen.
 
-When using metrics in InnerSource, we have already detailed the
-following purposes:
+Para o uso de métricas en InnerSource, xa definiramos os seguintes propósitos:
 
--   Awareness: be aware of the work in progress
+- Concienciación: Ser coñecedores/as do traballo en curso.
 
--   Process Improvement: detect issues and understand the root causes of
-    those issues (look for bottlenecks of your current process).
+- Mellora do proceso: Detectar problemas e comprender as súas causas raíz (buscar os puntos de conxestión do proceso actual).
 
--   Motivational: let the development team follow some track (e.g.,:
-    foster new contributions to a new project)
+- Motivación: Deixar que o equipo de desenvolvemento participe do seguimento (por exemplo, fomentando novas contribucións a un novo proxecto).
 
-A usual way to apply a new methodology consists of following the PDCA
-(Plan-Do-Check-Act) to continuously improve. The steps ‘Plan’ and
-‘Check’’ are the interesting ones for this metrics chapter, while the
-others are application of improvements in the process (‘Do’) and
-decision making (‘Act’).
+Unha forma habitual de aplicar unha nova metodoloxía consiste en seguir o PDCA (polas súas siglas en inglés, Planificar-Facer-Comprobar-Actuar) para unha mellora continua. Os pasos «Planificar» e «Comprobar» serán os máis relevantes para este capítulo de métricas, mentres que os outros dous estarán presentes na aplicación de melloras no proceso («Facer») e na toma de decisións («Actuar»).
 
-The Planning actions consists of understanding the current situation of
-the process within the organization. For this and from a metrics point
-of view, it is necessary to retrieve qualitative and quantitative
-information. Quantitative in the sense of measuring what is taking place
-in the current development team and understand how developers and middle
-management use the infrastructure and interact among them. This will
-help to have a first glimpse of the situation of the project in a given
-moment in time.
+As accións de planificación consisten en comprender a situación actual do proceso dentro da organización. Para iso, e desde o punto de vista das métricas, é necesario recadar información cualitativa e cuantitativa. Cuantitativa, no sentido de medir o que está a suceder no equipo de desenvolvemento actual e comprender como  desenvolvedores/as e mandos intermedios usan a infraestrutura e interactúan entre si. Así poderá botarse unha primeira ollada á situación do proxecto nun momento determinado.
 
-From a qualitative point of view, feedback from developers and middle
-management is also necessary as they understand how the current process
-actually works. This is expected to fill the gap left by the
-quantitative approach and will help to understand if metrics are useful
-for their daily work, from a more managerial point of view or if they
-are useless at all for them.
+En canto aos datos cualitativos, tamén será necesaria a retroalimentación do equipo de desenvolvemento e dos/as cargos superiores, xa que comprenden como funciona realmente o proceso actual. Cabe esperar que isto solucione as cuestións que non acada o enfoque cuantitativo e permita comprender se, desde o punto de vista da dirección, as métricas son útiles para o seu traballo ou non o son en absoluto.
 
-Finally, it is necessary to define the goals, questions and metrics that
-will help to understand how much improvement we had when applying new
-policies in the software development process and other areas. Those
-metrics can also be linked to some actions such as alerts when the
-software process is not evolving as expected. And those alerts should
-end in actions or decisions in the ‘Act’ step.
+Por último, é preciso definir os obxectivos, preguntas e métricas que axudarán a entender a contía da mellora á hora de aplicar novas políticas no proceso de desenvolvemento de software e noutras áreas. Esas métricas tamén se poden vincular a algunhas accións, como alertas cando o proceso do software non evoluciona como se esperaba. E esas alertas deberían rematar en accións ou decisións no paso de «Actuar».
 
-Summarizing: qualitative and quantitative feedback, definition of goals
-and questions that will be checked later to measure success and tracking
-of the current situation of the project at the point of initiating this
-process.
+En resumo; a retroalimentación cualitativa e cuantitativa, a definición de obxectivos e preguntas para medir o seu éxito que se comprobarán con posterioridade e, no momento de iniciar este proceso, facer un seguimento da situación do proxecto.
 
-Once the metrics and KPI’s were defined, the ‘Do’ step will take some
-weeks or months of work where developers work in a certain situation
-with some specific conditions. The ‘Check’ step will help to determine
-if this process was successful enough depending on the original goals
-defined at the ’Plan’ step. We may have improved the performance of the
-development model, but if the goal of this cycle was to attract more
-developers, we would have failed.
+Unha vez que se definen as métricas e os KPI, o paso «Facer» levará algunhas semanas ou meses de traballo nos que os/as desenvolvedores/as traballarán nunha determinada situación con algunhas condicións específicas. O paso de «Comprobar» permitirá determinar se este proceso tivo o éxito suficiente, en función dos obxectivos orixinais definidos no paso «Planificar». Poderiamos ter mellorado o rendemento do modelo de desenvolvemento, pero se o obxectivo deste ciclo fose atraer máis desenvolvedores/as, fallariamos.
 
-On top of this, the application of different policies or actions may
-take place in parallel and with different projects. Let’s take the
-example of selecting a new governance model for three different inner
-source projects: benevolent dictator, pure meritocracy where developers
-can work on their own and a mixing model of meritocracy but where
-developers are guided in the type of tasks they can work on.
+Ademais, a aplicación de diferentes políticas ou accións pode levarse a cabo de forma paralela e con diferentes proxectos. Poñamos o exemplo da selección dun novo modelo de gobernación para tres proxectos InnerSource diferentes: ditador/a benévolo/a, meritocracia pura na que os/as desenvolvedores/as poden traballar por si mesmos/as e un modelo mixto de meritocracia no que se guía aos/ás desenvolvedores/as no tipo de tarefas nas que poden traballar.
 
-This may help to follow a testing process where the governance model can
-be tested in small scale and the most successful govern later exported
-to others. This test A/B may help to understand the best governance
-model in certain circumstances. And having qualitative and quantitative
-feedback from the people involved in the process and the data sources
-they used provide great insights about the performance of the several
-models.
+Isto pode axudar a seguir un proceso de proba do modelo de goberno a pequena escala, de xeito que aquel con máis éxito poida exportarse posteriormente a outros. Esta proba A/B permite determinar o mellor modelo de goberno en determinadas circunstancias. E contar coa retroalimentación cualitativa e cuantitativa das persoas implicadas no proceso, e das fontes de datos que empregaron, proporciona unha valiosa perspectiva sobre o rendemento dos varios modelos.
