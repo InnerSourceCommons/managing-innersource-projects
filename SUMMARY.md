@@ -6,7 +6,7 @@
   * [Marco de traballo](introduction/framework.md)
   * [Autoría e revisións](introduction/authors.md)
 * [Infraestrutura](infrastructure/infrastructure.md)
-  * [Infraestrutura básica](infraestrutura/basics.md)
+  * [Infraestrutura básica](infrastructure/basics.md)
   * [Compare canto ten de InnerSource a súa infraestrutura](infrastructure/assessment.md)
   * [Autoría e revisións](infrastructure/authors.md)
 * [Cales, cando e como empregalas](measuring/measuring.md)
