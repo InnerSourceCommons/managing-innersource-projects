@@ -4,7 +4,7 @@
 * [Introdución](introduction/introduction.md)
   * [Escenarios](introduction/scenarios.md)
   * [Marco de traballo](introduction/framework.md)
-  * [Autoría](introduction/authors.md)
+  * [Autoría e revisións](introduction/authors.md)
 * [Infraestrutura](infrastructure/infrastructure.md)
   * [Infraestrutura básica](infraestrutura/infrastructure.md)
   * [Compare canto ten de InnerSource a súa infraestrutura](infrastructure/infrastructure.md)
