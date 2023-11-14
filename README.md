@@ -1,6 +1,6 @@
 # Resumo
 
-<img src="managing-innersource-projects-cover_gl.jpg" title="Xestión de proxectos InnerSource">
+![Xestión de proxectos InnerSource](managing-innersource-projects-cover_gl.jpg)
 
 Este libro busca proporcionar información sobre a xestión de distintos aspectos indispensables á hora de empregar InnerSource nas empresas.
 
@@ -44,4 +44,4 @@ Distribúese baixo licenza Creative Commons Atribución - Compartir Igual 4.0 In
 * María Lucía González Castro
 * Vanesa Pol Hermida
 
-<img src="fondos-publicos.png" title="Fondos Públicos">
+![Fondos Públicos](fondos-publicos.png)
