@@ -1,6 +1,6 @@
 # Managing InnerSource Projects book
 
-<img src="managing-innersource-projects-cover.jpg" title="Managing InnerSource Projects">
+![Managing InnerSource Projects](managing-innersource-projects-cover.jpg)
 
 This book is intended to bring, from a managerial perspective, the several aspects needed
 when introducing InnerSource methodologies into enterprises.
@@ -41,7 +41,6 @@ See the ["Metrics" section of CONTRIBUTING.md](./CONTRIBUTING.md#metrics).
 For further reading, we encourage you to participate in the [InnerSource Commons],
 a non-profit foundation where dozens of companies are already sharing experiences and working to
 improve their craft of InnerSource.
-
 
 ## Acknowledgements
 
