@@ -36,7 +36,7 @@ Todo o contido que se atopa neste repositorio ten licenza [CC BY-SA 4.0](https:/
 
 Esta tradución á lingua galega foi elaborada pola [AMTEGA](https://amtega.xunta.gal) (Xunta de Galicia). Cofinanciada a través de Fondos Europeos.
 
-Distribúese baixo licenza Creative Commons Atribución - Compartir Igual 4.0 Internacional (CC BY-SA 4.0). Pode consultar as condicións desta licenza [aquí](https://creativecommons.org/licenses/by‐sa/4.0/deed.gl).
+Distribúese baixo licenza Creative Commons Atribución - Compartir Igual 4.0 Internacional (CC BY-SA 4.0). Pode consultar as condicións desta licenza [aquí](https://creativecommons.org/licenses/by-sa/4.0/deed.gl).
 
 **Autoras da tradución:**
 
