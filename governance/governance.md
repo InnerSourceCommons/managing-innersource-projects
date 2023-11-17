@@ -115,7 +115,7 @@ Building trust means dealing with fears, uncertainty, and doubts
 
   - **Legal context**, because most participants usually are
     unaware of the relevant details.
-  - **Security**, mainly due to the not-invented here (MIH)
+  - **Security**, mainly due to the not-invented here (NIH)
     syndrome. In fact having the source code available ought to
     help building trust by enabling auditability, and shifting
     some testing from back-box to white-box.
