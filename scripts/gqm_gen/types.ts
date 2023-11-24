@@ -27,6 +27,7 @@ export type FileLink = {
 };
 export type Node = {
   id: string;
+  type: LinkType;
   shape: string;
   label: string;
 };

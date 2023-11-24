@@ -6,6 +6,13 @@ import { FileLink } from "./types";
 
 const graph = getGQMFileLinks();
 
+export function getLinkUrl(linkType: LinkType, file: string) {
+  // https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/goals/reduce-duplication.md
+  const measuringUrl = "https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/";
+  const url = `${measuringUrl}/${linkType.toLowerCase()}s/${file}`
+  return url;
+}
+
 export function getGQMFileLinks() {
   const graph: Graph = {
     nodes: [],
@@ -31,10 +38,11 @@ export function getGQMFileLinks() {
   return graph;
 }
 
-export function appendToGraph(graph: Graph, goalFileLinks: FileLink[]) {
-  goalFileLinks.forEach((fileLink) => {
+export function appendToGraph(graph: Graph, fileLinks: FileLink[]) {
+  fileLinks.forEach((fileLink) => {
     const node: Node = {
       id: fileLink.file,
+      type: fileLink.linkType,
       shape: NodeShape.RECT,
       label: fileLink.label,
     };
@@ -117,17 +125,19 @@ export function getLinks(parsed: Commonmark.Node) {
 }
 
 export function getNodeShapeSyntax(node: Node) {
+  const nodeUrl = getLinkUrl(node.type, node.id)
+  const nodeLabel = `<a href='${nodeUrl}'>${node.label}</a>`;
   switch (node.shape) {
     case 'rect':
-      return `[${node.label}]`;
+      return `[${nodeLabel}]`;
     case 'circ':
-      return `((${node.label}))`;
+      return `((${nodeLabel}))`;
     case 'roundrect':
-      return `((${node.label}))`;
+      return `((${nodeLabel}))`;
     case 'diamond':
-      return `{${node.label}}`;
+      return `{${nodeLabel}}`;
     default:
-      return `[${node.label}]`;
+      return `[${nodeLabel}]`;
   }
 }
 
@@ -135,17 +145,44 @@ export function generateMermaidDiagram(graph: Graph) {
   const nodes = graph.nodes;
   const edges = graph.edges;
 
-  let mermaidSyntax = "```mermaid\ngraph TB\n";
-
+  let mermaidSyntax = `\`\`\`mermaid\n
+  graph LR;\n
+    subgraph GQM[Goals, Questions, Metrics]\n
+  `;
+  
   nodes.forEach((node) => {
-    const nodeSyntax = getNodeShapeSyntax(node);
-    mermaidSyntax += `${node.id}${nodeSyntax}\n`;
+    const nodeSyntax = getNodeShapeSyntax(node)
+    mermaidSyntax += `    ${node.id}${nodeSyntax}\n`
   });
 
   edges.forEach((edge) => {
     const arrowSyntax: string = ArrowType.ARROW;
     mermaidSyntax += `${edge.from}${arrowSyntax}${edge.to}\n`;
   });
+
+  const goalsList = nodes.filter(n => n.type == LinkType.GOAL).map(n => `${n.id}`).join(',');
+  const questionsList = nodes.filter(n => n.type == LinkType.QUESTION).map(n => `${n.id}`).join(',');
+  const metricsList = nodes.filter(n => n.type == LinkType.METRIC).map(n => `${n.id}`).join(',');
+  
+  mermaidSyntax += "  end";
+  mermaidSyntax += `
+      subgraph Legend
+        direction TB
+
+        goal[Goal]
+        question[Question]
+        metric[Metric]
+
+        classDef goals stroke:green,stroke-width:2px;
+        class goal,${goalsList} goals
+
+        classDef questions stroke:orange,stroke-width:2px;
+        class question,${questionsList} questions
+
+        classDef metrics stroke:purple,stroke-width:2px;
+        class metric,${metricsList} metrics
+      end  
+  `;
   mermaidSyntax += "\n```";
   return mermaidSyntax;
 }

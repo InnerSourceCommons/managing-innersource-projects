@@ -6,8 +6,7 @@ import {
   getLinks,
   getFileLinks,
   generateMermaidDiagram,
-  appendToGraph,
-  getGQMFileLinks
+  getGQMFileLinks,
 } from "./index";
 
 test("can get links", () => {
@@ -34,11 +33,9 @@ test("can generate mermaid diagram", () => {
 });
 
 test("can generate mermaid diagram from file", { only: true }, () => {
-
-  
   const graph = getGQMFileLinks();
 
   const diagram = generateMermaidDiagram(graph);
-console.log(diagram)
+  console.log(diagram);
   assert(diagram.indexOf("graph TB") > 1);
 });
