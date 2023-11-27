@@ -37,5 +37,5 @@ test("can generate mermaid diagram from file", { only: true }, () => {
 
   const diagram = generateMermaidDiagram(graph);
   console.log(diagram);
-  assert(diagram.indexOf("graph TB") > 1);
+  assert(diagram.indexOf("graph LR;") > 1);
 });
