@@ -10,7 +10,8 @@
     "scripts": {
         "build": "tsc",
         "start": "tsc ./index.ts && node index.js",
-        "test": "tsc && node --import tsx --test-only *test.ts"
+        "test": "tsc && node --import tsx --test-only *test.ts",
+        "coverage": "nyc npm run test"
     },
     "devDependencies": {
         "@types/commonmark": "^0.27.7",
