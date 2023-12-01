@@ -7,7 +7,6 @@ import { FileLink } from "./types";
 const graph = getGQMFileLinks();
 
 export function getLinkUrl(linkType: LinkType, file: string) {
-  // https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/goals/reduce-duplication.md
   const measuringUrl = "https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/";
   const url = `${measuringUrl}/${linkType.toLowerCase()}s/${file}`
   return url;
