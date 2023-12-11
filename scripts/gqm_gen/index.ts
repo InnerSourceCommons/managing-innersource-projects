@@ -4,7 +4,9 @@ import * as path from "path";
 import { Node, Edge, Graph, Link, LinkType, NodeShape, ArrowType } from "./types";
 import { FileLink } from "./types";
 
-const graph = getGQMFileLinks();
+const mdFilePath = process.env.npm_config_markDownFilePath || "../../measuring";
+
+const graph = getGQMFileLinks(mdFilePath);
 
 export function getLinkUrl(linkType: LinkType, file: string) {
   const measuringUrl = "https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/";
@@ -12,15 +14,15 @@ export function getLinkUrl(linkType: LinkType, file: string) {
   return url;
 }
 
-export function getGQMFileLinks() {
+export function getGQMFileLinks(mdFilePath: string) {
   const graph: Graph = {
     nodes: [],
     edges: [],
   };
 
-  const goalsPath = "../../measuring/goals/";
-  const questionsPath = "../../measuring/questions/";
-  const metricsPath = "../../measuring/metrics/";
+  const goalsPath = `${mdFilePath}/goals/`;
+  const questionsPath = `${mdFilePath}/questions/`;
+  const metricsPath = `${mdFilePath}/metrics/`;
   
   const goalFileLinks: FileLink[] = getFileLinks(LinkType.GOAL, goalsPath);
   appendToGraph(graph, goalFileLinks);
@@ -144,8 +146,7 @@ export function generateMermaidDiagram(graph: Graph) {
   const nodes = graph.nodes;
   const edges = graph.edges;
 
-  let mermaidSyntax = `\`\`\`mermaid\n
-  graph LR;\n
+  let mermaidSyntax = `\`\`\`mermaid\ngraph LR;\n
     subgraph GQM[Goals, Questions, Metrics]\n
   `;
   
@@ -156,7 +157,7 @@ export function generateMermaidDiagram(graph: Graph) {
 
   edges.forEach((edge) => {
     const arrowSyntax: string = ArrowType.ARROW;
-    mermaidSyntax += `${edge.from}${arrowSyntax}${edge.to}\n`;
+    mermaidSyntax += `    ${edge.from}${arrowSyntax}${edge.to}\n`;
   });
 
   const goalsList = nodes.filter(n => n.type == LinkType.GOAL).map(n => `${n.id}`).join(',');

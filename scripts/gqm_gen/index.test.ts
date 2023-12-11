@@ -1,4 +1,5 @@
 import * as Commonmark from "commonmark";
+import * as fs from "fs";
 import test from "node:test";
 import assert from "node:assert";
 import { FileLink, Graph, LinkType } from "./types";
@@ -6,7 +7,7 @@ import {
   getLinks,
   getFileLinks,
   generateMermaidDiagram,
-  getGQMFileLinks,
+  getGQMFileLinks
 } from "./index";
 
 test("can get links", () => {
@@ -29,13 +30,11 @@ test("can generate mermaid diagram", () => {
     edges: [],
   };
   const diagram = generateMermaidDiagram(graph);
-  assert(diagram.indexOf("graph TB") > 1);
+  assert(diagram.indexOf("graph LR") > 1);
 });
 
-test("can generate mermaid diagram from file", { only: true }, () => {
-  const graph = getGQMFileLinks();
-
+test("can generate mermaid diagram from file", () => {
+  const graph = getGQMFileLinks('../../measuring/');
   const diagram = generateMermaidDiagram(graph);
-  console.log(diagram);
   assert(diagram.indexOf("graph LR;") > 1);
 });
