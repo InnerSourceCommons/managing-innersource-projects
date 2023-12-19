@@ -4,6 +4,28 @@
 
 This page works better in GitHub; [click here](https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/use_gqm.md).
 
+<!--- 
+
+WARNING: Changes to this graph are overwritten by a GitHub workflow. 
+
+To update this graph, add new goals, questions, and metrics to the following directores.
+
+./goals
+./questions
+./metrics
+
+A GitHub workflow will automatically update this graph with your changes.
+
+See this README.md file for more information about how to add goals, questions, and metrics.
+
+./gqm_gen/README.md
+
+To test your changes see this README.md file.
+
+../scripts/gqm_gen/README.md
+
+--->
+
 ```mermaid
 graph LR;
 
