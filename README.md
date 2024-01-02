@@ -1,6 +1,6 @@
 # Managing InnerSource Projects book
 
-<img src="managing-innersource-projects-cover.jpg" title="Managing InnerSource Projects">
+![Managing InnerSource Projects](managing-innersource-projects-cover.jpg)
 
 This book is intended to bring, from a managerial perspective, the several aspects needed
 when introducing InnerSource methodologies into enterprises.
@@ -12,7 +12,7 @@ within this respect in a way that this is useful for third parties. For this, we
 actively looking for reviewers that can help in this process.
 For those that have already contributed to the book, thanks a lot!
 
-You can find more information about the process in the [contributing section](https://github.com/dicortazar/managing-inner-source-projects/blob/master/CONTRIBUTING.md).
+You can find more information about the process in the [contributing section](https://github.com/dicortazar/managing-inner-source-projects/blob/main/CONTRIBUTING.md).
 
 ## Who is fostering this initiative?
 
@@ -41,7 +41,6 @@ See the ["Metrics" section of CONTRIBUTING.md](./CONTRIBUTING.md#metrics).
 For further reading, we encourage you to participate in the [InnerSource Commons],
 a non-profit foundation where dozens of companies are already sharing experiences and working to
 improve their craft of InnerSource.
-
 
 ## Acknowledgements
 

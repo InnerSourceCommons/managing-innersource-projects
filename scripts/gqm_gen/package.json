@@ -1,0 +1,22 @@
+{
+    "name": "gqmgen",
+    "version": "1.0.0",
+    "author": "InnerSource Commons <info@innersourcecommons.org>",
+    "main": "index.js",
+    "type": "commonjs",
+    "dependencies": {
+        "commonmark": "^0.30.0"
+    },
+    "scripts": {
+        "build": "tsc",
+        "start": "tsc ./index.ts && node index.js",
+        "test": "tsc && node --import tsx --test-only *test.ts",
+        "coverage": "nyc npm run test"
+    },
+    "devDependencies": {
+        "@types/commonmark": "^0.27.7",
+        "@types/node": "^20.7.0",
+        "tsx": "^3.14.0",
+        "typescript": "^5.2.2"
+    }
+}
