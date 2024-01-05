@@ -18,5 +18,7 @@ If the project is an API and requires caller authentication, then read the API l
 If the project is a module (or package), then scan your source control system for files that list out dependencies for a package manager to install.
 Here is a list of [many package managers](https://github.com/oss-review-toolkit/ort#analyzer).
 Look in those dependencies for usage of your InnerSource project.
-
-If the project is a UI and requires login, then read the project logs to determine the list of users.
+* The [ORT](https://github.com/oss-review-toolkit/ort) project will parse out these dependencies for you.
+* [Snyk](https://snyk.io/) is a security tool that your organization may already use.
+As part of its operation, it already parses out these dependencies.
+This information is exposed via [Snyk API](https://snyk.docs.apiary.io/#reference/dependencies).
