@@ -1,0 +1,32 @@
+name: Update GQM
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'measuring/goals/**'
+      - 'measuring/questions/**'
+      - 'measuring/metrics/**'
+
+  workflow_dispatch:
+jobs:
+    generateDiagram:
+      name: Generate Diagram
+      runs-on: ubuntu-latest
+      steps:    
+        - name: Checkout
+          uses: actions/checkout@v4
+        - name: Use Node.js
+          uses: actions/setup-node@v3
+          with:
+            node-version: '21.x'
+        - run: npm install --prefix ./scripts/gqm_gen
+        - run: npm run coverage-report --prefix ./scripts/gqm_gen
+        - name: Report NYC coverage
+          uses: sidx1024/report-nyc-coverage-github-action@v1.2.7
+          with:
+            coverage_file: ".nyc_output/nyc-coverage-report/coverage-summary.json"
+        - run: npm run --silent start --prefix ./scripts/gqm_gen > ./new_gqm.md.tmp
+        - run: sh ./scripts/gqm_gen/gqm_update.sh ./new_gqm.md.tmp ./measuring/use_gqm.md > ./measuring/use_gqm.md.tmp
+        - run: rm -f ./new_gqm.md.tmp
+        - run: mv -f ./measuring/use_gqm.md.tmp ./measuring/use_gqm.md
+        - run: sh ./scripts/gqm_gen/gqm_commit.sh

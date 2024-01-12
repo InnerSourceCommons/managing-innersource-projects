@@ -10,12 +10,14 @@
     "scripts": {
         "build": "tsc",
         "start": "tsc ./index.ts && node index.js",
-        "test": "tsc && node --import tsx --test-only *test.ts",
-        "coverage": "nyc npm run test"
+        "test": "tsc && node --import tsx *test.ts",
+        "coverage": "nyc npm run test",
+        "coverage-report": "nyc --exclude-after-remap false --reporter=json-summary --report-dir=.nyc_output/nyc-coverage-report npm run test"
     },
     "devDependencies": {
         "@types/commonmark": "^0.27.7",
         "@types/node": "^20.7.0",
+        "nyc": "^15.1.0",
         "tsx": "^3.14.0",
         "typescript": "^5.2.2"
     }
