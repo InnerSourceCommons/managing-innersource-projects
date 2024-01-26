@@ -36,11 +36,13 @@ graph LR;
     who-contributes.md[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring//questions/who-contributes.md'>Who contributes to the InnerSource project?</a>]
     who-uses.md[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring//questions/who-uses.md'>Who uses the InnerSource project?</a>]
     code-contributions.md[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring//metrics/code-contributions.md'>Code contributions</a>]
+    contribution_count.md[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring//metrics/contribution_count.md'>Code contributions</a>]
     usage-count.md[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring//metrics/usage-count.md'>Usage count</a>]
     find-projects.md-->who-uses.md
     find-projects.md-->who-contributes.md
     reduce-duplication.md-->who-uses.md
     who-contributes.md-->code-contributions.md
+    who-contributes.md-->contribution_count.md-
     who-uses.md-->usage-count.md
   end
       subgraph Legend
@@ -57,7 +59,7 @@ graph LR;
         class question,who-contributes.md,who-uses.md questions
 
         classDef metrics stroke:purple,stroke-width:2px;
-        class metric,code-contributions.md,usage-count.md metrics
+        class metric,who-contributes.md, code-contributions.md,usage-count.md metrics
       end  
   
 ```
