@@ -163,6 +163,8 @@ When configuring repository creation settings at the Organization Level, it's es
 
 *Depending on the type of Github instance you are using, the configurations options available may be what are shown below or there might not be an option for "internal" visible repositories.*
 
+| Repository creation | Description | Recommendation |
+| --- | --- | --- |
 | Disabled | Members will not be able to create repositories. | Discourages repository creation and may hinder InnerSource practices. Consider enabling creation for collaboration. |
 | Members can create repositories | Members are allowed to create repositories, but with restrictions on the types available (public, private, internal). | Encourage the creation of repositories while specifying the types that align with your organization's guidelines. |
 | ┣ Public | Members can create public repositories visible to everyone on GitHub. | Promote open sharing and collaboration with both internal and external stakeholders. |
