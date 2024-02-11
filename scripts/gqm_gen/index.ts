@@ -9,7 +9,7 @@ const mdFilePath = process.env.npm_config_markDownFilePath || "../../measuring";
 const graph = getGQMFileLinks(mdFilePath);
 
 export function getLinkUrl(linkType: LinkType, file: string) {
-  const measuringUrl = "https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/";
+  const measuringUrl = "https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring";
   const url = `${measuringUrl}/${linkType.toLowerCase()}s/${file}`
   return url;
 }
@@ -127,7 +127,7 @@ export function getLinks(parsed: Commonmark.Node) {
 
 export function getNodeShapeSyntax(node: Node) {
   const nodeUrl = getLinkUrl(node.type, node.id)
-  const nodeLabel = `<a href='${nodeUrl}'>${node.label}</a>`;
+  const nodeLabel = `${node.label}`;
   switch (node.shape) {
     case 'rect':
       return `[${nodeLabel}]`;
@@ -150,15 +150,30 @@ export function generateMermaidDiagram(graph: Graph) {
     subgraph GQM[Goals, Questions, Metrics]\n
   `;
   
+  mermaidSyntax += "  %% begin nodes\n";
   nodes.forEach((node) => {
     const nodeSyntax = getNodeShapeSyntax(node)
     mermaidSyntax += `    ${node.id}${nodeSyntax}\n`
   });
+  mermaidSyntax += "    %% end nodes\n\n";
+  
+  mermaidSyntax += "    %% begin edges\n";
 
   edges.forEach((edge) => {
     const arrowSyntax: string = ArrowType.ARROW;
     mermaidSyntax += `    ${edge.from}${arrowSyntax}${edge.to}\n`;
   });
+
+  mermaidSyntax += "    %% end edges\n\n";
+
+  mermaidSyntax += "    %% begin clicks\n"
+
+  nodes.forEach((node) => {
+    const nodeUrl = getLinkUrl(node.type, node.id);
+    mermaidSyntax += `    click ${node.id} "${nodeUrl}" "${node.label}"\n`; 
+  });
+
+  mermaidSyntax += "    %% end clicks\n\n"
 
   const goalsList = nodes.filter(n => n.type == LinkType.GOAL).map(n => `${n.id}`).join(',');
   const questionsList = nodes.filter(n => n.type == LinkType.QUESTION).map(n => `${n.id}`).join(',');
