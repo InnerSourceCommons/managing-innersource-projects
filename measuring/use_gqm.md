@@ -27,8 +27,6 @@ To test your changes see this README.md file.
 --->
 
 ```mermaid
-mermaid:
-  securityLevel: 'loose'
 graph LR;
 
     subgraph GQM[Goals, Questions, Metrics]
