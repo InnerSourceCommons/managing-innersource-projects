@@ -31,19 +31,32 @@ graph LR;
 
     subgraph GQM[Goals, Questions, Metrics]
 
-      find-projects.md[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring//goals/find-projects.md'>Find InnerSource Projects</a>]
-    reduce-duplication.md[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring//goals/reduce-duplication.md'>Reduce duplication</a>]
-    who-contributes.md[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring//questions/who-contributes.md'>Who contributes to the InnerSource project?</a>]
-    who-uses.md[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring//questions/who-uses.md'>Who uses the InnerSource project?</a>]
-    code-contributions.md[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring//metrics/code-contributions.md'>Code contributions</a>]
-    contribution_count.md[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring//metrics/contribution_count.md'>Code contributions</a>]
-    usage-count.md[<a href='https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring//metrics/usage-count.md'>Usage count</a>]
+    %% begin nodes
+    find-projects.md[Find InnerSource Projects]
+    reduce-duplication.md[Reduce duplication]
+    who-contributes.md[Who contributes to the InnerSource project?]
+    who-uses.md[Who uses the InnerSource project?]
+    code-contributions.md[Code contributions]
+    usage-count.md[Usage count]
+    %% end nodes
+
+    %% begin edges
     find-projects.md-->who-uses.md
     find-projects.md-->who-contributes.md
     reduce-duplication.md-->who-uses.md
     who-contributes.md-->code-contributions.md
-    who-contributes.md-->contribution_count.md-
     who-uses.md-->usage-count.md
+    %% end edges
+
+    %% begin clicks
+    click find-projects.md "https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/goals/find-projects.md" "Find InnerSource Projects" _blank
+    click reduce-duplication.md "https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/goals/reduce-duplication.md" "Reduce duplication"
+    click who-contributes.md "https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/questions/who-contributes.md" "Who contributes to the InnerSource project?"
+    click who-uses.md "https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/questions/who-uses.md" "Who uses the InnerSource project?"
+    click code-contributions.md "https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/metrics/code-contributions.md" "Code contributions"
+    click usage-count.md "https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/metrics/usage-count.md" "Usage count"
+    %% end clicks
+
   end
       subgraph Legend
         direction TB
@@ -59,7 +72,7 @@ graph LR;
         class question,who-contributes.md,who-uses.md questions
 
         classDef metrics stroke:purple,stroke-width:2px;
-        class metric,who-contributes.md, code-contributions.md,usage-count.md metrics
+        class metric,code-contributions.md,usage-count.md metrics
       end  
   
 ```
