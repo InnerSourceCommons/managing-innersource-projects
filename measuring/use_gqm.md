@@ -4,6 +4,8 @@
 
 This page works better in GitHub; [click here](https://bit.ly/3tOrsbO).
 
+When opening diagram links, right click to open in a new window until this discussion is resolved; [Mermaid no longer render links](https://github.com/orgs/community/discussions/106690), or another solution arises.
+
 <!--- 
 
 WARNING: Changes to this graph are overwritten by a GitHub workflow. 
