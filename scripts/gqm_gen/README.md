@@ -31,7 +31,7 @@ npm install
 Builds the mermaid diagram and outputs it to stdout.
 
 ```bash
-npm run --silent start > gqm.mmd && mmdc --input gqm.md --output gqm.png
+npm run --silent start > gqm.md && mmdc --input gqm.md --output gqm.png
 ```
 
 Note that the file ending `.mmd` is not a typo. It is mermaid markdown file.
