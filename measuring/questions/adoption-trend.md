@@ -9,4 +9,4 @@ Lack of adoption, or stagnant adoption may reveal that it is necessary to rethin
 
 | **Metric** | **How it answers the question** | **Gotchas** |
 | --- | --- | --- |
-| [Number of InnerSource repositories](../metrics/number-of-innersource-repositories.md) | The number of (source code) repositories that are consider InnerSource are directly related to the adoption of the practice. | Depending on how you define _InnerSource repositories_, it can be pronte to false positives and/or negatives |
+| [Number of InnerSource repositories](../metrics/number-of-innersource-repositories.md) | The number of (source code) repositories that are consider InnerSource are directly related to the adoption of the practice. | Depending on how you define _InnerSource repositories_, it can be prone to false positives and/or negatives |
