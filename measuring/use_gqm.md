@@ -2,7 +2,7 @@
 
 *An overview of the Goals, Questions, and Metrics (GQM) catalog.*
 
-This page works better in GitHub; [click here](https://bit.ly/3tOrsbO).
+Right-click on any node representing a goal, question, or metric to open a new tab with more detailed information.
 
 <!--- 
 
