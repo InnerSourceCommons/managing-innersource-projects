@@ -3,9 +3,9 @@ Referencias[^1][^2][^3][^4][^5][^6][^7]
 
 [^1]: Unha *pull request* é a acción de presentar un fragmento de código para a súa revisión. Este termo ven das comunidades de software libre e xurdiu do traballo colaborativo en GitHub.
  
-[^2]: Modelado e medición de *software*: O paradigma métrico da cuestión meta. Victor R. Basili.
+[^2]: Modelaxe e medición de *software*: o paradigma métrico da cuestión meta. Victor R. Basili.
 
-[^3]: Existen moitas charlas e, mesmo, manuais en Internet que mostran os obxectivos de InnerSource. A listaxe proposta dos principais non pretende ser exhaustiva, senón unha introdución ao contexto InnerSource. E podería considerarse un resumo das seguintes charlas e manuais: *Getting Started with InnerSource. Keys to collaboration and productivity inside your company* [Iniciación a InnerSource. Claves para a colaboración e a produtividade dentro da súa empresa] de Andy Oram; *Inner Sourcing. Enterprise Lessons Learned from the Open Source Community* [InnerSource: Leccións empresariais aprendidas da comunidade de software libre] de Jim Jagielski; e *Community Development Practices in Corporate IT. InnerSource Fundamentals* [Prácticas de desenvolvemento comunitario en TI. Fundamentos de InnerSource] de Guy Martin e Andrew Aitken.
+[^3]: Existen moitas charlas e, mesmo, manuais na internet que mostran os obxectivos de InnerSource. A listaxe proposta dos principais non pretende ser exhaustiva, senón unha introdución ao contexto InnerSource. E podería considerarse un resumo das seguintes charlas e manuais: *Getting Started with InnerSource. Keys to collaboration and productivity inside your company* [Iniciación a InnerSource. Claves para a colaboración e a produtividade dentro da súa empresa] de Andy Oram; *Inner Sourcing. Enterprise Lessons Learned from the Open Source Community* [InnerSource: Leccións empresariais aprendidas da comunidade de software libre] de Jim Jagielski; e *Community Development Practices in Corporate IT. InnerSource Fundamentals* [Prácticas de desenvolvemento comunitario en TI. Fundamentos de InnerSource] de Guy Martin e Andrew Aitken.
 
 [^4]: *Best Kept Secrets of Peer Code Review* [Os secredos mellor gardados da revisión por pares], escrito por Jason Cohen, Steven Teleki, Eric Brown et al.
 
