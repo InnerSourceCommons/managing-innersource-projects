@@ -6,7 +6,7 @@ As projects adopt InnerSource, there are signs of such adoption on the correspon
 Examples are the presences of a `CONTRIBUTING.md` file, a "How to Contribute" section on the `README.md` file or repository topics in GitHub such as `innersource`.
 
 One challenge with this metric, is defining an InnerSource repository, as there is no clear cut definition.
-Some companies may have strict requirements for what an InnerSource repository is, others may adopt a _self-declaration_.
+Some companies may have strict requirements that define an InnerSource repository, while others may adopt a _self-declaration_.
 
 Another challenge is that companies that use (entirely or partially) the concept of a monorepo may need to find a different unit of measure to observe, as a single repository may be used for many projects or software packages.
 
