@@ -14,7 +14,11 @@ Another challenge is that companies that use (entirely or partially) the concept
 
 **Unit of Measurement**: Number of repositories 
 
-**Interpretation**: Comparing an absolute number to a range does not make sense here. Comparing percentages (e.g. 10% of repositories are InnerSource) would make sense, but there is no strong base for comparison at the moment. What is more interesting for this metric is to observe its trend (how it changes over time).  
+**Interpretation**: Comparing an absolute number to a range does not make sense in this context. Comparing percentages does make sense, but there's no strong base for comparison.
+
+e.g. 10% of repositories are InnerSource
+
+It's more interesting to observe this metric's trend over time.  
 
 **Measuring**
 
