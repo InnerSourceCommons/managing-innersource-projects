@@ -26,4 +26,4 @@ Examples:
 - [InnerSource Portal](https://patterns.innersourcecommons.org/p/innersource-portal) - typically shows the number of InnerSource projects
 - [Repository Activity Score](https://patterns.innersourcecommons.org/p/repository-activity-score) - defines a score for ranking active projects, usable as a criteria to identify InnerSource repositories
 - [Standard Base Documentation](https://patterns.innersourcecommons.org/p/base-documentation) - describe common files used to document different aspects of InnerSource projects
-- [Maturity Model](https://patterns.innersourcecommons.org/p/maturity-model) - defines maturity model for different aspects of InnerSource projects, that could be used to decide on how classify a repository as InnerSource
+- [Maturity Model](https://patterns.innersourcecommons.org/p/maturity-model) - defines levels of maturity for InnerSource projects and can help classify a repository as InnerSource.
