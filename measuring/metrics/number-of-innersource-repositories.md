@@ -24,7 +24,7 @@ It's more interesting to observe this metric's trend over time.
 
 Examples:
 - Measure the number of GitHub repositories tagged with the `innersource` topic.
-- Measure the number of repositories that are above a given threshold on automated maturity score calculation
+- Measure the number of repositories that are above a given threshold using an automated maturity score calculation
 
 ## Related InnerSource Patterns
 - [InnerSource Portal](https://patterns.innersourcecommons.org/p/innersource-portal) - typically shows the number of InnerSource projects
