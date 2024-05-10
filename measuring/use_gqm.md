@@ -4,8 +4,6 @@
 
 Right-click on any node representing a goal, question, or metric to open a new tab with more detailed information.
 
-When opening diagram links, right click to open in a new window until this discussion is resolved; [Mermaid no longer render links](https://github.com/orgs/community/discussions/106690), or another solution arises.
-
 <!--- 
 
 WARNING: Changes to this graph are overwritten by a GitHub workflow. 
