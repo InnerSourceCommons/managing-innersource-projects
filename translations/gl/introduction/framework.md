@@ -2,10 +2,10 @@
 
 Ao adoptar os procesos e principios de InnerSource, as organizacións conseguen:
 
-- Unha xestión eficaz dos recursos, cunha mellor reutilización do código e do coñecemento e un mellor reparto dos costes entre as distintas unidades empresariais.
+- Unha xestión eficaz dos recursos, cunha mellor reutilización do código e do coñecemento e unha mellor repartición dos custos entre as distintas unidades empresariais.
 - Innovacións ou melloras tecnolóxicas máis rápidas, xa que o código se desenvolve de forma colaborativa e transparente por medio das contribucións recibidas das distintas áreas da empresa interesadas.
-- Un equipo de traballo apoderado e máis comprometido, ao permitirlles formar parta da folla de ruta de desenvolvemento da compañía.
--	Maior innovación interna, que permite ao persoal propor novas ideas baseadas na tecnoloxía e coñecementos da empresa.
+- Un equipo de traballo apoderado e máis comprometido, ao permitirlles formar parte da folla de ruta de desenvolvemento da compañía.
+-	Maior innovación interna, que lle permite ao persoal propor novas ideas baseadas na tecnoloxía e nos coñecementos da empresa.
 
 Pero calquera proxecto, incluso os de software libre, necesitará un marco de traballo que poida axudar ao persoal a definir ou dar resposta aos seguintes aspectos:
 
@@ -25,7 +25,7 @@ O dicionario define a gobernación como:
 
 Para o software libre, a gobernación descríbese no documento «modelo de gobernación» de OSSWatch[^1]:
 
->O modelo de gobernación describe os roles que poden asumir os/as participantes dun proxecto e o proceso de toma de decisións dentro do mesmo. Ademais, a gobernación describe as regras básicas para a participación no proxecto e os procesos para a comunicación e o intercambio entre o equipo e a comunidade.
+>O modelo de gobernación describe os roles que poden asumir os/as participantes dun proxecto e o proceso de toma de decisións dentro del. Ademais, a gobernación describe as regras básicas para a participación no proxecto e os procesos para a comunicación e o intercambio entre o equipo e a comunidade.
 
 Xeralmente, o modelo de gobernación é un documento escrito que contén:
 
@@ -50,7 +50,7 @@ Por infraestrutura referímonos ás ferramentas empregadas polo equipo de desenv
 
 ## A colaboración como cambio cultural
 
-Crear unha comunidade comprometida é un dos puntos chave para o éxito e sostibilidade dos proxectos de software libre. O mesmo principio aplícase aos proxectos de InnerSource.
+Crear unha comunidade comprometida é un dos puntos chave para o éxito e a sostibilidade dos proxectos de software libre. O mesmo principio se aplica aos proxectos de InnerSource.
 
 A xestión da comunidade é diferente á xestión tradicional de equipos de desenvolvemento, polo que os/as xestores/as de proxectos deben adaptar as súas habilidades ao novo escenario.
 
@@ -62,9 +62,9 @@ Nun escenario InnerSource perfecto, e baseándonos na cita de David Pink, vosted
 
 Pero non adoitamos vivir en mundos perfectos e hai varios escenarios nos que o financiamento será fundamental para os proxectos de InnerSource:
 
-- Nos pagos en diferentes rexións xeográficas.
+- Nos pagamentos en diferentes rexións xeográficas.
 - Cando hai traballadores/as que combinan o traballo de proxectos InnerSource con outros que non o son.
-- Nos costes compartidos entre diferentes unidades de negocio cun presuposto propio.
+- Nos custos compartidos entre diferentes unidades de negocio cun presuposto propio.
 - Proxectos desenvolvidos por unha combinación de persoal da empresa e subcontratado.
 
 De novo, o software libre proporciona algúns exemplos de como obter financiamento para os seus proxectos e organizacións como Linux Foundation, Apache Software Foundation etc.; as cales, se trasladamos os seus principios «fundacionais» ás nosas compañías, poderían servirnos de referencia.
@@ -73,11 +73,11 @@ De novo, o software libre proporciona algúns exemplos de como obter financiamen
 
 Por último, pero non menos importante, se falamos de xestión, a medición convértese nunha habilidade básica para nós. Máis aló de recompilar datos, os cargos superiores necesitan entender os obxectivos da organización e como empregar os datos recollidos para chegar a alcanzalos. Tamén cómpre coidar a forma de compartir eses datos cos equipos e o que queren conseguir.
 
->«Recompilar datos é só o primeiro paso cara a sabedoría, pero compartir datos é o primeiro paso cara a comunidade.». Henry Lewis Gates (Profesor da Universidade de Harvard).
+>«Recompilar datos é só o primeiro paso cara á sabedoría, pero compartir datos é o primeiro paso cara á comunidade.». Henry Lewis Gates (profesor da Universidade de Harvard).
 
 A medición aberta pode ser moi vantaxosa para a nosa comunidade InnerSource:
 
-- Conciencia; permítenos entender quen somos, que estamos a facer etc.
+- Conciencia; que nos permite entender quen somos, que estamos a facer etc.
 - Control da gobernación, posta en marcha das políticas de seguimento.
 - Transparencia para xerar confianza externa, como para garantir a equidade na nosa comunidade InnerSource.
 
