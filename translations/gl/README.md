@@ -4,7 +4,7 @@
 
 Este libro busca proporcionar información sobre a xestión de distintos aspectos indispensables á hora de empregar InnerSource nas empresas.
 
-É o resultado dun proceso aínda en marcha, no que calquera persoa está convidada a contribuír de calquera xeito posible. As aportacións en forma de ideas, comentarios, correccións de erros tipográficos, ou mesmo cambios en parágrafos ou seccións enteiras, serán benvidas. Este repositorio ten como obxectivo aportar coñecemento especializado desde a industria de maneira que sexa útil a terceiros/as. Para isto, estamos na procura activa de revisores/as que poidan colaborar neste proceso e expresamos o noso agradecemento a aquelas persoas que xa fixeron algunha contribución ao libro.
+É o resultado dun proceso aínda en marcha, no que calquera persoa está convidada a contribuír de calquera xeito posible. As achegas en forma de ideas, comentarios, correccións de erros tipográficos, ou mesmo cambios en parágrafos ou seccións enteiras, serán benvidas. Este repositorio ten como obxectivo achegar coñecemento especializado desde a industria de maneira que sexa útil a terceiros/as. Para isto, estamos na procura activa de revisores/as que poidan colaborar neste proceso e expresamos o noso agradecemento a aquelas persoas que xa fixeron algunha contribución ao libro.
 
 Pode atopar máis información sobre este proceso na [sección de contribucións](https://github.com/dicortazar/managing-inner-source-projects/blob/master/CONTRIBUTING.md).
 
