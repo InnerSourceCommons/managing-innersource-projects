@@ -32,40 +32,9 @@ Let's introduce the *InnerSource framework*.
 
 ## Governance
 
-According to the Business Dictionary, governance is defined as:
+A core aspect of the InnerSource framework is the governance model. Good governance is essential for the success of any project, and InnerSource is no exception.
 
->Establishment of policies, and continuous monitoring
->of their proper implementation, by the members of the
->governing body of an organization. It includes the
->mechanisms required to balance the powers of the
->members (with the associated accountability), and
->their primary duty of enhancing the prosperity and
->viability of the organization
-
-In open source, governance is described in the "governance
-model" document, defined by [OSSWatch](http://oss-watch.ac.uk/resources/governancemodels) as:
-
->A governance model describes the roles that project participants 
->can take on and the process for decision making within the project. 
->In addition, it describes the ground rules for participation in the 
->project and the processes for communicating and sharing within 
->the project team and community
-
-Usually the governance model is a written document containing:
-
--  project goals
-
--  work, management and collaboration infrastructures definition
-
--  people roles and responsibilities definitions
-
--  community support mechanisms 
-
--  decision making process policies description
-
--  contribution process policies description
-
--  monitoring policies and mechanisms description
+Pick the right [governance standards and model](/governance/governance.md) for your organization.
 
 ## Technical infrastructure
 
