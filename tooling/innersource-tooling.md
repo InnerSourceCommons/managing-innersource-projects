@@ -4,7 +4,7 @@
 
 This documentation is a compilation of the essential settings and strategies necessary for implementing InnerSource inside an organization. It encompasses both overall strategic elements and specific points relating to SCM configuration.
 
-We also encourage you to read the OSSF's (Open Source Security Foundation's) 
+We also encourage you to read the OpenSSF's (Open Source Security Foundation's) 
 [Source Code Management Configuration Best Practices guide](https://best.openssf.org/SCM-BestPractices/)
 for a perspective focused entirely on security.
 
