@@ -1,6 +1,8 @@
-# Managing InnerSource Projects book
+# Managing an InnerSource Program
 
 ![Managing InnerSource Projects](managing-innersource-projects-cover.jpg)
+
+
 
 This book is intended to bring, from a managerial perspective, the several aspects needed
 when introducing InnerSource methodologies into enterprises.
