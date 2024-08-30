@@ -2,17 +2,29 @@
 
 ![Managing InnerSource Projects](managing-innersource-projects-cover.jpg)
 
-This book is intended to bring, from a managerial perspective, the several aspects needed
-when introducing InnerSource methodologies into enterprises.
+## What is this book about?
 
-This book is a work in progress process where anyone is more than welcome to contribute
+This book is intended to cover all aspects of managing an InnerSource Program at an organization.
+Pitching, starting, scaling, training, governance, infrastructure, metrics, motivation, and much more!
+If there is any explanation that you need in relation to your InnerSource Program, then this book is intended to have it.
+
+## How is the book structured?
+
+This book is divided into sections and articles, each of which cover one single aspect of an InnerSource Program.
+Articles should be relatively short and self-contained so that they can be read in any order and any amount and still be useful.
+Detailed explanation of InnerSource topics should go in the [InnerSource Patterns] book and be linked from the article here.
+Think of the articles in this book like either a conversational introduction/summary to a pattern or possible a journey showing how multiple patterns can be used together in an InnerSource Program.
+
+## Who can contribute?
+
+This book is a work in progress where anyone is more than welcome to contribute
 in any possible way. Ideas, comments, typos, full paragraphs or sections would be
 great. This repository aims at bringing specialized knowledge from the industry
 within this respect in a way that this is useful for third parties. For this, we are
 actively looking for reviewers that can help in this process.
 For those that have already contributed to the book, thanks a lot!
 
-You can find more information about the process in the [contributing section](https://github.com/dicortazar/managing-inner-source-projects/blob/main/CONTRIBUTING.md).
+You can find more information about the process in our [contributing section](./CONTRIBUTING.md).
 
 ## Who is fostering this initiative?
 
@@ -55,3 +67,4 @@ All of the content found in this repository is licensed [CC BY-SA 4.0](https://c
 [Bitergia]: https://bitergia.com/
 [ISPO Working Group]: https://innersourcecommons.org/community/#ispo
 [InnerSource Commons]: https://innersourcecommons.org/
+[InnerSource Patterns]: https://patterns.innersourcecommons.org/
