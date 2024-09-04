@@ -1,14 +1,26 @@
 [book]
-authors = ["Jeff Bailey"]
+authors = ["InnerSource Commons"]
 language = "en"
 multilingual = false
 src = "."
-title = "Managing InnerSource Projects"
+title = "How To Create An InnerSource Program Office"
 
 [preprocessor]
 
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
+
+[preprocessor.embedify]
+giscus.enable = true
+giscus.repo = "InnerSourceCommons/managing-innersource-projects"
+giscus.repo-id = "MDEwOlJlcG9zaXRvcnk4MjY2ODc3OA=="
+giscus.category = "Website"
+giscus.category-id = "DIC_kwDOBO1s6s4CiMTg"
+giscus.reactions-enabled = "1"
+giscus.theme = "preferred_color_scheme"
+giscus.lang = "en"
+giscus.loading = "eager"
+giscus.crossorigin = "anonymous"
 
 [output]
 
