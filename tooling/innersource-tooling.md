@@ -36,3 +36,4 @@ for a perspective focused entirely on security.
   - [Resources](./github-configuration.md/#resources)
 
 ### GitLab
+For GitLab, we are using same - [GitHub InnerSource Strategies](./github-strategy.md#github-innersource-strategies) as that does not changed.
