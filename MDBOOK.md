@@ -16,6 +16,16 @@ To install mdBook, run the following command:
 cargo install mdbook
 ```
 
+Install required preprocessors:
+
+```sh
+# Install mdbook-mermaid for Mermaid diagram support
+cargo install mdbook-mermaid
+
+# Install mdbook-embedify for embedding external content
+cargo install mdbook-embedify
+```
+
 ## Usage
 
 To build the book, run the following command:
@@ -41,6 +51,4 @@ We've enabled the following features:
 
 ## Deployment
 
-TBD
-
-See: <https://github.com/rust-lang/mdBook/blob/master/.github/workflows/deploy.yml>
+Deployment is handled by GitHub Actions. See: <https://github.com/rust-lang/mdBook/blob/master/.github/workflows/deploy.yml>
