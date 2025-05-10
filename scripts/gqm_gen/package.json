@@ -2,15 +2,15 @@
     "name": "gqmgen",
     "version": "1.0.0",
     "author": "InnerSource Commons <info@innersourcecommons.org>",
-    "main": "index.js",
-    "type": "commonjs",
+    "main": "dist/index.js",
+    "type": "module",
     "dependencies": {
         "commonmark": "^0.30.0"
     },
     "scripts": {
         "build": "tsc",
-        "start": "tsc ./index.ts && node index.js",
-        "test": "tsc && node --import tsx *test.ts",
+        "start": "tsc && node --experimental-specifier-resolution=node dist/index.js",
+        "test": "tsc && node --experimental-specifier-resolution=node --import tsx dist/*test.js",
         "coverage": "nyc npm run test",
         "coverage-report": "nyc --exclude-after-remap false --reporter=json-summary --report-dir=.nyc_output/nyc-coverage-report npm run test"
     },
