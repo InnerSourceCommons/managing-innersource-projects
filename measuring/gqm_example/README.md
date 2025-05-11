@@ -1,3 +1,17 @@
+## How Do I Add New Goals, Questions, and Metrics?
+
+Each goal, question, and metric is defined in its own markdown file. The goals, questions, and metrics are used to:
+
+1. Define clear objectives for InnerSource initiatives
+2. Guide the selection of relevant questions
+3. Help determine appropriate metrics for measurement
+
+## Adding New Goals, Questions, and Metrics
+
+To add a new goal, question, or metric:
+1. Create a new markdown file in the `goals`, `questions`, or `metrics` directory
+2. Update the GQM diagram by running the generator in the /scripts/gqm_gen directory
+
 # How Should I Format Goals Questions & Metrics?
 
 * [gqm_goal_template.md](../goals/gqm_goal_template.md)
