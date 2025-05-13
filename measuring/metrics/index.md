@@ -1,24 +1,33 @@
-# Metrics
+# InnerSource Metrics
 
-This section contains all the metrics used to measure InnerSource project questions.
+This directory contains the metrics used to measure InnerSource success. Each metric is defined using the Goal-Question-Metric (GQM) approach and provides specific ways to measure different aspects of InnerSource adoption and effectiveness.
 
 ## Available Metrics
 
-- [Code Contributions](metrics/code-contributions.md) - Measure the number and types of code contributions to InnerSource projects
-- [Contribution Distance](metrics/contribution-distance.md) - Measure how far contributions come from the original team
-- [Number of InnerSource repositories](metrics/number-of-innersource-repositories.md) - Track the total count of InnerSource repositories
-- [Usage Count](metrics/usage-count.md) - Measure how many times a component is used across the organization
+1. [Code Contributions](code-contributions.md)
+   - Measures non-owner commits to a project
+   - Tracks contribution diversity across people, business units, and time
+   - Unit: Ordinal number
 
-## How to Use
+2. [Contribution Distance](contribution-distance.md)
+   - Measures organizational distance between owning team and contributing team
+   - Indicates collaboration effectiveness and project impact
+   - Unit: Manager levels
 
-Each metric is defined in its own markdown file. The metrics are used to:
-1. Quantify answers to questions
-2. Track progress towards goals
-3. Provide actionable insights
+3. [Number of InnerSource Repositories](number-of-innersource-repositories.md)
+   - Tracks adoption of InnerSource practices across repositories
+   - Identifies repositories with InnerSource characteristics
+   - Unit: Number of repositories
 
-## Adding New Metrics
+4. [Usage Count](usage-count.md)
+   - Measures how many times an InnerSource project is used
+   - Tracks usage patterns across business units and time
+   - Unit: Ordinal number
 
-To add a new metric:
-1. Create a new markdown file in this directory
-2. Add a link to it in this README.md
-3. Update the GQM diagram by running the generator
+## Templates
+
+- [GQM Metric Template](gqm_metric_template.md) - Template for creating new metrics using the GQM approach
+
+## Related Resources
+
+- [Back to the overall graph](../use_gqm.md)

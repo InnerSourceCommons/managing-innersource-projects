@@ -10,7 +10,7 @@
   * [Compare canto ten de InnerSource a súa infraestrutura](infrastructure/assessment.md)
   * [Autoría e revisións](infrastructure/authors.md)
 * [Cales, cando e como empregalas](measuring/measuring.md)
-  * [Obxectivos no uso das métricas](measuring/goals.md)
+  * [Obxectivos no uso das métricas](measuring/goals_using_metrics.md)
   * [Áreas de análise](measuring/areas.md)
   * [Enfoque GQM (Obxectivo-Pregunta-Métrica)](measuring/gqm.md)
   * [Estratexia](measuring/strategy.md)

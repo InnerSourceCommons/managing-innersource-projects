@@ -1,23 +1,28 @@
-# Questions
+# InnerSource Questions
 
-This section contains all the questions used to measure InnerSource project goals.
+This directory contains the questions used in the Goal-Question-Metric (GQM) approach to measure InnerSource success. Each question helps evaluate different aspects of InnerSource adoption and effectiveness.
 
 ## Available Questions
 
-- [What is the InnerSource Adoption Trend?](questions/adoption-trend.md) - Track the growth and adoption of InnerSource practices over time
-- [Who contributes to the InnerSource project?](questions/who-contributes.md) - Identify and analyze the contributors to InnerSource projects
-- [Who Uses](questions/who-uses.md) - Track which teams and projects are using InnerSource components
+1. [What is the InnerSource adoption trend?](adoption-trend.md)
+   - Helps evaluate the growth and success of InnerSource programs
+   - Identifies potential program strategy issues or impediments
+   - Related metrics: Number of InnerSource repositories
 
-## How to Use
+2. [Who contributes to the InnerSource project?](who-contributes.md)
+   - Examines the diversity and scope of project contributions
+   - Covers various types of contributions (code, documentation, discussion)
+   - Related metrics: Code Contributions, Contribution Distance
 
-Each question is defined in its own markdown file. The questions are used to:
-1. Break down goals into measurable aspects
-2. Guide the selection of appropriate metrics
-3. Help evaluate progress towards goals
+3. [Who uses the InnerSource project?](who-uses.md)
+   - Tracks project adoption and usage patterns
+   - Covers different usage types (modules, APIs, UIs)
+   - Related metrics: Usage count
 
-## Adding New Questions
+## Templates
 
-To add a new question:
-1. Create a new markdown file in this directory
-2. Add a link to it in this README.md
-3. Update the GQM diagram by running the generator
+- [GQM Question Template](gqm_question_template.md) - Template for creating new questions using the GQM approach
+
+## Related Resources
+
+- [Back to the overall graph](../use_gqm.md)

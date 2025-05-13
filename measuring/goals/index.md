@@ -1,22 +1,21 @@
-# Goals
+# InnerSource Goals
 
-This section contains all the goals for measuring InnerSource projects.
+This directory contains the goals for measuring InnerSource success. Each goal is defined using the Goal-Question-Metric (GQM) approach.
 
 ## Available Goals
 
-- [Find InnerSource Projects](goals/find-projects.md) - Identify and discover InnerSource projects within the organization
-- [Reduce Duplication](goals/reduce-duplication.md) - Minimize code duplication through InnerSource practices
+1. [Find InnerSource Projects](find-projects.md)
+   - Make it easy for people to discover and use InnerSource projects
+   - Focuses on project discoverability and usage
 
-## How to Use
+2. [Reduce Duplication](reduce-duplication.md)
+   - Minimize redundant development efforts across the organization
+   - Encourages building software once and sharing it widely
 
-Each goal is defined in its own markdown file. The goals are used to:
-1. Define clear objectives for InnerSource initiatives
-2. Guide the selection of relevant questions
-3. Help determine appropriate metrics for measurement
+## Templates
 
-## Adding New Goals
+- [GQM Goal Template](gqm_goal_template.md) - Template for creating new goals using the GQM approach
 
-To add a new goal:
-1. Create a new markdown file in this directory
-2. Add a link to it in this README.md
-3. Update the GQM diagram by running the generator
+## Related Resources
+
+- [Back to the overall graph](../use_gqm.md)
