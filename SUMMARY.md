@@ -10,7 +10,7 @@
   * [Comparing How Inner-Sourced Your Infra Is](infrastructure/assessment.md)
   * [Authors and Reviewers](infrastructure/authors.md)
 * [What, When and How to Measure](measuring/measuring.md)
-  * [Goals using Metrics](measuring/goals_using_metrics.md)
+  * [Goals using Metrics](measuring/index.md)
     * [Use Goals, Questions, and Metrics](measuring/use_gqm.md)
       * [Goals](measuring/goals/index.md)
         * [Find InnerSource Projects](measuring/goals/find-projects.md)
