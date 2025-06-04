@@ -63,8 +63,10 @@ For further questions, please contact us in [Slack](https://innersourcecommons.o
 The book cover was created by [Sebastian Spier](https://spier.hu), using an image by user [Bru-nO](https://pixabay.com/photos/measure-unit-of-measure-meterstab-2737004/), available under the [Pixabay License](https://pixabay.com/service/license/).
 
 All of the content found in this repository is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Please see [LICENSE.txt] in this repository for the full text of the license.
 
 [Bitergia]: https://bitergia.com/
 [ISPO Working Group]: https://innersourcecommons.org/community/#ispo
 [InnerSource Commons]: https://innersourcecommons.org/
 [InnerSource Patterns]: https://patterns.innersourcecommons.org/
+[LICENSE.txt]: ./LICENSE.txt
