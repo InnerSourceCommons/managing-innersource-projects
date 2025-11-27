@@ -29,15 +29,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      MDBOOK_VERSION: 0.4.36
+      MDBOOK_VERSION: 0.4.52
+      MDBOOK_MERMAID_VERSION: 0.10.0
     steps:
       - uses: actions/checkout@v4
       - name: Install mdBook
         run: |
           curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
           rustup update
+          # Install mdbook v0.4.52 (required for mdbook-embedify compatibility)
           cargo install --version ${MDBOOK_VERSION} mdbook
-          cargo install mdbook-mermaid
+          # Install mdbook-mermaid v0.10.0 (compatible with mdbook 0.4.52)
+          cargo install --version ${MDBOOK_MERMAID_VERSION} mdbook-mermaid
+          # Install mdbook-embedify (latest version compatible with mdbook 0.4.52)
           cargo install mdbook-embedify
       - name: Setup Pages
         id: pages
