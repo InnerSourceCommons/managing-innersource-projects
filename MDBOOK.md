@@ -13,18 +13,21 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 To install mdBook, run the following command:
 
 ```bash
-cargo install mdbook
+# Install mdbook v0.4.52 (required for mdbook-embedify compatibility)
+cargo install mdbook --version 0.4.52
 ```
 
 Install required preprocessors:
 
 ```sh
-# Install mdbook-mermaid for Mermaid diagram support
-cargo install mdbook-mermaid
+# Install mdbook-mermaid v0.10.0 (compatible with mdbook 0.4.52)
+cargo install mdbook-mermaid --version 0.10.0
 
 # Install mdbook-embedify for embedding external content
 cargo install mdbook-embedify
 ```
+
+**Note:** These specific versions are required for compatibility. mdbook-embedify 0.2.18 is not compatible with mdbook 0.5.x, so we use mdbook 0.4.52 and a compatible version of mdbook-mermaid.
 
 ## Usage
 
