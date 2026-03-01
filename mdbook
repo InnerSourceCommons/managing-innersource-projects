@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Run the project's mdBook (avoids using global mdbook, which may have incompatible embedify).
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec "${SCRIPT_DIR}/.cargo/bin/mdbook" "$@"
