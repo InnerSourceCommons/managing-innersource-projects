@@ -33,7 +33,6 @@ jobs:
       MDBOOK_MERMAID_VERSION: 0.10.0
       CARGO_HOME: ${{ github.workspace }}/.cargo
       RUSTUP_HOME: ${{ github.workspace }}/.rustup
-      PATH: ${{ github.workspace }}/.cargo/bin:$PATH
     steps:
       - uses: actions/checkout@v4
       - name: Install mdBook
@@ -46,7 +45,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Build with mdBook
-        run: mdbook build
+        run: ${{ env.CARGO_HOME }}/bin/mdbook build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
