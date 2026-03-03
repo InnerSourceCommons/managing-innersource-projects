@@ -1,5 +1,7 @@
 # InnerSource with GitHub
 
+For how tooling and workflow integration support AI-assisted development and InnerSource together, see the [InnerSource and AI](/innersource-and-ai/innersource-and-ai.md) section, in particular [Shaping Repositories and Practices for AI](/innersource-and-ai/shaping-for-ai.md).
+
 ## Effective InnerSource Strategies and Configuration for GitHub
 
 This documentation is a compilation of the essential settings and strategies necessary for implementing InnerSource inside an organization. It encompasses both overall strategic elements and specific points relating to SCM configuration.
