@@ -11,5 +11,7 @@ Chronological order:
 Chronological order:
 
 * Jeff Bailey
+* Russ Rutledge
+* Micaela Eller
 
 This section was drafted as a discussion starter and is open for contributions. If you would like to be listed as an author or reviewer, please open a pull request or get in touch via [Slack](https://innersourcecommons.org/slack).

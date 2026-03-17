@@ -14,6 +14,10 @@ AI systems and coding agents work best when they have a well-scoped, well-bounda
 
 Reuse at the service or component level is especially valuable when many teams use AI to generate code. Without shared standards and shared repos, each team may produce similar solutions in isolation. InnerSource fosters reuse and cost sharing across units, which in turn supports sustainability and efficiency. This is the same benefit InnerSource has always offered; in an AI-augmented world, it becomes harder to ignore.
 
+## Platforms ready for InnerSource
+
+Platforms and tooling play a crucial role in enabling InnerSource at scale. As organizations adopt AI and agentic workflows, collaboration platforms must support discovery, visibility, and contribution across team boundaries. Platforms that make it easy to find reusable components, understand interfaces, and submit improvements reduce friction and encourage participation. Investment in platform capabilities—search, documentation, governance workflows, and integration with development tools—directly multiplies the effectiveness of InnerSource practices in an AI-augmented environment.
+
 ## Enterprise AI and production readiness
 
 This section focuses on large-scale enterprise adoption of AI—internal tools, pipelines, and agentic workflows—rather than consumer-facing AI products. In that context, the difference between prototype AI solutions and production-ready ones matters a lot. InnerSource practices—transparency, code review, documentation, and governance—help teams build robust, secure, and maintainable AI-assisted development. They also help leaders see what is ready for production and what still needs work.

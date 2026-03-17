@@ -1,6 +1,8 @@
 # Risks and Guardrails
 
-Adopting AI in development can deliver short-term gains in speed and productivity. Without guardrails, it can also introduce long-term risks to quality, security, and maintainability. InnerSource practices help organizations balance innovation with responsibility.
+AI is the ultimate InnerSource contributor. Like any external contributor, AI agents generate code that must be reviewed, validated, and integrated thoughtfully into your systems. The same InnerSource practices that enable trusted external contributions—code review, clear guidelines, transparent decision-making, and systems thinking—are exactly what you need to safely and sustainably adopt AI in development.
+
+Adopting AI without these guardrails can deliver short-term gains in speed and productivity, but at the cost of long-term risks to quality, security, and maintainability. The good news: if your organization has built a strong InnerSource culture, you already have the foundations in place.
 
 ## Risks of rapid AI deployment
 
@@ -8,7 +10,7 @@ Trusting AI-generated or AI-modified code without review or guidance can lead to
 
 ## The role of code review and systems thinking
 
-When AI generates or modifies code, human review remains essential. Code review catches errors, enforces consistency, and spreads knowledge. InnerSource’s existing review and governance practices—trusted committers, contribution guidelines, and transparent decision-making—apply directly to AI-assisted contributions. Systems thinking is also critical: understanding how a change fits into boundaries, interfaces, and dependencies helps avoid local optimizations that cause global problems. Program leads can emphasize that AI output is a draft to be reviewed, not a substitute for human judgment.
+When AI generates or modifies code, human review remains essential. Code review catches errors, enforces consistency, and spreads knowledge. InnerSource's existing review and governance practices—trusted committers, contribution guidelines, and transparent decision-making—apply directly to AI-assisted contributions. Systems thinking is also critical: understanding how a change fits into boundaries, interfaces, and dependencies helps avoid local optimizations that cause global problems. Resources like the [InnerSource Patterns](https://patterns.innersourcecommons.org/) and [Trusted Committer guide](https://innersourcecommons.org/learn/learning-path/trusted-committer/) provide guidance on how to frame and review contributions responsibly.
 
 ## Transparency and stakeholder involvement
 
