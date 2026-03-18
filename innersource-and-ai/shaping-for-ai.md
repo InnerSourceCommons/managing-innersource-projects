@@ -18,4 +18,20 @@ Playbooks that describe how to contribute—and what to avoid—benefit both hum
 
 InnerSource can be integrated directly into coding workflows through skills, plugins, and tooling. When reuse and contribution are part of the daily environment—for example, by suggesting existing InnerSource components when starting a new feature—both developers and AI-assisted flows are more likely to reuse rather than duplicate. This is an area of active development; program leads can work with their tooling and platform teams to explore how to surface InnerSource projects and contribution paths where developers (and their tools) already work.
 
+## Agent skills and enterprise standards
+
+A particularly promising approach is using agent skills to codify enterprise standards and best practices. Rather than documenting standards in wikis that developers must find and follow manually, organizations can encode them as skills that coding agents use directly. When an agent starts work, it can automatically apply the organization's coding standards, security policies, and architectural guidelines. This makes InnerSource contribution guidelines machine-readable and enforceable at the point of development.
+
+The [Agent Skills](https://agentskills.io/home) open standard provides a framework for packaging and sharing these capabilities. InnerSource programs can maintain shared skill libraries that any team's agents can use, extending the InnerSource model from shared code to shared agent behaviors.
+
+## Emerging standards and protocols
+
+Several open standards are emerging that are relevant to InnerSource programs adopting agentic workflows:
+
+- [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) — A standard for connecting AI agents to external tools and data sources, enabling agents to interact with development infrastructure like issue trackers, CI/CD systems, and code review platforms.
+- [Agent2Agent (A2A)](https://a2a-protocol.org/latest/) — A protocol for communication between AI agents, supporting scenarios where multiple specialized agents collaborate on development tasks.
+- [agents.md](https://agents.md/) — A standard for describing how AI agents should interact with a repository, similar to how CONTRIBUTING.md guides human contributors.
+
+InnerSource program leads should monitor these standards as they mature. Organizations that adopt them early can shape how agent-to-agent and agent-to-repository interactions work across team boundaries, reinforcing InnerSource collaboration patterns at the tooling level.
+
 For more on infrastructure and tooling in InnerSource, see [Tooling](/tooling/innersource-tooling.md) and [Infrastructure](/infrastructure/infrastructure.md).
