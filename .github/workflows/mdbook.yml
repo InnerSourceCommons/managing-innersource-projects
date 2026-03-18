@@ -94,17 +94,11 @@ jobs:
           ls -la book/ | head -30
 
       - name: Upload artifact
-        if: ${{ !env.ACT }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./book
 
-      - name: Confirm local act build
-        if: ${{ env.ACT }}
-        run: 'echo "Local act run: mdBook build completed; skipping upload."'
-
   deploy:
-    if: ${{ !env.ACT }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
