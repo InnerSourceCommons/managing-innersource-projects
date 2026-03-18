@@ -38,17 +38,24 @@ jobs:
         env:
           REPO_ROOT: ${{ github.workspace }}
       - name: Setup Pages
+        if: ${{ !env.ACT }}
         id: pages
         uses: actions/configure-pages@v5
       - name: Build with mdBook
         run: ${{ env.CARGO_HOME }}/bin/mdbook build
       - name: Upload artifact
+        if: ${{ !env.ACT }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./book
+      - name: Confirm local act build
+        if: ${{ env.ACT }}
+        run: |
+          echo "Local act run: mdBook build completed; skipping Pages upload/deploy steps."
 
   # Deployment job
   deploy:
+    if: ${{ !github.event.act }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
