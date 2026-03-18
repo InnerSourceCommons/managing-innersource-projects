@@ -1,6 +1,6 @@
 # Workflow for building and deploying a mdBook site to GitHub Pages.
 # - On push to main: deploys to the root of gh-pages.
-# - On pull_request: deploys a preview under pr-<number>/ on gh-pages,
+# - On pull_request: deploys a preview under pr-preview/pr-<number>/ on gh-pages,
 #   comments the preview URL, and cleans up when the PR closes.
 #
 # Repo Settings required:
