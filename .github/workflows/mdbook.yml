@@ -29,8 +29,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      MDBOOK_VERSION: 0.4.52
-      MDBOOK_MERMAID_VERSION: 0.10.0
       CARGO_HOME: ${{ github.workspace }}/.cargo
       RUSTUP_HOME: ${{ github.workspace }}/.rustup
     steps:
@@ -39,8 +37,6 @@ jobs:
         run: bash scripts/install-mdbook.sh
         env:
           REPO_ROOT: ${{ github.workspace }}
-          MDBOOK_VERSION: ${{ env.MDBOOK_VERSION }}
-          MDBOOK_MERMAID_VERSION: ${{ env.MDBOOK_MERMAID_VERSION }}
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
