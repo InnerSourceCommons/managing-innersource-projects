@@ -25,10 +25,44 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Cache Cargo registry and git index
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ env.CARGO_HOME }}/registry
+            ${{ env.CARGO_HOME }}/git
+          key: ${{ runner.os }}-cargo-registry-${{ hashFiles('scripts/install-mdbook.sh') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-registry-
+
+      - name: Cache Rust toolchains
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ env.RUSTUP_HOME }}/toolchains
+            ${{ env.RUSTUP_HOME }}/update-hashes
+          key: ${{ runner.os }}-rust-toolchain-${{ hashFiles('scripts/install-mdbook.sh') }}
+          restore-keys: |
+            ${{ runner.os }}-rust-toolchain-
+
+      - name: Cache installed mdBook binaries
+        id: mdbook-cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ env.CARGO_HOME }}/bin
+          key: ${{ runner.os }}-mdbook-bin-${{ hashFiles('scripts/install-mdbook.sh') }}
+          restore-keys: |
+            ${{ runner.os }}-mdbook-bin-
+
       - name: Install mdBook
+        if: steps.mdbook-cache.outputs.cache-hit != 'true'
         run: bash scripts/install-mdbook.sh
         env:
           REPO_ROOT: ${{ github.workspace }}
+
+      - name: Add Cargo bin to PATH
+        run: echo "${CARGO_HOME}/bin" >> "$GITHUB_PATH"
 
       - name: Build with mdBook
         run: ${{ env.CARGO_HOME }}/bin/mdbook build
