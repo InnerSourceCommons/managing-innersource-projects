@@ -1,0 +1,18 @@
+{
+  "act": true,
+  "action": "synchronize",
+  "repository": {
+    "fork": false,
+    "default_branch": "main",
+    "name": "managing-innersource-projects",
+    "full_name": "InnerSourceCommons/managing-innersource-projects"
+  },
+  "pull_request": {
+    "number": 107,
+    "head": {
+      "repo": {
+        "full_name": "InnerSourceCommons/managing-innersource-projects"
+      }
+    }
+  }
+}

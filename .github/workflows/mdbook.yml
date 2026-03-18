@@ -1,7 +1,11 @@
 # Workflow for building and deploying a mdBook site to GitHub Pages.
-# Serves the main book at / and PR previews at /pr-<number>/ by merging
-# pr-* directories from the gh-pages branch (pushed by mdbook-pr-preview.yml)
-# into the deployed artifact. Works with Pages source "GitHub Actions".
+# - On push to main: deploys to the root of gh-pages.
+# - On pull_request: deploys a preview under pr-preview/pr-<number>/ on gh-pages,
+#   comments the preview URL, and cleans up when the PR closes.
+#
+# Repo Settings required:
+#   Pages -> Source: "Deploy from a branch" -> gh-pages / (root)
+#   Actions -> General -> Workflow permissions: "Read and write permissions"
 #
 # See: https://rust-lang.github.io/mdBook/index.html
 name: Deploy mdBook site to Pages
@@ -9,20 +13,21 @@ name: Deploy mdBook site to Pages
 on:
   push:
     branches: ["main"]
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  contents: write
+  pull-requests: write
 
 jobs:
-  build:
+  deploy:
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     env:
       CARGO_HOME: ${{ github.workspace }}/.cargo
       RUSTUP_HOME: ${{ github.workspace }}/.rustup
@@ -71,40 +76,73 @@ jobs:
       - name: Build with mdBook
         run: ${{ env.CARGO_HOME }}/bin/mdbook build
 
-      - name: Merge PR previews from gh-pages into artifact
-        run: |
-          set -e
-          echo "Fetching gh-pages branch..."
-          git fetch origin gh-pages 2>/dev/null || true
-          if ! git rev-parse -q origin/gh-pages >/dev/null 2>&1; then
-            echo "No gh-pages branch found; skipping PR preview merge."
-            exit 0
-          fi
-          PR_DIRS=$(git ls-tree -d --name-only origin/gh-pages 2>/dev/null | grep -E '^pr-[0-9]+$' || true)
-          if [ -z "$PR_DIRS" ]; then
-            echo "No pr-* directories on gh-pages; skipping."
-            exit 0
-          fi
-          echo "Merging PR preview dirs: $PR_DIRS"
-          for d in $PR_DIRS; do
-            echo "  -> merging $d"
-            git archive origin/gh-pages "$d" | tar -x -C book
-          done
-          echo "Done. Contents of book/ after merge:"
-          ls -la book/ | head -30
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./book
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./book
+          keep_files: true
+
+  preview:
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    concurrency: preview-${{ github.ref }}
+    env:
+      CARGO_HOME: ${{ github.workspace }}/.cargo
+      RUSTUP_HOME: ${{ github.workspace }}/.rustup
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache Cargo registry and git index
+        if: github.event.action != 'closed'
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ env.CARGO_HOME }}/registry
+            ${{ env.CARGO_HOME }}/git
+          key: ${{ runner.os }}-cargo-registry-${{ hashFiles('scripts/install-mdbook.sh') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-registry-
+
+      - name: Cache Rust toolchains
+        if: github.event.action != 'closed'
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ env.RUSTUP_HOME }}/toolchains
+            ${{ env.RUSTUP_HOME }}/update-hashes
+          key: ${{ runner.os }}-rust-toolchain-${{ hashFiles('scripts/install-mdbook.sh') }}
+          restore-keys: |
+            ${{ runner.os }}-rust-toolchain-
+
+      - name: Cache installed mdBook binaries
+        if: github.event.action != 'closed'
+        id: mdbook-cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ env.CARGO_HOME }}/bin
+          key: ${{ runner.os }}-mdbook-bin-${{ hashFiles('scripts/install-mdbook.sh') }}
+          restore-keys: |
+            ${{ runner.os }}-mdbook-bin-
+
+      - name: Install mdBook
+        if: github.event.action != 'closed' && steps.mdbook-cache.outputs.cache-hit != 'true'
+        run: bash scripts/install-mdbook.sh
+        env:
+          REPO_ROOT: ${{ github.workspace }}
+
+      - name: Add Cargo bin to PATH
+        if: github.event.action != 'closed'
+        run: echo "${CARGO_HOME}/bin" >> "$GITHUB_PATH"
+
+      - name: Build with mdBook
+        if: github.event.action != 'closed'
+        run: ${{ env.CARGO_HOME }}/bin/mdbook build
+
+      - name: Deploy PR preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./book
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview

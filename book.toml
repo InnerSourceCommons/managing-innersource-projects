@@ -20,4 +20,6 @@ giscus.loading = "lazy"
 giscus.crossorigin = "anonymous"
 
 [output.html]
+# Required for correct asset and 404 paths on GitHub Pages (project site and PR preview subpaths).
+site-url = "/managing-innersource-projects/"
 additional-js = ["mermaid.min.js", "mermaid-init.js"]
