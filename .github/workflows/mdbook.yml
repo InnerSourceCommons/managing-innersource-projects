@@ -101,7 +101,7 @@ jobs:
 
       - name: Confirm local act build
         if: ${{ env.ACT }}
-        run: echo "Local act run: mdBook build completed; skipping upload."
+        run: 'echo "Local act run: mdBook build completed; skipping upload."'
 
   deploy:
     if: ${{ !env.ACT }}
