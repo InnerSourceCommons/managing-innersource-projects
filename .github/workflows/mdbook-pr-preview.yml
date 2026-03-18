@@ -64,6 +64,11 @@ jobs:
       - name: Add Cargo bin to PATH
         run: echo "${CARGO_HOME}/bin" >> "$GITHUB_PATH"
 
+      - name: Set site-url for PR preview subpath
+        run: |
+          SITE_URL="/${{ github.event.repository.name }}/${{ env.PREVIEW_DIR }}/"
+          sed -i "s|^site-url = .*|site-url = \"${SITE_URL}\"|" book.toml
+
       - name: Build with mdBook
         run: ${{ env.CARGO_HOME }}/bin/mdbook build
 
