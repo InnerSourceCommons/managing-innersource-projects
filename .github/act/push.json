@@ -1,3 +1,7 @@
 {
-  "act": true
+  "act": true,
+  "repository": {
+    "fork": false,
+    "default_branch": "main"
+  }
 }
