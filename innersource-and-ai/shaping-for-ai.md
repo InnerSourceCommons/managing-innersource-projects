@@ -34,4 +34,4 @@ Several open standards are emerging that are relevant to InnerSource programs ad
 
 InnerSource program leads should monitor these standards as they mature. Organizations that adopt them early can shape how agent-to-agent and agent-to-repository interactions work across team boundaries, reinforcing InnerSource collaboration patterns at the tooling level.
 
-For more on infrastructure and tooling in InnerSource, see [Tooling](/tooling/innersource-tooling.md) and [Infrastructure](/infrastructure/infrastructure.md).
+For more on infrastructure and tooling in InnerSource, see [Tooling](../tooling/innersource-tooling.md) and [Infrastructure](../infrastructure/infrastructure.md).
