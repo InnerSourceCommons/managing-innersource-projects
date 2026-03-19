@@ -1,0 +1,475 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Basic Infrastructure - How To Create An InnerSource Program Office</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-2459343d.css">
+        <link rel="stylesheet" href="../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-c7d72596.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-78c7bc11.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">How To Create An InnerSource Program Office</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="basic-infrastructure"><a class="header" href="#basic-infrastructure">Basic Infrastructure</a></h1>
+<p>As InnerSource is mainly about cultural change, we need to have an easy-access
+and low barrier tools. The easier to use, the more developers that will try
+in first place to work with other business units and inner-sourced projects.</p>
+<p>Although there is a code review process and this takes time to learn, there are
+other areas where developers can start to contribute. From documentation and
+mere typos in the collaborative wiki to design meetings and even review
+activities in projects of your interest or asking for feature requests. There
+is a myriad of potential actions that anyone within the organization can help
+with. And the goal of InnerSource is to foster those actions as much as possible
+letting developers know that those actions are really much appreciated.</p>
+<p>The infrastructure is thus divided into three main areas:</p>
+<ul>
+<li>
+<p>In first place the development process infrastructure that contains
+the basic tooling for developers.
+Selecting the right tools will help to have a clear process and that process
+will bring trustiness to the community. Any developer must follow that process
+and work-arounds should not exist. As an example, any developer, even core
+or trusted committers should face a review process when submitting a piece
+of code. It is clear that trusted committers have a reputation in the community
+and this will help in the review process, but they still need to go through
+the process.
+A clear workflow brings trust across the business units. That certainty in the
+definition of requirements, software development process, use of versioning or
+ticketing systems, the code review process and the continuous integration helps
+with this.</p>
+</li>
+<li>
+<p>In second place a solid use of the communication channels infrastructure.
+These tools should be as transparent as possible and any technical meeting must
+be followed by a summary of results and decisions in the mailing list. This helps
+to open technical discussions, but also to reference to previous decisions
+made.
+As we are considering large organizations, it is also necessary the use of
+asynchronous communication channels such as the usual IRC in open source
+communities. More advanced options could be the use of <a href="https://slack.com">Slack</a> but also
+<a href="https://mattermost.com">Mattermost</a> if the organization prefers to use
+open source and in house SaaS deployments.</p>
+</li>
+<li>
+<p>In third place the monitoring infrastructure is key when applying InnerSource and
+in general when bringing a new methodology to organizations. This is one of the
+main differences with open source communities. They are open by default and basically
+follow the detailed key aspects. However, infrastructure to measure process advances
+have not been one of the main goals in the case of open source communities.
+Basically they are using a successful development methodology, each of them
+with their own peculiarities, but open by default.
+InnerSource needs of this type of infrastructure as managers and developers
+need feedback about their performance. A change in the software development
+process of large organizations, a cultural change and the community building
+process needs a large set of actions and those actions should have the
+confirmation that they are working. For this the organization and its
+business units need of a monitoring infrastructure.</p>
+</li>
+</ul>
+<h2 id="development-process-infrastructure"><a class="header" href="#development-process-infrastructure">Development Process Infrastructure</a></h2>
+<p>When developing there are three main tools to take into account: the versioning
+, code review and continuous integration systems. Those should follow a process
+similar to the one depicted in the following picture. If this process
+is familiar to you is because this is based on the <a href="https://docs.openstack.org/infra/manual/developers.html">OpenStack software development
+process</a> as detailed in their wiki site.
+I have copied the workflow as this contains the basic pieces also needed for
+InnerSource. Other communities use a similar approach, although I did not find
+a nice picture! Sorry folks!. In addition to this, this is a new figure as
+I wanted to have it independent of the infrastructure. OpenStack uses
+Git, Gerrit and other tooling for this process, but others are also possible.
+As an example the Linux Kernel uses mailing lists for the code review process
+or the Mozilla community that uses another toolchain. Think of the figure
+as a generic way to introduce code review and continuous integration aspects
+in the software development process.</p>
+<p>In short, the process in the figure is as follows: the developer should clone the repository(1)
+make changes to it (2), run some local tests (3), pull request those changes (4),
+tests will be run (5) with a specific result (6). If that result is negative,
+then we need to go through a new version of the code and come back to the
+local environment (7: Review process -&gt; Updated Copy of Upstream). If the
+CI works and there is a positive answer from the Review Process, then this go
+again through CI before being committed to master (8). If the review process
+provides a negative evaluation then the piece of code goes back again
+to the submitter (7: Review process -&gt; Updated Copy of Upstream).</p>
+<p><img src="development_workflow.jpg" alt="Usual software development process"></p>
+<ul>
+<li>
+<p><strong>Versioning system</strong>: this tool is used by developers to store the
+several iterations of a given piece of software. As developers are basically
+geographically distributed, the versioning system should allow this type of
+interactions, where any developer at any time may submit a piece of code
+to be reviewed. Systems that allow off-line development are highly
+recommended as developers will be able to locally work and later submit the code.</p>
+</li>
+<li>
+<p><strong>Code review system</strong>: once the piece of code is ready to be submitted,
+this should be previously reviewed by another developer. This forces developers
+to submit that piece of code through a specific process. As an example,
+there are several ways where open source communities code review others, using
+specific tools, sending the piece of code to a mailing list or integrated
+in the versioning system tool. As one of the main goals when inner sourcing
+is to keep the process as simple as possible, the main recommendation is to
+avoid too noise channels (as mailing lists) or too hard to use tools.
+It is also recommended to use tools that help others to start developing a new
+piece of source code without needing to submit that to review. Early discussions
+in the code review process helps to produce better code and having mentors
+involved in the process.</p>
+</li>
+<li>
+<p><strong>Continuous integration (CI) system</strong>: this is one of the key tooling when
+developing. There are already several eyes having a look at the source code
+in the code review process. With the addition of a continuous integration
+platform, any type of test should be covered: regression, unit testing, end
+user tests, etc. Ideally this platform should be integrated with the code
+review process. In this way, developers can wait for the answer for the CI
+system before proceeding with the code review process. They would be sure
+that this works prior any effort from them.</p>
+</li>
+<li>
+<p><strong>Ticketing system</strong>: tickets are useful to attract community to an
+InnerSource project. This helps in two specific ways: transparency of the
+development process, raising issues and having a roadmap of the issues
+to be closed. And in second place, to provide a platform for newcomers and
+users to detail their needs. Tickets are helpful to bring community in inner
+source projects as users of the platform will open bug reports, but also
+feature requests. And even those can socialized as the community can vote
+those reports and declare what are the most important for them. This information
+is key to let developers know about the community and business units needs.
+Then all of this can be discussed during the design summits defining further
+roadmaps based on users, developers and organizations requirements.</p>
+</li>
+<li>
+<p><strong>Documentation system</strong>: documentation is now available to any member
+of the organization. And documentation has extra goals when producing it. Not
+only to developers, but to users. Indeed the documentation should be focused
+on several roles. From developers to users, the documentation should cover
+their needs. And as such, documentation should be transparent and open to
+any potential change from members. This will help to adequate the documentation
+to the users needs, but also to other members within the organization.
+The tool used should allow to have all of these pieces of information. From the
+usual developers APIs to high level users interested in understanding what
+that piece of code offers to the organization. It is worth mentioning that
+the documentation also covers information as general as the mission and
+the type of things that the piece of code does and the things that this does
+not do.</p>
+</li>
+<li>
+<p><strong>Collaborative design platform</strong>: InnerSource in large organizations
+is a synonym of geographically distributed teams. Face to face meetings are
+hard to have in this type of organizations, but there should exist infrastructure
+to bridge those difficulties. Requirements specifications, technical decisions,
+TODOs lists and others should be stored in this type of collaborative environments.
+This will provide transparency to the process, but also informal documentation
+and communication. Even when the developers are in face to face meetings,
+those tools should be used as they will leave traces of activity readable
+by others within the organization.</p>
+</li>
+</ul>
+<p><img src="development_workflow_all.jpg" alt="Extended usual software development process"></p>
+<h2 id="communication-channels-infrastructure"><a class="header" href="#communication-channels-infrastructure">Communication Channels Infrastructure</a></h2>
+<p>InnerSource is about cultural change. And that cultural change is based on
+transparency and meritocracy. Communication channels should be open within
+the organization, and anyone is allowed to post to them.</p>
+<p>Any decision out of the public channels should be later written down in these
+as any decision should be traceable and referenceable.</p>
+<ul>
+<li>
+<p><strong>Mailing Lists / Forums</strong>: this asynchronous way of communicating across the
+developer teams is highly effective. Being geographically distributed force
+the members of the organization to avoid direct communication channels
+when possible as people lives in different time zones.</p>
+</li>
+<li>
+<p><strong>Instant Messaging</strong>: this is another asynchronous communication channel.
+From the usual IRC channels used in open source software, to other open
+source options such as Mattermost, this helps to lead technical discussions,
+store the log information and have all of the developers in a virtual room
+where they can discuss, but also users can enter looking for advice.</p>
+</li>
+<li>
+<p><strong>Questions / Answers</strong>: this type of platforms help to raise questions and
+share those with the rest of the community. Users and developers can vote
+the most interesting ones and this helps to bring attention to issues of interest
+for the internal inner-sourced community.</p>
+</li>
+<li>
+<p><strong>Video conference</strong>: face to face meeting definitively helps. And even more
+when discussing about technical issues. This type of synchronous communication
+channels are useful for discussions but force people to be at the same time
+in the same virtual room. As there could be members from several time zones,
+those are more difficult to set than conversations in the instant messaging
+or mailing lists.</p>
+</li>
+</ul>
+<h2 id="monitoring-infrastructure"><a class="header" href="#monitoring-infrastructure">Monitoring Infrastructure</a></h2>
+<p>This infrastructure is needed to understand the current situation of the
+software development process and should help in the decision making process.
+One of the key aspects when choosing a specific toolchain is that this is
+<em>data retrieval friendly</em>. This means that any tool is now a data source
+and such data source should provide a way to mine this. This will provide
+raw data information that should be later parsed and treated to be useful.</p>
+<p>There is extra information in the metrics chapter, but in brief, any organization
+applying InnerSource, or any other new methodology, should have a way to
+check how that new process is performing when compared to the old way.</p>
+<p>This monitoring infrastructure should also have as outcomes several ways of
+accessing such information. And this depends on the role accessing the information.
+Although everyone in the organization may have access to the information
+released by the development and communication channels toolchain, not all of them
+will be interested in accessing the raw data or the high level and quarterly reports
+focused on C-level.</p>
+<p>For this the monitoring platform should provide access to the raw data retrieved
+from all of the data sources, to the enriched data after removing inconsistencies,
+and the final outcomes as dashboards, KPIs or quarterly reports. Indeed, having
+actionable data will help the members of the community to align those outcomes
+to their specific needs.</p>
+<p>The following is a potential architecture that could help when accessing
+the several data layers, from raw information to detailed visualizations.</p>
+<p><img src="monitoring_infrastructure.jpg" alt="Monitoring Infrastructure"></p>
+<ul>
+<li>
+<p><strong>Retrieval Platform</strong>: this first part uses as input any of the data
+sources already mentioned. Version systems, mailing lists, tickets,
+collaborative documents and others should have some way of retrieving
+the information those contain. There may be some tools that produce events
+and those events are not stored anymore. This platform should take care of
+these cases. As an example of temporary logs, if there is not a policy to take
+care of the Apache logs or the jobs run by a Jenkins instance, there is not a
+way to retrieve old datasets.</p>
+</li>
+<li>
+<p><strong>Enrichment Platform</strong>: this part of the data analysis focuses on cleaning
+and preparing the data for visualization.</p>
+</li>
+<li>
+<p><strong>Visualization Platform</strong>: this third part of the monitoring platform should
+help to produce the outcomes needed to track the status of the methodology
+process. By visualization, this platform produces actionable charts, but
+also KPIs or static documents to be shared with third parties.</p>
+</li>
+</ul>
+<!-- {% embed giscus repo="InnerSourceCommons/managing-innersource-projects"repo-id="MDEwOlJlcG9zaXRvcnk4MjY2ODc3OA=="category="Website"category-id="DIC_kwDOBO1s6s4CiMTg"reactions-enabled="1"theme="preferred_color_scheme"lang="en"loading="lazy" %} -->
+<div data-embedify="" data-app="giscus" data-option-repo="InnerSourceCommons/managing-innersource-projects" data-option-repo-id="MDEwOlJlcG9zaXRvcnk4MjY2ODc3OA==" data-option-category="Website" data-option-category-id="DIC_kwDOBO1s6s4CiMTg" data-option-reactions-enabled="1" data-option-theme="preferred_color_scheme" data-option-lang="en" data-option-loading="lazy" style="display:none"></div>
+
+<style>.giscus { margin-top: 6rem; }</style><script src="https://giscus.app/client.js" data-repo="InnerSourceCommons/managing-innersource-projects" data-repo-id="MDEwOlJlcG9zaXRvcnk4MjY2ODc3OA==" data-category="Website" data-category-id="DIC_kwDOBO1s6s4CiMTg" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-lang="en" data-loading="lazy" crossorigin="anonymous" data-theme="preferred_color_scheme" async=""></script><script>(() => { const giscusScript = document.querySelector("script[data-repo][data-repo-id]"); if (giscusScript?.getAttribute("data-theme") !== "book") return; const mapTheme = (theme) => (["light", "rust"].includes(theme) ? "light" : "dark"); const bookTheme = localStorage.getItem("mdbook-theme") || html.getAttribute("class"); giscusScript.setAttribute("data-theme", mapTheme(bookTheme)); document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => { btn.addEventListener("click", (event) => { const theme = mapTheme(event.target.id); const iframe = document.querySelector("iframe.giscus-frame"); if (iframe) iframe.contentWindow.postMessage({ giscus: { setConfig: { theme } } }, "*"); }); }); })();</script>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../infrastructure/infrastructure.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../infrastructure/assessment.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../infrastructure/infrastructure.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../infrastructure/assessment.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-c2a407aa.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../mermaid-a19b8af3.min.js"></script>
+        <script src="../mermaid-init-4533fb11.js"></script>
+
+
+
+    </div>
+    </body>
+</html>
