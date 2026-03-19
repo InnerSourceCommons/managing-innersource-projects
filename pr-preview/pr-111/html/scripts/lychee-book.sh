@@ -10,7 +10,7 @@
 #   BASE_URL defaults to http://localhost:3000/
 #
 # Report shows which page contains each broken link (source page → failed URL).
-# For the "Broken links by page" section, jq must be installed; otherwise only lychee's default output is shown.
+# For the "Broken links by page" section, jq must be installed; otherwise the raw JSON report is kept for manual inspection.
 
 set -e
 
@@ -47,6 +47,7 @@ set -e
 # Lychee uses "error_map" (source URL -> list of { url, status: { code } }); some versions use "fail_map".
 echo "JSON_REPORT: $JSON_REPORT"
 if [[ -f "$JSON_REPORT" ]]; then
+  delete_report=1
   errors=""
   if command -v jq &>/dev/null; then
     errors=$(jq -r '(.error_map // .fail_map // {}) | to_entries[] | "Page: \(.key)\n  Broken:\n\(.value[] | "    [\(.status.code)] \(.url)")"' "$JSON_REPORT" 2>/dev/null)
@@ -62,9 +63,12 @@ if [[ -f "$JSON_REPORT" ]]; then
       echo ""
       echo "=== Broken links (report has $report_errors failure(s)); full report: $JSON_REPORT ==="
       echo "Install jq to see 'Broken links by page' summary, or: cat $JSON_REPORT | jq '.error_map'"
+      delete_report=0
     fi
   fi
-  rm -f "$JSON_REPORT"
+  if [[ "$delete_report" -eq 1 ]]; then
+    rm -f "$JSON_REPORT"
+  fi
 fi
 
 exit "$lychee_exit"
