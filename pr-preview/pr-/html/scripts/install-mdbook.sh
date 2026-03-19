@@ -25,6 +25,7 @@ rustup toolchain install "${RUST_TOOLCHAIN_VERSION}" --profile minimal
 rustup default "${RUST_TOOLCHAIN_VERSION}"
 
 # Skip install when binary exists and reports the expected version (e.g. from CI cache).
+# All four tools (mdbook, mdbook-mermaid, mdbook-embedify, mdbook-linkcheck2) are checked.
 # Install with --force when missing or version mismatch so we overwrite.
 bin_dir="${CARGO_HOME}/bin"
 has_version() {
