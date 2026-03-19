@@ -5,8 +5,6 @@
 Chronological order:
 
 * InnerSource Program Office (ISPO) Working Group, [InnerSource Commons](https://innersourcecommons.org/).
-* Guilherme Dellagustin ([@dellagustin-sap](https://github.com/dellagustin-sap)) — framing of agentic coding, reuse futures, and emerging standards.
-* Fei Wan — agent skills for enterprise standards.
 
 ## Reviewers
 
