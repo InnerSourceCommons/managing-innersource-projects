@@ -23,7 +23,7 @@ This book uses the [Goal-Question-Metric] approach to documenting InnerSource me
 The full graph of relationships is visible in this [graph].
 
 Add in your scenarios by copying this [goal template], [question template], and/or [metric template], filling them out, and submitting them in pull request.
-After successful merge, a [Trusted Committer](https://github.com/orgs/InnerSourceCommons/teams/ispo-working-group-trusted-committers) will manually[^1] add those to the [graph].
+After successful merge, a [Trusted Committer](https://github.com/orgs/InnerSourceCommons/teams/ispo-working-group-trusted-committers) will manually add those to the [graph].
 If interested, feel free to [edit the MermaidJS source] of the graph on your own!
 
 By adding in your scenarios to the graph, you will be able to see how others approach and interact with them.
@@ -32,9 +32,6 @@ You may get new ideas of what metrics answer the questions you have or what addi
 ## Guidelines
 
 When using titles in Markdown, use # for main title, ## for the second header title, etc. It's just to follow the same style :).
-
-[^1]: [#37](https://github.com/InnerSourceCommons/managing-inner-source-projects/issues/37) will automate the addition of new goals, questions, and metrics to the graph.
-At that time this manual step will no longer be needed.
 
 [Goal-Question-Metric]: https://en.wikipedia.org/wiki/GQM
 [goals]: https://github.com/InnerSourceCommons/managing-inner-source-projects/tree/main/measuring/goals

@@ -6,6 +6,7 @@ set -euo pipefail
 MDBOOK_VERSION="${MDBOOK_VERSION:-0.5.2}"
 MDBOOK_MERMAID_VERSION="${MDBOOK_MERMAID_VERSION:-0.17.0}"
 MDBOOK_EMBEDIFY_VERSION="${MDBOOK_EMBEDIFY_VERSION:-0.3.2}"
+MDBOOK_LINKCHECK2_VERSION="${MDBOOK_LINKCHECK2_VERSION:-0.12.0}"
 RUST_TOOLCHAIN_VERSION="${RUST_TOOLCHAIN_VERSION:-1.91.1}"
 
 # Install into repo so CI and local use the same layout (avoids cross-device issues in act)
@@ -23,9 +24,14 @@ fi
 rustup toolchain install "${RUST_TOOLCHAIN_VERSION}" --profile minimal
 rustup default "${RUST_TOOLCHAIN_VERSION}"
 
+# https://github.com/rust-lang/mdBook
 cargo install --version "${MDBOOK_VERSION}" mdbook
+# https://github.com/badboy/mdbook-mermaid
 cargo install --version "${MDBOOK_MERMAID_VERSION}" mdbook-mermaid
+# https://github.com/rust-lang/mdbook-embedify
 cargo install --version "${MDBOOK_EMBEDIFY_VERSION}" mdbook-embedify
+# https://github.com/Michael-F-Bryan/mdbook-linkcheck
+cargo install --version "${MDBOOK_LINKCHECK2_VERSION}" mdbook-linkcheck2
 
 echo "Done. To build the book, use the project mdbook (do not use your global 'mdbook'):"
 echo "  ${CARGO_HOME}/bin/mdbook build"

@@ -28,7 +28,7 @@ Se ten algunha pregunta, pode pórse en contacto con José Manrique López ou Da
 
 Grazas polo seu interese.
 
-A portada do libro foi creada por [Sebastian Spier](https://spier.hu), a partir dunha imaxe do usuario [Bru-nO](https://pixabay.com/photos/measure-unit-of-measure-meterstab-2737004/), dispoñible baixo a [licenza Pixabay](https://pixabay.com/service/license/).
+A portada do libro foi creada por [Sebastian Spier](https://spier.hu), a partir dunha imaxe do usuario [Bru-nO](https://pixabay.com/photos/measure-unit-of-measure-meterstab-2737004/), dispoñible baixo a [licenza Pixabay](https://pixabay.com/service/license-summary/).
 
 Todo o contido que se atopa neste repositorio ten licenza [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 

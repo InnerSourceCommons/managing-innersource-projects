@@ -250,7 +250,7 @@ organization and its context and find other goals InnerSource may
 contribute towards. Then communicate it and get as much air cover
 from your executives as you can.
 
-For how governance and transparency support responsible use of AI in development, see [InnerSource and AI](/innersource-and-ai/innersource-and-ai.md), in particular [Risks and Guardrails](/innersource-and-ai/risks-and-guardrails.md).
+For how governance and transparency support responsible use of AI in development, see [InnerSource and AI](../innersource-and-ai/innersource-and-ai.md), in particular [Risks and Guardrails](../innersource-and-ai/risks-and-guardrails.md).
 
 [^1]: http://oss-watch.ac.uk/resources/governancemodels
 

@@ -1,6 +1,6 @@
 # InnerSource with GitHub
 
-For how tooling and workflow integration support AI-assisted development and InnerSource together, see the [InnerSource and AI](/innersource-and-ai/innersource-and-ai.md) section, in particular [Shaping Repositories and Practices for AI](/innersource-and-ai/shaping-for-ai.md).
+For how tooling and workflow integration support AI-assisted development and InnerSource together, see the [InnerSource and AI](../innersource-and-ai/innersource-and-ai.md) section, in particular [Shaping Repositories and Practices for AI](../innersource-and-ai/shaping-for-ai.md).
 
 ## Effective InnerSource Strategies and Configuration for GitHub
 

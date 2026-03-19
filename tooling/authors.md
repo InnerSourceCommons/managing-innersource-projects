@@ -9,4 +9,4 @@
 
 (Chronological order)
 
-- Guilherme Dellagustin ([SAP](https://sap.com/))
+- Guilherme Dellagustin ([SAP](https://www.sap.com/index.html))
