@@ -24,14 +24,31 @@ fi
 rustup toolchain install "${RUST_TOOLCHAIN_VERSION}" --profile minimal
 rustup default "${RUST_TOOLCHAIN_VERSION}"
 
+# Skip install when binary exists and reports the expected version (e.g. from CI cache).
+# All four tools (mdbook, mdbook-mermaid, mdbook-embedify, mdbook-linkcheck2) are checked.
+# Install with --force when missing or version mismatch so we overwrite.
+bin_dir="${CARGO_HOME}/bin"
+has_version() {
+	[[ -x "${bin_dir}/$1" ]] && "${bin_dir}/$1" --version 2>/dev/null | grep -qF "$2"
+}
+
+install_if_needed() {
+	local name=$1 version=$2
+	if has_version "$name" "$version"; then
+		echo "$name $version already installed (cached), skipping."
+	else
+		cargo install --version "$version" "$name" --force
+	fi
+}
+
 # https://github.com/rust-lang/mdBook
-cargo install --version "${MDBOOK_VERSION}" mdbook
+install_if_needed mdbook "${MDBOOK_VERSION}"
 # https://github.com/badboy/mdbook-mermaid
-cargo install --version "${MDBOOK_MERMAID_VERSION}" mdbook-mermaid
+install_if_needed mdbook-mermaid "${MDBOOK_MERMAID_VERSION}"
 # https://github.com/rust-lang/mdbook-embedify
-cargo install --version "${MDBOOK_EMBEDIFY_VERSION}" mdbook-embedify
+install_if_needed mdbook-embedify "${MDBOOK_EMBEDIFY_VERSION}"
 # https://github.com/Michael-F-Bryan/mdbook-linkcheck
-cargo install --version "${MDBOOK_LINKCHECK2_VERSION}" mdbook-linkcheck2
+install_if_needed mdbook-linkcheck2 "${MDBOOK_LINKCHECK2_VERSION}"
 
 echo "Done. To build the book, use the project mdbook (do not use your global 'mdbook'):"
 echo "  ${CARGO_HOME}/bin/mdbook build"

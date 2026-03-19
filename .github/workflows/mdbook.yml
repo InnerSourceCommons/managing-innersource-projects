@@ -44,16 +44,16 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-cargo-registry-
 
-      - name: Cache Rust toolchains
+      # Cache full RUSTUP_HOME (rustc + toolchain + settings) so rustup does minimal work on restore.
+      - name: Cache Rust toolchain (rustc)
         uses: actions/cache@v4
         with:
-          path: |
-            ${{ env.RUSTUP_HOME }}/toolchains
-            ${{ env.RUSTUP_HOME }}/update-hashes
+          path: ${{ env.RUSTUP_HOME }}
           key: ${{ runner.os }}-rust-toolchain-${{ hashFiles('scripts/install-mdbook.sh') }}
           restore-keys: |
             ${{ runner.os }}-rust-toolchain-
 
+      # Exact key only (no restore-keys) so we never restore a bin/ missing a tool (e.g. linkcheck2).
       - name: Cache installed mdBook binaries
         id: mdbook-cache
         uses: actions/cache@v4
@@ -61,11 +61,9 @@ jobs:
           path: |
             ${{ env.CARGO_HOME }}/bin
           key: ${{ runner.os }}-mdbook-bin-${{ hashFiles('scripts/install-mdbook.sh') }}
-          restore-keys: |
-            ${{ runner.os }}-mdbook-bin-
 
+      # Script skips install when cached binaries already match versions in install-mdbook.sh
       - name: Install mdBook
-        if: steps.mdbook-cache.outputs.cache-hit != 'true'
         run: bash scripts/install-mdbook.sh
         env:
           REPO_ROOT: ${{ github.workspace }}
@@ -104,17 +102,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-cargo-registry-
 
-      - name: Cache Rust toolchains
+      # Cache full RUSTUP_HOME (rustc + toolchain + settings) so rustup does minimal work on restore.
+      - name: Cache Rust toolchain (rustc)
         if: github.event.action != 'closed'
         uses: actions/cache@v4
         with:
-          path: |
-            ${{ env.RUSTUP_HOME }}/toolchains
-            ${{ env.RUSTUP_HOME }}/update-hashes
+          path: ${{ env.RUSTUP_HOME }}
           key: ${{ runner.os }}-rust-toolchain-${{ hashFiles('scripts/install-mdbook.sh') }}
           restore-keys: |
             ${{ runner.os }}-rust-toolchain-
 
+      # Exact key only (no restore-keys) so we never restore a bin/ missing a tool (e.g. linkcheck2).
       - name: Cache installed mdBook binaries
         if: github.event.action != 'closed'
         id: mdbook-cache
@@ -123,11 +121,10 @@ jobs:
           path: |
             ${{ env.CARGO_HOME }}/bin
           key: ${{ runner.os }}-mdbook-bin-${{ hashFiles('scripts/install-mdbook.sh') }}
-          restore-keys: |
-            ${{ runner.os }}-mdbook-bin-
 
+      # Script skips install when cached binaries already match versions in install-mdbook.sh
       - name: Install mdBook
-        if: github.event.action != 'closed' && steps.mdbook-cache.outputs.cache-hit != 'true'
+        if: github.event.action != 'closed'
         run: bash scripts/install-mdbook.sh
         env:
           REPO_ROOT: ${{ github.workspace }}
