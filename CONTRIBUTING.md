@@ -3,15 +3,15 @@
 This book is built as a [Gitbook book](https://gitbook.com). This is written
 using [Markdown syntax](https://www.gitbook.com/book/gitbookio/markdown/).
 This is maintained under the [InnerSource Commons' GitHub account](https://github.com/innersourcecommons) in the
-[Managing Inner Source Projects repository](https://github.com/innersourcecommons/managing-inner-source-projects).
+[Managing Inner Source Projects repository](https://github.com/innersourcecommons/managing-innersource-projects).
 
 Thus you can follow the usual contribution process in GitHub through
 [Pull Requests](https://help.github.com/articles/about-pull-requests/). You can
 see for instance the pull requests open and closed at this point in time and for
-this repository at https://github.com/innersourcecommons/managing-inner-source-projects/pulls .
+this repository at https://github.com/innersourcecommons/managing-innersource-projects/pulls .
 
 If you want to share an idea, comment or feature request, you can also open an issue
-in the [GitHub issues tracking for this repository](https://github.com/innersourcecommons/managing-inner-source-projects/issues).
+in the [GitHub issues tracking for this repository](https://github.com/innersourcecommons/managing-innersource-projects/issues).
 
 Please be aware that all of your contributions will be opened by default and
 that those will be licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
@@ -34,11 +34,11 @@ You may get new ideas of what metrics answer the questions you have or what addi
 When using titles in Markdown, use # for main title, ## for the second header title, etc. It's just to follow the same style :).
 
 [Goal-Question-Metric]: https://en.wikipedia.org/wiki/GQM
-[goals]: https://github.com/InnerSourceCommons/managing-inner-source-projects/tree/main/measuring/goals
-[questions]: https://github.com/InnerSourceCommons/managing-inner-source-projects/tree/main/measuring/questions
-[metrics]: https://github.com/InnerSourceCommons/managing-inner-source-projects/tree/main/measuring/metrics
-[goal template]: https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/goals/gqm_goal_template.md
-[question template]: https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/questions/gqm_question_template.md
-[metric template]: https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/metrics/gqm_metric_template.md
-[edit the MermaidJS source]: https://github.com/InnerSourceCommons/managing-inner-source-projects/edit/main/measuring/use_gqm.md
-[graph]: https://github.com/InnerSourceCommons/managing-inner-source-projects/blob/main/measuring/use_gqm.md
+[goals]: https://github.com/InnerSourceCommons/managing-innersource-projects/tree/main/measuring/goals
+[questions]: https://github.com/InnerSourceCommons/managing-innersource-projects/tree/main/measuring/questions
+[metrics]: https://github.com/InnerSourceCommons/managing-innersource-projects/tree/main/measuring/metrics
+[goal template]: https://github.com/InnerSourceCommons/managing-innersource-projects/blob/main/measuring/goals/gqm_goal_template.md
+[question template]: https://github.com/InnerSourceCommons/managing-innersource-projects/blob/main/measuring/questions/gqm_question_template.md
+[metric template]: https://github.com/InnerSourceCommons/managing-innersource-projects/blob/main/measuring/metrics/gqm_metric_template.md
+[edit the MermaidJS source]: https://github.com/InnerSourceCommons/managing-innersource-projects/edit/main/measuring/use_gqm.md
+[graph]: https://github.com/InnerSourceCommons/managing-innersource-projects/blob/main/measuring/use_gqm.md
