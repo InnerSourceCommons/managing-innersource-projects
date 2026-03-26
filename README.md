@@ -15,6 +15,30 @@ Articles should be relatively short and self-contained so that they can be read 
 Detailed explanation of InnerSource topics should go in the [InnerSource Patterns] book and be linked from the article here.
 Think of the articles in this book like either a conversational introduction/summary to a pattern or possible a journey showing how multiple patterns can be used together in an InnerSource Program.
 
+## Building the Book Locally
+
+The book is built with [mdBook](https://rust-lang.github.io/mdBook/).
+You don't need to install anything manually — the helper scripts handle everything.
+
+**Build the book** (output goes to `book/`):
+
+```sh
+make build
+```
+
+**Live-preview with auto-reload** (opens a local web server):
+
+```sh
+make serve
+```
+
+On the first run, the scripts will automatically install Rust and mdBook into the
+repo-local `.cargo/` and `.rustup/` directories (these are git-ignored).
+Subsequent runs reuse the existing install and start immediately.
+
+> **Windows users:** Run these scripts in **Git Bash** (included with
+> [Git for Windows](https://gitforwindows.org/)) or in WSL.
+
 ## Who can contribute?
 
 This book is a work in progress where anyone is more than welcome to contribute

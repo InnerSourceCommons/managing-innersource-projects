@@ -10,9 +10,8 @@ const outputPath = process.env.npm_config_outputPath || "../../measuring/use_gqm
 const graph = getGQMFileLinks(mdFilePath);
 
 export function getLinkUrl(linkType: LinkType, file: string) {
-  const measuringUrl = "/measuring";
-  const url = `${measuringUrl}/${linkType.toLowerCase()}s/${file}`
-  return url;
+  const htmlFile = file.replace(/\.md$/i, ".html");
+  return `${linkType.toLowerCase()}s/${htmlFile}`;
 }
 
 export function getGQMFileLinks(mdFilePath: string): Graph {
@@ -82,11 +81,17 @@ export function getLinks(parsed: Commonmark.Node): Link[] {
     node = event.node;
     if (event.entering && node.type === "link") {
       const destination = node.destination as string;
-      if (destination.includes('.md') && !destination.includes('use_gqm')) {
+      const linkFileName = path.parse(destination).base;
+      // Match getFileLinks readdir filter: skip template stubs linked from index pages.
+      if (
+        destination.includes('.md') &&
+        !destination.includes('use_gqm') &&
+        !linkFileName.endsWith('template.md')
+      ) {
         links.push({
           url: destination,
           text: node.firstChild?.literal as string,
-          name: path.parse(destination).base
+          name: linkFileName
         });
       }
     }
@@ -105,11 +110,7 @@ function getNodeShapeSyntax(node: Node): string {
 }
 
 export function generateMermaidDiagram(graph: Graph): string {
-  console.log('graph', graph);
-
   const { nodes, edges } = graph;
-
-  const getLinkUrl = (type: LinkType, nodeId: string) => `/measuring/${type.toLowerCase()}s/${nodeId}`;
 
   let mermaidSyntax = "```mermaid\ngraph LR;\n  subgraph GQM[Goals, Questions, Metrics]\n";
   
@@ -128,7 +129,7 @@ export function generateMermaidDiagram(graph: Graph): string {
   // Add click handlers
   mermaidSyntax += "  %% begin clicks\n";
   nodes.forEach(node => {
-    const url = getLinkUrl(node.type, node.id).replace('.md', '');
+    const url = getLinkUrl(node.type, node.id);
     mermaidSyntax += `    click ${node.id} "${url}" "${node.label}"\n`;
   });
   
@@ -157,25 +158,33 @@ export function updateGQMDiagram(): void {
 
     const graph = getGQMFileLinks(mdFilePath);
     const mermaidContent = generateMermaidDiagram(graph);
-    
+
+    // Strip the markdown fences to get raw mermaid syntax
+    const rawMermaid = mermaidContent
+      .replace(/^```mermaid\n/, '')
+      .replace(/\n```$/, '');
+
+    // Write raw mermaid to stdout so it can be piped to mmdc
+    process.stdout.write(rawMermaid + '\n');
+
     // Check if the output file exists
     if (!fs.existsSync(outputPath)) {
       console.error(`Error: Output file not found at ${outputPath}`);
       process.exit(1);
     }
-    
+
     // Read the existing file
     const existingContent = fs.readFileSync(outputPath, 'utf-8');
-    
+
     // Replace the mermaid block
     const updatedContent = existingContent.replace(
       /```mermaid[\s\S]*?```/,
       mermaidContent
     );
-    
+
     // Write back to file
     fs.writeFileSync(outputPath, updatedContent);
-    console.log(`Successfully updated GQM diagram at ${outputPath}`);
+    console.error(`Successfully updated GQM diagram at ${outputPath}`);
   } catch (error) {
     console.error('Error updating GQM diagram:', error);
     process.exit(1);
