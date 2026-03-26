@@ -25,3 +25,4 @@ site-url = "/managing-innersource-projects/"
 additional-js = ["mermaid.min.js", "mermaid-init.js"]
 
 [output.linkcheck2]
+optional = true

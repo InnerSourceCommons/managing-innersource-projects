@@ -16,10 +16,11 @@ export CARGO_HOME="${REPO_ROOT}/.cargo"
 
 echo "Installing Rust and mdBook into ${REPO_ROOT} (RUSTUP_HOME=$RUSTUP_HOME, CARGO_HOME=$CARGO_HOME)"
 
-if ! command -v rustup >/dev/null 2>&1; then
+# Install Rust into repo-local RUSTUP_HOME/CARGO_HOME if not already there
+if [ ! -x "${CARGO_HOME}/bin/rustup" ]; then
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --no-modify-path
-	source "${CARGO_HOME}/env"
 fi
+source "${CARGO_HOME}/env"
 
 rustup toolchain install "${RUST_TOOLCHAIN_VERSION}" --profile minimal
 rustup default "${RUST_TOOLCHAIN_VERSION}"

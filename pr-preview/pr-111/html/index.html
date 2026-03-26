@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-b444af62.js";
+            window.path_to_searchindex_js = "searchindex-ba1f9679.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-e70a2d30.js"></script>
@@ -185,6 +185,22 @@ If there is any explanation that you need in relation to your InnerSource Progra
 Articles should be relatively short and self-contained so that they can be read in any order and any amount and still be useful.
 Detailed explanation of InnerSource topics should go in the <a href="https://patterns.innersourcecommons.org/">InnerSource Patterns</a> book and be linked from the article here.
 Think of the articles in this book like either a conversational introduction/summary to a pattern or possible a journey showing how multiple patterns can be used together in an InnerSource Program.</p>
+<h2 id="building-the-book-locally"><a class="header" href="#building-the-book-locally">Building the Book Locally</a></h2>
+<p>The book is built with <a href="https://rust-lang.github.io/mdBook/">mdBook</a>.
+You don’t need to install anything manually — the helper scripts handle everything.</p>
+<p><strong>Build the book</strong> (output goes to <code>book/</code>):</p>
+<pre><code class="language-sh">make build
+</code></pre>
+<p><strong>Live-preview with auto-reload</strong> (opens a local web server):</p>
+<pre><code class="language-sh">make serve
+</code></pre>
+<p>On the first run, the scripts will automatically install Rust and mdBook into the
+repo-local <code>.cargo/</code> and <code>.rustup/</code> directories (these are git-ignored).
+Subsequent runs reuse the existing install and start immediately.</p>
+<blockquote>
+<p><strong>Windows users:</strong> Run these scripts in <strong>Git Bash</strong> (included with
+<a href="https://gitforwindows.org/">Git for Windows</a>) or in WSL.</p>
+</blockquote>
 <h2 id="who-can-contribute"><a class="header" href="#who-can-contribute">Who can contribute?</a></h2>
 <p>This book is a work in progress where anyone is more than welcome to contribute
 in any possible way. Ideas, comments, typos, full paragraphs or sections would be

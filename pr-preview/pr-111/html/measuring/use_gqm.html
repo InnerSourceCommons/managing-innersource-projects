@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-b444af62.js";
+            window.path_to_searchindex_js = "../searchindex-ba1f9679.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-e70a2d30.js"></script>
@@ -202,32 +202,47 @@ To test your changes see this README.md file.
   subgraph GQM[Goals, Questions, Metrics]
   %% begin nodes
     find-projects.md[Find InnerSource Projects]
+    index.md[InnerSource Goals]
     reduce-duplication.md[Reduce duplication]
     adoption-trend.md[What is the InnerSource adoption trend?]
+    index.md[InnerSource Questions]
     who-contributes.md[Who contributes to the InnerSource project?]
     who-uses.md[Who uses the InnerSource project?]
     code-contributions.md[Code contributions]
     contribution-distance.md[Contribution Distance]
+    index.md[InnerSource Metrics]
     number-of-innersource-repositories.md[Number of InnerSource repositories]
     usage-count.md[Usage count]
   %% begin edges
     find-projects.md--&gt;who-uses.md
     find-projects.md--&gt;who-contributes.md
+    index.md--&gt;find-projects.md
+    index.md--&gt;reduce-duplication.md
     reduce-duplication.md--&gt;who-uses.md
     adoption-trend.md--&gt;number-of-innersource-repositories.md
+    index.md--&gt;adoption-trend.md
+    index.md--&gt;who-contributes.md
+    index.md--&gt;who-uses.md
     who-contributes.md--&gt;code-contributions.md
     who-contributes.md--&gt;contribution-distance.md
     who-uses.md--&gt;usage-count.md
+    index.md--&gt;code-contributions.md
+    index.md--&gt;contribution-distance.md
+    index.md--&gt;number-of-innersource-repositories.md
+    index.md--&gt;usage-count.md
   %% begin clicks
-    click find-projects.md "/measuring/goals/find-projects" "Find InnerSource Projects"
-    click reduce-duplication.md "/measuring/goals/reduce-duplication" "Reduce duplication"
-    click adoption-trend.md "/measuring/questions/adoption-trend" "What is the InnerSource adoption trend?"
-    click who-contributes.md "/measuring/questions/who-contributes" "Who contributes to the InnerSource project?"
-    click who-uses.md "/measuring/questions/who-uses" "Who uses the InnerSource project?"
-    click code-contributions.md "/measuring/metrics/code-contributions" "Code contributions"
-    click contribution-distance.md "/measuring/metrics/contribution-distance" "Contribution Distance"
-    click number-of-innersource-repositories.md "/measuring/metrics/number-of-innersource-repositories" "Number of InnerSource repositories"
-    click usage-count.md "/measuring/metrics/usage-count" "Usage count"
+    click find-projects.md "goals/find-projects.html" "Find InnerSource Projects"
+    click index.md "goals/index.html" "InnerSource Goals"
+    click reduce-duplication.md "goals/reduce-duplication.html" "Reduce duplication"
+    click adoption-trend.md "questions/adoption-trend.html" "What is the InnerSource adoption trend?"
+    click index.md "questions/index.html" "InnerSource Questions"
+    click who-contributes.md "questions/who-contributes.html" "Who contributes to the InnerSource project?"
+    click who-uses.md "questions/who-uses.html" "Who uses the InnerSource project?"
+    click code-contributions.md "metrics/code-contributions.html" "Code contributions"
+    click contribution-distance.md "metrics/contribution-distance.html" "Contribution Distance"
+    click index.md "metrics/index.html" "InnerSource Metrics"
+    click number-of-innersource-repositories.md "metrics/number-of-innersource-repositories.html" "Number of InnerSource repositories"
+    click usage-count.md "metrics/usage-count.html" "Usage count"
   end
   subgraph Legend
     direction TB
@@ -236,13 +251,13 @@ To test your changes see this README.md file.
     metric[Metric]
 
     classDef goals stroke:green,stroke-width:2px;
-    class goal,find-projects.md,reduce-duplication.md goals
+    class goal,find-projects.md,index.md,reduce-duplication.md goals
 
     classDef questions stroke:orange,stroke-width:2px;
-    class question,adoption-trend.md,who-contributes.md,who-uses.md questions
+    class question,adoption-trend.md,index.md,who-contributes.md,who-uses.md questions
 
     classDef metrics stroke:purple,stroke-width:2px;
-    class metric,code-contributions.md,contribution-distance.md,number-of-innersource-repositories.md,usage-count.md metrics
+    class metric,code-contributions.md,contribution-distance.md,index.md,number-of-innersource-repositories.md,usage-count.md metrics
   end
 </pre>
 
