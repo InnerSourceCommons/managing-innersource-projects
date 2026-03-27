@@ -6,13 +6,21 @@ AI and agentic coding are changing how development work gets done. Developers sp
 
 When many teams use AI to generate or modify code, the risk of duplication and inconsistency grows. InnerSource encourages shared building blocks and a single place to contribute improvements. That reduces waste and keeps quality consistent across the organization. The demand for software architecture and orchestration skills is also rising: understanding system boundaries, interfaces, and processes is essential for building valuable, reliable AI-assisted systems. InnerSource’s emphasis on transparency, documentation, and community aligns with this need.
 
+## The shifting role of the developer
+
+Agentic coding—sometimes called “vibe coding”—is changing what it means to be a software developer. The role is shifting from one that writes code to one that provides instructions in natural language and oversees the work of automated agents. Teams are beginning to deploy agent teams where specialized agents handle quality engineering, project management, frontend, and backend work, interacting directly with tools like Jira and GitHub.
+
+This makes software architecture and orchestration skills more important than ever. Understanding system boundaries, interfaces, and integration points is essential when you are guiding agents rather than typing code yourself. InnerSource's emphasis on clear ownership, well-documented interfaces, and collaborative governance gives developers and their agents the structure they need to operate effectively across team boundaries.
+
 ## Reducing context for AI
 
-AI systems and coding agents work best when they have a well-scoped, well-boundaried context. InnerSource projects that are clearly scoped—with explicit interfaces and a clear purpose—give AI a manageable surface area. That improves reliability and reduces the chance of AI “hallucinating” or misusing code from outside the intended scope. Shaping your repositories for both humans and AI is a theme we explore in [Shaping Repositories and Practices for AI](shaping-for-ai.md).
+AI systems and coding agents work best when they have a well-scoped, well-boundaried context. InnerSource projects that are clearly scoped—with explicit interfaces and a clear purpose—give AI a manageable surface area. That improves reliability and reduces the chance of AI “hallucinating” or misusing code from outside the intended scope. Context size remains a practical impediment: current models have limits on how much code and conversation history they can process at once, which makes well-boundaried, modular repositories even more valuable. Shaping your repositories for both humans and AI is a theme we explore in [Shaping Repositories and Practices for AI](shaping-for-ai.md).
 
 ## Reuse and avoiding duplication
 
-Reuse at the service or component level is especially valuable when many teams use AI to generate code. Without shared standards and shared repos, each team may produce similar solutions in isolation. InnerSource fosters reuse and cost sharing across units, which in turn supports sustainability and efficiency. This is the same benefit InnerSource has always offered; in an AI-augmented world, it becomes harder to ignore.
+The ease of generating software with AI puts the role of software reuse in question. When a coding agent can rewrite any capability on demand, why reuse an existing component? The answer is that reuse at the service or component level still matters—especially for services that carry their own system of records, compliance requirements, and organizational governance. Rewriting these introduces risk and duplication that AI speed does not offset.
+
+Without shared standards and shared repos, each team may produce similar solutions in isolation. InnerSource fosters reuse and cost sharing across units, which in turn supports sustainability and efficiency. Reusable InnerSource components can also reduce the cost of AI adoption: well-maintained shared libraries mean agents spend fewer tokens and less compute regenerating solutions that already exist. This is the same benefit InnerSource has always offered; in an AI-augmented world, it becomes harder to ignore.
 
 ## Platforms ready for InnerSource
 

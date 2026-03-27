@@ -147,7 +147,7 @@ and communication. Even when the developers are in face to face meetings,
 those tools should be used as they will leave traces of activity readable
 by others within the organization.
 
-![Extended usual software development process](development_workflow_all.jpg)
+![Extended usual software development process](./development_workflow_all.jpg)
 
 ## Communication Channels Infrastructure
 
@@ -210,7 +210,7 @@ to their specific needs.
 The following is a potential architecture that could help when accessing
 the several data layers, from raw information to detailed visualizations.
 
-![Monitoring Infrastructure](monitoring_infrastructure.jpg)
+![Monitoring Infrastructure](./monitoring_infrastructure.jpg)
 
 * **Retrieval Platform**: this first part uses as input any of the data
 sources already mentioned. Version systems, mailing lists, tickets,

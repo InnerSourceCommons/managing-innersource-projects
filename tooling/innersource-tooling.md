@@ -1,6 +1,6 @@
 # InnerSource with GitHub
 
-For how tooling and workflow integration support AI-assisted development and InnerSource together, see the [InnerSource and AI](/innersource-and-ai/innersource-and-ai.md) section, in particular [Shaping Repositories and Practices for AI](/innersource-and-ai/shaping-for-ai.md).
+For how tooling and workflow integration support AI-assisted development and InnerSource together, see the [InnerSource and AI](../innersource-and-ai/innersource-and-ai.md) section, in particular [Shaping Repositories and Practices for AI](../innersource-and-ai/shaping-for-ai.md).
 
 ## Effective InnerSource Strategies and Configuration for GitHub
 
@@ -22,19 +22,19 @@ for a perspective focused entirely on security.
   - [Pros and Cons of InnerSource Dedicated Environment](./github-strategy.md#pros-and-cons-of-innersource-dedicated-environment)
   - [Variations in how repository read access is distributed](./github-strategy.md#variations-in-how-repository-read-access-is-distributed)
   - [Conclusion: High Level Guideline](./github-strategy.md#conclusion-high-level-guideline)
-- [GitHub InnerSource Configuration](./github-configuration.md/#github-innersource-configuration)
-  - [Enterprise Setting](./github-configuration.md/#enterprise-setting)
-    - [Repository policies](./github-configuration.md/#repository-policies)
-      - [Base permissions](./github-configuration.md/#base-permissions)
-      - [Repository creation](./github-configuration.md/#repository-creation)
-      - [Repository forking (Private / Internal)](./github-configuration.md/#repository-forking-private--internal)
-  - [Organization Setting](./github-configuration.md/#organization-setting)
-    - [Member privileges](./github-configuration.md/#member-privileges)
-      - [Base permissions](./github-configuration.md/#base-permissions-1)
-      - [Repository creation](./github-configuration.md/#repository-creation-1)
-      - [Repository forking](./github-configuration.md/#repository-forking)
-  - [GitHub Enterprise Server Setting](./github-configuration.md/#github-enterprise-server-setting)
-    - [GitHub Connect - Server statistics](./github-configuration.md/#github-connect---server-statistics)
-  - [Resources](./github-configuration.md/#resources)
+- [GitHub InnerSource Configuration](./github-configuration.md#github-innersource-configuration)
+  - [Enterprise Setting](./github-configuration.md#enterprise-setting)
+    - [Repository policies](./github-configuration.md#repository-policies)
+      - [Base permissions](./github-configuration.md#base-permissions)
+      - [Repository creation](./github-configuration.md#repository-creation)
+      - [Repository forking (Private / Internal)](./github-configuration.md#repository-forking-private--internal)
+  - [Organization Setting](./github-configuration.md#organization-setting)
+    - [Member privileges](./github-configuration.md#member-privileges)
+      - [Base permissions](./github-configuration.md#base-permissions-1)
+      - [Repository creation](./github-configuration.md#repository-creation-1)
+      - [Repository forking](./github-configuration.md#repository-forking)
+  - [GitHub Enterprise Server Setting](./github-configuration.md#github-enterprise-server-setting)
+    - [GitHub Connect - Server statistics](./github-configuration.md#github-connect---server-statistics)
+  - [Resources](./github-configuration.md#resources)
 
 ### GitLab

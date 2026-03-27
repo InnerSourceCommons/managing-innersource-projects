@@ -1,6 +1,6 @@
 # Managing InnerSource Projects book
 
-![Managing InnerSource Projects](managing-innersource-projects-cover.jpg)
+![Managing InnerSource Projects](./managing-innersource-projects-cover.jpg)
 
 ## What is this book about?
 
@@ -14,6 +14,30 @@ This book is divided into sections and articles, each of which cover one single 
 Articles should be relatively short and self-contained so that they can be read in any order and any amount and still be useful.
 Detailed explanation of InnerSource topics should go in the [InnerSource Patterns] book and be linked from the article here.
 Think of the articles in this book like either a conversational introduction/summary to a pattern or possible a journey showing how multiple patterns can be used together in an InnerSource Program.
+
+## Building the Book Locally
+
+The book is built with [mdBook](https://rust-lang.github.io/mdBook/).
+You don't need to install anything manually — the helper scripts handle everything.
+
+**Build the book** (output goes to `book/`):
+
+```sh
+make build
+```
+
+**Live-preview with auto-reload** (opens a local web server):
+
+```sh
+make serve
+```
+
+On the first run, the scripts will automatically install Rust and mdBook into the
+repo-local `.cargo/` and `.rustup/` directories (these are git-ignored).
+Subsequent runs reuse the existing install and start immediately.
+
+> **Windows users:** Run these scripts in **Git Bash** (included with
+> [Git for Windows](https://gitforwindows.org/)) or in WSL.
 
 ## Who can contribute?
 
@@ -40,9 +64,9 @@ Come join us and contribute!
 ## How Do We Structure Goals, Questions, and Metrics?
 
 Review the [Goal-Question-Metric Approach](./measuring/gqm.md) to further understand how we structure goals, questions, and metrics.
-Review [GQM use cases and user journeys](./measuring/gqm_example/README.md) to guide their development.
+Review [GQM use cases and user journeys](measuring/gqm_example/README.md) to guide their development.
 
-We document goals, questions, and metrics in separate folders in the [measuring](./measuring) directory.
+We document goals, questions, and metrics in separate folders in the [measuring](./measuring/index.md) directory.
 You can browse all goals, questions, and metrics in [graph format](./measuring/use_gqm.md). 
 
 Add in your own scenarios to the graph!
@@ -60,13 +84,12 @@ Each chapter in the book is authored and reviewed by different people. That info
 be found at the beginning of each chapter. This initiative is fostered by the [ISPO Working Group].
 For further questions, please contact us in [Slack](https://innersourcecommons.org/slack)!
 
-The book cover was created by [Sebastian Spier](https://spier.hu), using an image by user [Bru-nO](https://pixabay.com/photos/measure-unit-of-measure-meterstab-2737004/), available under the [Pixabay License](https://pixabay.com/service/license/).
+The book cover was created by [Sebastian Spier](https://spier.hu), using an image by user [Bru-nO](https://pixabay.com/users/bru-no-1161770/), available under the [Pixabay License](https://pixabay.com/service/license-summary/).
 
 All of the content found in this repository is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
-Please see [LICENSE.txt] in this repository for the full text of the license.
+Please see [LICENSE.txt](./LICENSE.txt) in this repository for the full text of the license.
 
 [Bitergia]: https://bitergia.com/
 [ISPO Working Group]: https://innersourcecommons.org/community/#ispo
 [InnerSource Commons]: https://innersourcecommons.org/
 [InnerSource Patterns]: https://patterns.innersourcecommons.org/
-[LICENSE.txt]: ./LICENSE.txt
