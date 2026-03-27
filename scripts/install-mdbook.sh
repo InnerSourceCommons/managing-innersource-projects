@@ -20,7 +20,13 @@ echo "Installing Rust and mdBook into ${REPO_ROOT} (RUSTUP_HOME=$RUSTUP_HOME, CA
 if [ ! -x "${CARGO_HOME}/bin/rustup" ]; then
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --no-modify-path
 fi
-source "${CARGO_HOME}/env"
+# rustup creates .cargo/env; CI may restore .cargo/bin from cache without env (not cached).
+if [[ -f "${CARGO_HOME}/env" ]]; then
+	# shellcheck source=/dev/null
+	source "${CARGO_HOME}/env"
+else
+	export PATH="${CARGO_HOME}/bin:${PATH}"
+fi
 
 rustup toolchain install "${RUST_TOOLCHAIN_VERSION}" --profile minimal
 rustup default "${RUST_TOOLCHAIN_VERSION}"
