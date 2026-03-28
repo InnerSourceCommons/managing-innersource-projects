@@ -26,5 +26,5 @@ if [ "$ACT" = "true" ]; then
   exit 0
 else
   git add measuring/use_gqm.md
-  git diff --staged --quiet || (git commit -m "Update Goals Questions Metrics Graph" && git push origin HEAD:${{ github.ref }})
+  git diff --staged --quiet || (git commit -m "Update Goals Questions Metrics Graph" && git push origin "HEAD:${GITHUB_REF}")
 fi 

@@ -9,6 +9,9 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   generateDiagram:
     name: Generate Diagram
@@ -16,7 +19,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ssh-key: ${{ secrets.DEPLOY_KEY_SSH_PRIVATE_KEY }}
           fetch-depth: 0
       
       - uses: actions/setup-node@v3
