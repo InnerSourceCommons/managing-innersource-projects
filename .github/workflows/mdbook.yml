@@ -74,6 +74,9 @@ jobs:
       - name: Build with mdBook
         run: ${{ env.CARGO_HOME }}/bin/mdbook build
 
+      - name: Remove nested html output
+        run: rm -rf ./book/html
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
@@ -147,6 +150,10 @@ jobs:
       - name: Build with mdBook
         if: github.event.action != 'closed'
         run: ${{ env.CARGO_HOME }}/bin/mdbook build
+
+      - name: Remove nested html output
+        if: github.event.action != 'closed'
+        run: rm -rf ./book/html
 
       - name: Deploy PR preview
         uses: rossjrw/pr-preview-action@v1
