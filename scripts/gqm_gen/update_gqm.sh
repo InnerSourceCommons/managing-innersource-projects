@@ -21,7 +21,7 @@ npm install
 npm run start || true  # Continue even if tests fail
 
 # Handle git operations if not in act
-if [ "$ACT" = "true" ]; then
+if [ "${ACT:-}" = "true" ]; then
   echo "Running in act - simulating successful git operations"
   exit 0
 else
