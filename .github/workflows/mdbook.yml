@@ -74,14 +74,11 @@ jobs:
       - name: Build with mdBook
         run: ${{ env.CARGO_HOME }}/bin/mdbook build
 
-      - name: Remove nested html output
-        run: rm -rf ./book/html
-
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: ./book
+          folder: ./book/html
           target-folder: docs
           clean: true
           clean-exclude: pr-preview
@@ -151,14 +148,10 @@ jobs:
         if: github.event.action != 'closed'
         run: ${{ env.CARGO_HOME }}/bin/mdbook build
 
-      - name: Remove nested html output
-        if: github.event.action != 'closed'
-        run: rm -rf ./book/html
-
       - name: Deploy PR preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: ./book
+          source-dir: ./book/html
           preview-branch: gh-pages
           umbrella-dir: pr-preview
 
