@@ -75,11 +75,16 @@ jobs:
         run: ${{ env.CARGO_HOME }}/bin/mdbook build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./book
-          keep_files: true
+          branch: gh-pages
+          folder: ./book
+          clean: true
+          clean-exclude: pr-preview
+
+  gqm-main:
+    needs: deploy
+    uses: ./.github/workflows/gqm_update.yml
 
   preview:
     if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
@@ -133,6 +138,11 @@ jobs:
         if: github.event.action != 'closed'
         run: echo "${CARGO_HOME}/bin" >> "$GITHUB_PATH"
 
+      - name: Set preview site-url
+        if: github.event.action != 'closed'
+        run: |
+          sed -i 's|site-url = "/managing-innersource-projects/"|site-url = "/managing-innersource-projects/pr-preview/pr-${{ github.event.pull_request.number }}/"|' book.toml
+
       - name: Build with mdBook
         if: github.event.action != 'closed'
         run: ${{ env.CARGO_HOME }}/bin/mdbook build
@@ -143,3 +153,8 @@ jobs:
           source-dir: ./book
           preview-branch: gh-pages
           umbrella-dir: pr-preview
+
+  gqm-preview:
+    if: github.event_name == 'pull_request' && github.event.action != 'closed' && github.event.pull_request.head.repo.full_name == github.repository
+    needs: preview
+    uses: ./.github/workflows/gqm_update.yml

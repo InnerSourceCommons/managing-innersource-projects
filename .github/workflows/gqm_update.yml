@@ -9,6 +9,8 @@ on:
 
   workflow_dispatch:
 
+  workflow_call:
+
 permissions:
   contents: write
 
@@ -20,21 +22,21 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      
+
       - uses: actions/setup-node@v3
         with:
           node-version: "21.x"
-      
+
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      
+
       - name: Update GQM diagram
         run: |
           cd scripts/gqm_gen
           ./update_gqm.sh
-      
+
       - name: Report coverage
         if: success()
         uses: sidx1024/report-nyc-coverage-github-action@v1.2.7
