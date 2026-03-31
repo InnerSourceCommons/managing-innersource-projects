@@ -154,6 +154,7 @@ jobs:
           source-dir: ./book/html
           preview-branch: gh-pages
           umbrella-dir: docs/pr-preview
+          pages-base-path: docs
 
   gqm-preview:
     if: github.event_name == 'pull_request' && github.event.action != 'closed' && github.event.pull_request.head.repo.full_name == github.repository
