@@ -6,6 +6,8 @@ AI and agentic coding are changing how development work gets done. Developers sp
 
 When many teams use AI to generate or modify code, the risk of duplication and inconsistency grows. InnerSource encourages shared building blocks and a single place to contribute improvements. That reduces waste and keeps quality consistent across the organization. The demand for software architecture and orchestration skills is also rising: understanding system boundaries, interfaces, and processes is essential for building valuable, reliable AI-assisted systems. InnerSource’s emphasis on transparency, documentation, and community aligns with this need.
 
+This relevance extends beyond code. Organizations are discovering that non-code assets—patterns, tutorials, enablement content, blog posts, and architectural learnings—are just as important to capture and share. When people leave teams or companies, their knowledge often leaves with them. InnerSource practices that encourage open contribution and visible documentation help preserve institutional knowledge and make it available for AI training and retrieval. Organizations that have historically restricted internal knowledge sharing are now recognizing the cost: lost insights, repeated effort, and AI systems that lack the context they need to be useful.
+
 ## The shifting role of the developer
 
 Agentic coding—sometimes called “vibe coding”—is changing what it means to be a software developer. The role is shifting from one that writes code to one that provides instructions in natural language and oversees the work of automated agents. Teams are beginning to deploy agent teams where specialized agents handle quality engineering, project management, frontend, and backend work, interacting directly with tools like Jira and GitHub.
@@ -22,9 +24,23 @@ The ease of generating software with AI puts the role of software reuse in quest
 
 Without shared standards and shared repos, each team may produce similar solutions in isolation. InnerSource fosters reuse and cost sharing across units, which in turn supports sustainability and efficiency. Reusable InnerSource components can also reduce the cost of AI adoption: well-maintained shared libraries mean agents spend fewer tokens and less compute regenerating solutions that already exist. This is the same benefit InnerSource has always offered; in an AI-augmented world, it becomes harder to ignore.
 
+## Capturing non-code knowledge
+
+Software reuse is only part of the picture. Organizations also benefit from capturing and sharing non-code reusable assets: patterns, enablement content, tutorials, architecture decisions, and operational learnings. These assets are valuable both for human contributors and as training or grounding material for AI systems. Rather than requiring individuals to read through long tutorials, AI tools can surface the right knowledge at the right time—but only if that knowledge has been captured, organized, and made accessible in the first place.
+
+InnerSource practices provide a natural framework for this. Open contribution models, visible repositories, and shared publishing tools encourage teams to document what they learn rather than keeping it siloed. Organizations that invest in capturing non-code knowledge will find their AI systems are better grounded in organizational context and more useful to the people they serve.
+
 ## Platforms ready for InnerSource
 
 Platforms and tooling play a crucial role in enabling InnerSource at scale. As organizations adopt AI and agentic workflows, collaboration platforms must support discovery, visibility, and contribution across team boundaries. Platforms that make it easy to find reusable components, understand interfaces, and submit improvements reduce friction and encourage participation. Investment in platform capabilities—search, documentation, governance workflows, and integration with development tools—directly multiplies the effectiveness of InnerSource practices in an AI-augmented environment.
+
+Discoverability is a particular challenge. Without central guidance and good search capabilities, multiple teams within the same organization may independently build similar platforms or solutions, unaware of each other's work. This duplication is costly and undermines the benefits of InnerSource. Program leads should invest in mechanisms that make shared assets—code, data, documentation, and tooling—easy to find across the organization. AI-powered search and recommendation tools can help, but they work best when the underlying assets are well-described, consistently tagged, and published to a central location.
+
+## The importance of a solid data foundation
+
+Data is a critical enabler for AI adoption, and organizations that treat their data assets with the same care as their code will be better positioned to succeed. Clean, well-governed, and discoverable data—whether in data lakes, data warehouses, or data products—is essential for training, fine-tuning, and grounding AI systems. When data is siloed, inconsistent, or poorly documented, AI initiatives stall or produce unreliable results.
+
+InnerSource principles apply naturally to data: open contribution, clear ownership, transparent governance, and shared standards help organizations build a data foundation that is ready for cross-team collaboration and AI consumption. Treating data products as InnerSource projects—with contribution guidelines, quality standards, and discoverability mechanisms—enables teams to share and build on each other's data work rather than duplicating effort. As AI adoption accelerates, the organizations that invest in making their data InnerSource-ready will have a significant advantage.
 
 ## Enterprise AI and production readiness
 
