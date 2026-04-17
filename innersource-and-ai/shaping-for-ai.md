@@ -10,6 +10,8 @@ Well-defined repositories with clear scope and interfaces make it easier for hum
 
 InnerSource behaviors like solid READMEs, CONTRIBUTING guides, and architecture decision records are increasingly important when AI is in the loop. They help AI and people alike understand how to use and extend shared code correctly. Documentation that explains *why* decisions were made, not just *what* the code does, supports better AI-generated contributions and reduces misuse. Making repositories searchable and well-described also helps teams and tools find the right building blocks instead of reimplementing them.
 
+Discoverability deserves special attention. In large organizations, teams frequently build duplicate solutions because they cannot find what already exists. This problem extends beyond code to data assets, enablement content, and operational knowledge. Program leads should work with platform teams to ensure that shared assets are consistently tagged, well-described, and surfaced through central search and recommendation tools. AI-powered chatbots and assistants can help with discoverability, but they are only as good as the content they can access—investing in publishing and indexing infrastructure pays dividends.
+
 ## Playbooks for people and agents
 
 Playbooks that describe how to contribute—and what to avoid—benefit both human contributors and AI-assisted workflows. The community is starting to develop playbooks that work for both. As these emerge, they will be reflected in the InnerSource Patterns book and linked from this section. The goal is to make it easy for contributors and tools to follow the same rules and expectations.
