@@ -2,15 +2,15 @@
 
 AI is the ultimate InnerSource contributor. Like any external contributor, AI agents generate code that must be reviewed, validated, and integrated thoughtfully into your systems. The same InnerSource practices that enable trusted external contributions—code review, clear guidelines, transparent decision-making, and systems thinking—are exactly what you need to safely and sustainably adopt AI in development.
 
-Adopting AI without these guardrails can deliver short-term gains in speed and productivity, but at the cost of long-term risks to quality, security, and maintainability. The good news: if your organization has built a strong InnerSource culture, you already have the foundations in place.
+Adopting AI without these guardrails can deliver short-term gains in speed and productivity, but at the cost of long-term risks to quality, security, and maintainability. The good news is that if your organization has built a strong InnerSource culture, you already have the foundations in place.
 
 ## Short-term speed vs. long-term risk
 
-AI coding tools can deliver impressive short-term productivity gains. The risk is that teams take on more risk than they realize—releasing AI-generated content with fewer human reviews, skipping tests, or accepting code they do not fully understand. These gains can erode over time as technical debt, security vulnerabilities, and maintenance burden accumulate. InnerSource practices like mandatory code review, clear ownership, and contribution guidelines act as a natural brake on this tendency, ensuring that speed does not come at the expense of reliability.
+AI coding tools boost short-term productivity but may cause teams to underestimate risks like releasing less-reviewed AI content, skipping tests, or using misunderstood code. These gains can decrease as technical debt and vulnerabilities grow. InnerSource practices such as mandatory review, clear ownership, and contribution guidelines help maintain reliability without sacrificing speed.
 
 ## Mitigating AI slop
 
-"AI slop" refers to low-quality, generic, or incorrect content produced by AI systems without adequate human oversight. In a development context, this can mean boilerplate code that does not fit the project's conventions, misleading documentation, or subtly incorrect implementations. InnerSource's emphasis on transparency—keeping things traceable and open for inspection—directly mitigates this risk. When contributions (whether from humans or AI) go through visible review processes in shared repositories, quality issues are caught earlier and patterns of slop become visible to the community.
+"AI slop" refers to low-quality, generic, or incorrect content produced by AI systems without adequate human oversight. In a development context, this can mean boilerplate code that does not fit the project's conventions, misleading documentation, or subtly incorrect implementations. InnerSource's emphasis on transparency—keeping things traceable and open for inspection—directly mitigates this risk. When contributions (whether from humans or AI) go through visible review processes in shared repositories, quality issues are caught earlier, and patterns of slop become visible to the community.
 
 ## Defining boundaries for proprietary knowledge
 
@@ -21,6 +21,23 @@ The goal is to separate human creation outcomes (the knowledge and artifacts tha
 ## Transparency and stakeholder involvement
 
 Involving stakeholders and keeping development transparent supports responsible AI deployment. When decisions about tools, patterns, and policies are visible and discussable, teams can align on what is acceptable and what is not. This aligns with InnerSource principles of openness and collaboration and helps prevent AI from being used in ways that conflict with organizational values or compliance requirements.
+
+## Walled gardens and uneven access to AI tooling
+
+Access to AI tools varies across companies. Some teams have broad access, while others face restrictions due to API limits, approval delays, or group-specific access. This risks creating 'walled gardens' in InnerSource, where collaboration depends more on access to tools than on work merit or community needs.
+
+An ISPO's role mirrors an OSPO's: not to deploy tooling, but to track access disparities affecting collaboration. When contribution patterns shift due to faster iteration by some teams, the ISPO should highlight this as a signal. It can then recommend policies to address uneven access: contribution norms without AI dependence, universal review standards, and guidance on equitable collaboration.
+
+
+## Measuring the cost of AI adoption
+
+Organizations are spending heavily on AI tooling, often while simultaneously being asked to reduce costs elsewhere. Program leads should help their organizations measure the actual costs of AI adoption: licensing, compute, tokens, platform engineering effort, and the opportunity cost of experiments that do not land. InnerSource components that are well-maintained reduce these costs by preventing agents from regenerating solutions that already exist. Making savings visible, along with AI's productivity gains, helps leaders decide where to invest.
+
+## Designing for agent accessibility alongside human contributors and consumers
+
+InnerSource offices see two main audiences: contributors submitting code and consumers relying on outputs. Agents now constitute a third category, capable of contributing code and independently consuming interfaces; project standards should be updated accordingly.
+
+An ISPO should expand its stewardship to include agent accessibility by encouraging projects with documented processes, clear contribution guidelines, and discoverable interfaces, making them more approachable. It can prompt teams to consider whether agents can find, understand, and contribute independently, alongside regular questions from contributors and consumers.
 
 ## Leading people and agents
 

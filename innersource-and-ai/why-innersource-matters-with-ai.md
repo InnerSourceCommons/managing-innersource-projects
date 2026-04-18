@@ -10,13 +10,13 @@ This relevance extends beyond code. Organizations are discovering that non-code 
 
 ## The shifting role of the developer
 
-Agentic coding—sometimes called “vibe coding”—is changing what it means to be a software developer. The role is shifting from one that writes code to one that provides instructions in natural language and oversees the work of automated agents. Teams are beginning to deploy agent teams where specialized agents handle quality engineering, project management, frontend, and backend work, interacting directly with tools like Jira and GitHub.
+Agentic coding—sometimes called “vibe coding”—is changing what it means to be a software developer. The role is shifting from writing code to providing natural-language instructions and overseeing the work of automated agents. Teams are beginning to deploy agent teams where specialized agents handle quality engineering, project management, frontend, and backend work, interacting directly with tools like Jira and GitHub.
 
 This makes software architecture and orchestration skills more important than ever. Understanding system boundaries, interfaces, and integration points is essential when you are guiding agents rather than typing code yourself. InnerSource's emphasis on clear ownership, well-documented interfaces, and collaborative governance gives developers and their agents the structure they need to operate effectively across team boundaries.
 
 ## Reducing context for AI
 
-AI systems and coding agents work best when they have a well-scoped, well-boundaried context. InnerSource projects that are clearly scoped—with explicit interfaces and a clear purpose—give AI a manageable surface area. That improves reliability and reduces the chance of AI “hallucinating” or misusing code from outside the intended scope. Context size remains a practical impediment: current models have limits on how much code and conversation history they can process at once, which makes well-boundaried, modular repositories even more valuable. Shaping your repositories for both humans and AI is a theme we explore in [Shaping Repositories and Practices for AI](shaping-for-ai.md).
+AI systems and coding agents achieve optimal performance when operating within a clearly defined and bounded context. Well-scoped InnerSource projects with explicit interfaces restrict the accessibility of AI, thereby enhancing reliability and reducing the likelihood of hallucinations or misuse beyond their intended scope. Because current models struggle with large codebases and extensive conversations due to context size limits, maintaining modular and well-boundaried repositories becomes even more important. Designing your repositories to accommodate both human developers and AI aligns with the themes discussed in [Shaping Repositories and Practices for AI](shaping-for-ai.md).
 
 ## Reuse and avoiding duplication
 
@@ -28,13 +28,23 @@ Without shared standards and shared repos, each team may produce similar solutio
 
 Software reuse is only part of the picture. Organizations also benefit from capturing and sharing non-code reusable assets: patterns, enablement content, tutorials, architecture decisions, and operational learnings. These assets are valuable both for human contributors and as training or grounding material for AI systems. Rather than requiring individuals to read through long tutorials, AI tools can surface the right knowledge at the right time—but only if that knowledge has been captured, organized, and made accessible in the first place.
 
+Focus on capturing historical knowledge from key personnel like experts, engineers, and architects, whose insights are often in memory, chats, or documents. Making this knowledge discoverable enables agent workflows to surface the right expertise at the right time without humans needing to know who to ask.
+
 InnerSource practices provide a natural framework for this. Open contribution models, visible repositories, and shared publishing tools encourage teams to document what they learn rather than keeping it siloed. Organizations that invest in capturing non-code knowledge will find their AI systems are better grounded in organizational context and more useful to the people they serve.
+
+## Reimagining collaboration over the next five years
+
+Organizations are reconsidering employee collaboration as AI and agentic workflows transform work. InnerSource programs can either lead this change proactively or wait for top-down imposition by CIOS or others. Proactive leadership enables shaping practices that suit their organization, rather than retrofitting based on external decisions.
+
+A five-year vision emphasizes agentic experiences where tools predict needs and offer seamless access to info and expertise. Future focus shifts from raw search to curated experiences and collaboration. InnerSource practices that capture and share expert knowledge form the foundation.
+
+Be realistic about AI adoption. Enthusiasm is mostly in tech; wider awareness is limited. Program leads should plan for a long adoption curve, focus on current users, and stay open to future adopters.
 
 ## Platforms ready for InnerSource
 
 Platforms and tooling play a crucial role in enabling InnerSource at scale. As organizations adopt AI and agentic workflows, collaboration platforms must support discovery, visibility, and contribution across team boundaries. Platforms that make it easy to find reusable components, understand interfaces, and submit improvements reduce friction and encourage participation. Investment in platform capabilities—search, documentation, governance workflows, and integration with development tools—directly multiplies the effectiveness of InnerSource practices in an AI-augmented environment.
 
-Discoverability is a particular challenge. Without central guidance and good search capabilities, multiple teams within the same organization may independently build similar platforms or solutions, unaware of each other's work. This duplication is costly and undermines the benefits of InnerSource. Program leads should invest in mechanisms that make shared assets—code, data, documentation, and tooling—easy to find across the organization. AI-powered search and recommendation tools can help, but they work best when the underlying assets are well-described, consistently tagged, and published to a central location.
+Discoverability is a particular challenge. Without central guidance and effective search capabilities, multiple teams within the same organization may independently build similar platforms or solutions, unaware of one another's work. This duplication is costly and undermines the benefits of InnerSource. Program leads should invest in mechanisms that make shared assets—code, data, documentation, and tooling—easy to find across the organization. AI-powered search and recommendation tools can help, but they work best when the underlying assets are well-described, consistently tagged, and published to a central location.
 
 ## The importance of a solid data foundation
 
@@ -48,4 +58,4 @@ This section focuses on large-scale enterprise adoption of AI—internal tools, 
 
 ## Evidence and further reading
 
-AI tooling and organizational practices are evolving. This section will be updated with results from the [InnerSource Commons](https://innersourcecommons.org/) survey and from research partnerships (e.g. with universities, [FINOS](https://finos.org/), and other organizations) as data becomes available. If you have case studies or data to share, we encourage you to contribute or get in touch via the [InnerSource Commons Slack](https://innersourcecommons.org/slack).
+AI tooling and organizational practices are evolving. This section will be updated with results from the [InnerSource Commons](https://innersourcecommons.org/) survey and from research partnerships (e.g., with universities, [FINOS](https://finos.org/), and other organizations) as data becomes available. If you have case studies or data to share, we encourage you to contribute or get in touch via the [InnerSource Commons Slack](https://innersourcecommons.org/slack).
