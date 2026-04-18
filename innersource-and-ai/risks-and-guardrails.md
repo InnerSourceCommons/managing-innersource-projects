@@ -24,7 +24,7 @@ Involving stakeholders and keeping development transparent supports responsible 
 
 ## Walled gardens and uneven access to AI tooling
 
-Access to AI tools varies across companies. Some teams have broad access, while others face restrictions due to API limits, approval delays, or group-specific access. This risks creating 'walled gardens' in InnerSource, where collaboration depends more on access to tools than on work merit or community needs.
+Access to AI tools varies across companies. Some teams have broad access, while others face restrictions due to API limits, approval delays, or group-specific access. This risks creating "walled gardens" in InnerSource, where collaboration depends more on access to tools than on work merit or community needs.
 
 An ISPO's role mirrors an OSPO's: not to deploy tooling, but to track access disparities affecting collaboration. When contribution patterns shift due to faster iteration by some teams, the ISPO should highlight this as a signal. It can then recommend policies to address uneven access: contribution norms without AI dependence, universal review standards, and guidance on equitable collaboration.
 
