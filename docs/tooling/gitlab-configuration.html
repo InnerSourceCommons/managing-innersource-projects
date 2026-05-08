@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-1f2106dc.js";
+            window.path_to_searchindex_js = "../searchindex-85a1db60.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-e70a2d30.js"></script>
@@ -175,7 +175,46 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="gitlab-innersource-configuration"><a class="header" href="#gitlab-innersource-configuration">GitLab InnerSource Configuration</a></h1>
-<!-- {% embed giscus repo="InnerSourceCommons/managing-innersource-projects"repo-id="MDEwOlJlcG9zaXRvcnk4MjY2ODc3OA=="category="Website"category-id="DIC_kwDOBO1s6s4CiMTg"reactions-enabled="1"theme="preferred_color_scheme"lang="en"loading="lazy" %} -->
+<ul>
+<li><a href="#layering-source-control-management-configurations">Layering Source Control Management Configurations</a></li>
+<li><a href="#enterprise-setting">Enterprise Setting</a>
+<ul>
+<li><a href="#repository-policies">Repository policies</a>
+<ul>
+<li><a href="#base-permissions">Base permissions</a></li>
+<li><a href="#repository-creation">Repository creation</a></li>
+<li><a href="#repository-forking-private--internal">Repository forking (Private / Internal)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#organization-setting">Organization Setting</a>
+<ul>
+<li><a href="#member-privileges">Member privileges</a>
+<ul>
+<li><a href="#base-permissions-1">Base permissions</a></li>
+<li><a href="#repository-creation-1">Repository creation</a></li>
+<li><a href="#repository-forking">Repository forking</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#github-enterprise-server-setting">GitHub Enterprise Server Setting</a>
+<ul>
+<li><a href="#github-connect---server-statistics">GitHub Connect - Server statistics</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a></li>
+</ul>
+<h2 id="self-managed-and-free-with-customization"><a class="header" href="#self-managed-and-free-with-customization">Self-Managed and Free with Customization</a></h2>
+<p>GitLab is a self-managed configured source controlled platform. We can a lot of autonomy with that for being a free tier patform. With that said, there are of course pros and cons to having the ability to self-managed. We will need to configure and customize based on our organizational needs.</p>
+<p>Here is an <a href="https://docs.gitlab.com/administration/configure/">overview</a> of what we can configure within GitLab.</p>
+<p>There are various tiers of self-administering hierarchy within GitLab that InnerSource Commons can based on depending on the scope of project,organization, or user specifics.</p>
+<h3 id="gitlab-administration-layers"><a class="header" href="#gitlab-administration-layers">GitLab Administration Layers</a></h3>
+<p><strong>By organizations</strong>
+&lt;On GitLab Self-Managed, by default this feature is not available. To make it available, an administrator can enable the feature flag named ui_for_organizations. On GitLab.com and GitLab Dedicated, this feature is not available. This feature is not ready for production use.&gt;</p>
+<p><strong>By projects</strong>
+<strong>By users</strong><!-- {% embed giscus repo="InnerSourceCommons/managing-innersource-projects"repo-id="MDEwOlJlcG9zaXRvcnk4MjY2ODc3OA=="category="Website"category-id="DIC_kwDOBO1s6s4CiMTg"reactions-enabled="1"theme="preferred_color_scheme"lang="en"loading="lazy" %} --></p>
 <div data-embedify="" data-app="giscus" data-option-repo="InnerSourceCommons/managing-innersource-projects" data-option-repo-id="MDEwOlJlcG9zaXRvcnk4MjY2ODc3OA==" data-option-category="Website" data-option-category-id="DIC_kwDOBO1s6s4CiMTg" data-option-reactions-enabled="1" data-option-theme="preferred_color_scheme" data-option-lang="en" data-option-loading="lazy" style="display:none"></div>
 
 <style>.giscus { margin-top: 6rem; }</style><script src="https://giscus.app/client.js" data-repo="InnerSourceCommons/managing-innersource-projects" data-repo-id="MDEwOlJlcG9zaXRvcnk4MjY2ODc3OA==" data-category="Website" data-category-id="DIC_kwDOBO1s6s4CiMTg" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-lang="en" data-loading="lazy" crossorigin="anonymous" data-theme="preferred_color_scheme" async=""></script><script>(() => { const giscusScript = document.querySelector("script[data-repo][data-repo-id]"); if (giscusScript?.getAttribute("data-theme") !== "book") return; const mapTheme = (theme) => (["light", "rust"].includes(theme) ? "light" : "dark"); const bookTheme = localStorage.getItem("mdbook-theme") || html.getAttribute("class"); giscusScript.setAttribute("data-theme", mapTheme(bookTheme)); document.querySelectorAll("button[role='menuitem'].theme").forEach((btn) => { btn.addEventListener("click", (event) => { const theme = mapTheme(event.target.id); const iframe = document.querySelector("iframe.giscus-frame"); if (iframe) iframe.contentWindow.postMessage({ giscus: { setConfig: { theme } } }, "*"); }); }); })();</script>
