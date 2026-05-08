@@ -8,13 +8,23 @@ Well-defined repositories with clear scope and interfaces make it easier for hum
 
 ## Documentation and discoverability
 
-InnerSource behaviors like solid READMEs, CONTRIBUTING guides, and architecture decision records are increasingly important when AI is in the loop. They help AI and people alike understand how to use and extend shared code correctly. Documentation that explains *why* decisions were made, not just *what* the code does, supports better AI-generated contributions and reduces misuse. Making repositories searchable and well-described also helps teams and tools find the right building blocks instead of reimplementing them.
+InnerSource behaviors like solid READMEs, CONTRIBUTING guides, and architecture decision records are increasingly important when AI is in the loop. They help AI and people alike understand how to use and extend shared code correctly. Documentation that explains *why* decisions were made, not just *what* the code does, supports better AI-generated contributions and reduces misuse. Making repositories searchable and well-described also helps teams and tools find the right building blocks rather than reimplementing them.
 
-Discoverability deserves special attention. In large organizations, teams frequently build duplicate solutions because they cannot find what already exists. This problem extends beyond code to data assets, enablement content, and operational knowledge. Program leads should work with platform teams to ensure that shared assets are consistently tagged, well-described, and surfaced through central search and recommendation tools. AI-powered chatbots and assistants can help with discoverability, but they are only as good as the content they can access—investing in publishing and indexing infrastructure pays dividends.
+Discoverability deserves special attention. In large organizations, teams frequently build duplicate solutions because they cannot find existing ones. This problem extends beyond code to data assets, enablement content, and operational knowledge. Program leads should work with platform teams to ensure that shared assets are consistently tagged, well-described, and surfaced through central search and recommendation tools. AI-powered chatbots and assistants can help with discoverability, but they are only as good as the content they can access—investing in publishing and indexing infrastructure pays dividends.
 
 ## Playbooks for people and agents
 
 Playbooks that describe how to contribute—and what to avoid—benefit both human contributors and AI-assisted workflows. The community is starting to develop playbooks that work for both. As these emerge, they will be reflected in the InnerSource Patterns book and linked from this section. The goal is to make it easy for contributors and tools to follow the same rules and expectations.
+
+## Beyond portals: integrating InnerSource into the flow of work
+
+Early InnerSource initiatives often relied on a single portal where teams had to find, navigate, and access reusable components. While this can work for motivated contributors, it often fails at larger scales. A better approach is to embed reusable components and documentation within tools like IDEs, workflows, or chat platforms. Moving from a portal-centric model doesn't eliminate the need for a central index; it shifts the focus to making the index improve user experience, not be the only interaction point.
+
+## Removing barriers at the platform engineering layer
+
+AI adoption raises the stakes for frictionless contribution workflows. A human contributor who encounters a confusing approval gate can ask a colleague for help; an agent that hits the same gate will stall, fail silently, or open a malformed PR. When agentic tools are submitting contributions at scale—running automated fixes, proposing dependency updates, or handling issue triage—every point of unnecessary friction is amplified. Heavyweight review requirements, unclear ownership, or undocumented merge criteria that seasoned engineers navigate by instinct become hard blockers for automated workflows.
+
+Program leads should work with platform engineering teams to ensure contribution paths are explicit and machine-navigable: clear criteria for what makes a PR acceptable, documented ownership so agents know who to route requests to, and lightweight approval flows for low-risk changes. The organizations best positioned to benefit from agentic contribution are those whose InnerSource platforms are already streamlined for human contributors—AI makes it impossible to defer the cost of ignoring that work.
 
 ## Skills, plugins, and workflow integration
 
