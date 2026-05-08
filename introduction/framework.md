@@ -34,7 +34,7 @@ Let's introduce the *InnerSource framework*.
 
 A core aspect of the InnerSource framework is the governance model. Good governance is essential for the success of any project, and InnerSource is no exception.
 
-Pick the right [governance standards and model](/governance/governance.md) for your organization.
+Pick the right [governance standards and model](../governance/governance.md) for your organization.
 
 ## Technical infrastructure
 
@@ -112,3 +112,7 @@ Open measurement gives a lot of benefits for our InnerSource community:
 
 - transparency, as trust generator for third parties and fairness
   for our InnerSource community
+
+## InnerSource and AI
+
+Organizations adopting AI in the workplace—from generative AI assistants to agentic coding tools—can benefit from InnerSource in new ways. Shared repositories, clear boundaries, and collaborative practices help both humans and AI work with the right context and reuse. See the [InnerSource and AI](../innersource-and-ai/innersource-and-ai.md) section for why it matters, how to shape repositories and practices for AI, and what risks and guardrails to consider.

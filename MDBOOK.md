@@ -13,7 +13,15 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 To install mdBook, run the following command:
 
 ```bash
-cargo install mdbook
+# Install mdbook v0.4.52 (required for mdbook-embedify compatibility)
+cargo install mdbook --version 0.4.52
+```
+
+Install required preprocessors:
+
+```sh
+cargo install mdbook-mermaid
+cargo install mdbook-embedify
 ```
 
 ## Usage
@@ -41,6 +49,4 @@ We've enabled the following features:
 
 ## Deployment
 
-TBD
-
-See: <https://github.com/rust-lang/mdBook/blob/master/.github/workflows/deploy.yml>
+Deployment is handled by GitHub Actions. See: <https://github.com/rust-lang/mdBook/blob/master/.github/workflows/deploy.yml>

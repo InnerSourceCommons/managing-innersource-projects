@@ -28,7 +28,7 @@ scenarios or situations where InnerSource can help.
 
 ## The digital transformation wave
 
-During last years, many companies have started facing what
+In previous years, many companies have started facing what
 they call their “Digital Transformation”, to become omnichannel
 companies[^1]. They become heavy IT users and the key transformation
 steps usually are defined by
@@ -49,14 +49,14 @@ framework”, obviously contains terms familiar to any open source
 developer.
 
 These teams usually develop custom software solutions and deployment
-recipes for their companies. For small, medium enterprises (SME) this
+recipes for their companies. For small, medium enterprises this
 could be useful and easy to manage. But, what happens when the company
-has several DevOps teams around the world? How can they ensure a maximum
+has several DevOps teams around the world? How can they ensure maximum
 code/knowledge reuse across the organization?
 
 We have seen companies facing the same problem with different solutions
-due to the lack of cross-organizational transparent and collaborative
-methodology.
+due to the lack of cross-organizational transparency and collaborative
+methodologies.
 
 ## The world of silos
 
@@ -74,11 +74,11 @@ resources caused by multiplication of technologies, developments, etc.
 
 Collaborative development in open source ecosystems has been used several
 times as an example of how these methodologies can break silos between
-companies that might be even market competitors. Those companies have
-been able to share knowledge and resources with a common goal . If competitors can
-collaborate to build technology in which their business rely on, why
-could not corporate business units do the same if they have corporate
-success as mission?
+companies that might even be market competitors. Those companies have
+been able to share knowledge and resources with a common goal. If competitors can
+collaborate to build technology their businesses rely on, why
+couldn't corporate business units do the same if they have corporate
+success as a mission?
 
 ## The start-ups bubble
 
@@ -92,13 +92,13 @@ challenge, and managing development teams growing that fast can be a
 serious problem.
 
 The lack of effective and transparent communication channels and
-documented procedures, might make harder any new employee on-boarding
+documented procedures might make it harder for any new employee to on-board
 and to be engaged with the company.
 
 On the other hand, recently created companies have been born taking
 advantage of the existing IT solutions to provide omnichannel services.
-They are used to work under “DevOps culture” and it might be easier for
-them to adopt a common cross-organizational methodology that allow
+They are used to working under “DevOps culture” and it might be easier for
+them to adopt a common cross-organizational methodology that allows
 transparency and collaboration.
 
 ## Disengagement at work
@@ -126,7 +126,7 @@ largely intrinsic. The aspects of this motivation can be divided into
 
 - purpose, defined as mission in many OSS projects
 
-These aspects are key for software developers motivation, since their tasks
+These aspects are key for software developers' motivation, since their tasks
 involve cognitive skills, decision-making, creativity, or higher-order thinking.
 
 [^1]: https://en.wikipedia.org/wiki/Omnichannel

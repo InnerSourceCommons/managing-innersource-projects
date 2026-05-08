@@ -1,4 +1,8 @@
 # We want to ignore our vale StylesPath
 .github/vale/*
- gqm*[pngmd]
+# Rust toolchain when running CI locally (e.g. act)
+.rustup
+.cargo
+gqm*[pngmd]
 book
+**/dist/
