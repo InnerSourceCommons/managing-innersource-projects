@@ -1,6 +1,6 @@
 # Risks and Guardrails
 
-AI is the ultimate InnerSource contributor. Like any external contributor, AI agents generate code that must be reviewed, validated, and integrated thoughtfully into your systems. The same InnerSource practices that enable trusted external contributions—code review, clear guidelines, transparent decision-making, and systems thinking—are exactly what you need to safely and sustainably adopt AI in development.
+AI is the ultimate InnerSource contributor. Like any external contributor, AI agents generate code that you must review, validate, and integrate thoughtfully into your systems. The same InnerSource practices that enable trusted external contributions, including code review, clear guidelines, transparent decision-making, and systems thinking, are exactly what you need to safely and sustainably adopt AI in development.
 
 Adopting AI without these guardrails can deliver short-term gains in speed and productivity, but at the cost of long-term risks to quality, security, and maintainability. The good news is that if your organization has built a strong InnerSource culture, you already have the foundations in place.
 
@@ -10,13 +10,13 @@ AI coding tools boost short-term productivity but may cause teams to underestima
 
 ## Mitigating AI slop
 
-"AI slop" refers to low-quality, generic, or incorrect content produced by AI systems without adequate human oversight. In a development context, this can mean boilerplate code that does not fit the project's conventions, misleading documentation, or subtly incorrect implementations. InnerSource's emphasis on transparency—keeping things traceable and open for inspection—directly mitigates this risk. When contributions (whether from humans or AI) go through visible review processes in shared repositories, quality issues are caught earlier, and patterns of slop become visible to the community.
+"AI slop" refers to low-quality, generic, or incorrect content produced by AI systems without adequate human oversight. In a development context, this can mean boilerplate code that does not fit the project's conventions, misleading documentation, or subtly incorrect implementations. InnerSource's emphasis on transparency, keeping things traceable and open for inspection, directly mitigates this risk. When contributions (whether from humans or AI) go through visible review processes in shared repositories, reviewers catch quality issues earlier, and patterns of slop become visible to the community.
 
 ## Defining boundaries for proprietary knowledge
 
-As organizations use InnerSource practices to capture and share knowledge for AI training, they must define clear boundaries between what can be shared broadly and what must remain protected. Not all internal knowledge is appropriate for AI training—sensitive research, competitive intelligence, and regulated data require careful handling. InnerSource governance practices—clear ownership, access controls, and contribution guidelines—provide a natural framework for making these distinctions explicit.
+As organizations use InnerSource practices to capture and share knowledge for AI training, they must define clear boundaries between what can be shared broadly and what must remain protected. Not all internal knowledge is appropriate for AI training. Sensitive research, competitive intelligence, and regulated data require careful handling. InnerSource governance practices, including clear ownership, access controls, and contribution guidelines, provide a natural framework for making these distinctions explicit.
 
-The goal is to separate human creation outcomes (the knowledge and artifacts that can be shared) from the creation process itself and from proprietary assets that need safeguarding. Organizations should establish policies that specify which content can be used for AI training, which requires restricted access, and which must remain outside AI systems entirely. This is especially important for organizations with sensitive internal research or regulated data, where compliance and appropriate access controls are non-negotiable.
+The goal is to separate human creation outcomes (the knowledge and artifacts that can be shared) from the creation process itself and from proprietary assets that need safeguarding. Organizations should establish policies that specify which content can be used for AI training, which requires restricted access, and which must remain outside AI systems entirely. This matters especially for organizations with sensitive internal research or regulated data, where compliance and appropriate access controls are non-negotiable.
 
 ## Transparency and stakeholder involvement
 
