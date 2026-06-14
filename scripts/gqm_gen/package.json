@@ -17,11 +17,15 @@
     "devDependencies": {
         "@types/commonmark": "^0.27.7",
         "@types/node": "^20.7.0",
-        "nyc": "^15.1.0",
+        "nyc": "^18.0.0",
         "tsx": "^4.19.3",
         "typescript": "^5.2.2"
     },
     "overrides": {
         "js-yaml": "^3.14.2"
+    },
+    "allowScripts": {
+        "esbuild@0.28.1": true,
+        "fsevents@2.3.3": true
     }
 }
