@@ -1,0 +1,612 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "managing-innersource-projects",
+    "languages": [
+      "bash",
+      "javascript",
+      "typescript"
+    ],
+    "frameworks": [
+      "commonmark"
+    ],
+    "description": "A book covering all aspects of managing an InnerSource Program, built with mdBook, including a GQM metrics generator tool in TypeScript.",
+    "analyzedAt": "2026-03-28T15:58:45.935Z",
+    "gitCommitHash": "1dd337b6210428b54d911552f02fdebb57815f68"
+  },
+  "nodes": [
+    {
+      "id": "file:mermaid-init.js",
+      "type": "file",
+      "name": "mermaid-init.js",
+      "filePath": "mermaid-init.js",
+      "summary": "Single-line script that initializes Mermaid.js diagram rendering with startOnLoad enabled. Loaded by mdBook to render mermaid diagrams in the built book.",
+      "tags": [
+        "javascript",
+        "mermaid",
+        "frontend",
+        "mdbook"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/build.sh",
+      "type": "file",
+      "name": "scripts/build.sh",
+      "filePath": "scripts/build.sh",
+      "summary": "Shell script that builds the mdBook locally. Sets up repo-local Rust/Cargo environment variables, auto-installs mdBook on first run via install-mdbook.sh, then runs mdbook build.",
+      "tags": [
+        "bash",
+        "build",
+        "mdbook"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/gqm_gen/index.test.ts",
+      "type": "file",
+      "name": "scripts/gqm_gen/index.test.ts",
+      "filePath": "scripts/gqm_gen/index.test.ts",
+      "summary": "Test suite for the GQM generator using node:test. Tests link URL generation, link extraction from commonmark AST, file link parsing, mermaid diagram generation, and template exclusion filtering.",
+      "tags": [
+        "typescript",
+        "test",
+        "gqm",
+        "commonmark"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/gqm_gen/index.ts",
+      "type": "file",
+      "name": "scripts/gqm_gen/index.ts",
+      "filePath": "scripts/gqm_gen/index.ts",
+      "summary": "Core GQM (Goal-Question-Metric) generator that parses markdown files using commonmark, extracts links between goals/questions/metrics, builds a graph data structure, and generates mermaid diagram syntax with styled nodes, edges, click handlers, and a legend. Also updates the use_gqm.md file in-place.",
+      "tags": [
+        "typescript",
+        "gqm",
+        "commonmark",
+        "mermaid",
+        "generator"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scripts/gqm_gen/types.ts",
+      "type": "file",
+      "name": "scripts/gqm_gen/types.ts",
+      "filePath": "scripts/gqm_gen/types.ts",
+      "summary": "Type definitions for the GQM generator: enums for LinkType (goal/question/metric), ArrowType, NodeShape, and types for Link, FileLink, Node, Edge, and Graph.",
+      "tags": [
+        "typescript",
+        "types",
+        "gqm"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/gqm_gen/update_gqm.sh",
+      "type": "file",
+      "name": "scripts/gqm_gen/update_gqm.sh",
+      "filePath": "scripts/gqm_gen/update_gqm.sh",
+      "summary": "Shell script that orchestrates GQM diagram updates: ensures measuring directory and use_gqm.md exist, runs npm install and the TypeScript generator, then commits and pushes changes (skipped when running in act).",
+      "tags": [
+        "bash",
+        "gqm",
+        "ci",
+        "git"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/install-mdbook.sh",
+      "type": "file",
+      "name": "scripts/install-mdbook.sh",
+      "filePath": "scripts/install-mdbook.sh",
+      "summary": "Installs Rust toolchain, mdBook and plugins (mdbook-mermaid, mdbook-embedify, mdbook-linkcheck2) into repo-local directories. Uses version-checking to skip already-installed binaries from CI cache.",
+      "tags": [
+        "bash",
+        "install",
+        "rust",
+        "mdbook",
+        "ci"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/lychee-book.sh",
+      "type": "file",
+      "name": "scripts/lychee-book.sh",
+      "filePath": "scripts/lychee-book.sh",
+      "summary": "Link checker script that finds all HTML files in the built book, converts paths to URLs, feeds them to lychee for validation, and produces a broken-links-by-page report using jq to parse lychee JSON output.",
+      "tags": [
+        "bash",
+        "lychee",
+        "link-checking",
+        "quality"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scripts/serve.sh",
+      "type": "file",
+      "name": "scripts/serve.sh",
+      "filePath": "scripts/serve.sh",
+      "summary": "Shell script that builds and serves the mdBook locally with live-reload. Sets up repo-local Rust/Cargo paths, auto-installs mdBook if needed, then runs mdbook serve.",
+      "tags": [
+        "bash",
+        "serve",
+        "mdbook",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/test-mdbook-deploy.sh",
+      "type": "file",
+      "name": "scripts/test-mdbook-deploy.sh",
+      "filePath": "scripts/test-mdbook-deploy.sh",
+      "summary": "Runs mdBook GitHub Actions workflows locally using act. Validates that act is installed and workflow/event files exist, then runs both push (deploy) and pull_request (deploy-preview) jobs.",
+      "tags": [
+        "bash",
+        "test",
+        "ci",
+        "act",
+        "github-actions"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "func:scripts/gqm_gen/index.ts::getLinkUrl",
+      "type": "function",
+      "name": "getLinkUrl",
+      "filePath": "scripts/gqm_gen/index.ts",
+      "summary": "Converts a LinkType and markdown filename to a relative HTML URL path (e.g. goal + find-projects.md -> goals/find-projects.html).",
+      "tags": [
+        "typescript",
+        "exported"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "func:scripts/gqm_gen/index.ts::getGQMFileLinks",
+      "type": "function",
+      "name": "getGQMFileLinks",
+      "filePath": "scripts/gqm_gen/index.ts",
+      "summary": "Main entry point that builds a Graph by scanning goals/, questions/, and metrics/ subdirectories under a given path, parsing each markdown file for links.",
+      "tags": [
+        "typescript",
+        "exported"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "func:scripts/gqm_gen/index.ts::appendToGraph",
+      "type": "function",
+      "name": "appendToGraph",
+      "filePath": "scripts/gqm_gen/index.ts",
+      "summary": "Mutates a Graph by appending nodes and edges from an array of FileLink objects.",
+      "tags": [
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "func:scripts/gqm_gen/index.ts::getFileLinks",
+      "type": "function",
+      "name": "getFileLinks",
+      "filePath": "scripts/gqm_gen/index.ts",
+      "summary": "Reads all markdown files (excluding templates) from a directory, parses each with commonmark, and returns FileLink objects containing heading labels and extracted links.",
+      "tags": [
+        "typescript",
+        "exported"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "func:scripts/gqm_gen/index.ts::getHeading",
+      "type": "function",
+      "name": "getHeading",
+      "filePath": "scripts/gqm_gen/index.ts",
+      "summary": "Walks a commonmark AST to extract the first heading text.",
+      "tags": [
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "func:scripts/gqm_gen/index.ts::getLinks",
+      "type": "function",
+      "name": "getLinks",
+      "filePath": "scripts/gqm_gen/index.ts",
+      "summary": "Walks a commonmark AST to extract all markdown links, filtering out non-.md links, use_gqm references, and template files.",
+      "tags": [
+        "typescript",
+        "exported"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "func:scripts/gqm_gen/index.ts::getNodeShapeSyntax",
+      "type": "function",
+      "name": "getNodeShapeSyntax",
+      "filePath": "scripts/gqm_gen/index.ts",
+      "summary": "Returns mermaid node shape syntax (parentheses, brackets, braces) based on a Node's shape property.",
+      "tags": [
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "func:scripts/gqm_gen/index.ts::generateMermaidDiagram",
+      "type": "function",
+      "name": "generateMermaidDiagram",
+      "filePath": "scripts/gqm_gen/index.ts",
+      "summary": "Generates a complete mermaid diagram string from a Graph, including subgraphs, nodes with shapes, edges with arrows, click handlers for navigation, and a styled legend categorized by goal/question/metric.",
+      "tags": [
+        "typescript",
+        "exported"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "func:scripts/gqm_gen/index.ts::updateGQMDiagram",
+      "type": "function",
+      "name": "updateGQMDiagram",
+      "filePath": "scripts/gqm_gen/index.ts",
+      "summary": "Orchestrates diagram update: builds graph, generates mermaid, writes raw mermaid to stdout, reads existing output file, replaces the mermaid block, and writes back.",
+      "tags": [
+        "typescript",
+        "exported"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "func:scripts/install-mdbook.sh::has_version",
+      "type": "function",
+      "name": "has_version",
+      "filePath": "scripts/install-mdbook.sh",
+      "summary": "Checks if a binary exists at the expected path and reports the expected version string.",
+      "tags": [
+        "bash"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "func:scripts/install-mdbook.sh::install_if_needed",
+      "type": "function",
+      "name": "install_if_needed",
+      "filePath": "scripts/install-mdbook.sh",
+      "summary": "Conditionally installs a cargo package if the cached version doesn't match the expected version.",
+      "tags": [
+        "bash"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scripts/gqm_gen/index.ts",
+      "target": "file:scripts/gqm_gen/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/gqm_gen/index.test.ts",
+      "target": "file:scripts/gqm_gen/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/gqm_gen/index.test.ts",
+      "target": "file:scripts/gqm_gen/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/gqm_gen/index.ts",
+      "target": "func:scripts/gqm_gen/index.ts::getLinkUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/gqm_gen/index.ts",
+      "target": "func:scripts/gqm_gen/index.ts::getGQMFileLinks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/gqm_gen/index.ts",
+      "target": "func:scripts/gqm_gen/index.ts::appendToGraph",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/gqm_gen/index.ts",
+      "target": "func:scripts/gqm_gen/index.ts::getFileLinks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/gqm_gen/index.ts",
+      "target": "func:scripts/gqm_gen/index.ts::getHeading",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/gqm_gen/index.ts",
+      "target": "func:scripts/gqm_gen/index.ts::getLinks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/gqm_gen/index.ts",
+      "target": "func:scripts/gqm_gen/index.ts::getNodeShapeSyntax",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/gqm_gen/index.ts",
+      "target": "func:scripts/gqm_gen/index.ts::generateMermaidDiagram",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/gqm_gen/index.ts",
+      "target": "func:scripts/gqm_gen/index.ts::updateGQMDiagram",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/install-mdbook.sh",
+      "target": "func:scripts/install-mdbook.sh::has_version",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/install-mdbook.sh",
+      "target": "func:scripts/install-mdbook.sh::install_if_needed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/gqm_gen/index.test.ts",
+      "target": "func:scripts/gqm_gen/index.ts::getLinkUrl",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:scripts/gqm_gen/index.test.ts",
+      "target": "func:scripts/gqm_gen/index.ts::getLinks",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:scripts/gqm_gen/index.test.ts",
+      "target": "func:scripts/gqm_gen/index.ts::getFileLinks",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:scripts/gqm_gen/index.test.ts",
+      "target": "func:scripts/gqm_gen/index.ts::generateMermaidDiagram",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:scripts/gqm_gen/index.test.ts",
+      "target": "func:scripts/gqm_gen/index.ts::getGQMFileLinks",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "func:scripts/gqm_gen/index.ts::getGQMFileLinks",
+      "target": "func:scripts/gqm_gen/index.ts::getFileLinks",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "func:scripts/gqm_gen/index.ts::getGQMFileLinks",
+      "target": "func:scripts/gqm_gen/index.ts::appendToGraph",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "func:scripts/gqm_gen/index.ts::getFileLinks",
+      "target": "func:scripts/gqm_gen/index.ts::getHeading",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "func:scripts/gqm_gen/index.ts::getFileLinks",
+      "target": "func:scripts/gqm_gen/index.ts::getLinks",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "func:scripts/gqm_gen/index.ts::generateMermaidDiagram",
+      "target": "func:scripts/gqm_gen/index.ts::getNodeShapeSyntax",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "func:scripts/gqm_gen/index.ts::generateMermaidDiagram",
+      "target": "func:scripts/gqm_gen/index.ts::getLinkUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "func:scripts/gqm_gen/index.ts::updateGQMDiagram",
+      "target": "func:scripts/gqm_gen/index.ts::getGQMFileLinks",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "func:scripts/gqm_gen/index.ts::updateGQMDiagram",
+      "target": "func:scripts/gqm_gen/index.ts::generateMermaidDiagram",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "func:scripts/install-mdbook.sh::install_if_needed",
+      "target": "func:scripts/install-mdbook.sh::has_version",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build.sh",
+      "target": "file:scripts/install-mdbook.sh",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/serve.sh",
+      "target": "file:scripts/install-mdbook.sh",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/gqm_gen/update_gqm.sh",
+      "target": "file:scripts/gqm_gen/index.ts",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/test-mdbook-deploy.sh",
+      "target": "file:scripts/build.sh",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:gqm-generator-tool",
+      "name": "GQM Generator Tool",
+      "description": "TypeScript application that parses Goals-Questions-Metrics markdown files and generates a Mermaid graph, with its own type definitions, test suite, and shell orchestration script.",
+      "nodeIds": [
+        "file:scripts/gqm_gen/index.ts",
+        "file:scripts/gqm_gen/types.ts",
+        "file:scripts/gqm_gen/index.test.ts",
+        "file:scripts/gqm_gen/update_gqm.sh"
+      ]
+    },
+    {
+      "id": "layer:build-and-deploy-infrastructure",
+      "name": "Build & Deploy Infrastructure",
+      "description": "Shell scripts that install dependencies, build the mdBook, serve it locally, run link checks, and test the CI deployment workflow.",
+      "nodeIds": [
+        "file:scripts/build.sh",
+        "file:scripts/serve.sh",
+        "file:scripts/install-mdbook.sh",
+        "file:scripts/lychee-book.sh",
+        "file:scripts/test-mdbook-deploy.sh"
+      ]
+    },
+    {
+      "id": "layer:frontend-book-runtime",
+      "name": "Frontend Book Runtime",
+      "description": "Client-side JavaScript that initializes Mermaid diagram rendering when the built mdBook is loaded in a browser.",
+      "nodeIds": [
+        "file:mermaid-init.js"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Build Foundation: Installing mdBook and Its Toolchain",
+      "description": "The project starts with install-mdbook.sh, which bootstraps a complete, repo-local Rust toolchain along with mdBook and its plugins (mermaid, embedify, linkcheck2). Pinned versions ensure CI and local builds are identical. Both build.sh and serve.sh depend on this script, calling it automatically on first run if mdBook is not yet installed.",
+      "nodeIds": [
+        "file:scripts/install-mdbook.sh",
+        "file:scripts/build.sh",
+        "file:scripts/serve.sh"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Building and Serving the Book",
+      "description": "build.sh and serve.sh are the two primary developer entry points. They set up repo-local RUSTUP_HOME and CARGO_HOME environment variables so the project never touches a global Rust install, then delegate to mdBook's build or serve commands. serve.sh adds live-reload for a smooth authoring workflow, while build.sh produces the static site output.",
+      "nodeIds": [
+        "file:scripts/build.sh",
+        "file:scripts/serve.sh"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "GQM Type System: Modeling Goals, Questions, and Metrics",
+      "description": "The GQM (Goal-Question-Metric) generator has a clean type foundation in types.ts. It defines enums for LinkType (goal, question, metric), ArrowType (arrow styles for Mermaid edges), and NodeShape (rectangle, circle, diamond). The core data structures -- Graph, Node, Edge, and FileLink -- model the entire relationship graph that gets rendered into diagrams.",
+      "nodeIds": [
+        "file:scripts/gqm_gen/types.ts"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Core GQM Generator: From Markdown to Mermaid Diagrams",
+      "description": "index.ts is the heart of the GQM tool. It reads markdown files from goals/, questions/, and metrics/ directories, parses them with Commonmark to extract headings and inter-document links, and assembles a typed Graph structure. The generateMermaidDiagram function then transforms that graph into Mermaid syntax with color-coded nodes, click handlers linking back to book pages, and a legend. The updateGQMDiagram entry point writes the result back into the book's use_gqm.md file.",
+      "nodeIds": [
+        "file:scripts/gqm_gen/index.ts",
+        "file:scripts/gqm_gen/types.ts"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Testing the GQM Generator",
+      "description": "index.test.ts contains six focused tests using Node's built-in test runner. Tests range from unit-level checks (empty paragraph produces no links, URL generation targets .html) to integration tests that read actual markdown files from the measuring/ directory and verify the full pipeline from file parsing through Mermaid output. A regression test confirms that template files are excluded from the generated graph edges.",
+      "nodeIds": [
+        "file:scripts/gqm_gen/index.test.ts",
+        "file:scripts/gqm_gen/index.ts",
+        "file:scripts/gqm_gen/types.ts"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "CI Orchestration: Automated Diagram Updates and Workflow Testing",
+      "description": "update_gqm.sh is the CI glue that runs npm install and npm start in the gqm_gen directory, then commits and pushes updated diagrams when changes are detected. It handles the act testing environment gracefully by skipping git operations. test-mdbook-deploy.sh lets developers validate the full GitHub Actions workflow locally using act, exercising both push (deploy) and pull_request (preview) events.",
+      "nodeIds": [
+        "file:scripts/gqm_gen/update_gqm.sh",
+        "file:scripts/test-mdbook-deploy.sh"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Quality Gates: Link Checking and Diagram Rendering",
+      "description": "lychee-book.sh validates every link in the built book by crawling the served HTML pages with the lychee link checker, producing a structured JSON report that maps broken links back to their source pages. mermaid-init.js is a minimal but essential piece -- it initializes the Mermaid library so that all GQM diagrams and other Mermaid blocks render correctly when readers view the book in a browser.",
+      "nodeIds": [
+        "file:scripts/lychee-book.sh",
+        "file:mermaid-init.js"
+      ]
+    }
+  ]
+}

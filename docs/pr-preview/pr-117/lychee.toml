@@ -1,0 +1,8 @@
+# Lychee config for checking the built mdbook served at http://localhost:3000/
+# Run: scripts/lychee-book.sh or:
+#   find book/html -name "*.html" -not -path "*/.cargo/*" -not -path "*/.git/*" -not -path "*/.rustup/*" -not -path "*/.github/*" -not -path "*/.claude/*" -not -path "*/.nwave/*" | lychee --base-url "http://localhost:3000/" --files-from -
+
+format = "detailed"
+verbose = "info"
+# Allow 2xx and 3xx (redirects) as success
+accept = "100..=103,200..=399"
