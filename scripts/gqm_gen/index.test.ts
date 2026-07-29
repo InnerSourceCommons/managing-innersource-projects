@@ -2,14 +2,14 @@ import * as Commonmark from "commonmark";
 import * as fs from "fs";
 import test from "node:test";
 import assert from "node:assert";
-import { FileLink, Graph, LinkType } from "./types";
+import { FileLink, Graph, LinkType } from "./types.js";
 import {
   getLinks,
   getFileLinks,
   generateMermaidDiagram,
   getGQMFileLinks,
   getLinkUrl,
-} from "./index";
+} from "./index.js";
 
 test("getLinkUrl targets built HTML pages", () => {
   assert.strictEqual(
