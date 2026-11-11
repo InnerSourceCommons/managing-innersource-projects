@@ -22,7 +22,7 @@
         "typescript": "^7.0.2"
     },
     "overrides": {
-        "js-yaml": "^5.2.2"
+        "js-yaml": "^5.5.0"
     },
     "allowScripts": {
         "esbuild@0.28.1": true,
