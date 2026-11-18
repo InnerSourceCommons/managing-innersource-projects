@@ -1,0 +1,9 @@
+# Pages excluded from link checking (see scripts/lychee-book.sh)
+# print.html aggregates the whole book and repeats links; excluding it is required.
+^https?://[^/]+/print\.html
+# External sites that block or throttle link checkers
+https://pixabay.com/users/bru-no-1161770/
+https://pixabay.com/service/license-summary/
+https://www.sap.com/
+# Built book may serve this chapter at README.html or index.html; ignore if 404
+^https?://[^/]+/measuring/gqm_example/README\.html
